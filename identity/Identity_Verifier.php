@@ -229,6 +229,7 @@ class Identity_Verifier {
 	 */
 	public function get_username() {
 		$username = $this->get_username_by_cookie(@$_COOKIE[self::COOKIE_NAME]);
+		Environment::get()->get_logger()->info("Username: $username");
 		if ($username === null) {
 			$this->erase_cookie();
 		}
