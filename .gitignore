@@ -1,0 +1,38 @@
+#gedit backup files
+*~
+
+#local temporary files, logs, and backup files
+back.*.gz
+*.bak
+*.dat
+*.txt
+*.log
+
+#local scripts
+sshlabs.sh
+sftplabs.sh
+backup.sh
+
+#locally generated file by ogrebot.php
+commons_images*.htm
+
+#local working folder
+local-working
+local-working/**
+
+#logs
+log/
+
+#live
+#environment.properties
+
+#temp directory
+tmp/
+
+/.fuse_hidden*
+.buildpath
+.project
+org.eclipse.php.core.prefs
+/appkey.pem
+/uploadlog
+/cleanup-multi-log

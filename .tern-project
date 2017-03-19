@@ -1,0 +1,28 @@
+{
+  "ecmaVersion": 6,
+  "plugins": {
+    "eslint": {
+      "config": {
+        "parserOptions": {
+          "ecmaVersion": 7
+        },
+        "rules": {
+          
+        }
+      }
+    },
+    "es_modules": {
+      
+    },
+    "angular1": {
+      
+    },
+    "jquery-ui1-12": {
+      
+    }
+  },
+  "libs": [
+    "browser",
+    "jquery"
+  ]
+}

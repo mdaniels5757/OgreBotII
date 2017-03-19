@@ -1,0 +1,50 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "script",
+        "ecmaVersion": 2017
+    },
+    "rules": {
+    	"keyword-spacing": "error",
+    	"no-array-constructor": "error",
+    	"no-catch-shadow": "error",
+    	"no-eval": "error",
+    	"no-extra-bind": "error",
+    	"no-implied-eval": "error",
+    	"no-label-var": "error",
+    	"no-labels": "error",
+    	"no-lone-blocks": "error",
+    	"no-new": "error",
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "semi-spacing": "error",
+        "space-infix-ops": "error",
+        "space-unary-ops": [
+		     2, {
+		          "words": true,
+		          "nonwords": false,
+		          "overrides": {
+		            "new": false,
+		            "++": false
+		          }
+		    }]
+    }
+}
