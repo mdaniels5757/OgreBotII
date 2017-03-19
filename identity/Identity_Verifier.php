@@ -228,7 +228,10 @@ class Identity_Verifier {
 	 * @return NULL|string
 	 */
 	public function get_username() {
-		return $this->get_username_by_cookie(@$_COOKIE[self::COOKIE_NAME]);
+		$username = $this->get_username_by_cookie(@$_COOKIE[self::COOKIE_NAME]);
+		if ($username === null) {
+			$this->erase_cookie();
+		}
 	}
 	
 	/**
@@ -371,6 +374,10 @@ class Identity_Verifier {
 		return $payload->username;
 	}
 	
+	private function erase_cookie() {
+		setcookie(self::COOKIE_NAME, null, -1, $this->cookie_path);
+	}
+	
 	/**
 	 * Request a JWT and verify it
 	 *
@@ -387,6 +394,6 @@ class Identity_Verifier {
 	
 	public function logout() {
 		$this->identity_dao->logout($_COOKIE[self::COOKIE_NAME]);
-		setcookie(self::COOKIE_NAME, null, -1, $this->cookie_path);
+		$this->erase_cookie();
 	}
 }
