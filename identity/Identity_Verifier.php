@@ -233,6 +233,7 @@ class Identity_Verifier {
 		if ($username === null) {
 			$this->erase_cookie();
 		}
+		return $username;
 	}
 	
 	/**
