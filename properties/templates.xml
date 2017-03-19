@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OgreBot>
+<templates>
+	<template>
+		<name>PermissionOTRS</name>
+		<aliases>
+			<alias>OTRS</alias>
+			<alias>Otrs</alias>
+			<alias>OTRS permission</alias>
+			<alias>Разрешение OTRS</alias>
+			<alias>OTRSPermission</alias>
+		</aliases>
+		<fieldaliases>
+			<fieldalias>
+				<name>1</name>
+				<alias>id</alias>
+			</fieldalias>
+		</fieldaliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>Cc-by-1.0</name>
+		<aliases>
+			<alias>CC-BY</alias>
+			<alias>CC-by</alias>
+			<alias>Cc-by</alias>
+			<alias>CC-BY-1.0</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>Cc-by-sa-1.0</name>
+		<aliases>
+			<alias>CC-BY-SA</alias>
+			<alias>CC-by-sa</alias>
+			<alias>Cc-by-sa</alias>
+			<alias>CC-BY-sa</alias>
+			<alias>CC-BY-SA-1.0</alias>
+			<alias>Bild-CC-by-sa/1.0</alias>
+			<alias>CC-by-SA</alias>
+			<alias>Cc-sa-1.0-nl</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>Cc-by-sa-3.0</name>
+		<aliases>
+			<alias>CC-by-sa-3.0</alias>
+			<alias>CC-BY-SA-3.0</alias>
+			<alias>Bild-CC-by-sa/3.0</alias>
+			<alias>Bild-CC-by-sa-3.0</alias>
+			<alias>CC-BY-SA 3.0</alias>
+			<alias>Cc-by-sa 3.0</alias>
+			<alias>CC-by-sa/3.0</alias>
+			<alias>CC-BY-SA-3.0 P</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>PD-Polish</name>
+		<aliases>
+			<alias>Poland-PD</alias>
+			<alias>PD-PRL</alias>
+			<alias>Polish-PD</alias>
+			<alias>PD-Poland</alias>
+			<alias>Poland-pd</alias>
+			<alias>Pd-polish</alias>
+			<alias>Pd-Polish</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>PD-US-not renewed</name>
+		<aliases>
+			<alias>PD-US-no-renewal</alias>
+			<alias>PD-US-not-renewed</alias>
+			<alias>PD-US-notrenewed</alias>
+			<alias>PD-US-expired</alias>
+			<alias>PD-US-no renewal</alias>
+			<alias>PD-norenewal</alias>
+			<alias>PD-US-norenewal</alias>
+			<alias>PD-Pre1964</alias>
+			<alias>Grant's Anatomy plate</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>PD-US-no notice</name>
+		<aliases>
+			<alias>PD-US-no-notice</alias>
+			<alias>PD-US-pre1978</alias>
+			<alias>PD Pre-1978</alias>
+			<alias>PD-Pre1978</alias>
+			<alias>PD-US-no-license</alias>
+			<alias>ChicagoPicasso</alias>
+			<alias>PD-pre1978</alias>
+			<alias>PD-1978</alias>
+			<alias>PD-US-No notice</alias>
+			<alias>PD-US no notice</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>No rights reserved</name>
+		<aliases>
+			<alias>NoRightsReserved</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>Trademarked</name>
+		<aliases>
+			<alias>Trademark</alias>
+			<alias>Marque déposée</alias>
+			<alias>Tm</alias>
+			<alias>SVG-Logo</alias>
+			<alias>TM</alias>
+			<alias>®</alias>
+			<alias>SVG logo</alias>
+			<alias>SVG-Trademark</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>PD-textlogo</name>
+		<aliases>
+			<alias>PD-text-logo</alias>
+			<alias>PD-text logo</alias>
+			<alias>Pd-textlogo</alias>
+			<alias>PD-Textlogo</alias>
+			<alias>Textlogo</alias>
+			<alias>نگاره نوشتاری</alias>
+			<alias>PDtextlogo</alias>
+			<alias>PD-TextLogo</alias>
+			<alias>PD-logo</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>Wrong license</name>
+		<aliases>
+			<alias>Wrong-licence</alias>
+			<alias>Wrong-license</alias>
+			<alias>Wl</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>GFDL</name>
+		<aliases>
+			<alias>Bild-GFDL</alias>
+			<alias>Gfdl</alias>
+			<alias>GNU FDL</alias>
+			<alias>Gdfl</alias>
+			<alias>GFDL-no-disclaimers</alias>
+			<alias>GNU</alias>
+			<alias>ГЛСД-без-одрицања</alias>
+			<alias>CopyrightGFDL</alias>
+			<alias>مجوز گنو</alias>
+			<alias>Јд-јас</alias>
+			<alias>ГЛСД</alias>
+			<alias>ГЛСД-без одрицања</alias>
+			<alias>Гфдл</alias>
+			<alias>GFDL-lastno</alias>
+			<alias>GFDl</alias>
+			<alias>GNU Free Documentation License</alias>
+			<alias>Gnu</alias>
+			<alias>GÖBL</alias>
+			<alias>GÖBL-Kişisel</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>GFDL-self-en</name>
+		<aliases>
+			<alias>ГЛСД-ја</alias>
+			<alias>GFDL-self-with-disclaimers</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>Copyrighted free use provided that</name>
+		<aliases>
+			<alias>CopyrightedFreeUseProvidedThat</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>Free screenshot</name>
+		<aliases>
+			<alias>Free-Screenshot</alias>
+			<alias>Freescreenshot</alias>
+			<alias>Free-screenshot</alias>
+			<alias>Vrije screenshot</alias>
+			<alias>Screenshot libero</alias>
+			<alias>Free software screenshot</alias>
+			<alias>Free software</alias>
+
+			<!-- Not actually aliases, but possibly used on local projects as such -->
+			<alias>Screenshot</alias>
+			<alias>Software-screenshot</alias>
+			<alias>Capture d&#39;écran</alias>
+			<alias>Несвободен скрийншот</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>PD-USGov-NOAA</name>
+		<aliases>
+			<alias>NOAA</alias>
+			<alias>PD-NOAA</alias>
+			<alias>PD-USGov-DOC-NOAA</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>PD-Art</name>
+		<aliases>
+			<alias>PD-art</alias>
+			<alias>Pd-art</alias>
+			<alias>PD-kunst</alias>
+			<alias>PD-Arte</alias>
+			<alias>Pd-Art</alias>
+			<alias>PD-ART</alias>
+		</aliases>
+		<cleanup-remove-duplicates />
+	</template>
+	<template>
+		<name>Artwork</name>
+		<fields>
+			<field value="artist" />
+			<field value="author" />
+			<field value="title" />
+			<field value="description" />
+			<field value="date" />
+			<field value="medium" />
+			<field value="dimensions" />
+			<field value="institution" />
+			<field value="department" />
+			<field value="references" />
+			<field value="object history" />
+			<field value="exhibition history" />
+			<field value="credit line" />
+			<field value="inscriptions" />
+			<field value="notes" />
+			<field value="accession number" />
+			<field value="place of creation" />
+			<field value="source" />
+			<field value="permission" />
+			<field value="other_versions" />
+		</fields>
+		<aliases>
+			<alias>Painting</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Art Photo</name>
+		<aliases>
+			<alias>Art photo</alias>
+		</aliases>
+		<fields>
+			<field value="artist" />
+			<field value="title" />
+			<field value="description" />
+			<field value="date" />
+			<field value="medium" />
+			<field value="dimensions" />
+			<field value="institution" />
+			<field value="location" />
+			<field value="references" />
+			<field value="object history" />
+			<field value="exhibition history" />
+			<field value="credit line" />
+			<field value="inscriptions" />
+			<field value="notes" />
+			<field value="accession number" />
+			<field value="artwork license" />
+			<field value="place of creation" />
+			<field value="artwork" />
+			<field value="photo description" />
+			<field value="photo date" />
+			<field value="photographer" />
+			<field value="source" />
+			<field value="photo license" />
+			<field value="other_versions" />
+		</fields>
+	</template>
+	<template>
+		<name>Book</name>
+		<field>
+			<field value="Author" />
+			<field value="Translator" />
+			<field value="Editor" />
+			<field value="Illustrator" />
+			<field value="Title" />
+			<field value="Subtitle" />
+			<field value="Series title" />
+			<field value="Volume" />
+			<field value="Edition" />
+			<field value="Publisher" />
+			<field value="Printer" />
+			<field value="Date" />
+			<field value="City" />
+			<field value="Language" />
+			<field value="Description" />
+			<field value="Source" />
+			<field value="Permission" />
+			<field value="Image" />
+			<field value="Image page" />
+			<field value="Pageoverview" />
+			<field value="Wikisource" />
+			<field value="Homecat" />
+			<field value="Other_versions" />
+			<field value="ISBN" />
+			<field value="LCCN" />
+			<field value="OCLC" />
+			<field value="References" />
+			<field value="Linkback" />
+		</field>
+		<aliases>
+			<alias>DE Wikisource Book</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Information</name>
+		<fields>
+			<field value="description" />
+			<field value="source" />
+			<field value="author" />
+			<field value="date" />
+			<field value="permission" />
+			<field value="other versions" />
+			<field value="other fields" />
+			<field value="other fields 1" />
+		</fields>
+	</template>>
+	<template>
+		<name>Information2</name>
+		<fields>
+			<field value="description" />
+			<field value="source" />
+			<field value="author" />
+			<field value="date" />
+			<field value="location" />
+			<field value="permission" />
+			<field value="other versions" />
+			<field value="other fields" />
+			<field value="other fields 1" />
+		</fields>
+	</template>
+	<template>
+		<name>Flickr</name>
+		<fields>
+			<field value="description" />
+			<field value="flickr_url" />
+			<field value="title" />
+			<field value="taken" />
+			<field value="photographer_url" />
+			<field value="photographer" />
+			<field value="photographer_location" />
+			<field value="reviewer" />
+			<field value="permission" />
+			<field value="self_made" />
+		</fields>
+	</template>
+	<template>
+		<name>Musical work</name>
+		<fields>
+			<field value="composer" />
+			<field value="lyrics_writer" />
+			<field value="performer" />
+			<field value="title" />
+			<field value="description" />
+			<field value="composition_date" />
+			<field value="performance_date" />
+			<field value="notes" />
+			<field value="record_ID" />
+			<field value="image" />
+			<field value="references" />
+			<field value="source" />
+			<field value="permission" />
+			<field value="other_versions" />
+		</fields>
+	</template>
+	<template>
+		<name>Photograph</name>
+		<fields>
+			<field value="photographer" />
+			<field value="title" />
+			<field value="description" />
+			<field value="depicted people" />
+			<field value="depicted place" />
+			<field value="date" />
+			<field value="medium" />
+			<field value="dimensions" />
+			<field value="institution" />
+			<field value="department" />
+			<field value="references" />
+			<field value="object history" />
+			<field value="exhibition history" />
+			<field value="credit line" />
+			<field value="inscriptions" />
+			<field value="notes" />
+			<field value="accession number" />
+			<field value="source" />
+			<field value="permission" />
+			<field value="other_versions" />
+		</fields>
+	</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- ******************************************************************** 
+	     Infobox location templates 
+	     ******************************************************************** -->
+
+	<!-- after infobox -->
+	<template>
+		<name>Location dec</name>
+		<infobox-location>after</infobox-location>
+		<aliases>
+			<alias>Camera location dec</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Object location dec</name>
+		<infobox-location>after</infobox-location>
+	</template>
+	<template>
+		<name>Object location</name>
+		<infobox-location>after</infobox-location>
+		<aliases>
+			<alias>Object Location</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Location possible</name>
+		<infobox-location>after</infobox-location>
+		<aliases>
+			<alias>Location request</alias>
+			<alias>No Location</alias>
+			<alias>Coord missing</alias>
+			<alias>Reqgeotag</alias>
+			<alias>Lagewunsch</alias>
+			<alias>Location Possible</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Artifacts</name>
+		<infobox-location>after</infobox-location>
+	</template>
+	<template>
+		<name>BadSVG</name>
+		<infobox-location>after</infobox-location>
+	</template>
+	<template>
+		<name>Blurry</name>
+		<infobox-location>after</infobox-location>
+	</template>
+	<template>
+		<name>Opaque</name>
+		<infobox-location>after</infobox-location>
+		<aliases>
+			<alias>ShouldBeTransparent</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Copy to Commons</name>
+		<infobox-location>delete</infobox-location>
+		<aliases>
+			<alias>NowCommons</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Remove border</name>
+		<infobox-location>after</infobox-location>
+		<aliases>
+			<alias>crop</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Created with Inkscape</name>
+		<infobox-location>after</infobox-location>
+		<aliases>
+			<alias>Inkscape</alias>
+			<alias>Made in Inkscape</alias>
+			<alias>Made with Inkscape</alias>
+			<alias>Created with</alias>
+			<alias>Createdwith</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Convert to SVG</name>
+		<infobox-location>after</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>ConvertToSVG</alias>
+			<alias>ConverttoSVG</alias>
+			<alias>ToSVG</alias>
+			<alias>To SVG</alias>
+			<alias>Svg</alias>
+			<alias>ShouldBeSVG</alias>
+			<alias>Convert to svg</alias>
+			<alias>Should be SVG</alias>
+			<alias>Should be svg</alias>
+			<alias>Vectorize</alias>
+			<alias>SVG</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Reflist</name>
+		<infobox-location>after</infobox-location>
+		<major-infobox-change />
+	</template>
+	<template>
+		<name>Created with Inkscape</name>
+		<infobox-location>after</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>Created with Inkscape</alias>
+			<alias>Created with inkscape</alias>
+			<alias>Made with Inkscape</alias>
+			<alias>Made in Inkscape</alias>
+			<alias>Cwi</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Brands of the World SVG</name>
+		<infobox-location>after</infobox-location>
+		<major-infobox-change />
+	</template>
+	<template>
+		<name>Convert to PNG</name>
+		<infobox-location>after</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>PNG</alias>
+			<alias>ShouldBePNG</alias>
+			<alias>ShouldbePNG</alias>
+			<alias>Should be png</alias>
+			<alias>Should be PNG</alias>
+			<alias>Shouldbepng</alias>
+			<alias>Png</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Watermark</name>
+		<infobox-location>after</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>Watermarked</alias>
+			<alias>Imagewatermark</alias>
+			<alias>Water mark</alias>
+			<alias>Remove Watermark</alias>
+			<alias>Watermerk</alias>
+			<alias>Wmr</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>BadJPEG</name>
+		<infobox-location>after</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>Badjpg</alias>
+			<alias>BadJPG</alias>
+			<alias>bad jpeg</alias>
+			<alias>jpg</alias>
+			<alias>Bad JPEG</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>BadGIF</name>
+		<infobox-location>after</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>Badgif</alias>
+			<alias>Bad GIF</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Overcompressed JPEG</name>
+		<infobox-location>after</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>OvercompressedJPEG</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>SupersededPNG</name>
+		<infobox-location>after</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>Superseded PNG</alias>
+			<alias>PNG available</alias>
+			<alias>PNG version available</alias>
+			<alias>PNG version available 2</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Vector version available</name>
+		<infobox-location>after</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>SupersededSVG</alias>
+			<alias>Converted to SVG</alias>
+			<alias>Vva</alias>
+			<alias>SVG available</alias>
+			<alias>NowSVG</alias>
+			<alias>Svg available</alias>
+			<alias>VVA</alias>
+			<alias>Vectorversionavailable</alias>
+		</aliases>
+	</template>
+
+	<!-- source -->
+	<template>
+		<name>Own</name>
+		<infobox-location>source</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>own work</alias>
+			<alias>opera propria</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>Bsr</name>
+		<infobox-location>source</infobox-location>
+		<major-infobox-change />
+	</template>
+	<template>
+		<name>FWS Image</name>
+		<infobox-location>source</infobox-location>
+		<major-infobox-change />
+	</template>
+	<template>
+		<name>SourceNPGLondon</name>
+		<infobox-location>source</infobox-location>
+		<major-infobox-change />
+	</template>
+	<template>
+		<name>AWM-image</name>
+		<infobox-location>source</infobox-location>
+		<major-infobox-change />
+	</template>
+	<template>
+		<name>LOC-image</name>
+		<infobox-location>source</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>LOC</alias>
+			<alias>Loc-image</alias>
+			<alias>LOC-Image</alias>
+			<alias>Loc</alias>
+			<alias>LoC</alias>
+			<alias>LOC image</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>NARA-image</name>
+		<infobox-location>source</infobox-location>
+		<major-infobox-change />
+		<aliases>
+			<alias>NARA</alias>
+		</aliases>
+	</template>
+	<template>
+		<name>PCL</name>
+		<infobox-location>source</infobox-location>
+		<major-infobox-change />
+	</template>
+	<template>
+		<name>Original description page</name>
+		<aliases>
+			<alias>Original description</alias>
+		</aliases>
+	</template>
+
+
+	<!-- description -->
+	<template>
+		<name>USS</name>
+		<infobox-location>description</infobox-location>
+		<major-infobox-change />
+	</template>
+	<template>
+		<name>USNS</name>
+		<infobox-location>description</infobox-location>
+		<major-infobox-change />
+	</template>
+	<template>
+		<name>HMS</name>
+		<infobox-location>description</infobox-location>
+		<major-infobox-change />
+	</template>
+	<template>
+		<name>HMCS</name>
+		<infobox-location>description</infobox-location>
+		<major-infobox-change />
+	</template>
+	<template>
+		<name>Football kit template</name>
+		<infobox-location>description</infobox-location>
+		<major-infobox-change />
+	</template>
+
+	<template-type>
+		<name>Infobox</name>
+		<types>
+			<type>Art Photo</type>
+			<type>Artwork</type>
+			<type>Book</type>
+			<type>Information</type>
+			<type>Musical work</type>
+			<type>Photograph</type>
+		</types>
+	</template-type>
+</templates>

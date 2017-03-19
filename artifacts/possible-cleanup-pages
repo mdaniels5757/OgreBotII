@@ -1,0 +1,52 @@
+/*
+ * TODO
+ * File:Le Prince Paul Gavrilowitch Gagarine.jpg infinite looping
+ * https://commons.wikimedia.org/w/index.php?diff=48707293 didn't catch langlink
+ * https://commons.wikimedia.org/w/index.php?title=File:Damson_plum_fruit.jpg&diff=89666347&oldid=89658729 why not catching transferred from?
+ * https://commons.wikimedia.org/w/index.php?diff=89208177 original uploader caught on second run
+ * https://commons.wikimedia.org/w/index.php?diff=81323955 original description page
+ * https://commons.wikimedia.org/w/index.php?title=File:Bockwindm%C3%BChle_Winsen_(Aller)_IMG_5969.jpg&diff=85779264&oldid=70208267 didn't catch de date
+ * https://commons.wikimedia.org/w/index.php?diff=84056100 deletes transferred from
+ * https://commons.wikimedia.org/w/index.php?diff=82695168 why not uploader rmeoved?
+ * https://commons.wikimedia.org/w/index.php?diff=54184861 -> no migration?
+ * https://commons.wikimedia.org/w/index.php?diff=81803762 y u no remove uploader?
+ * https://commons.wikimedia.org/w/index.php?diff=81801632 dupe gfdl not fixed
+ * https://commons.wikimedia.org/w/index.php?diff=80736654 this date
+ * https://commons.wikimedia.org/w/index.php?diff=80722818 categories
+ * https://commons.wikimedia.org/w/index.php?diff=65455759 ERRORS (notably, in source)
+ * https://commons.wikimedia.org/w/index.php?diff=77787465 gfdl-self-en -> gfdl-user-with-disclaimers
+ * https://commons.wikimedia.org/w/index.php?diff=75569146 this kind of information template
+ * https://commons.wikimedia.org/w/index.php?diff=75518375 and this kind
+ * https://commons.wikimedia.org/w/index.php?diff=75327003 and this other kind
+ * https://commons.wikimedia.org/w/index.php?diff=74052898 pd-release redirection
+ * https://commons.wikimedia.org/w/index.php?diff=74052638 pd-self redirection
+ * https://commons.wikimedia.org/w/index.php?diff=73879314 rejigger date so it appears correctly
+ * https://commons.wikimedia.org/w/index.php?diff=73891254 smart read to change to pd-user-w
+ * https://commons.wikimedia.org/w/index.php?title=File:Philadelphia_runway8-26.jpg&diff=73902705&oldid=73891221 filedesc?
+ * http://commons.wikimedia.org/w/index.php?diff=73650495 screwed up this template
+ * http://commons.wikimedia.org/w/index.php?diff=73478480 ditto
+ * http://commons.wikimedia.org/w/index.php?title=File:%D0%91%D1%83%D1%82%D1%8B%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%9C%D0%B0%D1%80%D0%B8%D1%8F.jpg&action=edit didn't transclude template
+ * http://commons.wikimedia.org/w/index.php?diff=73520292 multiple things, transclude all of them
+ * https://commons.wikimedia.org/w/index.php?title=File:C._Aubrey_Smith_Lloyd%27s_of_London_1936_Henry_King.png&diff=73500737&oldid=73466239 rm n00b date
+ * https://commons.wikimedia.org/w/index.php?diff=73375219 crashes program
+ * https://commons.wikimedia.org/w/index.php?diff=73323564 fix this bot error on self|author
+ * https://commons.wikimedia.org/w/index.php?diff=72926278 vi templates
+ * https://commons.wikimedia.org/w/index.php?title=File:Palazzo_della_Provincia,_Crotone_(1).jpg&action=edit&oldid=72896816 {{own}} fix
+ * http://commons.wikimedia.org/w/index.php?diff=71825861 (what the helll is that?!)
+ * transferred from gone if uploader already next to thumb (http://commons.wikimedia.org/w/index.php?diff=71825833)
+ * {{pd-self|authorname}} -> {{pd-user-he}} (http://commons.wikimedia.org/w/index.php?diff=71185752)
+ * user at project fix for underscored usernames (http://commons.wikimedia.org/w/index.php?diff=71560304)
+ * Nested information (http://commons.wikimedia.org/w/index.php?title=File:Tilannep%C3%A4%C3%A4ll%C3%A4.JPG&action=edit)
+ * https://commons.wikimedia.org/w/index.php?diff=73382533 translate indic numerals
+ * https://commons.wikimedia.org/w/index.php?title=File:JoukovskiCaRMetal1.svg&action=edit&oldid=130581573
+ */
+ http://commons.wikimedia.org/w/index.php?title=File:Dwdavis.jpg&action=edit
+ https://commons.wikimedia.org/w/index.php?title=File:Hopewell_Rocks_low_tide_with_tourists_2007.jpg&action=edit&oldid=159084960
+ https://commons.wikimedia.org/w/index.php?title=File%3AKrunoslav_Jur%C4%8Di%C4%87_2013.jpg&action=submit&functionName=post_cleanup_ts
+ http://commons.wikimedia.org/wiki/File:Akaka_Falls%2C_Hawai%27i_%282_July_2006%29.jpg Fastily
+ http://en.wikipedia.org/wiki/File:At_work_in_la_paz.jpg Fastily 2
+ http://commons.wikimedia.org/wiki/File:Bandelier-national-monument.jpg Fastily 3
+ http://commons.wikimedia.org/wiki/File:Benozzo_Gozzoli.jpg Fastily 4
+ http://commons.wikimedia.org/w/index.php?title=File:DwAlbertawildrose.jpg&action=edit WTF I fixd this
+ 
+ https://commons.wikimedia.org/wiki/File:Samuel-Colt-copy.jpg lots of issues

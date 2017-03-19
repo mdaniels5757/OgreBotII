@@ -1,0 +1,20 @@
+== {{int:filedesc}} ==
+{{Information
+|Description={{en|Hemispheric and Global mean concentrations of CFC-11}}
+|Source=http://www.esrl.noaa.gov/gmd/hats/combined/CFC11.html
+|Date=
+|Author=NOAA/ESRL halocarbons group
+|Permission=
+|other_versions=
+}}
+
+== {{int:license-header}} ==
+{{PD-USGov-NOAA}}
+
+== {{Original upload log}} ==
+{{original description|en.wikipedia|Hats+f11+global.png}}
+{| class="wikitable"
+! {{int:filehist-datetime}} !! {{int:filehist-dimensions}} !! {{int:filehist-user}} !! {{int:filehist-comment}}
+|-
+| 2011-06-21 15:33 || 645×405× (40655 bytes) || [[:en:User:Goffog|Goffog]] || ''<nowiki>{{Information |Description = Hemispheric and Global mean concentrations of CFC-11 (NOAA/ESRL) |Source = NOAA/ESRL halocarbons group |Date = ~~~~~ |Author = |Permission = |other_versions = }}</nowiki>''
+|}

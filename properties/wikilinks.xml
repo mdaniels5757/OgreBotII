@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OgreBot>
+<wikilinks>
+
+	<wikilink-full name="commons.wikimedia" value="c" />
+	<wikilink-full name="meta.wikimedia" value="m" />
+	<wikilink-full name="wikivoyage-old-shared" full-url="http://www.wikivoyage-old.org/shared/$page"/>
+	<wikilink-full name="wts.wikivoyage-old" full-url="http://wts.wikivoyage-old.org/wiki/$page" />
+	<wikilink-full name="wts.wikivoyage" full-url="http://wts.wikivoyage-old.org/wiki/$page" />
+	
+	<wikilink name="wikinews" value="n" />
+	<wikilink name="wikipedia" value="w" />
+	<wikilink name="wikiquote" value="q" />
+	<wikilink name="wikiversity" value="v" />
+	<wikilink name="wiktionary" value="wikt" />
+	<wikilink name="wikibooks" value="b" />
+	<wikilink name="wikisource" value="s" />
+	<wikilink name="wikivoyage" value="voy" />
+	<wikilink name="wikivoyage-old" value="voy" />
+	
+	<!--  not sure if this is right... -->
+
+</wikilinks>

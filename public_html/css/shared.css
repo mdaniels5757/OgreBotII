@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+.topbar {
+    background: #990000;
+    border-bottom: solid 2px #EEE;
+    text-align: center;
+    color: white;
+    padding: 3px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}​
+
+.tooltip-icon {
+	font-size: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+	color: blue;
+}
+
+.tooltip-text {
+	display: none;
+}
+
+.spinner-div {
+	background-color: #888;
+	z-index: 101;
+	opacity: .5;
+	position: absolute;
+	text-align: center;
+}
+
+/* middle align helper */
+.spinner-div div {
+	height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.spinner-div img {
+	width: 100px;
+}
+
+.tooltip-15 {
+    font-size: 15px;
+}
+
+.ui-widget [role='button'] {
+    font-size: 1em;
+}
+
+iframe {
+	border: none;
+}

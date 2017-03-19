@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+
+[ng-cloak] {
+	display: none;
+}
+
+body.expanded {
+    background: #BAD0EF;
+}
+
+.toolTitle {
+	font-weight: 700;
+	text-align: left;
+	font-size: 32px;
+	text-align: center;
+}
+
+.expanded .body-wrapper {
+    margin: auto;
+    position: relative;
+    width: 300px;
+    min-width: 60%;
+    max-width: 90%;
+}
+
+a {
+	text-decoration: underline;
+}
+
+.expanded .newuser-instructions {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.newuser-instructions ul {
+	padding-left: 20px;
+}
+
+.newuser-instructions h2 {
+    border-color: #333;
+}

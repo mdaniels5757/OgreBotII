@@ -1,0 +1,30 @@
+== {{int:filedesc}} ==
+{{Information
+|Description={{en|Windows 8 Interface app showing an article about Wikipedia}}
+|Source=Transferred from [https://en.wikipedia.org en.wikipedia]<br/>
+(Original text : ''Wikipedia App, Windows app store'')
+|Date={{Original upload date|2012-11-11}}
+|Author=Wikimedia Foundation.
+Original uploader was {{user at project|NotinREALITY|wikipedia|en}}
+|Permission=CC-BY-SA; CC-BY-SA-1.0.<br/>
+(Original text : ''http://en.wikipedia.org'')
+|other_versions=
+}}
+
+== {{int:license-header}} ==
+;For Wikipedia content
+{{Wikipedia screenshot}}
+
+;For the app
+{{PD-ineligible}}
+
+== {{Original upload log}} ==
+{{original description|en.wikipedia|Wikipedia_App_Windows_8.png}}
+{| class="wikitable"
+! {{int:filehist-datetime}} !! {{int:filehist-dimensions}} !! {{int:filehist-user}} !! {{int:filehist-comment}}
+|-
+| 2012-11-11 04:12 || 1680&times;1050&times; (364382 bytes) || [[:en:User:NotinREALITY|NotinREALITY]] || ''<nowiki>Uploading a file from a free published source using [[Wikipedia:File_Upload_Wizard|File Upload Wizard]]</nowiki>''
+|}
+
+
+[[Category:Wikipedia App]]

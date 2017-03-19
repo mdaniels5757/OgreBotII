@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+a {
+	text-decoration: none;
+}
+
+._table {
+	display: table;
+}
+
+.table-row {
+	display: table-row;
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.mainTable td {
+	border: 1px #23527c solid;
+}
+
+[ng-cloak] {
+	display: none;
+}

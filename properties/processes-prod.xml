@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE OgreBot>
+<configs>
+
+	<!-- cleanup -->
+	<config>
+		<hour>0</hour>
+		<command>cleanup</command>
+		<directory>exe</directory>
+		<args>$(date --date="$year-$month-$day -2 day" +%Y%m%d)235959</args>
+		<timeout>480</timeout>
+	</config>
+
+	<!-- category-files -->
+	<config>
+		<hour>3</hour>
+		<directory>exe</directory>
+		<command>category-files</command>
+		<args>$(date --date="$year-$month-$day -1 day" +%Y%m%d)000000</args>
+		<timeout>60</timeout>
+		<hhvm/>
+	</config>	
+		
+	<!-- newuploads -->
+	<config>
+		<hour>1</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$(date --date="$year-$month-$day -1 day" +%Y%m%d)223000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<config>
+		<hour>2</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day000000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<config>
+		<hour>4</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day013000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<config>
+		<hour>5</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day030000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<config>
+		<hour>7</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day043000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<config>
+		<hour>8</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day060000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<config>
+		<hour>10</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day073000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<config>
+		<hour>11</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day090000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<config>
+		<hour>13</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day103000</args>
+		<timeout>30</timeout>
+	</config>
+		
+	<config>
+		<hour>14</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day120000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<config>
+		<hour>16</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day133000</args>
+		<timeout>30</timeout>
+	</config>
+		
+	<config>
+		<hour>17</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day150000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<config>
+		<hour>19</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day163000</args>
+		<timeout>30</timeout>
+	</config>
+		
+	<config>
+		<hour>20</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day180000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<config>
+		<hour>22</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day193000</args>
+		<timeout>30</timeout>
+	</config>
+		
+	<config>
+		<hour>23</hour>
+		<directory>exe</directory>
+		<command>newuploads</command>
+		<args>--new=1 --start=$year$month$day210000</args>
+		<timeout>30</timeout>
+	</config>
+	
+	<!-- prune-old-logs -->
+	<config>
+		<hour>5</hour>
+		<directory>exe</directory>
+		<command>prune-old-logs</command>
+		<timeout>2</timeout>
+		<runonce/>
+	</config>
+	
+	<!-- UploadReport  -->
+	<config>
+		<hour>2</hour>
+		<directory>exe</directory>
+		<command>UploadReport</command>
+		<args>$(date --date="$year-$month-$day -1 day" +%Y%m%d)000000</args>
+		<timeout>15</timeout>
+		<hhvm/>
+	</config>
+	
+	<config>
+		<hour>4</hour>
+		<directory>exe</directory>
+		<command>UploadReport</command>
+		<args>$(date --date="$year-$month-$day -30 day" +%Y%m%d)000000 --update</args>
+		<timeout>15</timeout>
+		<hhvm/>
+	</config>
+	
+	<!-- interval between cron runs, in hours -->
+	<interval>1</interval>
+	
+</configs>

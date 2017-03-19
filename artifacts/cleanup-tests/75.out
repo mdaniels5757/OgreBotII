@@ -1,0 +1,103 @@
+== Beschreibung ==
+{{Information
+|Description={{en|1=This figure shows the operating systems used on the supercomputers listed on the Top500 list. Data for this figure was compiled from http://top500.org/stats}}
+|Source=Eigenes Werk (own work) / source top500.org
+|Author=[[User:Benedikt.Seidl|Benedikt.Seidl]]
+|Date=2009-02-12
+|Permission=
+|other_versions={{DerivativeVersions|Operating systems used on top 500 supercomputers de.svg}}
+[[:Image:Top500_OS.png]]
+}}
+
+== {{int:license-header}} ==
+{{PD-self}}
+
+=== Verwendetes Script für Gnuplot ===
+<source lang="gnuplot">
+#!/usr/bin/gnuplot
+#
+# Gnuplot Script zur Erstellung des SVG-Dokuments
+#
+
+unset border
+
+# using native size of 1200 * 720 = (2*2*2*2*3*5*5) * (2*2*2*2*3*3*5)
+# so that size can be divided by 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 16, 20, 24, 30, 40, 48, 60, 80, 120, 240 without aliasing
+set terminal svg enhanced size 1200 720 fname "DejaVu Sans" fsize 24
+set output "Operating_systems_used_on_top_500_supercomputers.svg"
+
+set ylabel rotate by 0 "%" offset 3,1.0
+set key invert reverse Left outside
+set xtics  in scale 0,0  rotate by 90 offset 1.3,character -1.4  1993,1,2014
+set ytics  in scale 0,0  offset -1,character 0 0,10,100
+set mytics 2
+show mytics
+
+set yrange [0:100]
+
+set grid front linetype 3 linewidth 1 lc rgb "#c0000000"
+
+plot \
+'cpu.csv' using 1:(100-$7)      :(100)         title "mac"      with filledcurves lt rgb "#6f0085" ,\
+       '' using 1:($2+$4+$6+$3) :(100-$7)      title "bsd"      with filledcurves lt rgb "#f7c500" ,\
+       '' using 1:($2+$4+$6)    :($2+$4+$6+$3) title "windows"  with filledcurves lt rgb "#00adef" ,\
+       '' using 1:($2+$4)       :($2+$4+$6)    title "na/mixed" with filledcurves lt rgb "grey90" ,\
+       '' using 1:($2)          :($2+$4)       title "unix"     with filledcurves lt rgb "light-blue" ,\
+       '' using 1:(0)           :($2)          title "linux"    with filledcurves lt rgb "web-green"
+
+set term x11
+</source>
+
+=== Verwendete Daten ===
+<pre><nowiki># year  linux   windows unix    bsd     na_mixed        mac
+1993.5	0	0	93.60 	4.60 	1.80 	0
+1993.9	0	0	93.60 	4.80 	1.60 	0
+1994.5	0	0	94.40 	4.20 	1.40 	0
+1994.9	0	0	95.40 	4.60 	0	0
+1995.5	0	0	96.20 	3.80 	0	0
+1995.9	0	0	96.40 	3.60 	0	0
+1996.5	0	0	97.40 	2.60 	0	0
+1996.9	0	0	97.80 	2.20 	0	0
+1997.5	0	0	98.80 	1.20 	0	0
+1997.9	0	0	99.20 	0.80 	0	0
+1998.5	0.20 	0	99.20 	0.60 	0	0
+1998.9	0.20 	0	99.40 	0.20 	0.20 	0
+1999.5	3.40 	0	96.40 	0	0.20 	0
+1999.9	3.60 	0	94.20 	1.80 	0.40 	0
+2000.5	5.60 	0	90.60 	3.40 	0.40 	0
+2000.9	10.80 	0	85.40 	3.20 	0.60 	0
+2001.5	8.80 	0	88.00 	2.60 	0.60 	0
+2001.9	7.80 	0.20 	88.60 	2.40 	1.00 	0
+2002.5	13.40 	0	82.80 	2.60 	1.20 	0
+2002.9	14.60 	0	82.40 	2.40 	0.60 	0
+2003.5	27.20 	0.20 	69.80 	2.40 	0.40 	0
+2003.9	36.80 	0.20 	57.80 	2.20 	2.80 	0.20 
+2004.5	56.60 	0.20 	38.20 	1.80 	3.20 	0
+2004.9	60.40 	0.20 	36.40 	2.00 	0.60 	0.40 
+2005.5	63.60 	0.20 	30.80 	1.40 	3.20 	0.80 
+2005.9	74.40 	0.20 	19.40 	0.80 	4.20 	1.00 
+2006.5	73.40 	0.40 	19.20 	0.80 	5.20 	1.00 
+2006.9	75.20 	0	17.20 	0.60 	6.40 	0.60 
+2007.5	77.80 	0.60 	11.80 	0.80 	8.40 	0.60 
+2007.9	84.60 	1.40 	6.00 	0.40 	7.20 	0.40 
+2008.5	85.40 	1.00 	5.00 	0.20 	8.00 	0.40 
+2008.9	87.80 	1.00 	4.60 	0.20 	6.20 	0.20
+2009.5  88.60   1.00    4.40    0.20    5.80    0
+2009.9  89.20   1.00    5.00    0.20    4.60    0
+2010.5  91.00   1.00    4.40    0.20    3.40    0
+2010.9  91.80   1.00    3.80    0.20    3.20    0
+2011.5  91.4    0.8     4.6     0.2     3.0     0       # as retrieved 2011-12-02
+2011.9  91.4    0.2     6.0     0.2     2.2     0       # as retrieved 2011-12-02
+2012.5  92.4    0.4     4.8     0.4     2.2     0       # as retrieved 2012-10-27 http://i.top500.org/stats
+2012.9  93.8    0.6     4.0     0.2     1.4     0       # as retrieved 2012-11-12 http://www.top500.org/statistics/list
+2013.5  95.2    0.6     3.2     0.2     0.8     0       # as retrieved 2013-06-19 http://www.top500.org/statistics/list
+2013.9  96.4    0.4     2.2     0.2     0.8     0       # as retrieved 2013-11-18 http://www.top500.org/statistics/list
+2014.5  97.0    0.4     2.4     0.0     0.2     0       # as retrieved 2014-06-23 http://www.top500.org/statistics/list
+2014.9  97.0    0.2     2.6     0.0     0.2     0       # as retrieved 2014-11-17 http://www.top500.org/statistics/list
+</nowiki></pre>
+
+[[Category:TOP500]]
+[[Category:Operating system statistics]]
+[[Category:Computer science diagrams]]
+[[Category:Images with Gnuplot source code]]
+[[Category:Area charts]]

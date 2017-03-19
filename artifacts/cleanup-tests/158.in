@@ -1,0 +1,19 @@
+{{Information
+|Description={{en|database diagram for POSper revision 364}}
+|Source=Transferred from [http://en.wikibooks.org en.wikibooks]; transferred to Commons by [[User:Adrignola]] using [http://tools.wikimedia.de/~magnus/commonshelper.php CommonsHelper].
+|Date={{original upload date|2010-01-01}}
+|Author=Original uploader was [[:wikibooks:en:User:OsaridSaris|OsaridSaris]] at [http://en.wikibooks.org en.wikibooks].
+Later version(s) were uploaded by [[:wikibooks:en:User:Adrignola|Adrignola]] at [http://en.wikibooks.org en.wikibooks].
+|Permission=CC-BY-SA-3.0,2.5,2.0,1.0; Released under the [[GNU Free Documentation License]].
+|other_versions=
+}}
+
+== {{int:license-header}} ==
+{{self|author=[[:wikibooks:en:User:OsaridSaris|OsaridSaris]] at [http://en.wikibooks.org en.wikibooks]|GFDL|migration=relicense|Cc-by-sa-3.0,2.5,2.0,1.0}}
+
+== {{original upload log}} ==
+{{original description page|en.wikibooks|PosperDbdRev364.png}}
+* 2010-01-01 22:30 [[:wikibooks:en:User:Adrignola|Adrignola]] 2182&times;1487&times; (174498 bytes) ''<nowiki>Removed extra white space.</nowiki>''
+* 2007-09-28 03:48 [[:wikibooks:en:User:OsaridSaris|OsaridSaris]] 2212&times;1896&times; (180895 bytes) ''<nowiki>database diagram for POSper revision 364</nowiki>''
+
+[[Category:Class diagrams]]

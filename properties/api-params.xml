@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OgreBot>
+<api-params>
+	<defaults>
+		<param name="action" value="query" />		
+		<title value="title" />
+		<top-index value="query" />
+	</defaults>
+	
+	<query type="ususers">
+		<param name="list" value="users" />
+		<index value="users" />
+		<title value="name" />
+	</query>
+	<query type="titles">
+		<index value="pages" />
+	</query>
+	<query type="allimages">
+		<param name="list" value="allimages" />
+		<param name="ailimit" type="limit" />
+		<index value="allimages" />
+	</query>
+	<query type="bkusers">
+		<param name="list" value="blocks" />
+		<param name="bklimit" type="limit" />
+		<index value="blocks" />
+		<title value="user" />
+	</query>
+	<query type="bltitle">
+		<param name="list" value="backlinks" />
+		<param name="bllimit" type="limit" />
+		<index value="backlinks" />
+	</query>
+	<query type="iutitle">
+		<param name="list" value="imageusage" />
+		<param name="iulimit" type="limit" />
+		<index value="imageusage" />
+	</query>
+	<query type="categorymembers">
+		<param name="list" value="categorymembers" />
+		<param name="cmlimit" type="limit" />
+		<index value="categorymembers" />
+	</query>
+	<query type="search">
+		<param name="list" value="search" />
+		<param name="srlimit" type="limit" />
+		<index value="search" />
+	</query>
+	<query type="namespaces">
+		<param name="meta" value="siteinfo" />
+		<title value="*" />
+		<index value="namespaces" />
+	</query>
+	<query type="wbgetentities">
+		<param name="action" value="wbgetentities" />
+		<title-query value="titles" />
+		<index value="entities" />
+		<top-index />
+		<continue value="false"/>
+	</query>
+</api-params>

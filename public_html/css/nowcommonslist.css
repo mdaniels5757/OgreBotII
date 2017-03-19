@@ -1,0 +1,191 @@
+@CHARSET "UTF-8";
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #2C022C;
+}
+
+label {
+	cursor: pointer;
+}
+
+code {
+	color: black;
+}
+
+.issues, .preview {
+	text-align: center;
+}
+
+.name {
+	font-size: 13.3px;
+}
+
+.revision {
+	color: #77f;
+}
+
+.samename {
+	color: red;
+}
+
+.talk {
+	background-color: red;
+	text-decoration: underline;
+}
+
+.text {
+	valign: top;
+	align: center;
+	word-wrap: break-word;
+	font-family: monospace;
+}
+
+.links {
+	text-align: center;
+}
+
+.redlink {
+	color: #a55858;
+}
+
+.bottom-buttons {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 5px;
+	height: 40px;
+	background-color: rgb(219, 219, 219);
+	border-radius: 6px;
+}
+
+.ready-count {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 10px 30px 0;
+	background-color: lightblue;
+	border: 1px solid #555;
+	border-radius: 5px;
+}
+
+.table-row {
+	display: table-row;
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.regex {
+	background-color: rgb(242, 241, 198);
+}
+
+.selected {
+	background-color: #fdf5e6;
+}
+
+#searchRegexBox {
+	border: 5px;
+	background: white;
+}
+
+#auto-delete, #auto-mark, #auto-files-found, #searchRegexBox, #searchRegexOmitBox,
+	#img-load-per, .bottom-buttons {
+	display: none;
+}
+
+.mark-auto {
+	font-size: 1.4em;
+}
+
+.close-buttons {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.close-buttons:hover, .close-buttons:focus, .close-buttons:active {
+	color: rgb(76, 115, 166);
+}
+
+.main-table {
+	table-layout: fixed;
+	word-break: break-all;
+	width: 100%;
+}
+
+.glyphicon.status {
+	font-size: 20px;
+}
+
+.glyphicon-ok.status {
+	color: green;
+}
+
+.glyphicon-remove.status {
+	color: red;
+}
+
+.mark-attribution {
+	background-color: #aaffaa;
+}
+
+.mark-keeplocal {
+	background-color: red;
+}
+
+.mark-other {
+	background-color: #f0f0f0;
+}
+
+.mark-public_domain {
+	background-color: pink;
+}
+
+.mark-sharealike {
+	background-color: #aaffaa;
+}
+
+.mark-problematic {
+	background-color: red;
+}
+
+.mark-uploader {
+	background-color: yellow;
+}
+
+.nc-header {
+	font-weight: bold;
+}
+
+.nc-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nc-row>div {
+    border-left: 1px solid #000;
+	flex: 14.2%;
+	border-width: 1px 1px 0 0;
+	border-style: solid;
+	border-color: #000;
+
+}
+
+.nc-row>div:nth-child(8),.nc-row>div:nth-child(9) {
+	flex: 42.8%;
+}
+
+.name, .issues, .preview, .history {
+	display: flex;
+	align-items: center; /* Vertical center alignment */
+}
+
+.issues, .preview {
+	justify-content: center; /* Horizontal center alignment */
+}

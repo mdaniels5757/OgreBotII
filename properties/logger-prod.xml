@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<!DOCTYPE OgreBot>
+<configs>
+	<!-- default config -->
+	<config script="*">
+		<level>INFO</level>
+	</config>
+
+	<config script="blockproxies">
+		<level>DEBUG</level>
+		<out>STDOUT</out>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="branchmapper">
+		<level>DEBUG</level>
+		<out>STDOUT</out>
+	</config>
+
+	<config script="branchmapper-start">
+		<level>DEBUG</level>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+
+	<config script="branchmapper-select">
+		<level>DEBUG</level>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="branchmapper-check">
+		<level>DEBUG</level>
+		<out>$logdir/$script-$year$month$day.out</out>
+		<out>$logdir/$script-$request_key-$year$month$day$hour$minute$second.out</out>
+	</config>
+
+	<!--  If I'm running this script directly, it's probably debugging it. -->
+	<config script="bootstrap">
+		<level>TRACE</level>
+		<out>STDERR</out>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="category-files">
+		<level>INFO</level>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="category-files-blame">
+		<level>INFO</level>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="category-files-blame-data">
+		<level>INFO</level>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="cleanup">
+		<level>DEBUG</level>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="cleanup-cat">
+		<level>INFO</level>
+		<out>$logdir/$script-$year$month$day$hour$minute$seconds.out</out>
+	</config>
+	
+	<config script="cleanup_multi">
+		<level>INFO</level>
+		<out>$logdir/$script-$year$month$day$hour$minute$seconds.out</out>
+	</config>
+
+	<config script="cleanup-test">
+		<level>INFO</level>
+		<out>STDOUT</out>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="cleanup-tests">
+		<level>INFO</level>
+		<out>STDOUT</out>
+	</config>
+	
+	<config script="commons-images-update">
+		<level>INFO</level>
+		<out>$logdir/$script-$year$month$day.out</out>
+		<out>$logdir/$script-$year$month$day$hour$minute$seconds.out</out>
+	</config>
+	
+	<config script="commonshelper">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="cron">
+		<level>INFO</level>
+		<out>$logdir/$script-$year$month$day$hour.out</out>
+	</config>
+
+	<config script="delink_specific">
+		<level>DEBUG</level>
+		<out>STDOUT</out>
+	</config>
+		
+	<config script="do_cleanup">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+
+	<config script="do_cleanup_json">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+
+	<config script="do_cleanup_multi">
+		<out>$logdir/$script-$year$month$day.out</out>
+		<out>$logdir/$script-$year$month$day$hour$minute$seconds.out</out>
+	</config>
+	
+	<config script="do_cleanup_multi_json">
+		<out>$logdir/$script-$year$month$day.out</out>
+		<out>$logdir/$script-$year$month$day-$request_key.out</out>
+	</config>
+
+	<config script="do_cleanup_multi_service">
+		<out>$logdir/$script-$year$month$day.out</out>
+		<out>$logdir/$script-$year$month$day-$request_key.out</out>
+	</config>
+	
+	<config script="emptycats">
+		<level>DEBUG</level>
+		<out>STDOUT</out>
+	</config>
+	
+	<config script="fileinfo">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="checkuser_formatter">
+		<level>INFO</level>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="ident-authorize">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="ident-complete">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="ident-logout">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="ident-start">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="ident-verify">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="load">
+		<level>ERROR</level>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+
+	<config script="newuploads">
+		<out>$logdir/$script-$year$month$day$hour$minute$seconds.out</out>
+	</config>
+	
+	<config script="now-commons-service">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="nowcommonslist">
+		<out>STDOUT</out>
+	</config>
+	
+	<config script="oldver">
+		<out>$logdir/$script-$year$month$day.out</out>
+		<out>$logdir/$script-$year$month$day$hour$minute$seconds.out</out>
+	</config>
+
+	<config script="oldverlog">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+
+	<config script="process_uploads">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+
+	<config script="prune-old-logs">
+		<out>$logdir/$script-$year.out</out>
+	</config>
+
+	<config script="refactor">
+		<out>STDOUT</out>
+	</config>
+
+	<config script="relink">
+		<out>STDOUT</out>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="test">
+		<level>TRACE</level>
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+
+	<config script="update-report">
+		<out>$logdir/$script-$year$month$day.out</out>
+	</config>
+	
+	<config script="UpdateNewUploads">
+		<out>$logdir/$script-$year$month$day.out</out>
+		<out>$logdir/$script-$year$month$day$hour$minute$seconds.out</out>
+	</config>
+	
+	<config script="UpdateUploadReport">
+		<out>$logdir/$script-$year$month$day.out</out>
+		<out>$logdir/$script-$year$month$day$hour$minute$seconds.out</out>
+	</config>
+
+	<config script="UploadReport">
+		<level>INFO</level>
+		<out>$logdir/$script-$year$month$day.out</out>	
+	</config>
+</configs>

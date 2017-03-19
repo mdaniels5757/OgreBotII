@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE OgreBot>
+<map-data>
+
+	<!-- *************** States *************** -->
+	<state name="Alabama" fips="1" abbreviation="AL"
+		source="Alabama Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Alaska" fips="2" abbreviation="AK"
+		source="Alaska Republican Presidential Caucuses Election Results by County, 2012.svg" />
+	<state name="Arizona" fips="4" abbreviation="AZ"
+		source="Arizona Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Arkansas" fips="5" abbreviation="AR"
+		source="Arkansas Gubernatorial Election Results by County, 2010.svg" />
+	<state name="California" fips="6" abbreviation="CA"
+		source="California Gubernatorial Election Results by County, 2010.svg" />
+	<state name="Colorado" fips="8" abbreviation="CO"
+		source="Colorado Republican Presidential Caucuses Election Results by County, 2012.svg" />
+	<state name="Connecticut" fips="9" abbreviation="CT"
+		source="Connecticut Election Results by County, all Democratic.svg" />
+	<state name="Delaware" fips="10" abbreviation="DE"
+		source="Delaware Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="District of Columbia" fips="11" abbreviation="DC"
+		source="District of Columbia Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Florida" fips="12" abbreviation="FL"
+		source="Florida Presidential Election Results by County, 2008.svg" />
+	<state name="Georgia" fips="13" abbreviation="GA"
+		source="Georgia Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Hawaii" fips="15" abbreviation="HI"
+		source="Hawaii Election Results by County, all Democratic.svg" />
+	<state name="Idaho" fips="16" abbreviation="ID"
+		source="Idaho Senatorial Election Results by County, 2010.svg" />
+	<state name="Illinois" fips="17" abbreviation="IL"
+		source="Illinois Senate Election Results by County, 2010.svg" />
+	<state name="Indiana" fips="18" abbreviation="IN"
+		source="Indiana Presidential Election Results by County, 2008.svg" />
+	<state name="Iowa" fips="19" abbreviation="IA"
+		source="Iowa Senatorial Election Results by County, 2010.svg" />
+	<state name="Kansas" fips="20" abbreviation="KS"
+		source="Kansas Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Kentucky" fips="21" abbreviation="KY"
+		source="Kentucky Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Louisiana" fips="22" abbreviation="LA"
+		source="Louisiana Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Maine" fips="23" abbreviation="ME"
+		source="Maine Gubernatorial Election Results by County, 2010.svg" />
+	<state name="Maryland" fips="24" abbreviation="MD" city-county-split="true"
+		source="Maryland Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Massachusetts" fips="25" abbreviation="MA"
+		source="Massachusetts Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Michigan" fips="26" abbreviation="MI"
+		source="Michigan Presidential Election Results by County, 2008.svg" />
+	<state name="Minnesota" fips="27" abbreviation="MN"
+		source="Minnesota Presidential Election Results by County, 2008.svg" />
+	<state name="Mississippi" fips="28" abbreviation="MS"
+		source="Mississippi Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Missouri" fips="29" abbreviation="MO" city-county-split="true"
+		source="Missouri Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Montana" fips="30" abbreviation="MT"
+		source="Montana Presidential Election Results by County, 2008.svg" />
+	<state name="Nebraska" fips="31" abbreviation="NE"
+		source="Nebraska Presidential Election Results by County, 2008.svg" />
+	<state name="Nevada" fips="32" abbreviation="NV"
+		source="Nevada Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="New Hampshire" fips="33" abbreviation="NH"
+		source="New Hampshire Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="New Jersey" fips="34" abbreviation="NJ"
+		source="New Jersey Presidential Election Results by County, 2008.svg" />
+	<state name="New Mexico" fips="35" abbreviation="NM"
+		source="New Mexico Gubernatorial Election Results by County, 2010.svg" />
+	<state name="New York" fips="36" abbreviation="NY"
+		source="New York Presidential Election Results by County, 2008.svg" />
+	<state name="North Carolina" fips="37" abbreviation="NC"
+		source="North Carolina Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="North Dakota" fips="38" abbreviation="ND"
+		source="North Dakota Senatorial Election Results by County, 2010.svg" />
+	<state name="Ohio" fips="39" abbreviation="OH"
+		source="Ohio Presidential Election Results by County, 2008.svg" />
+	<state name="Oklahoma" fips="40" abbreviation="OK"
+		source="Oklahoma Election Results by County, all Republican.svg" />
+	<state name="Oregon" fips="41" abbreviation="OR"
+		source="Oregon Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Pennsylvania" fips="42" abbreviation="PA"
+		source="Pennsylvania Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Rhode Island" fips="44" abbreviation="RI"
+		source="Rhode Island Election Results by County, all Democratic.svg" />
+	<state name="South Carolina" fips="45" abbreviation="SC"
+		source="South Carolina Senatorial Election Results by County, 2010.svg" />
+	<state name="South Dakota" fips="46" abbreviation="SD"
+		source="South Dakota Senatorial Election Results by County, 2010.svg" />
+	<state name="Tennessee" fips="47" abbreviation="TN"
+		source="Tennessee Presidential Election Results by County, 2008.svg" />
+	<state name="Texas" fips="48" abbreviation="TX"
+		source="Texas Republican Gubernatorial Election Results by County, 2010.svg" />
+	<state name="Utah" fips="49" abbreviation="UT"
+		source="Utah Senatorial Election Results by County, 2010.svg" />
+	<state name="Vermont" fips="50" abbreviation="VT"
+		source="Vermont Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Virginia" fips="51" abbreviation="VA" city-county-split="true"
+		source="Virginia Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Washington" fips="53" abbreviation="WA"
+		source="Washington Republican Presidential Caucuses Election Results by County, 2012.svg" />
+	<state name="West Virginia" fips="54" abbreviation="WV"
+		source="West Virginia Republican Presidential Primary Election Results by County, 2012.svg" />
+	<state name="Wisconsin" fips="55" abbreviation="WI"
+		source="Wisconsin Presidential Election Results by County, 2008.svg" />
+	<state name="Wyoming" fips="56" abbreviation="WY"
+		source="Wyoming Presidential Election Results by County, 2008.svg" />
+		
+		
+	<!-- *************** Election types *************** -->
+	<election-type name="Presidential" category-name="presidential" off="0"
+		interval="4" />
+
+	<election-type name="Senate" category-name="Senate" off="3" />
+	
+	<election-type name="Governor" category-name="gubernatorial" off="5" />
+		
+</map-data>

@@ -1,0 +1,41 @@
+== {{int:filedesc}} ==
+{{Information
+|Description    ={{en|1=[[:en:Quantum circuit|Quantum circuit]] diagram of a sqare-root-of-SWAP (<math>\sqrt{\mathrm{SWAP}}</math>) [[:en:Quantum gate|gate]].}}
+|Source         ={{own}}
+|Author         =[[User:Geek3|Geek3]]
+|Date           =2015-07-19
+|Permission     =
+|other_versions =
+}}
+
+== Source Code ==
+Created in [[:en:LaTeX|LaTeX]] using [http://www.cquic.org/Qcircuit/ Q-circuit] by the following code:
+<source lang="latex">
+\documentclass[border={10pt 21pt}]{standalone}
+\input{Qcircuit} % available on http://physics.unm.edu/CQuIC/Qcircuit/
+\usepackage{graphicx}
+\newcommand{\qwxo}[2][-1]{\ar @{-} [#1,0]|*+<2pt,4pt>[Fo]{#2}}
+\begin{document}
+\scalebox{5}{%
+\Qcircuit @C=1.4em @R=1.8em {
+	& \qswap & \qw \\
+	& \qswap \qwxo{\scalebox{0.5}{$1\hspace{-1pt}/\hspace{-1pt}2$}} & \qw
+}}
+\end{document}
+</source>
+
+Postprocessing with [http://www.cityinthesky.co.uk/opensource/pdf2svg/ pdf2svg], [[:en:Inkscape|Inkscape]] and [http://www.codedread.com/scour/ Scour]:
+<source lang="bash">
+x=Qcircuit_SqrtSwap;
+pdflatex $x.tex;
+pdf2svg $x.pdf $x_.svg;
+inkscape --verb=EditSelectAll --verb=SelectionUnGroup --verb=FileVacuum --verb=FileSave --verb=FileClose $x_.svg;
+scour -i $x_.svg -o $x.svg --renderer-workaround --remove-metadata --enable-id-stripping --create-groups --enable-viewboxing
+</source>
+
+
+== {{int:license-header}} ==
+{{self|GFDL|cc-by-3.0}}
+
+[[Category:Images with LaTeX source code]]
+[[Category:Quantum circuit]]

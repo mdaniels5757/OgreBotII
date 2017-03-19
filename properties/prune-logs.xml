@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE OgreBot>
+<prune-logs>
+	<directory name="log" time="72" time-empty="12" />
+	<directory name="log/category-files" time="720" />
+	<directory name="tmp" time="24" />
+	<directory name="tmp/cache" time="720" />
+	<directory name="tmp/ident" time="720" />
+</prune-logs>

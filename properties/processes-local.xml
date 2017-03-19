@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE OgreBot>
+<configs>
+
+	<!-- prune-old-logs -->
+	<config>
+		<hour>5</hour>
+		<directory>exe</directory>
+		<command>prune-old-logs</command>
+		<timeout>2</timeout>
+		<runonce/>
+	</config>
+	
+	<!-- interval between cron runs, in hours -->
+	<interval>1</interval>
+	
+</configs>

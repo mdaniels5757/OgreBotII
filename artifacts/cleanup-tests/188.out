@@ -1,0 +1,79 @@
+== {{int:filedesc}} ==
+{{Information
+|Description={{en|A screenshot of the free text editor [[:en:Notepad++|Notepad++]] version 5.9.2 depicting the source code of [[:en:MediaWiki|MediaWiki]].}}
+{{fi|Kuvankaappaus vapaan tekstieditorin [[:fi:Notepad++|Notepad++]]:an versiosta 5.9.2, esittäen [[:fi:MediaWiki|MediaWiki]]n lähdekoodia.}}
+{{Retouched picture|Cropped outer window borders|editor=User:WubTheCaptain|orig=Notepad++ screenshot2.png}}
+|Source={{Extracted from|Notepad++ screenshot2.png}}
+; MediaWiki
+: [https://www.mediawiki.org/wiki/Download MediaWiki download page]{{Clarify|date=September 2016}} <!-- Which version of MediaWiki? This could be more specific. Original uploader doesn't say. -->
+; Notepad++
+: [https://notepad-plus-plus.org/download/v5.9.2.html Notepad++ 5.9.2 download page] ([https://github.com/notepad-plus-plus/notepad-plus-plus/tree/v5.9.2 source repository])
+; Original screenshot
+: {{Self-photographed}}
+|Date=; Original screenshot
+: {{Original upload date|2011-07-23}}
+; This image
+: {{date|2016|09|05}}
+|Author=; This derivative work
+: {{Author|derivative|[[User:WubTheCaptain]]}}
+; Screenshot
+: {{Author|photo|[[User:Dobz]]}}
+; MediaWiki
+: See the [https://phabricator.wikimedia.org/diffusion/MW/browse/master/CREDITS CREDITS] file in MediaWiki source code. {{Clarify|date=September 2016}} <!-- Which version of MediaWiki? This could be more specific. Original uploader doesn't say. -->
+; Notepad++
+: {{Author|original|{{Creator
+ | Name = {{LangSwitch
+    | hu = Don Ho
+    | en = Don Ho
+    | ru = Дон Хо
+    | it = Don Ho
+    | ar = دون هو
+  }}
+ | Alternative names = 
+ | Sortkey = Ho, Don
+ | Birthdate = 
+ | Deathdate = 
+ | Birthloc = 
+ | Deathloc = 
+ | Nationality = 
+ | Gender = 
+ | Occupation = 
+ | Description = French software developer
+ | Homecat = Notepad++ GUI with MediaWiki source code (cropped).png
+ | Option = {{{1|}}} <!-- Do not modify -->
+ | Wikidata = Q16830205
+ | Authority = {{Authority control|q=Q16830205|bare=1}}
+ | Linkback = Creator:Don Ho
+ | Image = 
+}}}} <!-- Hopefully a bot will clean this up. -->
+|Permission=; Notepad++
+: {{Free screenshot|GPLv2}}
+; MediaWiki source code
+: {{GPL}}
+|Other versions={{Superseded|File:Notepad++ v6.9.2 on Windows 10, with MediaWiki 1.27.1 source code, with split window view.png}}
+}}
+
+== {{Original upload log}} ==
+{{original description|commons.wikimedia|Notepad%2B%2B_screenshot2.png}}
+{| class="wikitable"
+! {{int:filehist-datetime}} !! {{int:filehist-dimensions}} !! {{int:filehist-user}} !! {{int:filehist-comment}}
+|-
+| 10:52, 23 July 2011 || 800 × 600 (102 KB) || [[User:Dobz|Dobz]] || New version
+|-
+| 05:49, 6 November 2010 || 800 × 600 (106 KB) || [[User:Dobz|Dobz]] || New version.
+|-
+| 08:49, 19 June 2010 || 800 × 600 (78 KB) || [[User:Dobz|Dobz]] || Added a 800x600 version so it fits inside the preview page without artifacts, feel free to revert if you feel it is too small.
+|-
+| 07:33, 15 June 2010 || 1,024 × 768 (77 KB) || [[User:Dobz|Dobz]] || Updated screen shot to Notepad++ 5.6.8. Still displaying MediaWiki source code.
+|-
+| 08:49, 19 June 2010 || 1,024 × 738 (79 KB) || [[User:Aaa3-other|Aaa3-other]] || Reverted to version as of 10:13, 24 July 2007 -- i understand the pattern of using shots made in the latest os, but unless it is anything near the descriptive and good quality (for illustrating the software) as the old, ...
+|-
+| 08:49, 19 June 2010 || 1,024 × 768 (90 KB) || [[User:Dianapianist|Dianapianist]] || Notepad++ in Windows 7, captured with Window Clippings.
+|-
+| 08:49, 19 June 2010 || 1,024 × 738 (79 KB) || [[User:Akira.pl|Akira.pl]] || This is a screenshot of the free/open-source Notepad++ 3.9 <nowiki>{{GPL}}</nowiki>
+|}
+
+[[Category:Screenshots of Notepad++ on Windows 7]]
+[[Category:Screenshots of Notepad++ 5.9.x]]
+[[Category:English screenshots of Notepad++]]
+[[Category:Screenshots of MediaWiki source code]]

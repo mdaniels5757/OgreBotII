@@ -1,0 +1,209 @@
+@CHARSET "UTF-8";
+
+a {
+	text-decoration: none;
+}
+
+a.softlink {
+	color: #36B;
+}
+
+.comment, .revert_text {
+	font-size: 0.8em;
+}
+
+.action, .success {
+	color: green;
+}
+
+.tusc {
+	font-weight: bold;
+}
+
+.comment {
+	font-style: italic;
+}
+
+.head {
+	display: table;
+	border-spacing: 2px;
+	border: 1px gray solid;
+}
+
+.head div {
+	border: inherit;
+}
+
+.head > div {
+	display: table-row;
+}
+
+.head > div > div {
+	display: table-cell;
+	padding: 1px;
+}
+
+.head > div > div:FIRST-CHILD {
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.log {
+	width: 100%;
+}
+
+.log td, .log th {
+	border: 1px gray solid;
+	border-spacing: 2px;
+}
+
+.log th {
+	text-align: center;
+}
+
+.logDate {
+	max-width: 100px;
+}
+
+.logUser, .logProject {
+	max-width: 150px;
+	padding-left: 2px;
+}
+
+.logSource, .logDest {
+	max-width: 400px;
+}
+
+.pleaseWait {
+	color: red;
+	font-weight: bold;
+}
+
+.pleaseWait, .upload_text {
+	display: none;
+}
+
+.sameName {
+	color: red;
+	font-size: 0.8em;
+}
+
+.sharedHeader {
+	background-color: #BAD0EF;
+	display: table;
+	width: 100%;
+	font-size: 13px;
+	white-space: nowrap;
+}
+
+.sharedHeader > div {
+	display: table-row;
+}
+
+.sharedHeader > div > div {
+	display: table-cell;
+	padding: 1px 5px;
+	vertical-align: middle;
+}
+
+.showMore {
+	background-color: yellow;
+}
+
+.toolTitle {
+	font-size: 32px;
+	width: 1px;
+}
+
+.toolTitle, .toolDescription {
+	font-weight: bold;
+	text-align: left;
+}
+
+.toolLinks {
+	font-size: 13px;
+	text-align: right;
+}
+
+.upload_text strong, .toolDescription strong {
+	font-style: italic;
+}
+
+.upload_text strong {
+	color: red;
+}
+
+.username {
+	color: #36B;
+}
+
+.tusc_username input {
+	width: 300px;
+}
+
+.tusc_username strong {
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* no, yes images */
+.glyphicon.status {
+	font-size: 20px;
+}
+
+.glyphicon-ok.status {
+	color: green;
+}
+
+.glyphicon-remove.status {
+	color: red;
+}
+
+.no_img, .yes_img {
+	display: inline-block;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	width: 20px;
+}
+
+.recommend, .revert_text {
+	white-space: nowrap;
+}
+
+.error {
+	color: red;
+}
+
+.no_img {
+	background-image: url("../images/20px-Red_x.svg.png");
+}
+
+label {
+	font-weight: normal;
+}
+
+.ob-table {
+	display: table;
+}
+
+.ob-table-row {
+	display: table-row;
+}
+
+.ob-table-cell {
+	display: table-cell;
+}
+
+.view-by-date {
+	display: none;
+}
+
+.ui-datepicker-title select {
+	color: black;
+}
+
+ng-cloak {
+	display: none;
+}

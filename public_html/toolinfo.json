@@ -1,0 +1,44 @@
+[
+    {
+        "title" : "Category Files Blamer",
+        "description" : "Why did OgreBot include a file in one of its Commons galleries? Shows 30 worth of history.",
+        "name" : "magog-category-files-blame",
+        "author" : "Magog the Ogre with Peachy Framework 1.0 (Sam Korn, Soxred93)",
+        "url" : "http://tools.wmflabs.org/magog/category-files-blame.php"
+    },
+    {
+        "title" : "File history generator",
+        "description" : "Get the upload history of a file for pasting on Commons. Can also generate a simple {{Information}} template.",
+        "name" : "magog-fileinfo",
+        "author" : "Magog the Ogre with Peachy Framework 1.0 (Sam Korn, Soxred93)",
+        "url" : "http://tools.wmflabs.org/magog/fileinfo.php"
+    },
+    {
+        "title" : "Mass cleanup tool",
+        "description" : "Request OgreBot to perform its cleanup operation on a certain subset of files. Requires special permissions or Commons administrator rights.",
+        "name" : "magog-cleanup-multi",
+        "author" : "Magog the Ogre with Peachy Framework 1.0 (Sam Korn, Soxred93)",
+        "url" : "http://tools.wmflabs.org/magog/cleanup_multi.php"
+    },
+    {
+        "title" : "NowCommonsList",
+        "description" : "Show the files currently marked as NowCommons on English Wikipedia. Displayed in a(n ugly) format which makes the process of deleting files easier.",
+        "name" : "magog-nowcommonslist",
+        "author" : "Magog the Ogre",
+        "url" : "http://tools.wmflabs.org/magog/commons_images.htm"
+    },
+    {
+        "title" : "Old Version File Mover",
+        "description" : "Move old and current versions of files from local wiki projects to Commons.",
+        "name" : "magog-oldver",
+        "author" : "Magog the Ogre with Peachy Framework 1.0 (Sam Korn, Soxred93)",
+        "url" : "http://tools.wmflabs.org/magog/oldver.php"
+    },
+    {
+        "title" : "Old Version File Mover log",
+        "description" : "Display the history of actions for the old version file mover.",
+        "name" : "magog-oldverlog",
+        "author" : "Magog the Ogre with Peachy Framework 1.0 (Sam Korn, Soxred93)",
+        "url" : "http://tools.wmflabs.org/magog/oldverlog.php"
+    }
+]

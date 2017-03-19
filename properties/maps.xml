@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE OgreBot>
+<maps>
+	<map primary="true" name="USA_location_map_-_counties"
+		human-readable="USA lower 48 with counties" west="-125.5" east="-66.5"
+		north="49.8" south="24.2" type="equirectangular">
+		<author><![CDATA[*[[:File:Bahamas location map.svg|Bahamas location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:Canada Nova Scotia location map.svg|Canada Nova Scotia location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:Canada New Brunswick location map.svg|Canada New Brunswick location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:Canada Quebec location map.svg|Canada Quebec location map.svg]]: {{U|NordNordWest}}
+*[[:File:Canada Ontario location map.svg|Canada Ontario location map.svg]]: {{U|NordNordWest}}
+*[[:File:Canada Manitoba location map.svg|Canada Manitoba location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:Canada Saskatchewan location map.svg|Canada Saskatchewan location map.svg]]: {{U|NordNordWest}}
+*[[:File:Canada Alberta location map.svg|Canada Alberta location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:Canada British Columbia location map.svg|Canada British Columbia location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:USA Maine location map.svg|USA Maine location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA New Hampshire location map.svg|USA New Hampshire location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Vermont location map.svg|USA Vermont location map.svg]]: [[User:Alexrk|Alexrk]]
+*[[:File:USA Massachusetts location map.svg|USA Massachusetts location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Rhode Island location map.svg|USA Rhode Island location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:USA Connecticut location map.svg|USA Connecticut location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA New York location map.svg|USA New York location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:USA New Jersey location map.svg|USA New Jersey location map.svg]]: [[User:Alexrk|Alexrk]]
+*[[:File:USA Pennsylvania location map.svg|USA Pennsylvania location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Delaware location map.svg|USA Delaware location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Maryland location map.svg|USA Maryland location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Virginia location map.svg|USA Virginia location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA North Carolina location map.svg|USA North Carolina location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA South Carolina location map.svg|USA South Carolina location map.svg]]: [[User:Alexrk|Alexrk]]
+*[[:File:USA Georgia location map.svg|USA Georgia location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Florida location map.svg|USA Florida location map.svg]]: Eric Gaba ([[User:Sting|Sting]] - [[:fr:Utilisateur:Sting|fr:Sting]])
+*[[:File:USA West Virginia location map.svg|USA West Virginia location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Ohio location map.svg|USA Ohio location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Michigan location map.svg|USA Michigan location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Kentucky location map.svg|USA Kentucky location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Tennessee location map.svg|USA Tennessee location map.svg]]: [[User:Alexrk|Alexrk]]
+*[[:File:USA Indiana location map.svg|USA Indiana location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Alabama location map.svg|USA Alabama location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Wisconsin location map.svg|USA Wisconsin location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Illinois location map.svg|USA Illinois location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Mississippi location map.svg|USA Mississippi location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Minnesota location map.svg|USA Minnesota location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Iowa location map.svg|USA Iowa location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Missouri location map.svg|USA Missouri location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Arkansas location map.svg|USA Arkansas location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Louisiana location map.svg|USA Louisiana location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA North Dakota location map.svg|USA North Dakota location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA South Dakota location map.svg|USA South Dakota location map.svg]]: [[User:Alexrk|Alexrk]]
+*[[:File:USA Nebraska location map.svg|USA Nebraska location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Kansas location map.svg|USA Kansas location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Oklahoma location map.svg|USA Oklahoma location map.svg]]: [[User:Alexrk|Alexrk]]
+*[[:File:USA Texas location map.svg|USA Texas location map.svg]]: [[User:Alexrk|Alexrk]]
+*[[:File:USA Montana location map.svg|USA Montana location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Wyoming location map.svg|USA Wyoming location map.svg]]: [[User:Alexrk|Alexrk]]
+*[[:File:USA Colorado location map.svg|USA Colorado location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:USA New Mexico location map.svg|USA New Mexico location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Idaho location map.svg|USA Idaho location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Utah location map.svg|USA Utah location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:USA Arizona location map.svg|USA Arizona location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:USA Nevada location map.svg|USA Nevada location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:USA Washington location map.svg|USA Washington location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA Oregon location map.svg|USA Oregon location map.svg]]: [[User:Alexrk2|Alexrk2]]
+*[[:File:USA California location map.svg|USA California location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*[[:File:Mexico location map.svg|Mexico location map.svg]]: [[User:NordNordWest|NordNordWest]]
+*Compilation map: [[User:Magog the Ogre|Magog the Ogre]]]]></author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="Canada_Alberta_location_map" human-readable="Alberta"
+		west="-123.0" east="-107.0" north="60.3" south="48.7" type="equirectangular">
+		<author>{{U|NordNordWest}}</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="Canada_British_Columbia_location_map" human-readable="British Columbia"
+		west="-139.3" east="-113.7" north="60.3" south="48.1" type="equirectangular">
+		<author>{{U|NordNordWest}}</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="Canada_Manitoba_location_map" human-readable="Manitoba"
+		west="-104.0" east="-88.0" north="60.3" south="48.7" type="equirectangular">
+		<author>{{U|NordNordWest}}</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="Canada_New_Brunswick_location_map" human-readable="New Brunswick"
+		west="-69.2" east="-63.6" north="48.3" south="44.5" type="equirectangular">
+		<author>{{U|NordNordWest}}</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="Canada_Newfoundland_and_Labrador_location_map" human-readable="Quebec"
+		west="-68.0" east="-52.0" north="60.8" south="46.5" type="equirectangular">
+		<author>{{U|NordNordWest}}</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="Canada_Ontario_location_map" human-readable="Ontario"
+		west="-95.5" east="-74" north="57.1" south="41.3" type="equirectangular">
+		<author>{{U|NordNordWest}}</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="Canada_Prince_Edward_Island_location_map" human-readable="Prince Edward Island"
+		west="-64.9" east="-61.6" north="47.3" south="45.5" type="equirectangular">
+		<author>{{U|NordNordWest}}</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="Canada_Quebec_location_map" human-readable="Quebec"
+		west="-81.0" east="-56.5" north="62.8" south="44.7" type="equirectangular">
+		<author>{{U|NordNordWest}}</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="Canada_Saskatchewan_location_map" human-readable="Quebec"
+		west="-114.0" east="-98.0" north="60.3" south="48.7" type="equirectangular">
+		<author>{{U|NordNordWest}}</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="Europe_location_map" human-readable="Europe"
+		west="-81.0" east="-56.5" north="62.8" south="44.7" type="equirectangular">
+		<author>{{U|NordNordWest}}</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="Mexico_location_map" human-readable="Mexico"
+		west="-118.5" east="-86.3" north="33.3" south="14.2" type="equirectangular">
+		<author>[[User:NordNordWest|NordNordWest]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Alabama_location_map" human-readable="Alabama" west="-88.7"
+		east="-84.7" north="35.2" south="29.9" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Alaska_location_map" human-readable="Alaska" west="-188.0"
+		east="-129.0" north="72.0" south="51.0" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Arizona_location_map" human-readable="Arizona" west="-115"
+		east="-108.7" north="37.3" south="31.1" type="equirectangular">
+		<author>[[User:NordNordWest|NordNordWest]]</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="USA_Arkansas_location_map" human-readable="Arkansas"
+		west="-94.8" east="-89.4" north="36.7" south="32.8" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_California_location_map" human-readable="California"
+		west="-124.7" east="-113.9" north="42.2" south="32.3" type="equirectangular">
+		<author>[[User:NordNordWest|NordNordWest]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Colorado_location_map" human-readable="Colorado"
+		west="-109.3" east="-101.8" north="41.2" south="36.8" type="equirectangular">
+		<author>[[User:NordNordWest|NordNordWest]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Connecticut_location_map" human-readable="Connecticut"
+		west="-73.9" east="-71.6" north="42.3" south="40.8" type="equirectangular">
+		<author>[[User:NordNordWest|NordNordWest]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Delaware_location_map" human-readable="Delaware"
+		west="-76.0" east="-74.7" north="40.0" south="38.3" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Florida_location_map" human-readable="Florida" west="-87.85"
+		east="-79.8" north="31.2" south="24.3" type="equirectangular">
+		<author><![CDATA[*Eric Gaba ([[User:Sting|Sting]] - [[:fr:Utilisateur:Sting|fr:Sting]])]]></author>
+		<license>{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Georgia_location_map" human-readable="Georgia" west="-85.8"
+		east="-80.6" north="35.2" south="30.2" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Hawaii_location_map" human-readable="Hawaii" west="-160.7"
+		east="-154.6" north="22.4" south="18.7" type="equirectangular">
+		<author>[[User:NordNordWest|NordNordWest]]</author>
+		<license>{{cc-by-sa-3.0-de}}</license>
+	</map>
+	<map name="USA_Idaho_location_map" human-readable="Idaho" west="-118.1"
+		east="-110.2" north="49.2" south="41.8" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Illinois_location_map" human-readable="Illinois"
+		west="-92.2" east="-86.4" north="42.7" south="36.8" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Indiana_location_map" human-readable="Indiana" west="-88.3"
+		east="-84.6" north="42.0" south="37.6" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Iowa_location_map" human-readable="Iowa" west="-96.8"
+		east="-89.9" north="43.7" south="40.2" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Kansas_location_map" human-readable="Kansas" west="-102.3"
+		east="-94.4" north="40.2" south="36.8" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Kentucky_location_map" human-readable="Kentucky"
+		west="-89.8" east="-81.8" north="39.8" south="35.8" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Louisiana_location_map" human-readable="Louisiana"
+		west="-94.2" east="-88.6" north="33.2" south="28.7" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Maine_location_map" human-readable="Maine" west="-71.3"
+		east="-66.7" north="47.7" south="42.7" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Maryland_location_map" human-readable="Maryland"
+		west="-79.7" east="-74.8" north="40" south="37.6" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Massachusetts_location_map" human-readable="Massachusetts"
+		west="-73.7" east="-69.7" north="43.1" south="41.0" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Michigan_location_map" human-readable="Michigan"
+		west="-90.6" east="-81.9" north="48.5" south="41.5" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Minnesota_location_map" human-readable="Minnesota"
+		west="-97.4" east="-89.3" north="49.6" south="43.3" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Mississippi_location_map" human-readable="Mississippi"
+		west="-91.9" east="-87.9" north="35.2" south="29.9" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Missouri_location_map" human-readable="Missouri"
+		west="-96.0" east="-88.9" north="40.8" south="35.8" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Montana_location_map" human-readable="Montana" west="-116.3"
+		east="-103.8" north="49.8" south="43.6" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Nebraska_location_map" human-readable="Nebraska"
+		west="-104.3" east="-95.1" north="43.8" south="39.2" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Nevada_location_map" human-readable="Nevada" west="-120.1"
+		east="-113.9" north="42.2" south="34.9" type="equirectangular">
+		<author>[[User:NordNordWest|NordNordWest]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_New_Hampshire_location_map" human-readable="New Hampshire"
+		west="-72.8" east="-70.4" north="45.5" south="42.5" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_New_Jersey_location_map" human-readable="New Jersey"
+		west="-75.8" east="-73.7" north="41.6" south="38.6" type="equirectangular">
+		<author>[[User:Alexrk|Alexrk]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_New_Mexico_location_map" human-readable="New Mexico"
+		west="-109.3" east="-102.8" north="37.2" south="31.1" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_New_York_location_map" human-readable="New_York"
+		west="-80.0" east="-71.7" north="45.3" south="40.3" type="equirectangular">
+		<author>[[User:NordNordWest|NordNordWest]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_North_Carolina_location_map" human-readable="North_Carolina"
+		west="-84.5" east="-75.2" north="37.5" south="32.8" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_North_Dakota_location_map" human-readable="North_Dakota"
+		west="-104.3" east="-96.4" north="49.4" south="45.5" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Ohio_location_map" human-readable="Ohio" west="-85.0"
+		east="-80.3" north="42.5" south="38.2" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Oklahoma_location_map" human-readable="Oklahoma"
+		west="-103.2" east="-94.2" north="37.2" south="33.4" type="equirectangular">
+		<author>[[User:Alexrk|Alexrk]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Oregon_location_map" human-readable="Oregon" west="-124.9"
+		east="-116.3" north="46.5" south="41.8" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Pennsylvania_location_map" human-readable="Pennsylvania"
+		west="-80.7" east="-74.5" north="42.7" south="39.5" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Rhode_Island_location_map" human-readable="Rhode Island"
+		west="-72.1" east="-70.9" north="42.2" south="41.0" type="equirectangular">
+		<author>[[User:NordNordWest|NordNordWest]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_South_Carolina_location_map" human-readable="South Carolina"
+		west="-83.6" east="-78.3" north="35.4" south="31.8" type="equirectangular">
+		<author>[[User:Alexrk|Alexrk]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_South_Dakota_location_map" human-readable="South Dakota"
+		west="-104.3" east="-96.2" north="46.1" south="42.3" type="equirectangular">
+		<author>[[User:Alexrk|Alexrk]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Tennessee_location_map" human-readable="Tennessee"
+		west="-90.5" east="-81.4" north="38.1" south="33.6" type="equirectangular">
+		<author>[[User:Alexrk|Alexrk]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Texas_location_map" human-readable="Texas" west="-106.9"
+		east="-93.2" north="36.8" south="25.5" type="equirectangular">
+		<author>[[User:Alexrk|Alexrk]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Utah_location_map" human-readable="Utah" west="-114.6"
+		east="-108.5" north="42.4" south="36.6" type="equirectangular">
+		<author>[[User:NordNordWest|NordNordWest]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Vermont_location_map" human-readable="Vermont" west="-73.6"
+		east="-71.3" north="45.2" south="42.5" type="equirectangular">
+		<author>[[User:Alexrk|Alexrk]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Virginia_location_map" human-readable="Virginia"
+		west="-83.9" east="-75.0" north="40.2" south="35.8" type="equirectangular">
+		<author>[[User:Alexrk|Alexrk]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Washington_location_map" human-readable="Washington"
+		west="-125" east="-116.7" north="49.2" south="45.3" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_West_Virginia_location_map" human-readable="West Virginia"
+		west="-82.8" east="-77.5" north="40.8" south="37.0" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Wisconsin_location_map" human-readable="Wisconsin"
+		west="-93.1" east="-86.0" north="47.5" south="42.3" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Wyoming_location_map" human-readable="Wyoming" west="-111.3"
+		east="-103.9" north="45.2" south="40.8" type="equirectangular">
+		<author>[[User:Alexrk|Alexrk]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Guam_location_map" human-readable="Guam" west="144.54"
+		east="145.03" north="13.7" south="13.2" type="equirectangular">
+		<author>[[User:Alexrk|Alexrk]]</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="USA_New_York_City_location_map" human-readable="New York City"
+		west="-74.27" east="-73.68" north="40.92" south="40.49" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_District_of_Columbia_location_map" human-readable="District of Columbia"
+		west="-77.13" east="-76.9" north="39" south="38.7" type="equirectangular">
+		<author>[[User:Alexrk2|Alexrk2]]</author>
+		<license>{{GFDL|migration=redundant}}{{cc-by-3.0}}</license>
+	</map>
+	<map name="USA_Virgin_Islands_location_map" human-readable="US Virgin Islands"
+		west="-65.4" east="-64.15" north="18.85" south="17.6" type="equirectangular">
+		<author>{{U|NordNordWest}}</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+	<map name="USA_Puerto_Rico_location_map" human-readable="Puerto Rico"
+		west="-68.0" east="-65.2" north="19.0" south="17.5" type="equirectangular">
+		<author>[[User:NordNordWest|NordNordWest]]</author>
+		<license>{{cc-by-sa-3.0}}</license>
+	</map>
+</maps>

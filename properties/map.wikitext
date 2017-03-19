@@ -1,0 +1,14 @@
+== {{int:filedesc}} ==
+{{Information
+|Description=
+|Source=${source}
+|Date=${date}
+|Author=${author}
+|Permission=
+|other_versions=
+}}{{User:Magog the Ogre/Maps FAQ}}
+
+== {{int:license-header}} ==
+${license}
+
+{{subst:unc}}
