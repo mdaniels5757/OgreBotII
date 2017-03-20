@@ -18,7 +18,7 @@
 
     angular
         .module("app", [])
-        .controller("ctrl", ["$scope", "$http", ($scope, $http) => {
+        .controller("ctrl", ["$scope", "$http", "$timeout", async ($scope, $http, $timeout) => {
             const parametersFromUrl = retrieveGetParameters();
 
             var lastSearchedDate;
@@ -48,16 +48,12 @@
                         $scope.loading = true;
                         lastSearchedDate = selectedDate;
 
-                        const data = (await $http({
+                        allDateEntries = (await $http({
                             url: `category-files-blame-data.php?date=${lastSearchedDate}`
                         })).data;
 
-
-                        allDateEntries = data.entries;
                         $scope.loading = false;
-                        $scope.galleries = data.galleries;
-                        const dates = $scope.dates = data.dates.reverse();
-                        $scope.selectedDate = $scope.selectedDate || dates[0];
+                        $scope.selectedDate = $scope.selectedDate || $scope.dates[0];
 
                         updateEntries();
                     } else {
@@ -66,7 +62,13 @@
                 }
             });
 
-            $scope.loadData();
+            if ($scope.selectedDate) {
+                $scope.loadData();
+            } else {
+                await $timeout();
+                $scope.selectedDate = $scope.dates[0];
+                $scope.$digest();
+            }
         }])
         .filter("escape", () => (url) =>
             window.encodeURIComponent(url).replace(/%2F/g, "/")
