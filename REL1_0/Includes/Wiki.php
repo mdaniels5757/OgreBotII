@@ -609,14 +609,16 @@ class Wiki {
 					$logger->error( "API Error...\n\nCode: {$data['error']['code']}"
 					."\nText: {$data['error']['info']}");
 				}
-				if (@$data['error']['code']=='protectedpage' || @$data['error']['code'] === "cascadeprotected") {
-					throw new PermissionsError($data['error']['info']);
+				switch (@$data['error']['code']) {
+					case "protectedpage":
+					case "cascadeprotected":
+					case "customjsprotected":
+						throw new PermissionsError($data['error']['info']);
+					case "editconflict":
+						throw new EditConflictException($arrayParams['text'], $data['error']['info']);
+					default :
+						throw new APIError($data['error']);
 				}
-				if (@$data['error']['code']=='editconflict') {
-					throw new EditConflictException($arrayParams['text'],
-							$data['error']['info']);
-				}
-				throw new APIError($data['error']);
 			}
 			
 			if( isset( $data['servedby'] ) ) {
