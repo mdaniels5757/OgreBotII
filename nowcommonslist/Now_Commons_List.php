@@ -118,8 +118,8 @@ abstract class Now_Commons_List {
 		
 		
 		$this->local_project_data = $this->get_project_data();
-		$this->local_project_data->loadWiki();
-		$this->commons_project_data = new ProjectData(self::COMMONS_PROJECT_KEY);
+		//TODO remove $this->local_project_data->loadWiki();
+		$this->commons_project_data = ProjectData::load(self::COMMONS_PROJECT_KEY);
 		$this->local_project_key = $this->get_messages_key();
 		$this->start_time = time();
 		$logger->info("The time is " . date('Y-m-d H:i', $this->start_time));
@@ -187,13 +187,13 @@ abstract class Now_Commons_List {
 		
 		$logger->debug("Now_Commons_List::get_objects()");
 		
-		load_property_file_into_variable($properties, "nowcommonslist");
+		$properties = load_property_file("nowcommonslist");
 		
 		$step = 0;
 		
 		$logger->debug("Step " . ++$step . ": startup.");
 		
-		load_property_file_into_variable($localized_messages, 
+		$localized_messages = load_property_file(
 			self::MESSAGES_DIRECTORY . "/$this->local_project_key");
 		/**
 		 * Local variables for the sake of brevity
@@ -330,6 +330,7 @@ abstract class Now_Commons_List {
 			$redirect = @$redirects[$image->commons_listed_name];
 			if ($redirect) {
 				$image->commons_listed_name = $redirect;
+				$image->warnings[] = "NowCommons points to a redirect on Commons.";
 			}
 			
 			$commons_listed_query_result = @$commons_query_data[$image->commons_listed_name];
