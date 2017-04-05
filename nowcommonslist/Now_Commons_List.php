@@ -356,6 +356,7 @@ abstract class Now_Commons_List {
 		foreach ($non_identicals as $image) {
 			$dupe_title = $wiki_interface->get_files_by_hash($c_wiki, $image->local_hash, true);
 			if ($dupe_title !== null) {
+				$image->warnings[] = "NowCommons lists a different title.";
 				$image->commons_title = $dupe_title;
 				$extra_dupes[] = $dupe_title;
 			} else {
