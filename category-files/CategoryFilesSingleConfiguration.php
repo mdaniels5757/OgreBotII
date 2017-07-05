@@ -352,7 +352,7 @@ class CategoryFilesSingleConfiguration {
 	/**
 	 *
 	 * @param string $flag        	
-	 * @return CategoryFilesSingleConfigurationp[]|null 
+	 * @return array|null 
 	 * 	If parseable, returns the first value is the string key, the second is the value being set.
 	 *         If not parseable, returns null.
 	 */

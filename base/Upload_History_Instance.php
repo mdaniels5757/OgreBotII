@@ -21,7 +21,7 @@ class Upload_History_Instance {
 
 	/**
 	 *
-	 * @var numeric|null
+	 * @var number|null
 	 */
 	public $revert;
 

@@ -133,7 +133,7 @@ function array_key_or_empty(&$arg, $_) {
  *
  * @deprecated
  *
- * @see _array_key_or_value
+ * @see _array_key_or_value()
  * @param mixed[] $array        	
  * @param string[]|string $args        	
  * @param mixed $default        	
@@ -147,7 +147,7 @@ function array_key_or_value($array, $args, $default = null) {
  * Same as array_key_or_value, but with the arguments reshuffled to
  * take advantage of varargs
  * 
- * @see array_key_or_value
+ * @see array_key_or_value()
  * @param mixed[] $array        	
  * @param mixed $default        	
  * @param mixed $arg,...        	
@@ -510,7 +510,7 @@ function map_array_all(array $array, $callback) {
  * Because PHP inexplicably doesn't pass the key in array_map...
  * 
  * @param array $array        	
- * @param callback $callback        	
+ * @param callable $callback        	
  * @return array
  */
 function array_map_pass_key(array $array, $callback) {

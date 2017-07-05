@@ -240,7 +240,7 @@ function log_property_data($data) {
 
 /**
  *
- * @param string|handle $directory        	
+ * @param string|resource $directory        	
  * @param bool $include_directories
  *        	DEFAULT false
  * @return string[]

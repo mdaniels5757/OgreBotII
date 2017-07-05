@@ -3,7 +3,7 @@ class NewUploadsRangeCalculator {
 	
 	/**
 	 * 
-	 * @var numeric[]
+	 * @var number[]
 	 */
 	private $ranges;
 	
@@ -24,9 +24,9 @@ class NewUploadsRangeCalculator {
 
 	/**
 	 * 
-	 * @param numeric $start
+	 * @param number $start
 	 * @throws IllegalArgumentException
-	 * @return numeric
+	 * @return number
 	 */
 	public function get_end($start) {
 		$count_per_day = $this->get_count_for_date($start);

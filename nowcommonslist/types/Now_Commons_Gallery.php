@@ -22,7 +22,7 @@ class Now_Commons_Gallery {
 	
 	/**
 	 * 
-	 * @var unknown
+	 * @var ProjectData
 	 */
 	public $commons_project_data;
 	

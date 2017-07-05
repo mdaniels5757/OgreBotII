@@ -44,8 +44,8 @@ class Html_Form {
 	}
 	
 	/**
-	 *
-	 * @return unknown_type
+	 * 
+	 * @return string
 	 */
 	public function get_method() {
 		return $this->method;
@@ -53,7 +53,7 @@ class Html_Form {
 	
 	/**
 	 *
-	 * @param unknown_type $method        	
+	 * @param string $method        	
 	 * @return void
 	 */
 	public function set_method($method) {
@@ -64,8 +64,8 @@ class Html_Form {
 	}
 	
 	/**
-	 *
-	 * @return unknown_type
+	 * 
+	 * @return string[]
 	 */
 	public function get_input_fields() {
 		return $this->input_fields;

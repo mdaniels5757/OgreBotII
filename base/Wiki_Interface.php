@@ -76,7 +76,7 @@ class Wiki_Interface {
 	 * It will run the
 	 * query 4 times before dying.
 	 * 
-	 * @param callback $callback        	
+	 * @param callable $callback        	
 	 * @param Wiki $wiki        	
 	 * @throws Exception
 	 * @return mixed
@@ -354,7 +354,7 @@ class Wiki_Interface {
 	 *
 	 * @param Wiki $wiki        	
 	 * @param string $name        	
-	 * @param unknown_type $pageid        	
+	 * @param mixed $pageid        	
 	 * @param bool $followRedir        	
 	 * @param bool $normalize        	
 	 * @return Page
@@ -811,7 +811,7 @@ class Wiki_Interface {
 	/**
 	 *
 	 * @param Wiki $wiki        	
-	 * @return voi
+	 * @return void
 	 */
 	private function init_max_query(Wiki &$wiki) {
 		global $logger;
@@ -1373,9 +1373,9 @@ class Wiki_Interface {
 	 *
 	 * @param Wiki $wiki    
 	 * @param String $uploader    	
-	 * @param numeric $starttime        	
-	 * @param numeric $endtime        	
-	 * @param numeric|null $limit        	
+	 * @param number $starttime        	
+	 * @param number $endtime        	
+	 * @param number|null $limit        	
 	 * @throws WikiDataException - if thrown by simple_query
 	 * @return array
 	 */

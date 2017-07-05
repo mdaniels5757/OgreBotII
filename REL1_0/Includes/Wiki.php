@@ -1963,7 +1963,7 @@ class Wiki {
 	/**
 	 * 
 	 * @param string $type
-	 * @param callback $hook
+	 * @param callable $hook
 	 * @return void
 	 */
 	public function addHook($type, $hook) {

@@ -15,13 +15,13 @@ class Cleanup_User extends Abstract_Cleanup {
 	
 	/**
 	 * Wikimedia timestamp
-	 * @var numeric
+	 * @var number
 	 */
 	private $start;
 	
 	/**
 	 * Wikimedia timestamp
-	 * @var numeric
+	 * @var number
 	 */
 	private $end;
 	

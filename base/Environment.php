@@ -50,7 +50,7 @@ class Environment {
 	
 	/**
 	 * 
-	 * @var Validator
+	 * @var Validation
 	 */
 	private $validator;
 	
@@ -497,7 +497,7 @@ class Environment {
 	
 	/**
 	 * retrieve multiple properties
-	 * @param string|numeric $base
+	 * @param string|number $base
 	 * @param array $properties
 	 * @return array
 	 * @throws IllegalArgumentException

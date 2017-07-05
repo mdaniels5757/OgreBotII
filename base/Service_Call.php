@@ -45,7 +45,7 @@ class Service_Call {
 	/**
 	 * 
 	 * @param string $key
-	 * @param string|numeric $val
+	 * @param string|number $val
 	 */
 	public function add_post_param($key, $val) {
 		$this->post_params[$key] = $val;

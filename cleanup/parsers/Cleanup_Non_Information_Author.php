@@ -7,7 +7,7 @@ class Cleanup_Non_Information_Author implements Cleanup_Module {
 	
 	/**
 	 * 
-	 * @var stirng
+	 * @var string
 	 */
 	private $langlink_regex;
 	

@@ -22,7 +22,7 @@ class Cleanup_Localized_Dates_Parser implements Cleanup_Submodule {
 
 	/**
 	 * 
-	 * @var singles[]
+	 * @var string[]
 	 */
 	private $singles = [];
 	

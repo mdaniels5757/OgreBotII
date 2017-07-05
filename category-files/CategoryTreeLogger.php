@@ -3,7 +3,7 @@ interface CategoryTreeLogger {
 	
 	/**
 	 * Called once before each run
-	 * @param numeric $date
+	 * @param number $date
 	 * @param ProjectData $project_data
 	 * @return void
 	 */

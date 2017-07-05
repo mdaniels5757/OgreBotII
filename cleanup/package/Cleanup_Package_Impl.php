@@ -26,7 +26,7 @@ class Cleanup_Package_Impl implements Cleanup_Package {
 	
 	/**
 	 * 
-	 * @var Template_Utils
+	 * @var TemplateUtils
 	 */
 	private $template_utils;
 	

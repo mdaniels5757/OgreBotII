@@ -10,7 +10,7 @@ class Do_Cleanup_Logic {
 	 *        	'text' => the text for the filename. If not defined,
 	 *        	then the logic will fetch the text of the page.
 	 *        	
-	 * @param callback $encodeLinkCallback
+	 * @param callable $encodeLinkCallback
 	 *        	a callback which returns a string
 	 *        	when the link is passed to it.
 	 *        	

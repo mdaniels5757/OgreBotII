@@ -3,7 +3,7 @@ class Hook {
 	
 	/**
 	 * 
-	 * @var callback[]
+	 * @var callable[]
 	 */
 	private $callbacks = array();
 	
@@ -15,7 +15,7 @@ class Hook {
 	
 	/**
 	 * 
-	 * @param callback $callback
+	 * @param callable $callback
 	 * @return void
 	 */
 	private function run($callback) {
@@ -28,7 +28,7 @@ class Hook {
 
 	/**
 	 * 
-	 * @param callback $callback
+	 * @param callable $callback
 	 * @return void
 	 */
 	public function add($callback) {

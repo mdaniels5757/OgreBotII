@@ -272,7 +272,7 @@ function str_ends_with($haystack, $needle) {
  * @param string $number        	
  * @param string $demarcator        	
  * @param int $interval        	
- * @return numeric
+ * @return number
  */
 function parse_number($number, $demarcator = ",", $interval = 3) {
 	$re = "/(\d)(\d{" . "$interval})(?!\d)/";

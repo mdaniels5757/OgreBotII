@@ -34,7 +34,7 @@ class Now_Commons_Image {
 
 	/**
 	 *
-	 * @var numeric
+	 * @var number
 	 */
 	public $commons_height;
 
@@ -46,13 +46,13 @@ class Now_Commons_Image {
 	
 	/**
 	 * 
-	 * @var numeric
+	 * @var number
 	 */
 	public $commons_preview_height;
 	
 	/**
 	 * 
-	 * @var numeric
+	 * @var number
 	 */
 	public $commons_preview_width;
 	
@@ -64,7 +64,7 @@ class Now_Commons_Image {
 
 	/**
 	 *
-	 * @var numeric
+	 * @var number
 	 */
 	public $commons_size;
 
@@ -100,7 +100,7 @@ class Now_Commons_Image {
 
 	/**
 	 *
-	 * @var numeric
+	 * @var number
 	 */
 	public $commons_width;
 
@@ -159,7 +159,7 @@ class Now_Commons_Image {
 
 	/**
 	 *
-	 * @var numeric
+	 * @var number
 	 */
 	public $local_height;
 	/**
@@ -182,19 +182,19 @@ class Now_Commons_Image {
 	
 	/**
 	 * 
-	 * @var numeric
+	 * @var number
 	 */
 	public $local_preview_height;
 	
 	/**
 	 * 
-	 * @var numeric
+	 * @var number
 	 */
 	public $local_preview_width;
 
 	/**
 	 *
-	 * @var numeric
+	 * @var number
 	 */
 	public $local_size;
 
@@ -248,7 +248,7 @@ class Now_Commons_Image {
 
 	/**
 	 *
-	 * @var numeric
+	 * @var number
 	 */
 	public $local_width;
 

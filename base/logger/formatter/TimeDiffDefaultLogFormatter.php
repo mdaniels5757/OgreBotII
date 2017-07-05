@@ -26,7 +26,7 @@ class TimeDiffDefaultLogFormatter extends DefaultLogFormatter {
 	/**
 	 *
 	 * @param int $seconds
-	 * @param uint $micros
+	 * @param int $micros
 	 */
 	private static function formatMicroTime(&$seconds, &$micros) {
 		$microtime = microtime();

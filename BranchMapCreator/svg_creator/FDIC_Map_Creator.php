@@ -9,7 +9,7 @@ class FDIC_Map_Creator extends Zip_Code_Branch_Map_Creator {
 	
 	/**
 	 *
-	 * @var numeric[]
+	 * @var number[]
 	 */
 	private $certNumbers;
 	
@@ -33,7 +33,7 @@ class FDIC_Map_Creator extends Zip_Code_Branch_Map_Creator {
 	/**
 	 * (non-PHPdoc)
 	 *
-	 * @see Zip_Code_Branch_MapCreator::get_zips()
+	 * @see Zip_Code_Branch_Map_Creator::get_zips()
 	 */
 	public function get_zips() {
 		global $constants, $logger;

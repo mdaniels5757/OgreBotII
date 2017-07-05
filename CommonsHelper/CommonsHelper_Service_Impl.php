@@ -65,7 +65,6 @@ class CommonsHelper_Service_Impl implements CommonsHelper_Service {
 	 * @param string $project        	
 	 * @param bool $remove_categories    	
 	 * @return CommonsHelper_Get_Upload_Text_Response
-	 * @throws CommonsHelper_Exception
 	 */
 	private function _get_upload_text($image, $language, $project, $remove_categories) {		
 		$is_good = false;

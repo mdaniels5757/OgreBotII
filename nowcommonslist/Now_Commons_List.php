@@ -811,7 +811,7 @@ abstract class Now_Commons_List {
 	
 	/**
 	 * 
-	 * @param unknown $key
+	 * @param string $key
 	 * @return Now_Commons_List
 	 * @throws ArrayIndexNotFoundException if the instance is not found
 	 */
