@@ -23,7 +23,7 @@ interface Cleanup_Package {
 	
 	
 	/**
-	 * @return TemplateUtils
+	 * @return Template_Utils
 	 */
 	public function get_template_utils();
 	

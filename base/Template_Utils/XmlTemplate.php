@@ -271,13 +271,13 @@ class XmlTemplate {
 					$fieldsXml = array_key_or_empty($elements, "FIELDS", 0, "elements", "FIELD");
 					foreach ($fieldsXml as $fieldXml) {
 						$name = array_key_or_exception($fieldXml, "attributes", "VALUE");
-						$name = TemplateUtils::normalize($name);
+						$name = Template_Utils::normalize($name);
 
 						$aliasesXml = array_key_or_empty($fieldXml, "elements", "ALIAS");
 						$aliases = [];
 						foreach ($aliasesXml as $aliasXml) {
 							$alias = array_key_or_exception($aliasXml, "attributes", "VALUE");
-							$alias = TemplateUtils::normalize($alias);
+							$alias = Template_Utils::normalize($alias);
 							$aliases[] = $alias;
 						}
 						$xmlTemplate->field_aliases[$name] = $aliases;
@@ -337,7 +337,7 @@ class XmlTemplate {
 
 		$validator->validate_arg($name, "string");
 
-		$normalized = TemplateUtils::normalize($name);
+		$normalized = Template_Utils::normalize($name);
 
 		$all = self::get_all_xml_templates();
 		foreach ($all as $template) {

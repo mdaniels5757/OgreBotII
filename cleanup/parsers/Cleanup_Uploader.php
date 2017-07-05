@@ -14,7 +14,7 @@ class Cleanup_Uploader implements Cleanup_Module {
 	
 	/**
 	 *
-	 * @var TemplateUtils
+	 * @var Template_Utils
 	 */
 	private $template_utils;
 	

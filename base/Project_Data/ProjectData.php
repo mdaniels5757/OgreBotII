@@ -522,7 +522,7 @@ class ProjectData {
 		if ($namespace_string === false) {
 			$namespace_string = "";
 		}
-		$namespace_string = TemplateUtils::normalize(mb_strtolower(mb_trim($namespace_string)));
+		$namespace_string = Template_Utils::normalize(mb_strtolower(mb_trim($namespace_string)));
 		
 		$namespace = array_search_callback($namespaces, 
 			function ($namespace) use($namespace_string) {
@@ -543,14 +543,14 @@ class ProjectData {
 	 */
 	public function get_talk_page_name($page_name) {
 		$namespace = $this->get_namespace($page_name);
-		$after_colon = TemplateUtils::normalize(
+		$after_colon = Template_Utils::normalize(
 			$namespace->get_id() !== 0 ? strstr($page_name, ":") : ":$page_name");
 		
 		$talk_namespace = $namespace->get_talk_namespace();
 		
 		if ($talk_namespace === null) {
 			if ($namespace->get_talk()) {
-				return  TemplateUtils::normalize($page_name);
+				return  Template_Utils::normalize($page_name);
 			}
 			
 			throw new Namespace_Exception("Talk namespace not found for namespace of $page_name");
@@ -569,7 +569,7 @@ class ProjectData {
 		if ($before_slash !== false) {
 			$page_name = $before_slash;
 		}
-		return TemplateUtils::normalize($before_slash);
+		return Template_Utils::normalize($before_slash);
 	}
 	
 	/**

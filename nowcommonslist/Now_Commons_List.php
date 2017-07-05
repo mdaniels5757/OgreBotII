@@ -558,9 +558,9 @@ abstract class Now_Commons_List {
 		}
 		
 		foreach ($template_iterator as $template) {
-			$name = TemplateUtils::normalize($template->getname());
+			$name = Template_Utils::normalize($template->getname());
 			if ($name === "Self") {
-				$name = TemplateUtils::normalize($template->fieldvalue(1));
+				$name = Template_Utils::normalize($template->fieldvalue(1));
 			}
 			foreach ($license_cache->license_regexes as $type => $license_regex) {
 				if (preg_match($license_regex, $name)) {

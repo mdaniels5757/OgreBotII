@@ -20,7 +20,7 @@ class Cleanup_Remove_Duplicates implements Cleanup_Module {
 	
 	/**
 	 * 
-	 * @var TemplateUtils
+	 * @var Template_Utils
 	 */
 	private $template_utils;
 	
@@ -68,7 +68,7 @@ class Cleanup_Remove_Duplicates implements Cleanup_Module {
 							$second = array_key_or_exception($templates, $j);
 							
 							try {
-								TemplateUtils::remove_duplicate_xml_templates($text, 
+								Template_Utils::remove_duplicate_xml_templates($text, 
 									$xml_template, $first, $second);
 									
 								

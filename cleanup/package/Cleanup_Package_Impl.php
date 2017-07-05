@@ -26,7 +26,7 @@ class Cleanup_Package_Impl implements Cleanup_Package {
 	
 	/**
 	 * 
-	 * @var TemplateUtils
+	 * @var Template_Utils
 	 */
 	private $template_utils;
 	
@@ -41,10 +41,10 @@ class Cleanup_Package_Impl implements Cleanup_Package {
 	 * @param array $constants        	
 	 * @param Template_Factory $infobox_template_factory        	
 	 * @param Template_Factory $migration_template_factory        	
-	 * @param TemplateUtils $template_utils        	
+	 * @param Template_Utils $template_utils        	
 	 */
 	public function __construct(array $constants, Template_Factory $infobox_template_factory, 
-		Template_Factory $migration_template_factory, TemplateUtils $template_utils, 
+		Template_Factory $migration_template_factory, Template_Utils $template_utils, 
 		Template_Cache $template_cache) {
 		$this->constants = $constants;
 		$this->infobox_template_factory = $infobox_template_factory;

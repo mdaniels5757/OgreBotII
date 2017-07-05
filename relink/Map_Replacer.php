@@ -38,7 +38,7 @@ class Map_Replacer implements Relink_Text_Replacer {
 			if ($index < $start) {
 				continue;
 			}
-			if (array_search(TemplateUtils::normalize($templ->getname()), self::TEMPLATE_NAMES)
+			if (array_search(Template_Utils::normalize($templ->getname()), self::TEMPLATE_NAMES)
 					!== false) {
 				$map = $templ->fieldvalue(self::MAP_PARAM);
 		

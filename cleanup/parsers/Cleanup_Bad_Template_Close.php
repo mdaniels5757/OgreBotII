@@ -16,7 +16,7 @@ class Cleanup_Bad_Template_Close implements Cleanup_Module {
 	
 	/**
 	 * 
-	 * @var TemplateUtils $template_utils
+	 * @var Template_Utils $template_utils
 	 */
 	private $template_utils;
 	
@@ -56,7 +56,7 @@ class Cleanup_Bad_Template_Close implements Cleanup_Module {
 				$match_arr)) {
 				
 				$xmlTemplate = XmlTemplate::get_by_name($infobox->getname());
-				$field = TemplateUtils::normalize($match_arr[1]);
+				$field = Template_Utils::normalize($match_arr[1]);
 				
 				$suspicious_field = array_key_exists($field, $xmlTemplate->get_fields_and_aliases());
 				

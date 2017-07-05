@@ -26,7 +26,7 @@ class Gallery_Opt_Outs {
 			$line = mb_trim($line);
 				
 			if (strlen($line) !== 0) {
-				return TemplateUtils::normalize($line);
+				return Template_Utils::normalize($line);
 			}
 		});
 		

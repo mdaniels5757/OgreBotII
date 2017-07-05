@@ -44,14 +44,14 @@ class Cleanup_Add_Source implements Cleanup_Module {
 							$logger->warn("Template with basically no information found: $text");
 							continue;
 						}
-						$name = TemplateUtils::get_template_field_with_whitespace($template, 
+						$name = Template_Utils::get_template_field_with_whitespace($template, 
 							Cleanup_Shared::AUTHOR);
 					} else {
-						$name = TemplateUtils::get_template_field_with_whitespace($template, 
+						$name = Template_Utils::get_template_field_with_whitespace($template, 
 							Cleanup_Shared::DATE);
 					}
 				} else {
-					$name = TemplateUtils::get_template_field_with_whitespace($template, 
+					$name = Template_Utils::get_template_field_with_whitespace($template, 
 						Cleanup_Shared::DESCRIPTION);
 				}
 				

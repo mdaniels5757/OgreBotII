@@ -6,7 +6,7 @@
  * @author magog
  *
  */
-class TemplateUtils {
+class Template_Utils {
 	
 	/**
 	 *

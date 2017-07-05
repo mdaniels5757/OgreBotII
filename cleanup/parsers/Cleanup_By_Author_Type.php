@@ -20,7 +20,7 @@ class Cleanup_By_Author_Type implements Cleanup_Module {
 	
 	/**
 	 *
-	 * @var TemplateUtils
+	 * @var Template_Utils
 	 */
 	private $template_utils;
 	

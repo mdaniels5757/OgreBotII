@@ -54,7 +54,7 @@ class Cleanup_License_Templates_To_Information_Field implements Cleanup_Module {
 			$middle = substr($ci->get_text(), $start, $end - $start);
 			$after = substr($ci->get_text(), $end);
 			
-			$utils = new TemplateUtils($this->template_factory);
+			$utils = new Template_Utils($this->template_factory);
 			$information_types = $utils->get_all_templates_of_xml_type($before, "Infobox");
 			
 			if (count($information_types) === 0) {
@@ -73,7 +73,7 @@ class Cleanup_License_Templates_To_Information_Field implements Cleanup_Module {
 			$templates_by_name = map_array_function_keys(
 				iterator_to_array(new TemplateIterator($middle)), 
 				function (Abstract_Template $template) {
-					return [TemplateUtils::normalize($template->getname()), $template];
+					return [Template_Utils::normalize($template->getname()), $template];
 				}, true);
 			
 			$xml_template = null;

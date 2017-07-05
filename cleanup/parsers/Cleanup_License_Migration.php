@@ -20,7 +20,7 @@ class Cleanup_License_Migration implements Cleanup_Module {
 	
 	/**
 	 * 
-	 * @var TemplateUtils
+	 * @var Template_Utils
 	 */
 	private $template_utils;
 	

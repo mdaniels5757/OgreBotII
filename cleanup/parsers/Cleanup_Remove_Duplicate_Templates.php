@@ -48,7 +48,7 @@ class Cleanup_Remove_Duplicate_Templates implements Cleanup_Module {
 							$second = array_key_or_exception($templates, $j);
 							
 							try {
-								TemplateUtils::remove_duplicate_xml_templates($text, 
+								Template_Utils::remove_duplicate_xml_templates($text, 
 									$xml_template, $first, $second);
 									
 								// successful combination

@@ -34,7 +34,7 @@ class Cleanup_Base {
 		
 		$this->cleanup_package = new Cleanup_Package_Impl((new Cleanup_Shared())->get_constants(), 
 			$template_factory, new Template_Wrapper_Factory([new Migration_Template_Logic()]), 
-			new TemplateUtils(), new Template_Cache($template_factory));
+			new Template_Utils(), new Template_Cache($template_factory));
 		
 		$all_modules = map_array_function_keys(
 			Classloader::get_all_class_names_of_type(Cleanup_Module::class), 
