@@ -30,7 +30,7 @@
             }
 
             angular.extend($scope, {
-                authorize : async () => {
+                async authorize() {
                     $scope.ajax = true;
                     let response = await $http({
                         url: "authorize.php"
@@ -42,7 +42,7 @@
                         parentLocation.href = redirect;
                     }
                 },
-                logout: async () => {
+                async logout() {
                     $scope.ajax = true;
                     let response = await $http({
                         url: "logout.php"
@@ -53,7 +53,7 @@
                         $scope.username = $scope.cookie = null;
                     }
                 },
-                open: () => {
+                open() {
                     window.open(location.pathname, "_blank");
                 }
             });

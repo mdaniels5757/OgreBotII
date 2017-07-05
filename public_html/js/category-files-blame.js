@@ -31,7 +31,7 @@
                 galleries: [],
                 entries: [],
                 limit: 100,
-                loadData: async () => {
+                async loadData() {
                     function updateEntries() {
                         const localEntries = selectedGallery ? allDateEntries.filter(
                             entry => entry.gallery === selectedGallery
