@@ -348,7 +348,4 @@
         await allMapLinksDiv.slideToggle(50).promise();
         allMapLinksToggle.text(allMapLinksDiv.is(":hidden") ? "+" : "-");
     });
-
-    //TODO remove me when Closure correctly polyfills promises
-    return Promise;
 })(window);

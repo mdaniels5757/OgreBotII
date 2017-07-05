@@ -36,3 +36,5 @@ org.eclipse.php.core.prefs
 /appkey.pem
 /uploadlog
 /cleanup-multi-log
+
+/artifacts/node_modules

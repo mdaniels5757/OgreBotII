@@ -475,7 +475,4 @@
             });
         });
     });
-
-    //TODO remove me when Closure correctly polyfills promises
-    return Promise;
 })(window);

@@ -806,8 +806,4 @@
         markDialog.addOpenButton(`${AUTO_MARK}-open`);
         markDialog.addCloseButton(`${AUTO_MARK}-cancel`);
     });
-
-
-    //TODO remove me when Closure correctly polyfills promises
-    return Promise;
 }(window));

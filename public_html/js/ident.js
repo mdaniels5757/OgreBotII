@@ -87,7 +87,4 @@
     ]).filter("escape", () => (url => window.encodeURIComponent(url).replace(/%2F/g, "/")
             .replace(/%3A/g, ":").replace(/%20/g, "_"))
     );
-
-    //TODO remove me when Closure correctly polyfills promises
-    return Promise;
 })(window);

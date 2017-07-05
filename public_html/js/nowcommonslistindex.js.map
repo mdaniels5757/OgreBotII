@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"nowcommonslistindex.min.js",
+"lineCount":1,
+"mappings":"AAEAA,CAAA,CAAE,QAAS,EAAG,CACVA,CAAA,CAAE,MAAF,CAAAC,IAAA,CAAc,QAAd,CAAwB,QAAS,EAAG,CAChCD,CAAA,CAAE,IAAF,CAAAE,OAAA,CAAe,QAAS,EAAG,CACvB,MAAO,CAAA,CADgB,CAA3B,CADgC,CAApC,CADU,CAAd;",
+"sources":["nowcommonslistindex.js"],
+"names":["$","one","submit"]
+}
