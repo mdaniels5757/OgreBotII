@@ -33,13 +33,13 @@ Idenity verification...
 	<span>{{error}}</span>
 </span>
 <div ng-show="tusc_verified && uploads && uploads[0]">
-	<a href="{{'https://' + proj + '.org/wiki/' + (loc_title | escape)}}" target="_blank">{{loc_title}}</a> 
+	<a href="{{'https://' + proj + '.org/wiki/' + (loc_title | escape)}}">{{loc_title}}</a> 
 	({{proj}}) =&gt;
 	
-	<a href="https://commons.wikimedia.org/wiki/{{com_title | escape}}" target="_blank">{{com_title}}</a>
+	<a href="https://commons.wikimedia.org/wiki/{{com_title | escape}}">{{com_title}}</a>
 	(commons.wikimedia)
-	(<a href="https://commons.wikimedia.org/w/index.php?title={{com_title | escape}}&action=edit" target="_blank">edit</a>)
-	(<a href="do_cleanup.php?image={{com_title | escape}}" target="_blank">cleanup</a>)
+	(<a href="https://commons.wikimedia.org/w/index.php?title={{com_title | escape}}&action=edit">edit</a>)
+	(<a href="do_cleanup.php?image={{com_title | escape}}">cleanup</a>)
 	<br/>
 	<div ng-repeat="(index, upload) in uploads">
 		<div ng-show="upload.download_attempted">
@@ -72,7 +72,7 @@ Idenity verification...
 		</div>
 	</div>
 	<div ng-show="!error" class="ob-table">
-		<form method='post' enctype='multipart/form-data' target="_blank"
+		<form method='post' enctype='multipart/form-data'
 			action="{{('https://' + proj + '.org/w/index.php') | trusted}}" style="display: inline">
 			<input type='hidden' name='title' value='{{loc_title}}' />
 			<input type='hidden' name='action' value='edit' />
@@ -85,7 +85,7 @@ Idenity verification...
 				value='Add {{"{{" + "NowCommons}\}"}}' />
 		</form>
 		<form method="post" action="{{('https://' + proj + '.org/w/index.php') | trusted}}" 
-			target="_blank" style="display: inline">
+			style="display: inline">
 			<input type='hidden' name='title' value='{{loc_title}}' />
 			<input type="hidden" name="action" value="delete" />
 			<input type="hidden" name="wpReason" value="{{delete_text}}" />
