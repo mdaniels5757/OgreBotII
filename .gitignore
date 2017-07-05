@@ -23,8 +23,8 @@ local-working/**
 #logs
 log/
 
-#live
-#environment.properties
+/properties/secrets.properties
+/properties/environment
 
 #temp directory
 tmp/
