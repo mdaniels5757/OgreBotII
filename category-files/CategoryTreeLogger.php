@@ -4,10 +4,10 @@ interface CategoryTreeLogger {
 	/**
 	 * Called once before each run
 	 * @param number $date
-	 * @param ProjectData $project_data
+	 * @param Project_Data $project_data
 	 * @return void
 	 */
-	public function init($date, ProjectData $project_data);
+	public function init($date, Project_Data $project_data);
 	
 	/**
 	 * Called once for each category.

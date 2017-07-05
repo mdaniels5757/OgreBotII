@@ -20,7 +20,7 @@ class Cleanup_Subst_Parser implements Cleanup_Module {
 		$logger->debug("Loading " . self::class . "->__construct()");
 		
 		$this->namespaces = map_array_function_keys(
-			(new ProjectData("commons.wikimedia"))->get_namespaces(), 
+			(new Project_Data("commons.wikimedia"))->get_namespaces(), 
 			function (Wiki_Namespace $namespace) {
 				return [$namespace->get_id(), $namespace->get_name()];
 			});

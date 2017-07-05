@@ -35,7 +35,7 @@ class Category_License_Reader {
 	private function __construct() {
 		global $wiki_interface;
 		
-		$text_response = $wiki_interface->get_text((new ProjectData(self::PROJECT_DATA))->getWiki(), 
+		$text_response = $wiki_interface->get_text((new Project_Data(self::PROJECT_DATA))->getWiki(), 
 			self::GALLERY_PAGE);
 		$this->categories = map_array_function_keys(read_configuration_page_lines($text_response->text), 
 			function ($line) {

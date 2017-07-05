@@ -44,7 +44,7 @@ class Category_Files_Outputter {
 	
 	/**
 	 * 
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	private $project_data;
 	
@@ -74,10 +74,10 @@ class Category_Files_Outputter {
 	
 	/**
 	 * 
-	 * @param ProjectData $project_data
+	 * @param Project_Data $project_data
 	 * @param string|null $file_override
 	 */
-	public function __construct(ProjectData $project_data, $file_override = null) {
+	public function __construct(Project_Data $project_data, $file_override = null) {
 		$this->project_data = $project_data;
 		$this->runner = new CategoryFilesRunner($project_data->getWiki());
 		
@@ -378,7 +378,7 @@ class Category_Files_Outputter {
 			
 
 			$talk_page = $wiki_interface->new_page($this->project_data->getWiki(),
-				$this->project_data->get_talk_page_name(ProjectData::get_base_page_name($target)));
+				$this->project_data->get_talk_page_name(Project_Data::get_base_page_name($target)));
 			$wiki_interface->edit($talk_page, $error_text, $error_summary, EDIT_APPEND);
 		} catch (Exception $e) {
 			ogrebotMail($e);

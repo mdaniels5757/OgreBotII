@@ -8,7 +8,7 @@ abstract class Upload_History_Wiki_Text_Writer {
 	
 	/**
 	 * 
-	 * @var ProjectData $project_data
+	 * @var Project_Data $project_data
 	 */
 	protected $project_data;
 	
@@ -43,7 +43,7 @@ abstract class Upload_History_Wiki_Text_Writer {
 		$validator->validate_arg_array($upload_history_instances, "Upload_History_Instance");
 		$validator->validate_arg($omit_dupes, "bool");
 		
-		$this->project_data = new ProjectData($project);
+		$this->project_data = new Project_Data($project);
 		$this->project_data->setDefaultHostWiki("commons.wikimedia");
 		
 		$urlencode = urlencode(preg_replace("/\s+/", "_", $title));

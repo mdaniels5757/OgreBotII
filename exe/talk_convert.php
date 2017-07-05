@@ -4,7 +4,7 @@ require_once __DIR__ . "/../base/bootstrap.php";
 $page = ARTIFACTS_DIRECTORY . "/filestuff.txt";
 $text = file_get_contents_ensure($page);
 
-$project_data = new ProjectData("en.wikipedia", null, false);
+$project_data = new Project_Data("en.wikipedia", null, false);
 $project_data->setDefaultHostWiki("commons.wikimedia");
 
 $page_parser = new Page_Parser($text);

@@ -4,11 +4,11 @@ class User_Data_Eligibility_Parser {
 
 	/**
 	 * 
-	 * @param ProjectData $projectData
+	 * @param Project_Data $projectData
 	 * @param string $username
 	 * @return bool
 	 */
-	public static function is_elevated_cleanup_rights(ProjectData $projectData, $username) {
+	public static function is_elevated_cleanup_rights(Project_Data $projectData, $username) {
 		global $constants, $logger, $validator, $wiki_interface;
 		
 		$project_title = $projectData->getSubproject() . "." . $projectData->getProject();

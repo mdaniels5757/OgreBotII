@@ -16,7 +16,7 @@ class CommonsHelper_Dao_Impl implements CommonsHelper_Dao {
 
 	/**
 	 *
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	private $commons_project_data;
 	
@@ -25,7 +25,7 @@ class CommonsHelper_Dao_Impl implements CommonsHelper_Dao {
 	 */
 	public function __construct() {
 		$this->constants = CommonsHelper_Factory::get_constants();
-		$this->commons_project_data = ProjectData::load("commons.wikimedia");
+		$this->commons_project_data = Project_Data::load("commons.wikimedia");
 	}
 	
 	/**

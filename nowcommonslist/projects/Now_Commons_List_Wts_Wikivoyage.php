@@ -3,7 +3,7 @@ class Now_Commons_List_Wts_Wikivoyage extends Now_Commons_List {
 	
 	/**
 	 *
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	private $project_data;
 	
@@ -48,7 +48,7 @@ class Now_Commons_List_Wts_Wikivoyage extends Now_Commons_List {
 	protected function get_project_data() {
 		global $wiki_interface;
 		if ($this->project_data === null) {
-			$this->project_data = new ProjectData("wts.wikivoyage");
+			$this->project_data = new Project_Data("wts.wikivoyage");
 			
 			//the site is prone to taking naps; set initial to 5 minutes
 			$wiki_interface->set_curl_timeout(300);

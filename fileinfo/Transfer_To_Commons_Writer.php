@@ -20,7 +20,7 @@ class Transfer_To_Commons_Writer {
 	const INCLUDE_FIELDS = 4;
 	/**
 	 *
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	private $project_data;
 	
@@ -44,12 +44,12 @@ class Transfer_To_Commons_Writer {
 	
 	/**
 	 *
-	 * @param ProjectData $project_data        	
+	 * @param Project_Data $project_data        	
 	 * @param string $title        	
 	 * @param string $text        	
 	 * @param array $imageinfos        	
 	 */
-	public function __construct(ProjectData $project_data, $title, $text, array $imageinfos) {
+	public function __construct(Project_Data $project_data, $title, $text, array $imageinfos) {
 		global $logger;
 		
 		$logger->info(

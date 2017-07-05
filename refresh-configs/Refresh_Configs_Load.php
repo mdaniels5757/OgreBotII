@@ -52,7 +52,7 @@ class Refresh_Configs_Load {
 		global $logger, $wiki_interface;
 		if ($this->meta_configs) {
 			$logger->debug("Loading meta");
-			$meta = (new ProjectData("meta.wikimedia"))->getWiki();
+			$meta = (new Project_Data("meta.wikimedia"))->getWiki();
 			$page_text_responses = $wiki_interface->get_text($meta, $this->meta_configs);
 			
 			return array_merge_all(

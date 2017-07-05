@@ -2,7 +2,7 @@
 require_once __DIR__ . "/../base/bootstrap.php";
 
 $talk_page_name  = Environment::prop("constants", "eligibility.page.cleanup.commons.wikimedia");
-$talk_page_link = (new ProjectData("commons.wikimedia"))->getRawLink($talk_page_name);
+$talk_page_link = (new Project_Data("commons.wikimedia"))->getRawLink($talk_page_name);
 $permission_required = replace_named_variables(
 	Environment::prop("messages", "cleanup_multi.permission_required"), [
 		"link" => $talk_page_link]);

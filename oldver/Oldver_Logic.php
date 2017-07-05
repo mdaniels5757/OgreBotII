@@ -82,11 +82,11 @@ class Oldver_Logic {
 			}
 			
 			if (!$localerrmessage && !$sharederrmessage) {
-				$project_data_commons = new ProjectData("commons.wikimedia");
+				$project_data_commons = new Project_Data("commons.wikimedia");
 				$co = $project_data_commons->getWiki();
 				
 				try {
-					$project_data_local = new ProjectData($proj);
+					$project_data_local = new Project_Data($proj);
 				} catch (ProjectNotFoundException $e) {
 					$error = "Unknown error: unable to locate project: $proj";
 					ogrebotMail($error);

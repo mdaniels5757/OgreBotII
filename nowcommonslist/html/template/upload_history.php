@@ -5,12 +5,12 @@ function cleanup_timestamp(Upload_History_Instance $instance) {
 
 /**
  *
- * @param ProjectData $project_data
+ * @param Project_Data $project_data
  * @param Upload_History_Instance $instance
  * @param int $revision
  * @return void
  */
-function upload_template(ProjectData $project_data, Upload_History_Instance $instance, $revision) {
+function upload_template(Project_Data $project_data, Upload_History_Instance $instance, $revision) {
 
 	$user_href = $project_data->getRawLink("User:$instance->user");
 	$user_html = sanitize($instance->user);

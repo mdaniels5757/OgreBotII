@@ -1,7 +1,7 @@
 <?php 
 $all_maps = array_keys(Latitude_Longitude_Svg::load());
 sort($all_maps);
-$cpd = new ProjectData("commons.wikimedia");
+$cpd = new Project_Data("commons.wikimedia");
 
 ?><div class="sharedHeader">
 	<div>

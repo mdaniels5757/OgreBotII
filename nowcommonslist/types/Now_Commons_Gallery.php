@@ -16,13 +16,13 @@ class Now_Commons_Gallery {
 	
 	/**
 	 *
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	public $local_project_data;
 	
 	/**
 	 * 
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	public $commons_project_data;
 	

@@ -60,13 +60,13 @@ abstract class Now_Commons_List {
 	
 	/**
 	 * 
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	private $local_project_data;
 
 	/**
 	 *
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	private $commons_project_data;
 	
@@ -119,7 +119,7 @@ abstract class Now_Commons_List {
 		
 		$this->local_project_data = $this->get_project_data();
 		//TODO remove $this->local_project_data->loadWiki();
-		$this->commons_project_data = ProjectData::load(self::COMMONS_PROJECT_KEY);
+		$this->commons_project_data = Project_Data::load(self::COMMONS_PROJECT_KEY);
 		$this->local_project_key = $this->get_messages_key();
 		$this->start_time = time();
 		$logger->info("The time is " . date('Y-m-d H:i', $this->start_time));
@@ -843,7 +843,7 @@ abstract class Now_Commons_List {
 	}
 	
 	/**
-	 * @return ProjectData
+	 * @return Project_Data
 	 */
 	abstract protected function get_project_data();
 	

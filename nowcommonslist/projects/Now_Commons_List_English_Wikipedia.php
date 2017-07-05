@@ -4,7 +4,7 @@ class Now_Commons_List_English_Wikipedia extends Now_Commons_List {
 
 	/**
 	 *
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	private $project_data;
 
@@ -47,7 +47,7 @@ class Now_Commons_List_English_Wikipedia extends Now_Commons_List {
 	 */
 	protected function get_project_data() {
 		if ($this->project_data === null) {
-			$this->project_data = new ProjectData("en.wikipedia");
+			$this->project_data = new Project_Data("en.wikipedia");
 		}
 		return $this->project_data;
 	}

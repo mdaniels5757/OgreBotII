@@ -109,7 +109,7 @@ class Page_Parser {
 	 * @param string $callback        	
 	 * @return void
 	 */
-	public function modify_links_for_project(ProjectData $project_data) {
+	public function modify_links_for_project(Project_Data $project_data) {
 		global $MB_WS_RE_OPT;
 		
 		preg_match_all(

@@ -21,7 +21,7 @@ class RollingCategoryTreeLogger implements CategoryTreeLogger {
 
 	/**
 	 *
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	private $project_data;
 
@@ -42,7 +42,7 @@ class RollingCategoryTreeLogger implements CategoryTreeLogger {
 	 * (non-PHPdoc)
 	 * @see CategoryTreeLogger::init()
 	 */
-	public function init($date, ProjectData $project_data) {
+	public function init($date, Project_Data $project_data) {
 		global $validator;
 
 		$validator->validate_arg($date, "numeric");

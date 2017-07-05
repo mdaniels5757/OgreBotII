@@ -165,7 +165,7 @@ class Fileinfo_Web_Logic {
 			if (!$this->errmessage) {
 				$co = $wiki_interface->new_wiki("OgreBotCommons");
 				
-				$project_data = new ProjectData($this->project);
+				$project_data = new Project_Data($this->project);
 				$project_data->setDefaultHostWiki("commons.wikimedia");
 				$proj_type = $project_data->getProject();
 				$lang = $project_data->getSubproject();

@@ -53,7 +53,7 @@ try {
 	$time_tusc = time() - $time;
 	
 	if ($tusc_user) {
-		$project_data = new ProjectData("commons.wikimedia");
+		$project_data = new Project_Data("commons.wikimedia");
 		$success = User_Data_Eligibility_Parser::is_elevated_cleanup_rights($project_data, $tusc_user);
 		if (!$success) {
 			$error = "Not eligible!";

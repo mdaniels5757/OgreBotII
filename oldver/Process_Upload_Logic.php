@@ -78,7 +78,7 @@ class Process_Upload_Logic {
 	
 	/**
 	 *
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	private $project_data_com;
 	
@@ -90,7 +90,7 @@ class Process_Upload_Logic {
 	
 	/**
 	 *
-	 * @var ProjectData
+	 * @var Project_Data
 	 */
 	private $project_data_loc;
 	
@@ -172,9 +172,9 @@ class Process_Upload_Logic {
 		 */
 		$this->proj = $this->POST['project'];
 		$logger->info("\$proj = $this->proj");
-		$this->project_data_loc = new ProjectData($this->proj);
+		$this->project_data_loc = new Project_Data($this->proj);
 		$this->project_data_loc->setDefaultHostWiki("commons.wikimedia");
-		$this->project_data_com = new ProjectData("commons.wikimedia");
+		$this->project_data_com = new Project_Data("commons.wikimedia");
 		
 		/*
 		 * src, trg

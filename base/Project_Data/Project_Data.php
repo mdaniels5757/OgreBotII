@@ -1,5 +1,5 @@
 <?php
-class ProjectData {
+class Project_Data {
 	
 	const NAMESPACE_CACHE_FILE_NAME = "namespaces.dat";
 	
@@ -35,7 +35,7 @@ class ProjectData {
 	
 	/**
 	 * 
-	 * @var ProjectData[]
+	 * @var Project_Data[]
 	 */
 	private static $projectDatas = [];
 	
@@ -107,7 +107,7 @@ class ProjectData {
 	
 	/**
 	 * 
-	 * @var ProjectData[]
+	 * @var Project_Data[]
 	 */
 	private static $by_base_url = [];
 	
@@ -151,7 +151,7 @@ class ProjectData {
 	}
 	/**
 	 * 
-	 * @param ProjectData $project_data
+	 * @param Project_Data $project_data
 	 */
 	private function load_namespace() {
 		global $wiki_interface;
@@ -605,12 +605,12 @@ class ProjectData {
 	/**
 	 * Returns a singleton
 	 * @param string $type
-	 * @return ProjectData
+	 * @return Project_Data
 	 * @throws ProjectNotFoundException
 	 */
 	public static function load($type) {
 		if (!isset(self::$projectDatas[$type])) {
-			self::$projectDatas[$type] = new ProjectData($type);
+			self::$projectDatas[$type] = new Project_Data($type);
 		}
 		return self::$projectDatas[$type];
 	}

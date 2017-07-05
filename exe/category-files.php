@@ -9,7 +9,7 @@ $file_override = find_command_line_arg($argv, "FILE");
 //$file_override_no_context = ARTIFACTS_DIRECTORY . "/filestuff.txt";
 //$wiki_interface->set_live_edits(false);
 
-(new Category_Files_Outputter(new ProjectData("commons.wikimedia"), 
+(new Category_Files_Outputter(new Project_Data("commons.wikimedia"), 
 	$file_override ? __DIR__ . '/' . $file_override : null))->run(@$argv[1], @$argv[2]);
 
 

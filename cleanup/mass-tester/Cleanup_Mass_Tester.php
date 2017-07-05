@@ -94,7 +94,7 @@ class Cleanup_Mass_Tester {
 		global $logger, $wiki_interface;
 		
 		$this->changes = true;
-		$co = (new ProjectData("commons.wikimedia"))->getWiki();
+		$co = (new Project_Data("commons.wikimedia"))->getWiki();
 		
 		$all_uploads = array_merge_all(
 			array_map(

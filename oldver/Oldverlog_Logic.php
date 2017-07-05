@@ -40,7 +40,7 @@ class Oldverlog_Logic {
 	
 	/**
 	 * 
-	 * @var ProjectData[]
+	 * @var Project_Data[]
 	 */
 	private $project_datas;
 	
@@ -88,7 +88,7 @@ class Oldverlog_Logic {
 		$lines = array_reverse($lines);
 		
 		$this->project_datas = [
-			'commons.wikimedia' => new ProjectData("commons.wikimedia", null, false)];
+			'commons.wikimedia' => new Project_Data("commons.wikimedia", null, false)];
 		
 		
 		$this->from = $this->parse_date(@$POST["from"]);
@@ -183,7 +183,7 @@ class Oldverlog_Logic {
 		$this->name_without_namespace($entry->dest);
 		
 		if (!isset($this->project_datas[$entry->project])) {
-			$this->project_datas[$entry->project] = new ProjectData($entry->project, null,
+			$this->project_datas[$entry->project] = new Project_Data($entry->project, null,
 				false);
 		}
 		
@@ -232,7 +232,7 @@ class Oldverlog_Logic {
 	
 	/**
 	 *
-	 * @return ProjectData[]
+	 * @return Project_Data[]
 	 */
 	public function get_project_datas() {
 		return $this->project_datas;

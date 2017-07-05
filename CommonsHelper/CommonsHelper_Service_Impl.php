@@ -74,7 +74,7 @@ class CommonsHelper_Service_Impl implements CommonsHelper_Service {
 		$category_names_en = $this->constants['category_names']['en'];
 		
 		try {
-			$project_data = ProjectData::load("$language.$project");
+			$project_data = Project_Data::load("$language.$project");
 			$project_data->getWiki(); //check valid project
 		} catch (ProjectNotFoundException $e) {
 			$response->error = "invalid.project";
