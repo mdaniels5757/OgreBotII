@@ -552,7 +552,7 @@ abstract class Now_Commons_List {
 	private function get_formatted_text($text, License_Cache $license_cache, $uploaders) {
 		$regions = array();
 		try {
-			$template_iterator = new TemplateIterator($text);
+			$template_iterator = new Template_Iterator($text);
 		} catch (TemplateParseException $e) {
 			return sanitize($text);
 		}

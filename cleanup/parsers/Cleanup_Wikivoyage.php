@@ -135,7 +135,7 @@ class Cleanup_Wikivoyage implements Cleanup_Module {
 			$information_text = $information->__toString();
 			$locations = [];
 			while (true) {
-				foreach (new TemplateIterator($information_text, $this->template_factory) as $template) {
+				foreach (new Template_Iterator($information_text, $this->template_factory) as $template) {
 					$name = ucfirst_utf8(mb_trim($template->getname()));
 					if ($name === "Location" || $name == "IsIn") {
 						if ($template->fieldisset(1) && count($template->__get("fields")) == 1) {

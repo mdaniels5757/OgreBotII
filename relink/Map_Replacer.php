@@ -31,7 +31,7 @@ class Map_Replacer implements Relink_Text_Replacer {
 	 */
 	private function do_replace(Relink_Text $rt, $text, $start) {
 
-		$it = new TemplateIterator($text);
+		$it = new Template_Iterator($text);
 		$change = false;
 		
 		foreach ($it as $index => $templ) {

@@ -71,7 +71,7 @@ class Cleanup_License_Templates_To_Information_Field implements Cleanup_Module {
 				}
 			}
 			$templates_by_name = map_array_function_keys(
-				iterator_to_array(new TemplateIterator($middle)), 
+				iterator_to_array(new Template_Iterator($middle)), 
 				function (Abstract_Template $template) {
 					return [Template_Utils::normalize($template->getname()), $template];
 				}, true);

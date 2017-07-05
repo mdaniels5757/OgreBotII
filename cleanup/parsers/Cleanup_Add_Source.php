@@ -30,7 +30,7 @@ class Cleanup_Add_Source implements Cleanup_Module {
 	public function cleanup(Cleanup_Instance $ci) {
 	// add source field in {{information}} template if it's not there
 		// per http://commons.wikimedia.org/w/index.php?oldid=131405179#cleanup.js
-		$iterator = new TemplateIterator($text, $this->template_factory);
+		$iterator = new Template_Iterator($text, $this->template_factory);
 		foreach ($iterator as $template) {
 			if (ucfirst(mb_trim($template->__get("name"))) === Cleanup_Shared::INFORMATION &&
 				 !$template->fieldisset(Cleanup_Shared::SOURCE)) {

@@ -17,7 +17,7 @@ class Kit_Football_Kit_Pattern_Template_Replacer extends Kit_Replacer {
 		$value_matcher = "/^(\s*)_" . str_replace("_", "[_\s]+", preg_quote($old_match, "/")) .
 			 "(\s*)$/";
 		$escaped_replacement = "$1_" . escape_preg_replacement($new_match)."$2";
-		$it = new TemplateIterator($text);
+		$it = new Template_Iterator($text);
 		
 		foreach ($it as $template) {
 			if ($template->getname() === "Football kit/pattern") {

@@ -5,7 +5,7 @@
  * @author magog
  *
  */
-class TemplateIterator implements Iterator {
+class Template_Iterator implements Iterator {
 
 	/**
 	 * 

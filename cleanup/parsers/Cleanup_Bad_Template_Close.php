@@ -64,7 +64,7 @@ class Cleanup_Bad_Template_Close implements Cleanup_Module {
 					// there should be an unclosed template somewhere if it's truly unclosed... look for by
 					// removing all the templates from the page and looking for }}
 					$template_indices = array();
-					foreach (new TemplateIterator($text) as $template) {
+					foreach (new Template_Iterator($text) as $template) {
 						$startIndex = strlen($template->__get("before"));
 						$endIndex = strlen($template->__get("templatestring")) + $startIndex;
 						$template_indices[] = array($startIndex, $endIndex);

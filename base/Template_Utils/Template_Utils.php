@@ -2,7 +2,7 @@
 
 /** 
  * WARNING: This class is expensive. Use with caution. If execution time 
- * lags, please rewrite TemplateIterator.
+ * lags, please rewrite Template_Iterator.
  * @author magog
  *
  */
@@ -16,7 +16,7 @@ class Template_Utils {
 	
 	/**
 	 *
-	 * @var TemplateIterator
+	 * @var Template_Iterator
 	 */
 	private $cached;
 	
@@ -61,7 +61,7 @@ class Template_Utils {
 		
 		if ($this->text !== $text) {
 			$this->cached = map_array_all(
-				iterator_to_array(new TemplateIterator($text, $this->template_factory)), 
+				iterator_to_array(new Template_Iterator($text, $this->template_factory)), 
 				function ($template) {
 					return [self::normalize($template->getname()), $template];
 				});
