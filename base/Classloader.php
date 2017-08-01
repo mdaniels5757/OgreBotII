@@ -17,7 +17,7 @@ class Classloader {
 		"cleanup/package", "cleanup/parsers", "CommonsHelper", "CommonsHelper/debug", "cron", 
 		"cron/cron-date-factory", "FCC_Database_Serializer", "fileinfo", "fileinfo/upload-history", 
 		"generate-getters-setters", "identity", "mass-cleanup", "newuploads", "nowcommonslist", 
-		"oldver", "Png_Svg_Service", "refactor", "refresh-configs", "relink", "relink/types", 
+		"oldver", "Png_Svg_Service", "refresh-configs", "relink", "relink/types", 
 		"UploadReport", "UploadReport/newuploadhandler", "util"];
 	
 	/**
