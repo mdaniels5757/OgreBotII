@@ -19,9 +19,9 @@
             (url => encodeURIComponent(url).replace(/%2F/g, "/")
                 .replace(/%3A/g, ":").replace(/%20/g, "_"))
         ).filter("escape", () => encodeURIComponent)
-        .filter("trusted", ["$sce", $sce =>
-            (url => $sce.trustAsResourceUrl(url))
-        ]);
+            .filter("trusted", ["$sce", $sce =>
+                (url => $sce.trustAsResourceUrl(url))
+            ]);
         return;
     }
 
@@ -138,7 +138,7 @@
 
         $("#view-by-date-form").submit(() => {
             if (datepickerElements.is(function () {
-                return !$(this).val().match(/\d{4}\-\d{2}\-\d{2}/);
+                return !$(this).val().match(/\d{4}-\d{2}-\d{2}/);
             })) {
                 alert("Please enter a date in the form yyyy-mm-dd");
                 return false;

@@ -115,7 +115,7 @@
 
         finalDownloadListener = async () => {
             var thisSpinner = button.closest("tr").
-                    children(".map,.selection,.resolution").spinner();
+                children(".map,.selection,.resolution").spinner();
 
             svgOptions.dialog("close");
 
@@ -230,10 +230,10 @@
                 });
 
             table.append($("<tr/>")
-                    .append($("<td/>").append(loadButton))
-                    .append($("<td/>").append(removeButton))
-                    .append($("<td/>").text(name))
-                );
+                .append($("<td/>").append(loadButton))
+                .append($("<td/>").append(removeButton))
+                .append($("<td/>").text(name))
+            );
         });
 
         div.append(table).dialog({

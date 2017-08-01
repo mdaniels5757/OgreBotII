@@ -72,6 +72,6 @@
         }])
         .filter("escape", () => (url) =>
             window.encodeURIComponent(url).replace(/%2F/g, "/")
-            .replace(/%3A/g, ":").replace(/%20/g, "_")
+                .replace(/%3A/g, ":").replace(/%20/g, "_")
         );
 })(window);

@@ -2,15 +2,15 @@
 /*global $ */
 $(($) => {
     function parse(project) {
-        return project.match(/^([a-z\-]+)\.([a-z\-]+)$/);
+        return project.match(/^([a-z-]+)\.([a-z-]+)$/);
     }
 
     function buildSubprojectOptions(currentValue) {
         var subprojectVals = projects[projectElement.val()];
 
         subprojectElement.html(subprojectVals.map(key => `<option>${key}</option>`))
-        .val(subprojectVals.includes(currentValue) ? currentValue :
-            (subprojectElement.children("option").html() || null));
+            .val(subprojectVals.includes(currentValue) ? currentValue :
+                (subprojectElement.children("option").html() || null));
     }
 
     var select = $("select[name='project']");
@@ -39,7 +39,7 @@ $(($) => {
 
     select.after($("<div style='display: table-row;'/>")
         .append(projectElement, subprojectElement),
-        `<input type='hidden' name='project' value='${select.val()}' />`).remove();
+    `<input type='hidden' name='project' value='${select.val()}' />`).remove();
 
     select = $("[name='project']");
 

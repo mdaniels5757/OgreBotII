@@ -17,7 +17,7 @@
         const identCookie = $("#ident-cookie");
         const checkboxClicked = () => {
             okButton.attr("disabled", $("#checkbox-disclaimers").is(":checked") ?
-                 null : "disabled");
+                null : "disabled");
         };
 
         let okButton;
@@ -124,122 +124,122 @@
         $("#checkbox-disclaimers").change(checkboxClicked);
     } else {
         angular.
-        module("app", []).
-        controller("progress", ["$scope", "$http", "$timeout", (async ($scope, $http, $timeout) => {
-            function prettyTime(time){
-                var seconds;
-                var minutes;
-                var hours;
-                var asString = "";
+            module("app", []).
+            controller("progress", ["$scope", "$http", "$timeout", (async ($scope, $http, $timeout) => {
+                function prettyTime(time){
+                    var seconds;
+                    var minutes;
+                    var hours;
+                    var asString = "";
 
-                time = (time / 1000).toFixed(0);
-                seconds = time % 60;
-                time = (time - seconds) / 60;
-                minutes = time % 60;
-                hours = (time - minutes) / 60;
+                    time = (time / 1000).toFixed(0);
+                    seconds = time % 60;
+                    time = (time - seconds) / 60;
+                    minutes = time % 60;
+                    hours = (time - minutes) / 60;
 
-                if (hours) {
-                    asString = `${hours} hours, `;
+                    if (hours) {
+                        asString = `${hours} hours, `;
+                    }
+                    if (hours || minutes) {
+                        asString += `${minutes} minutes, `;
+                    }
+
+                    return `${asString}${seconds} seconds`;
                 }
-                if (hours || minutes) {
-                    asString += `${minutes} minutes, `;
+
+                const startTime = new Date();
+
+                $scope.lines = [];
+                $scope.changedTotal = () => {
+                    return $scope.lines.filter((line) => line.changed).length;
+                };
+
+                //wait for request_key to be defined from ng-init
+                await $timeout();
+
+                if ($scope.error) {
+                    return;
                 }
 
-                return `${asString}${seconds} seconds`;
-            }
+                let nextLine = 0;
+                let readDataTime;
 
-            const startTime = new Date();
+                (function call() {
+                    $http.post(
+                        `do_cleanup_multi_json.php?line=${nextLine}&request_key=${$scope.request_key}`
+                    ).then((response) => {
+                        let readData;
+                        let data = response.data;
 
-            $scope.lines = [];
-            $scope.changedTotal = () => {
-                return $scope.lines.filter((line) => line.changed).length;
-            };
+                        if (!data) {
+                            $scope.processError = true;
+                            return;
+                        }
 
-            //wait for request_key to be defined from ng-init
-            await $timeout();
+                        nextLine = data.lineNum;
 
-            if ($scope.error) {
-                return;
-            }
+                        if (data.startup) {
+                            $scope.started = true;
+                            readData = true;
+                        }
 
-            let nextLine = 0;
-            let readDataTime;
+                        if (data.count != null) {
+                            $scope.filesCount = data.count;
+                            readData = true;
+                        }
 
-            (function call() {
-                $http.post(
-                    `do_cleanup_multi_json.php?line=${nextLine}&request_key=${$scope.request_key}`
-                ).then((response) => {
-                    let readData;
-                    let data = response.data;
+                        if (data.lines && data.lines.length) {
+                            $scope.lines = $scope.lines.concat(data.lines);
 
-                    if (!data) {
-                        $scope.processError = true;
-                        return;
-                    }
-
-                    nextLine = data.lineNum;
-
-                    if (data.startup) {
-                        $scope.started = true;
-                        readData = true;
-                    }
-
-                    if (data.count != null) {
-                        $scope.filesCount = data.count;
-                        readData = true;
-                    }
-
-                    if (data.lines && data.lines.length) {
-                        $scope.lines = $scope.lines.concat(data.lines);
-
-                        if ($scope.scrollBottom) {
+                            if ($scope.scrollBottom) {
                             //scroll to the bottom
-                            window.setTimeout(() => {
-                                window.scrollTo(0, window.document.body.scrollHeight);
-                            });
-                        }
-                        readData = true;
-                    }
-
-                    if (data.complete) {
-                        $scope.complete = true;
-                        $scope.runTime = prettyTime(new Date() - startTime);
-                        return;
-                    }
-
-                    if (data.error) {
-                        $scope.processError = true;
-                        return;
-                    }
-
-                    //sanity check that background process is still running
-                    if (readData) {
-                        readDataTime = null;
-                    } else {
-                        if (readDataTime) {
-                            if (new Date().getTime() - readDataTime > 300000) {
-                                $scope.processError = true;
-                                return;
+                                window.setTimeout(() => {
+                                    window.scrollTo(0, window.document.body.scrollHeight);
+                                });
                             }
-                        } else {
-                            readDataTime = new Date().getTime();
+                            readData = true;
                         }
-                    }
 
-                    $timeout(call, 5000);
+                        if (data.complete) {
+                            $scope.complete = true;
+                            $scope.runTime = prettyTime(new Date() - startTime);
+                            return;
+                        }
 
-                }, () => {
-                    $scope.processError = true;
-                });
-            }());
-        })]).
-        filter("escape", () =>
-            (url => encodeURIComponent(url).replace(/%2F/g, "/")
-                .replace(/%3A/g, ":").replace(/%20/g, "_"))
-        ).
-        filter("round", () =>
-            (number, precision) => number.toFixed(+precision)
-        );
+                        if (data.error) {
+                            $scope.processError = true;
+                            return;
+                        }
+
+                        //sanity check that background process is still running
+                        if (readData) {
+                            readDataTime = null;
+                        } else {
+                            if (readDataTime) {
+                                if (new Date().getTime() - readDataTime > 300000) {
+                                    $scope.processError = true;
+                                    return;
+                                }
+                            } else {
+                                readDataTime = new Date().getTime();
+                            }
+                        }
+
+                        $timeout(call, 5000);
+
+                    }, () => {
+                        $scope.processError = true;
+                    });
+                }());
+            })]).
+            filter("escape", () =>
+                (url => encodeURIComponent(url).replace(/%2F/g, "/")
+                    .replace(/%3A/g, ":").replace(/%20/g, "_"))
+            ).
+            filter("round", () =>
+                (number, precision) => number.toFixed(+precision)
+            );
 
     }
 })(window);

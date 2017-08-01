@@ -589,12 +589,12 @@
             });
         }
 
-//        /**
-//         * @callback
-//         * @param {NowCommonsRow} row
-//         * @return {JQuery}
-//         */
-//        _getAutoOpenLink: undefined
+        //        /**
+        //         * @callback
+        //         * @param {NowCommonsRow} row
+        //         * @return {JQuery}
+        //         */
+        //        _getAutoOpenLink: undefined
     }
 
     class NowCommonsDeleteAjaxAction extends NowCommonsMarkedAction {
@@ -612,10 +612,10 @@
             this.xDomain.postMessage(ajaxDeleteObject);
         }
 
-//        /**
-//         * @type {XDomain}
-//         */
-//        xDomain : undefined
+        //        /**
+        //         * @type {XDomain}
+        //         */
+        //        xDomain : undefined
     }
 
     class NowCommonsDeletePopupAction extends NowCommonsAutoOpenAction {
@@ -719,7 +719,7 @@
                 ._flatten()))
                 .sort()
                 .map(uploader => $("<option/>").val(uploader).text(uploader)[0])
-        );
+            );
         autoUser.val(previousVal);
     }
 
@@ -759,8 +759,8 @@
 
         nowCommonsPopupOption.change(() => {
             markedAction._action = nowCommonsPopupOption.is(":checked") ?
-                    new NowCommonsNowCommonsAction() :
-                    new NowCommonsDeletePopupAction();
+                new NowCommonsNowCommonsAction() :
+                new NowCommonsDeletePopupAction();
         });
 
         $(`${AUTO_MARK_OK},${AUTO_MARK_TEST}`).data(NC_ACTION, new NowCommonsSearchAction());
