@@ -1,0 +1,14 @@
+{
+	"name": "ogrebot",
+	"version": "1.0.0",
+	"main": "package.json",
+	"liferayTheme": {},
+	"devDependencies": {
+		"google-closure-compiler": "^20170626.0.0",
+		"gulp": "^3.9.1",
+		"gulp-clean-css": "^3.7.0",
+		"gulp-flatmap": "^1.0.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-sourcemaps": "^2.6.0"
+	}
+}
