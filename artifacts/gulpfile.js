@@ -59,4 +59,4 @@ gulp.task("minify-css", () => {
 			}));
 	    }))
 	    .pipe(getGulpDest("js"));
-});
+}).task('default', ['minify-css', 'lint-js', 'minify-js']);
