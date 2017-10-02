@@ -166,7 +166,8 @@ class UploadData {
 				$this->noSource |= str_starts_with($category, "Media without a source as of");
 				$this->noPermission |= str_starts_with($category, "Media missing permission");
 				$this->dr |= str_starts_with($category, "Deletion requests");
-				$this->copyvio |= str_starts_with($category, "Copyright violations");
+				$this->copyvio |= str_starts_with($category, "Copyright violations") 
+					|| $category === "Duplicate" || $category === "Other speedy deletions";
 				$this->mobile |= str_starts_with($category, "Uploaded with Mobile");
 			}
 			$this->licenses = $license_reader->get_license_categories($categories);
