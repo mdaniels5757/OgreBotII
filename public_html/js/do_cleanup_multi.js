@@ -165,15 +165,16 @@
                 let nextLine = 0;
                 let readDataTime;
 
-                try {
-                    while (true) {
-                        let response = await $http.post(
-                            `do_cleanup_multi_json.php?line=${nextLine}&request_key=${$scope.request_key}`);
+                (function call() {
+                    $http.post(
+                        `do_cleanup_multi_json.php?line=${nextLine}&request_key=${$scope.request_key}`
+                    ).then((response) => {
                         let readData;
                         let data = response.data;
 
                         if (!data) {
-                            throw 0;
+                            $scope.processError = true;
+                            return;
                         }
 
                         nextLine = data.lineNum;
@@ -192,7 +193,7 @@
                             $scope.lines = $scope.lines.concat(data.lines);
 
                             if ($scope.scrollBottom) {
-                                //scroll to the bottom
+                            //scroll to the bottom
                                 window.setTimeout(() => {
                                     window.scrollTo(0, window.document.body.scrollHeight);
                                 });
@@ -203,11 +204,12 @@
                         if (data.complete) {
                             $scope.complete = true;
                             $scope.runTime = prettyTime(new Date() - startTime);
-                            break;
+                            return;
                         }
 
                         if (data.error) {
-                            throw 0;
+                            $scope.processError = true;
+                            return;
                         }
 
                         //sanity check that background process is still running
@@ -216,18 +218,20 @@
                         } else {
                             if (readDataTime) {
                                 if (new Date().getTime() - readDataTime > 300000) {
-                                    throw 0;
+                                    $scope.processError = true;
+                                    return;
                                 }
                             } else {
                                 readDataTime = new Date().getTime();
                             }
                         }
 
-                        await $timeout(undefined, 5000);
-                    }
-                } catch (e)  {
-                    $scope.processError = true;
-                }    
+                        $timeout(call, 5000);
+
+                    }, () => {
+                        $scope.processError = true;
+                    });
+                }());
             })]).
             filter("escape", () =>
                 (url => encodeURIComponent(url).replace(/%2F/g, "/")
