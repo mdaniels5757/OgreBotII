@@ -52,7 +52,7 @@ class Cleanup_Remove_Original_Uploader implements Cleanup_Module {
 	private function remove_original_uploader(&$author_field, $wholePage, $allow_blank_field = true) {
 		$re = "/([^\.\s]\s*\.*?)" . ($allow_blank_field ? "?" : "") . "\s*\.?\s*?" .
 			 Cleanup_Shared::OPT_BR .
-			 "\s*?\(?\s*\{\{original uploader\|\s*?([^\[\]\|\{\}]+)\s*?\|(w[a-z]+)\|" .
+			 "\s*?\(?\s*\{\{[Oo]riginal uploader\|\s*?([^\[\]\|\{\}]+)\s*?\|(w[a-z]+)\|" .
 			 "([a-z\-]+)\}\}\s*?\)?\s*?\.?(?:\s*Later version\(s\) were uploaded by .+?" .
 			 " at \[https?\:\/\/[a-z\-]+\.w[a-z]+\.org [a-z\-]+\.w[a-z]+\]\.?)?(\s*)$/u";
 		$re2 = "/([^\.\s]\s*\.*?)\s*?\.?\s*?" . Cleanup_Shared::OPT_BR .

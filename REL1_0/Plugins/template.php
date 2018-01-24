@@ -100,7 +100,6 @@ class Template implements Abstract_Template {
 		if (isset($match[0])) {
 			$from = strpos($text, $match[0], $offset);
 		} else {
-			unset($this);
 			return;
 		}
 
@@ -119,7 +118,6 @@ class Template implements Abstract_Template {
 				$close = strpos($match[0], "}", $i);
 				if ($close === false) {
 					//template will never close properly
-					unset($this);
 					return;
 				}
 				$i = $close;
@@ -134,7 +132,6 @@ class Template implements Abstract_Template {
 				$close = strpos($match[0], "}", $i);
 				if ($close === false) {
 					//template will never close properly
-					unset($this);
 					return;
 				} 
 				
@@ -156,7 +153,6 @@ class Template implements Abstract_Template {
 		$this->templatestring = substr($text, $from, $end);
 		if (!preg_match('/(\{\{\s*)([^|}]*)(.*)/s', $this->templatestring, $match)) {
 			$logger->warn("templatestring doesn't match. Value: " . $this->templatestring);
-			unset($this);
 			return;
 		}
 
