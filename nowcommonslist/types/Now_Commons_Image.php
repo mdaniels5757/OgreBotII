@@ -257,6 +257,12 @@ class Now_Commons_Image {
 	 * @var string
 	 */
 	public $old_versions_link;
+	
+	/**
+	 * 
+	 * @var boolean
+	 */
+	public $same_name;
 
 	/**
 	 *

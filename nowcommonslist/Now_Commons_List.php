@@ -292,7 +292,8 @@ abstract class Now_Commons_List {
 				$image->errors[] = $e->get_output_message();
 				$listed_name = $image->local_title;
 			}
-
+			$listed_name = preg_replace("/.+:/", "File:", $listed_name);
+			
 			$all_commons_listed_names[] = $listed_name;
 			$image->commons_listed_name = $listed_name;
 			
@@ -390,9 +391,8 @@ abstract class Now_Commons_List {
 				$commons_query_datum = [];
 				$image->commons_title = $image->commons_listed_name;
 			}
-				
-			$same_name = $image->local_title === $image->commons_title;
-			
+			$image->same_name = preg_replace("/.+:/", "", $image->local_title) ===
+				 preg_replace("/.+:/", "", $image->commons_title);
 			$image->commons_url = $c_project_data->getRawLink($image->commons_title);
 			$image->commons_edit_link = $c_project_data->getRawLink($image->commons_title, "edit");
 			$image->commons_text = array_key_or_blank($commons_query_datum, "revisions", 0, "*");
@@ -402,7 +402,7 @@ abstract class Now_Commons_List {
 				array("image" => urlencode($image->commons_title)));
 			
 			if ($image->local_talk_link) {
-				if ($same_name) {
+				if ($image->same_name) {
 					$image->local_view_talk_link = $l_project_data->getRawLink(
 						$image->local_talk_link); 
 				} else {
@@ -416,7 +416,7 @@ abstract class Now_Commons_List {
 
 			
 			$delete_reason = replace_named_variables(
-				$same_name ? $delete_reason_same : $delete_reason_different, 
+				$image->same_name ? $delete_reason_same : $delete_reason_different, 
 				array("new" => "[[$image->commons_title]]"));
 			$delete_reason_full = urlencode($delete_reason);
 			$image->local_delete_link = $l_project_data->getRawLink($image->local_title, 
@@ -483,7 +483,7 @@ abstract class Now_Commons_List {
 		
 		$different_name_images = array_filter($images, 
 			function ($image) {
-				return $image->local_title !== $image->commons_title;
+				return !$image->same_name;
 			});
 		$logger->info(
 			"Step " . ++$step . ": Querying links for pages with a different name on Commons...  ");

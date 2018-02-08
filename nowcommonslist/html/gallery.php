@@ -69,7 +69,7 @@ Last updated at <?= date('Y-m-d H:i', $now_commons_gallery->start_time) ?> (<?= 
 			<div class="name">
 				<div>
 					<?php 
-					if ($image->local_title === $image->commons_title) {
+					if ($image->same_name) {
 						?><span class="samename">Same name: </span><?php
 					}		
 					?><a target="_blank" href="<?= $commons_href ?>"
@@ -194,7 +194,7 @@ Last updated at <?= date('Y-m-d H:i', $now_commons_gallery->start_time) ?> (<?= 
 				<?php 
 				if ($image->errors) {
 					?>Ineligible to delink <span class="glyphicon glyphicon-remove status"></span><?php
-				} else if ($image->local_title === $image->commons_title) {
+				} else if ($image->same_name) {
 					?>Same name (no delink) <span class="glyphicon glyphicon-ok status"></span><?php
 				} else {
 					if ($image->local_links) {
