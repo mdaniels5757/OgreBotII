@@ -233,6 +233,7 @@ abstract class Now_Commons_List {
 				$logger->debug("Organizing: $count completed of " . count($local_query_data));
 			}
 			$image = new Now_Commons_Image();
+			$raw_title = preg_replace("/.+\:/", "", $title);
 			$image->local_title = $title;
 			$image->local_url = $l_project_data->getRawLink($title);
 			$image->local_edit_link = $l_project_data->getRawLink($title, "edit");
@@ -241,7 +242,7 @@ abstract class Now_Commons_List {
 				$image->local_text, $licenses_cache[$this->local_project_key], array());
 			$image->local_exists = !isset($data['missing']);
 			$image->local_fileinfo_link = replace_named_variables($properties['fileinfo.link'], 
-				array("project" => $this->local_project_key, "file" => rawurlencode($title)));
+				array("project" => $this->local_project_key, "file" => rawurlencode($raw_title)));
 			$image->local_now_commons_link = $l_project_data->getRawLink($title, 
 				"edit&functionName=NowCommonsReviewOK");
 				
