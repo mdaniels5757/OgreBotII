@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"main": "package.json",
 	"devDependencies": {
-		"google-closure-compiler": "^v20180101.0.0",
+		"google-closure-compiler": "^20180204.0.0",
 		"gulp": "^3.9.1",
 		"gulp-clean-css": "^3.9.2",
 		"gulp-eslint": "^4.0.1",

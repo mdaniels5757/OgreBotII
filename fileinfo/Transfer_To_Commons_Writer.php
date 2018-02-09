@@ -95,11 +95,16 @@ class Transfer_To_Commons_Writer {
 	/**
 	 *
 	 * @param Template $tmp        	
-	 * @param string $fieldname        	
+	 * @param string[] $fieldnames       	
 	 * @return string
 	 */
-	private function information_template_field(Template $tmp, $fieldname) {
-		$value = $tmp->information_style_fieldvalue($fieldname);
+	private function information_template_field(Template $tmp, array $fieldnames) {
+		foreach ($fieldnames as $fieldname) {
+			$value = $tmp->information_style_fieldvalue($fieldname);
+			if ($value !== null) {
+				break;
+			}
+		}
 		if ($value === null) {
 			$value = "";
 		}
@@ -141,7 +146,7 @@ class Transfer_To_Commons_Writer {
 		}
 		
 		$licensetext = "";
-		if ($license && $lang === "en" && $project === "wikipedia") {
+		if ($license) {
 			if (preg_match(
 				"/\{\{\s*(?:[Gg](?:FDL|fdl)\-[Ss]elf|[Gg]FDL-self-no-disclaimers)\s*(?:\|\s*[Mm]igration\s*\=\s*([A-Za-z\-]+)\s*)?\}\}/", 
 				$this->text, $match)) {
@@ -235,20 +240,17 @@ class Transfer_To_Commons_Writer {
 		$descriptiontext = "";
 		$descriptionfield = "";
 		if ($fields) {
+			$tmp = new Template($this->text, "information");
 			
-			$tmp = new Template(
-				"{{" . (preg_replace("/\|" . $MB_WS_RE_OPT . "[Oo]ther\s+versions\s*\=/u", 
-					"other_versions", $this->text)) . "}}", "information");
-			
-			$descriptionfield = $this->information_template_field($tmp, "description");
-			$sourcefield = $this->information_template_field($tmp, "source");
-			$datefield = $this->information_template_field($tmp, "date");
-			$authorfield = $this->information_template_field($tmp, "author");
-			$permissionfield = $this->information_template_field($tmp, "permission");
-			$otherversionsfield = $this->information_template_field($tmp, "other_versions");
-			$locationfield = $this->information_template_field($tmp, "location");
-			if ($locationfield) {
-				$descriptionfield = $descriptionfield ? "$locationfield\n$descriptionfield" : $locationfield;
+			$descriptionfield = $this->information_template_field($tmp, ["description", "beschreibung"]);
+			$sourcefield = $this->information_template_field($tmp, ["source", "quelle"]);
+			$datefield = $this->information_template_field($tmp, ["date", "datum"]);
+			$authorfield = $this->information_template_field($tmp, ["author", "urheber"]);
+			$permissionfield = $this->information_template_field($tmp, ["permission", "genehmigung"]);
+			$otherversionsfield = $this->information_template_field($tmp, ["other_versions", "andere versionen"]);
+			$etc = $this->information_template_field($tmp, ["location", "anmerkungen"]);
+			if ($etc) {
+				$descriptionfield = $descriptionfield ? "$etc\n$descriptionfield" : $etc;
 			}
 			
 			// grab everything that isn't a header, category, or in a template
