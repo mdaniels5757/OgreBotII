@@ -36,6 +36,10 @@ if ($local_project_data->getProject() === "wikipedia" && $local_project_data->ge
 }
 ?>
 Last updated at <?= date('Y-m-d H:i', $now_commons_gallery->start_time) ?> (<?= date_default_timezone_get() ?>)<br />
+	<form method="post" action="commons-images-update.php">
+		<input type="hidden" name="project" value="<?= $this->local_project_key ?>" />
+		<input type="submit" id="update" value="Update this gallery" class="btn btn-sm btn-primary" />
+	</form>
 	<input type="hidden" id="files-count"
 		value="<?= count($now_commons_gallery->now_commons_images) ?>" />
 	<div class="ready-count">
