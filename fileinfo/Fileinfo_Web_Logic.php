@@ -228,19 +228,17 @@ class Fileinfo_Web_Logic {
 			$this->edit_file_local_link = wikilink($title, $this->project, true, false, 
 				$edit_local_text, "", false, "edit");
 			
-			if ($commons_listed) {
-				$dest_sanitized = sanitize($commons_listed);
-				$view_commons_text = replace_named_variables($this->messages["view_commons"], 
-					array("file" => $dest_sanitized));
-				$edit_commons_text = replace_named_variables($this->messages["edit_commons"], 
-					array("file" => $dest_sanitized));
-				
-				$this->view_file_commons_link = wikilink($commons_listed, "commons.wikimedia", true, 
-					false, $view_commons_text, "");
-				$this->edit_file_commons_link = wikilink($commons_listed, "commons.wikimedia", true, 
-					false, $edit_commons_text, "", false, "edit");
-			}
+			$dest_sanitized = $commons_listed ? sanitize($commons_listed) : $this->src_sanitized ;
+			$view_commons_text = replace_named_variables($this->messages["view_commons"], 
+				array("file" => $dest_sanitized));
+			$edit_commons_text = replace_named_variables($this->messages["edit_commons"], 
+				array("file" => $dest_sanitized));
 			
+			$this->view_file_commons_link = wikilink($commons_listed, "commons.wikimedia", true, 
+				false, $view_commons_text, "");
+			$this->edit_file_commons_link = wikilink($commons_listed, "commons.wikimedia", true, 
+				false, $edit_commons_text, "", false, "edit");
+				
 			if ($information) {
 				$options = 0;
 				if ($authordate) {
