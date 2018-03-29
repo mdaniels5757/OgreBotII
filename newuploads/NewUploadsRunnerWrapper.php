@@ -97,8 +97,8 @@ class NewUploadsRunnerWrapper {
 		$validator->validate_arg($start, "string");
 		
 		if (preg_match("/^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})$/", $start, $datematcher)) {
-			$dateText = "$datematcher[1] " . date('F', mktime(0, 0, 0, $datematcher[2])) .
-				 " $datematcher[3] $datematcher[4]:$datematcher[5]";
+			$dateText = date('Y F d H:i', mktime($datematcher[4], $datematcher[5], 0, $datematcher[2],
+					$datematcher[3], $datematcher[1]));
 			$newPageName = "$this->baseName/$dateText";
 			return $newPageName;
 		} else {
