@@ -390,6 +390,15 @@ Last updated at <?= date('Y-m-d H:i', $now_commons_gallery->start_time) ?> (<?= 
 				<label for="auto-delete-nc"></label>
 			</div>
 		</div>
+		<div class="table-row">
+			<div class="table-cell">
+				<label for="auto-delete-remove-deleted">Remove rows after deletion</label>
+			</div>
+			<div class="table-cell checkbox">
+				<input type="checkbox" id="auto-delete-remove-deleted" checked="checked" />
+				<label for="auto-delete-remove-deleted"></label>
+			</div>
+		</div>
 		<div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
 			<div class="ui-dialog-buttonset">
 				<input type="button" class="btn btn-primary" id="auto-delete-ok"
