@@ -8,8 +8,7 @@ let sourcemaps = require('gulp-sourcemaps');
 let rename = require("gulp-rename");
 let closureCompiler = require('google-closure-compiler').gulp();
 let flatmap = require('gulp-flatmap');
-let eslint = require('gulp-eslint');
-let gulpIf = require('gulp-if');
+let prettier = require('gulp-prettier');
 
 let getDir = (type) => `../public_html/${type}`;
 let getGulpSources = (type) => {
@@ -35,12 +34,12 @@ gulp.task("minify-css", () => {
 	    .pipe(getGulpDest("css"));
 }).task("lint-js", () => {
 	return getGulpSources("js")
-		.pipe(eslint({
-			fix: true
+		.pipe(prettier({
+			printWidth: 100,
+			tabWidth: 4,
+			bracketSpacing: true
 		}))
-		.pipe(eslint.format())
-		.pipe(gulpIf(isFixed, getGulpDest("js")))
-		.pipe(eslint.failAfterError());
+		.pipe(getGulpDest("js"));
 }).task("minify-js", () => {
 	return getGulpSources("js")
 	    .pipe(flatmap((stream, file) => {

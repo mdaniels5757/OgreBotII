@@ -1,4 +1,4 @@
-((window) => {
+(window => {
     "use strict";
 
     const $ = window.$;
@@ -11,7 +11,6 @@
     function lcfirst(string) {
         return string.charAt(0).toLowerCase() + string.slice(1);
     }
-
 
     /**
      * @param {String} prefix
@@ -28,7 +27,7 @@
         return uniqueNowClass;
     }
 
-    Array.prototype._flatten = function () {
+    Array.prototype._flatten = function() {
         return this.reduce((a, b) => a.concat(b), []);
     };
 
@@ -38,15 +37,12 @@
          * @param {Object} options
          */
         constructor(jq, options) {
-
             /**
              * @type {JQuery}
              */
-            this.dialog = $(jq).dialog($.extend({}, {
-                autoOpen: false,
-                modal: true,
-                width: 600
-            }, options));
+            this.dialog = $(jq).dialog(
+                $.extend({}, { autoOpen: false, modal: true, width: 600 }, options)
+            );
         }
 
         /**
@@ -73,14 +69,12 @@
     };
 
     window.XDomain = class XDomain {
-
         /**
          * @param {String} origin
          * @param {String} path the path of the iframe to open
          * @param {Number|null} The timeout after which to fail the request
          */
         constructor(origin, path, timeout) {
-
             /**
              * @private
              */
@@ -107,7 +101,7 @@
                 return originalEvent.origin === origin;
             }
 
-            var checkedResolved = (e) => {
+            var checkedResolved = e => {
                 var originalEvent = e.originalEvent;
 
                 if (!checkOrigin(originalEvent)) {
@@ -117,14 +111,14 @@
                 if (originalEvent.data === "ping") {
                     this.deferred.resolve();
                     stopListeningForPing();
-                    $window.on("message", (e) => {
+                    $window.on("message", e => {
                         var originalEvent = e.originalEvent;
 
                         if (!checkOrigin(originalEvent)) {
                             return;
                         }
 
-                        this.listeners.forEach((listener) => {
+                        this.listeners.forEach(listener => {
                             listener(originalEvent.data);
                         });
                     });
@@ -132,21 +126,22 @@
             };
 
             var $window = $(window);
-            var failTimeout = timeout && window.setTimeout(() =>{
-                this.deferred.reject();
-                stopListeningForPing();
-            }, timeout);
+            var failTimeout = timeout && window.setTimeout(
+                    () => {
+                        this.deferred.reject();
+                        stopListeningForPing();
+                    },
+                    timeout
+                );
 
             $window.on("message", checkedResolved);
             /**
              * @private
              */
-            this.iframe = $("<iframe/>").attr({
-                style: "display: none",
-                src: `${origin}/${path}`
-            }).appendTo("body");
+            this.iframe = $("<iframe/>")
+                .attr({ style: "display: none", src: `${origin}/${path}` })
+                .appendTo("body");
         }
-
 
         /**
          * @callback listener
@@ -161,7 +156,6 @@
         postMessage(message) {
             this.iframe[0].contentWindow.postMessage(message, this.origin);
         }
-
 
         /**
          * @return {Promise}
@@ -192,28 +186,26 @@
     /**
      * @param {Object} options
      */
-    window.topBar = function (options) {
+    window.topBar = function(options) {
         function setHeight(height, div) {
             $(div).css("top", `${height * 26}px`);
         }
 
         if (typeof options !== "object") {
-            options = {
-                message: options
-            };
+            options = { message: options };
         }
 
         var existing = $(".topbar:last");
-        var div = $("<div />", {
-            "class": "topbar",
-            text: options.message
-        }).css(options.css || {});
+        var div = $("<div />", { "class": "topbar", text: options.message }).css(options.css || {});
 
-        window.setTimeout(() => {
-            div.remove();
+        window.setTimeout(
+            () => {
+                div.remove();
 
-            $(".topbar").each(setHeight);
-        }, options.delay || 5000);
+                $(".topbar").each(setHeight);
+            },
+            options.delay || 5000
+        );
 
         if (existing[0]) {
             existing.after(div);
@@ -228,27 +220,30 @@
      * @callback statusCallback
      * @param {number} intervalLength
      */
-    window.observeDom = function (statusCallback, intervalLength = 100) {
+    window.observeDom = function(statusCallback, intervalLength = 100) {
         var deferred = $.Deferred();
-        var interval = setInterval(() => {
-            if (statusCallback()) {
-                clearInterval(interval);
-                deferred.resolve();
-            } else if ($.isReady){
-                deferred.fail();
-            } else {
-                deferred.notify();
-            }
-        }, intervalLength);
+        var interval = setInterval(
+            () => {
+                if (statusCallback()) {
+                    clearInterval(interval);
+                    deferred.resolve();
+                } else if ($.isReady) {
+                    deferred.fail();
+                } else {
+                    deferred.notify();
+                }
+            },
+            intervalLength
+        );
 
         return deferred.promise();
     };
-    window.sortByKey = (object) => {
+    window.sortByKey = object => {
         var keys = Object.keys(object);
 
         keys.sort();
 
-        keys.forEach((key) => {
+        keys.forEach(key => {
             var val = object[key];
             delete object[key];
             object[key] = val;
@@ -259,13 +254,11 @@
 
     {
         let FileReader = window.FileReader;
-        let defaultOptions = {
-            type: "text"
-        };
+        let defaultOptions = { type: "text" };
         let validReaders = {};
         let validHandlers = {};
 
-        Object.keys(FileReader.prototype).forEach((key) => {
+        Object.keys(FileReader.prototype).forEach(key => {
             var handler = key.match(/^on([a-z]+)$/);
             var reader = key.match(/^readAs([A-Za-z]+)$/);
 
@@ -277,14 +270,13 @@
             }
         });
 
-        $.fn.fileReader = function (options) {
-
+        $.fn.fileReader = function(options) {
             var inputs = this.filter("input[type='file']");
 
             let localHandlers = {};
 
             options = $.extend({}, options, defaultOptions);
-            $.each(validHandlers, function (key) {
+            $.each(validHandlers, function(key) {
                 var option = options[this];
                 if (option) {
                     localHandlers[key] = option;
@@ -296,15 +288,15 @@
                 throw `Illegal readAs type: ${options.type}`;
             }
 
-            inputs.each(function () {
+            inputs.each(function() {
                 //each input gets its own reader
                 var $this = $(this);
                 var fileReader = new FileReader();
 
                 $.extend(fileReader, localHandlers);
 
-                $this.change((event) => {
-                    $.each(event.target.files, function () {
+                $this.change(event => {
+                    $.each(event.target.files, function() {
                         fileReader[localReader](this);
                     });
                     $this.val("");
@@ -324,32 +316,42 @@
                 let webRoot = $("#web-root").val() || ".";
 
                 this._jq = jq;
-                this._div = $("<div class='spinner-div'/>").hide()
-                    .append("<div/>").append($(`<img src='${webRoot}/images/ajax-loader.gif'/>`))
-                    .appendTo("body").show(options);
+                this._div = $("<div class='spinner-div'/>")
+                    .hide()
+                    .append("<div/>")
+                    .append($(`<img src='${webRoot}/images/ajax-loader.gif'/>`))
+                    .appendTo("body")
+                    .show(options);
                 this.redraw();
             }
 
             redraw() {
-                var coords = this._jq.map(function () {
+                var coords = this._jq.map(function() {
                     const $this = $(this);
-                    var position = $this.offset() || {top: 0, left: 0};
+                    var position = $this.offset() || { top: 0, left: 0 };
 
                     return $.extend(position, {
-                        bottom : position.top + $this.outerHeight(true),
-                        right : position.left + $this.outerWidth()
+                        bottom: position.top + $this.outerHeight(true),
+                        right: position.left + $this.outerWidth()
                     });
                 });
-                var [top, left, bottom, right] =
-                    [["top"], ["left"], ["bottom", 1], ["right", 1]]
-                        .map(([index, max]) =>
-                            Math[max ? "max" : "min"].apply(window,
-                                ($.map(coords, coords => coords[index]))));
+                var [ top, left, bottom, right ] = [
+                    [ "top" ],
+                    [ "left" ],
+                    [ "bottom", 1 ],
+                    [ "right", 1 ]
+                ].map(
+                    ([ index, max ]) =>
+                        Math[max ? "max" : "min"].apply(
+                            window,
+                            $.map(coords, coords => coords[index])
+                        )
+                );
                 this._div.css({
-                    width : `${right - left}px`,
-                    height : `${bottom - top}px`,
-                    top : `${top}px`,
-                    left : `${left}px`
+                    width: `${right - left}px`,
+                    height: `${bottom - top}px`,
+                    top: `${top}px`,
+                    left: `${left}px`
                 });
             }
 
@@ -369,7 +371,7 @@
             }
 
             redraw(filterJq) {
-                this.get(filterJq).forEach((spinner) => {
+                this.get(filterJq).forEach(spinner => {
                     spinner.redraw.call(spinner);
                 });
             }
@@ -384,8 +386,9 @@
             get(filterJq = undefined) {
                 var all = this.store;
                 if (filterJq) {
-                    all = all.filter((spinner) => !spinner._jq.not(filterJq)[0] &&
-                            !$(filterJq).not(spinner._jq)[0]);
+                    all = all.filter(
+                        spinner => !spinner._jq.not(filterJq)[0] && !$(filterJq).not(spinner._jq)[0]
+                    );
                 }
                 return all;
             }
@@ -394,11 +397,9 @@
         let spinnerFactory = new SpinnerFactory();
 
         //static
-        $.spinner = {
-            all: spinnerFactory
-        };
+        $.spinner = { all: spinnerFactory };
 
-        $.fn.spinner = function (options) {
+        $.fn.spinner = function(options) {
             if (this[0]) {
                 if ("redraw" === options) {
                     spinnerFactory.redraw(this);
@@ -412,67 +413,69 @@
         };
     }
 
-    $.fn.getTooltipContent = function () {
+    $.fn.getTooltipContent = function() {
         return $(this.data(tooltipContent));
     };
 
-    $.fn.closeTooltip = function () {
+    $.fn.closeTooltip = function() {
         return this.data("keepOpen", 0).tooltip("close");
     };
 
     $(() => {
-        $(".tooltip-div").click((e) => {
-            e.preventDefault();
-        }).each(function () {
-            var $this = $(this);
-            var id = $this.attr("id");
-            var tooltipClass = $this.data("tooltipClass");
-            var span = $("<span class='glyphicon glyphicon-question-sign tooltip-icon'/>");
+        $(".tooltip-div")
+            .click(e => {
+                e.preventDefault();
+            })
+            .each(function() {
+                var $this = $(this);
+                var id = $this.attr("id");
+                var tooltipClass = $this.data("tooltipClass");
+                var span = $("<span class='glyphicon glyphicon-question-sign tooltip-icon'/>");
 
-            const uniqueClass = generateUniqueClass("tooltip");
-            const uniqueClassSelector = `.${uniqueClass}`;
+                const uniqueClass = generateUniqueClass("tooltip");
+                const uniqueClassSelector = `.${uniqueClass}`;
 
-            function keepOpen() {
-                $this.tooltip("open");
-            }
-
-            if (tooltipClass) {
-                span.addClass(tooltipClass);
-            }
-
-            span = span.prependTo(this);
-
-            $this.tooltip({
-                content() {
-                    return $(".tooltip-text").filter(function () {
-                        return $(this).data("for") === id;
-                    }).html();
-                },
-                close() {
-                    if ($this.data("keepOpen")) {
-                        keepOpen();
-                    }
-                },
-                open() {
-                    $(uniqueClassSelector).hover(keepOpen, () => {
-                        $this.tooltip("close");
-                    });
-                },
-                items: $this,
-                hide: 300,
-                tooltipClass: uniqueClass
-            }).data(tooltipContent, uniqueClassSelector);
-
-            $("*").click((event) => {
-                var isKeepOpen = !!$(event.target).closest($this.add(uniqueClassSelector))[0];
-
-                $this.data("keepOpen", isKeepOpen);
-                if (isKeepOpen) {
-                    keepOpen();
-                } else {
-                    $this.tooltip("close");
+                function keepOpen() {
+                    $this.tooltip("open");
                 }
+
+                if (tooltipClass) {
+                    span.addClass(tooltipClass);
+                }
+
+                span = span.prependTo(this);
+
+                $this.tooltip({
+                    content() {
+                        return $(".tooltip-text").filter(function() {
+                            return $(this).data("for") === id;
+                        }).html();
+                    },
+                    close() {
+                        if ($this.data("keepOpen")) {
+                            keepOpen();
+                        }
+                    },
+                    open() {
+                        $(uniqueClassSelector).hover(keepOpen, () => {
+                            $this.tooltip("close");
+                        });
+                    },
+                    items: $this,
+                    hide: 300,
+                    tooltipClass: uniqueClass
+                }).data(tooltipContent, uniqueClassSelector);
+
+                $("*").click(event => {
+                    var isKeepOpen = !!$(event.target).closest($this.add(uniqueClassSelector))[0];
+
+                    $this.data("keepOpen", isKeepOpen);
+                    if (isKeepOpen) {
+                        keepOpen();
+                    } else {
+                        $this.tooltip("close");
+                    }
+                });
             });
-        });
     });
 })(window);

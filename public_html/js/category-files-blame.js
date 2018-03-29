@@ -1,12 +1,12 @@
 /* global angular */
-((window) => {
+(window => {
     function retrieveGetParameters() {
         const searchString = window.location.search.substring(1);
         var searchObject = {};
 
         if (searchString) {
-            searchString.split("&").forEach((param) => {
-                let [name, val] = param.split("=");
+            searchString.split("&").forEach(param => {
+                let [ name, val ] = param.split("=");
                 if (!searchObject[name]) {
                     searchObject[name] = window.decodeURIComponent(val);
                 }
@@ -16,9 +16,11 @@
         return searchObject;
     }
 
-    angular
-        .module("app", [])
-        .controller("ctrl", ["$scope", "$http", "$timeout", async ($scope, $http, $timeout) => {
+    angular.module("app", []).controller("ctrl", [
+        "$scope",
+        "$http",
+        "$timeout",
+        async ($scope, $http, $timeout) => {
             const parametersFromUrl = retrieveGetParameters();
 
             var lastSearchedDate;
@@ -33,11 +35,13 @@
                 limit: 100,
                 async loadData() {
                     function updateEntries() {
-                        const localEntries = selectedGallery ? allDateEntries.filter(
-                            entry => entry.gallery === selectedGallery
-                        ) : allDateEntries;
+                        const localEntries = selectedGallery
+                            ? allDateEntries.filter(entry => entry.gallery === selectedGallery)
+                            : allDateEntries;
 
-                        $scope.entries = $scope.limit ? localEntries.slice(0, $scope.limit) : localEntries;
+                        $scope.entries = $scope.limit
+                            ? localEntries.slice(0, $scope.limit)
+                            : localEntries;
                         $scope.$digest();
                     }
 
@@ -48,9 +52,9 @@
                         $scope.loading = true;
                         lastSearchedDate = selectedDate;
 
-                        allDateEntries = (await $http({
+                        allDateEntries = await $http({
                             url: `category-files-blame-data.php?date=${lastSearchedDate}`
-                        })).data;
+                        }).data;
 
                         $scope.loading = false;
                         $scope.selectedDate = $scope.selectedDate || $scope.dates[0];
@@ -69,9 +73,12 @@
                 $scope.selectedDate = $scope.dates[0];
                 $scope.$digest();
             }
-        }])
-        .filter("escape", () => (url) =>
-            window.encodeURIComponent(url).replace(/%2F/g, "/")
-                .replace(/%3A/g, ":").replace(/%20/g, "_")
-        );
+        }
+    ]).filter("escape", () =>
+        url =>
+            window
+                .encodeURIComponent(url)
+                .replace(/%2F/g, "/")
+                .replace(/%3A/g, ":")
+                .replace(/%20/g, "_"));
 })(window);

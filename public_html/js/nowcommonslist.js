@@ -1,4 +1,4 @@
-(function (window) {
+(function(window) {
     "use strict";
 
     const $ = window.$;
@@ -108,7 +108,6 @@
      */
     var autoMarkStart;
 
-
     /**
      * @type {JQuery}
      */
@@ -152,9 +151,7 @@
         if (string.indexOf("\n") < 0 && string.match(/^\/.*?\/[mi]*$/)) {
             try {
                 return new RegExp(string.substring(1, lastSlash), string.substring(lastSlash + 1));
-            } catch (ignored) {
-                // intentionally block
-            }
+            } catch (ignored) {}
         }
     }
 
@@ -242,7 +239,6 @@
     }
 
     class MatchString extends TextMatch {
-
         /**
          * @param {string} needle
          */
@@ -261,7 +257,6 @@
         }
     }
     class NowCommonsRow {
-
         /**
          * @param {JQuery} rows
          */
@@ -345,7 +340,6 @@
      * @abstract
      */
     class NowCommonsAction {
-
         /**
          * @abstract
          * @return {Array.NowCommonsRow} rows
@@ -403,7 +397,7 @@
          * @return {jQuery}
          */
         static getNowCommonsRows(filter) {
-            return $(NC_ROW).map(function () {
+            return $(NC_ROW).map(function() {
                 var row = new NowCommonsRow($(this).prev(NC_ROW).addBack());
                 if (filter(row)) {
                     return row;
@@ -413,7 +407,6 @@
     }
 
     class NowCommonsAbstractAction extends NowCommonsAction {
-
         /**
          * @param {String} action
          */
@@ -476,7 +469,6 @@
     }
 
     class NowCommonsSearchAction extends NowCommonsAction {
-
         /**
          * @override
          * @returns {Number}
@@ -498,11 +490,9 @@
          */
         _run(rows) {
             this.rows = rows;
-            rows.forEach(
-                row => {
-                    row.toggleSelect(true);
-                }
-            );
+            rows.forEach(row => {
+                row.toggleSelect(true);
+            });
         }
 
         /**
@@ -525,11 +515,15 @@
                 filters.push(new UserMatch(autoUserVal));
             }
             if (searchVal) {
-                filters.push(searchRegex ? new MatchRegex(searchRegex)
-                    : new MatchString(searchVal.toUpperCase()));
+                filters.push(
+                    searchRegex
+                        ? new MatchRegex(searchRegex)
+                        : new MatchString(searchVal.toUpperCase())
+                );
             }
             if (omitVal) {
-                omitFilter = omitRegex ? new MatchRegex(omitRegex)
+                omitFilter = omitRegex
+                    ? new MatchRegex(omitRegex)
                     : new MatchString(omitVal.toUpperCase());
                 omitFilter.setFilter(val => !val);
                 filters.push(omitFilter);
@@ -555,13 +549,12 @@
                 /**
                  * @param {NowCommonsRow} nowCommonsRow
                  */
-                nowCommonsRow =>
-                    filters.every(
-                        /**
+                nowCommonsRow => filters.every(
+                    /**
                          * @param {AbstractMatch} filter
                          */
-                        filter => filter.match(nowCommonsRow)
-                    )
+                    filter => filter.match(nowCommonsRow)
+                )
             );
         }
 
@@ -577,7 +570,6 @@
      * @abstract
      */
     class NowCommonsAutoOpenAction extends NowCommonsMarkedAction {
-
         /**
          * @param {Array.NowCommonsRow} rows
          */
@@ -588,7 +580,6 @@
                 row.toggleSelect(false);
             });
         }
-
         //        /**
         //         * @callback
         //         * @param {NowCommonsRow} row
@@ -598,7 +589,6 @@
     }
 
     class NowCommonsDeleteAjaxAction extends NowCommonsMarkedAction {
-
         /**
          * @override
          */
@@ -611,7 +601,6 @@
             ajaxCountElement.text(+ajaxCountElement.text() + rows.length);
             this.xDomain.postMessage(ajaxDeleteObject);
         }
-
         //        /**
         //         * @type {XDomain}
         //         */
@@ -645,64 +634,54 @@
 
     var markedAction = new NowCommonsAbstractAction(new NowCommonsDeletePopupAction());
 
-    window.XDomain.global(
-
-        /**
+    window.XDomain.global(/**
          * @param {XDomain} xDomain
          */
-        async (xDomain) => {
-            await xDomain.promise();
-            ajaxCountElement.text(0);
-            window.topBar({
-                css: {
-                    background: "#000099"
-                },
-                message: "Ajax delete detected"
-            });
-            markedAction._action = new NowCommonsDeleteAjaxAction();
+    async xDomain => {
+        await xDomain.promise();
+        ajaxCountElement.text(0);
+        window.topBar({ css: { background: "#000099" }, message: "Ajax delete detected" });
+        markedAction._action = new NowCommonsDeleteAjaxAction();
 
-            //wait until document ready in case it hasn't loaded
-            $(() => {
-                nowCommonsPopupOption.closest(".table-row").hide();
-            });
+        //wait until document ready in case it hasn't loaded
+        $(() => {
+            nowCommonsPopupOption.closest(".table-row").hide();
+        });
 
-            xDomain.addListener((data) => {
-                ajaxCountElement.text(ajaxCountElement.text() - 1);
-                if (data.status === "success") {
-                    window.topBar({
-                        css: {
-                            background: "#009999"
-                        },
-                        delay: 2000,
-                        message: `${data.page}: deleted`
-                    });
+        xDomain.addListener(data => {
+            ajaxCountElement.text(ajaxCountElement.text() - 1);
+            if (data.status === "success") {
+                window.topBar({
+                    css: { background: "#009999" },
+                    delay: 2000,
+                    message: `${data.page}: deleted`
+                });
 
-                    $(`${SELECTED_CLASS} a.delete`).each(function () {
-                        var $this = $(this);
-                        if ($this.data(NAME) === data.page) {
-                            $this.closest(SELECTED_CLASS).prev().addBack()
-                                .remove();
-                            var count = +autoMarkCount.attr("max") - 1;
+                $(`${SELECTED_CLASS} a.delete`).each(function() {
+                    var $this = $(this);
+                    if ($this.data(NAME) === data.page) {
+                        $this.closest(SELECTED_CLASS).prev().addBack().remove();
+                        var count = +autoMarkCount.attr("max") - 1;
 
-                            [autoDeleteCount, autoMarkCount, autoMarkStart].forEach(field => {
-                                let $field = $(field);
-                                $field.attr("max", count).val(Math.min(+$field.val(), count));
-                            });
-                        }
-                    });
-                    setupUploaderDropdown();
-                } else {
-                    window.topBar(`${data.page}: ${data.message}`);
-                }
-
-            });
-            markedAction._action.xDomain = xDomain;
-        }
-    );
-
-    window.observeDom(() => $.isReady).progress(() => {
-        $("#ready-count").html(roughPercent($("input.file").length / $("#files-count").val()));
+                        [ autoDeleteCount, autoMarkCount, autoMarkStart ].forEach(field => {
+                            let $field = $(field);
+                            $field.attr("max", count).val(Math.min(+$field.val(), count));
+                        });
+                    }
+                });
+                setupUploaderDropdown();
+            } else {
+                window.topBar(`${data.page}: ${data.message}`);
+            }
+        });
+        markedAction._action.xDomain = xDomain;
     });
+
+    window
+        .observeDom(() => $.isReady)
+        .progress(() => {
+            $("#ready-count").html(roughPercent($("input.file").length / $("#files-count").val()));
+        });
 
     $(window).on("beforeunload", () => {
         var selectedLength = $(SELECTED_CLASS).length / 2;
@@ -713,13 +692,18 @@
 
     function setupUploaderDropdown() {
         let previousVal = autoUser.val();
-        autoUser.html("").append("<option/>")
-            .append(Array.from(new Set(NowCommonsAction.getNowCommonsRows(() => true).get()
-                .map(nowcommonsrow => nowcommonsrow.uploaders)
-                ._flatten()))
+        autoUser.html("").append("<option/>").append(
+            Array
+                .from(new Set(
+                    NowCommonsAction
+                        .getNowCommonsRows(() => true)
+                        .get()
+                        .map(nowcommonsrow => nowcommonsrow.uploaders)
+                        ._flatten()
+                ))
                 .sort()
                 .map(uploader => $("<option/>").val(uploader).text(uploader)[0])
-            );
+        );
         autoUser.val(previousVal);
     }
 
@@ -737,7 +721,7 @@
         setupUploaderDropdown();
         $("#doc-load-per,.ready-count,.bottom-buttons").toggle();
 
-        $(MARK_AUTO).click(function () {
+        $(MARK_AUTO).click(function() {
             $(this).closest(NC_ROW).toggleClass(SELECTED);
         });
 
@@ -746,27 +730,30 @@
         });
 
         //suppress default links
-        $(`.delink,${MARK_AUTO}`).click((e) => {
+        $(`.delink,${MARK_AUTO}`).click(e => {
             e.preventDefault(); //suppress link
         });
 
-        $(`${AUTO_MARK_TEXT},${AUTO_MARK_TEXT_OMIT}`).on("keydown paste drop focus", function () {
-            setTimeout(() => {
-                var jqTextarea = $(this);
-                jqTextarea.toggleClass("regex", !!parseRegex(jqTextarea.val()));
-            }, 1);
+        $(`${AUTO_MARK_TEXT},${AUTO_MARK_TEXT_OMIT}`).on("keydown paste drop focus", function() {
+            setTimeout(
+                () => {
+                    var jqTextarea = $(this);
+                    jqTextarea.toggleClass("regex", !!parseRegex(jqTextarea.val()));
+                },
+                1
+            );
         });
 
         nowCommonsPopupOption.change(() => {
-            markedAction._action = nowCommonsPopupOption.is(":checked") ?
-                new NowCommonsNowCommonsAction() :
-                new NowCommonsDeletePopupAction();
+            markedAction._action = nowCommonsPopupOption.is(":checked")
+                ? new NowCommonsNowCommonsAction()
+                : new NowCommonsDeletePopupAction();
         });
 
         $(`${AUTO_MARK_OK},${AUTO_MARK_TEST}`).data(NC_ACTION, new NowCommonsSearchAction());
         $(`${AUTO_DELETE_OK},${AUTO_DELETE_TEST}`).data(NC_ACTION, markedAction);
 
-        $(`${AUTO_DELETE_OK},${AUTO_MARK_OK}`).click(function () {
+        $(`${AUTO_DELETE_OK},${AUTO_MARK_OK}`).click(function() {
             try {
                 $(this).data(NC_ACTION).run();
             } catch (error) {
@@ -774,8 +761,7 @@
             }
         });
 
-
-        $(`${AUTO_MARK_TEST},${AUTO_DELETE_TEST}`).click(function () {
+        $(`${AUTO_MARK_TEST},${AUTO_DELETE_TEST}`).click(function() {
             try {
                 $("#count").html($(this).data(NC_ACTION).test().length);
                 testDialog.open();
@@ -785,10 +771,9 @@
         });
 
         closeButtons.click(() => {
-            $(".bottom-buttons-buttons > *").animate({width: "toggle"}, 350);
+            $(".bottom-buttons-buttons > *").animate({ width: "toggle" }, 350);
             closeButtons.toggleClass("glyphicon-menu-left");
         });
-
 
         testDialog = new MDialog("#auto-files-found");
         testDialog.addCloseButton("#auto-delete-found-ok");
@@ -806,4 +791,4 @@
         markDialog.addOpenButton(`${AUTO_MARK}-open`);
         markDialog.addCloseButton(`${AUTO_MARK}-cancel`);
     });
-}(window));
+})(window);

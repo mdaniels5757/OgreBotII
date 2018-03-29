@@ -5,23 +5,27 @@
  * Datepicker icon is licensed as BSD by Wikibooks user Tbernhard,
  * https://commons.wikimedia.org/wiki/File:Calendar_-_2.png
  */
-(function (window, _undefined) {
+(function(window, _undefined) {
     const alert = window.alert;
     const angular = window.angular;
     const encodeURIComponent = window.encodeURIComponent.bind();
 
-
     //process upload page
     if (window.isAngular) {
-        angular.module("app", []).controller("process-uploads", ["$scope", ($scope) => {
-            angular.extend($scope, window.logic);
-        }]).filter("escapeTitle", () =>
-            (url => encodeURIComponent(url).replace(/%2F/g, "/")
-                .replace(/%3A/g, ":").replace(/%20/g, "_"))
-        ).filter("escape", () => encodeURIComponent)
-            .filter("trusted", ["$sce", $sce =>
-                (url => $sce.trustAsResourceUrl(url))
-            ]);
+        angular.module("app", []).controller("process-uploads", [
+            "$scope",
+            $scope => {
+                angular.extend($scope, window.logic);
+            }
+        ]).filter("escapeTitle", () =>
+            url =>
+                encodeURIComponent(url)
+                    .replace(/%2F/g, "/")
+                    .replace(/%3A/g, ":")
+                    .replace(
+                        /%20/g,
+                        "_"
+                    )).filter("escape", () => encodeURIComponent).filter("trusted", [ "$sce", $sce => url => $sce.trustAsResourceUrl(url) ]);
         return;
     }
 
@@ -31,14 +35,16 @@
         alert("Please wait while the page loads.");
     }
 
-    var interval = window.setInterval(() => {
-        $(":button").filter(function () {
-            return !$(this).data("notReady");
-        }).data("notReady", true).click(notReady);
-    }, 200);
+    var interval = window.setInterval(
+        () => {
+            $(":button").filter(function() {
+                return !$(this).data("notReady");
+            }).data("notReady", true).click(notReady);
+        },
+        200
+    );
 
     $(() => {
-
         var $src = $("#src"),
             $trg = $("#trg"),
             srcSpanVal = $("#srcspan > a").html(),
@@ -60,14 +66,8 @@
                 startDate = $.datepicker.parseDate(datepickerFormat, $("#start-date").val()),
                 endDate = $.datepicker.parseDate(datepickerFormat, $("#end-date").val());
 
-            viewByDateFrom.datepicker("option", {
-                minDate: startDate,
-                maxDate: to || endDate
-            });
-            viewByDateTo.datepicker("option", {
-                minDate: from || startDate,
-                maxDate: endDate
-            });
+            viewByDateFrom.datepicker("option", { minDate: startDate, maxDate: to || endDate });
+            viewByDateTo.datepicker("option", { minDate: from || startDate, maxDate: endDate });
         }
 
         //jqueryui isn't always loaded
@@ -92,13 +92,10 @@
 
             /* ensure submit button isn't pressed multiple times */
             submitProcessUploads.prop("disabled", true);
-
         });
-        $("#change_files").click(
-            function () {
-                $(this).add("#src,#trg,#srcspan,#trgspan,#submit_OV,#upload_text").toggle();
-            }
-        );
+        $("#change_files").click(function() {
+            $(this).add("#src,#trg,#srcspan,#trgspan,#submit_OV,#upload_text").toggle();
+        });
 
         $("#form").submit(() => {
             /* first valid click... update fields */
@@ -118,15 +115,17 @@
 
         $(".view-by-date-button").click(() => {
             viewByDate.dialog("open");
-            datepickerElements.blur().datepicker({
-                showOn: "button",
-                buttonImage: "images/calendar.png",
-                buttonImageOnly: true,
-                changeMonth: true,
-                changeYear: true,
-                dateFormat: datepickerFormat,
-                onClose: updateDatepickerMinMax
-            });
+            datepickerElements
+                .blur()
+                .datepicker({
+                    showOn: "button",
+                    buttonImage: "images/calendar.png",
+                    buttonImageOnly: true,
+                    changeMonth: true,
+                    changeYear: true,
+                    dateFormat: datepickerFormat,
+                    onClose: updateDatepickerMinMax
+                });
             updateDatepickerMinMax();
         });
 
@@ -137,21 +136,19 @@
         });
 
         $("#view-by-date-form").submit(() => {
-            if (datepickerElements.is(function () {
-                return !$(this).val().match(/\d{4}-\d{2}-\d{2}/);
-            })) {
+            if (datepickerElements.is(function() {
+                    return !$(this).val().match(/\d{4}-\d{2}-\d{2}/);
+                })) {
                 alert("Please enter a date in the form yyyy-mm-dd");
                 return false;
             }
         }).on("reset", window.setTimeout.bind(window, updateDatepickerMinMax));
     });
 
-    $("#ident-frame").on("load", function () {
-        this.contentWindow.postMessage({
-            watch: true
-        }, window.location.origin);
+    $("#ident-frame").on("load", function() {
+        this.contentWindow.postMessage({ watch: true }, window.location.origin);
 
-        window.onmessage = (event) => {
+        window.onmessage = event => {
             if (event.origin !== location.origin) {
                 return;
             }
@@ -160,4 +157,4 @@
             $("#ident-cookie").val(event.data.cookie);
         };
     });
-}(window));
+})(window);
