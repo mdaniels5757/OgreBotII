@@ -304,6 +304,7 @@
             }
         }
     });
+
     $("#export").click(() => {
         saveAs(
             new Blob([ localStorage.getItem(saveStateStorageName) ], {
