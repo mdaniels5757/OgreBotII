@@ -53,12 +53,12 @@ gulp.task("minify-css", () => {
 	        	language_out: 'ECMASCRIPT5',
 				js_output_file: filePath.replace(/\.js$/, "") + ".min.js",
 				create_source_map: `${filePath}.map`,
-				output_wrapper: `%output% //# sourceMappingURL=js/${filePath}.map`,
 				source_map_location_mapping: `${JS_DIR}|` 
 			}));
 	    }))
 	    .pipe(sourcemaps.write(".", {
-	        mapFile: path => path.replace(/\.min\.js\.map/, '.js.map')
+	        mapFile: path => path.replace(/\.min\.js\.map/, '.js.map'),
+	        sourceMappingURLPrefix: "js"
 	     }))
 	    .pipe(getGulpDest("js"));
 }).task('default', ['minify-css', 'lint-js', 'minify-js']);
