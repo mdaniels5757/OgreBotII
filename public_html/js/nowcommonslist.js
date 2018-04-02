@@ -1,4 +1,4 @@
-(function(window) {
+(async function(window) {
     "use strict";
 
     const $ = window.$;
@@ -12,6 +12,11 @@
      * @constant {String}
      */
     const AUTO_MARK = "#auto-mark";
+
+    /**
+     * @constant {String}
+     */
+    const AUTO_DELETE_REMOVE_DELETED = `${AUTO_DELETE}-remove-deleted`;
 
     /**
      * @constant {String}
@@ -96,6 +101,11 @@
     /**
      * @type {JQuery}
      */
+    var autoHideCheckbox;
+
+    /**
+     * @type {JQuery}
+     */
     var nowCommonsPopupOption;
 
     /**
@@ -132,6 +142,27 @@
      * @jQuery
      */
     var autoUser;
+
+    /**
+     * @param {string} name
+     */
+    function removeRow(name) {
+        if (autoHideCheckbox.is(":checked")) {
+            $("a.delete").get().forEach(link => {
+                var $link = $(link);
+                if ($link.data(NAME) === name) {
+                    $link.closest(NC_ROW).prev().addBack().remove();
+                    let count = +autoMarkCount.attr("max") - 1;
+
+                    [ autoDeleteCount, autoMarkCount, autoMarkStart ].forEach(field => {
+                        let $field = $(field);
+                        $field.attr("max", count).val(Math.min(+$field.val(), count));
+                    });
+                }
+            });
+            setupUploaderDropdown();
+        }
+    }
 
     /**
      * @param {Number} decimal
@@ -353,7 +384,7 @@
                 this._run(rows);
             }
 
-            this.postRun();
+            this.postRun(rows);
         }
 
         /**
@@ -580,6 +611,15 @@
                 row.toggleSelect(false);
             });
         }
+
+        /**
+         * @param {NowCommonsRow[]} 
+         * @override
+         */
+        postRun(rows) {
+            rows.forEach(row => removeRow(row.localName));
+            super.postRun();
+        }
         //        /**
         //         * @callback
         //         * @param {NowCommonsRow} row
@@ -656,20 +696,7 @@
                     delay: 2000,
                     message: `${data.page}: deleted`
                 });
-
-                $(`${SELECTED_CLASS} a.delete`).each(function() {
-                    var $this = $(this);
-                    if ($this.data(NAME) === data.page) {
-                        $this.closest(SELECTED_CLASS).prev().addBack().remove();
-                        var count = +autoMarkCount.attr("max") - 1;
-
-                        [ autoDeleteCount, autoMarkCount, autoMarkStart ].forEach(field => {
-                            let $field = $(field);
-                            $field.attr("max", count).val(Math.min(+$field.val(), count));
-                        });
-                    }
-                });
-                setupUploaderDropdown();
+                removeRow(data.page);
             } else {
                 window.topBar(`${data.page}: ${data.message}`);
             }
@@ -707,88 +734,89 @@
         autoUser.val(previousVal);
     }
 
-    $(() => {
-        var closeButtons = $(".close-buttons");
-        var testDialog;
+    await $.ready;
 
-        autoUser = $("#auto-user");
-        nowCommonsPopupOption = $(AUTO_DELETE_NC);
-        ajaxCountElement = $(".ajax-count");
-        autoMarkStart = $("#auto-mark-start");
-        autoMarkCount = $("#auto-mark-count");
-        autoDeleteCount = $("#auto-delete-count");
+    var closeButtons = $(".close-buttons");
+    var testDialog;
 
-        setupUploaderDropdown();
-        $("#doc-load-per,.ready-count,.bottom-buttons").toggle();
+    autoUser = $("#auto-user");
+    autoHideCheckbox = $(AUTO_DELETE_REMOVE_DELETED);
+    nowCommonsPopupOption = $(AUTO_DELETE_NC);
+    ajaxCountElement = $(".ajax-count");
+    autoMarkStart = $("#auto-mark-start");
+    autoMarkCount = $("#auto-mark-count");
+    autoDeleteCount = $("#auto-delete-count");
 
-        $(MARK_AUTO).click(function() {
-            $(this).closest(NC_ROW).toggleClass(SELECTED);
-        });
+    setupUploaderDropdown();
+    $("#doc-load-per,.ready-count,.bottom-buttons").toggle();
 
-        $("#clear-marks").click(() => {
-            $(SELECTED_CLASS).removeClass(SELECTED);
-        });
-
-        //suppress default links
-        $(`.delink,${MARK_AUTO}`).click(e => {
-            e.preventDefault(); //suppress link
-        });
-
-        $(`${AUTO_MARK_TEXT},${AUTO_MARK_TEXT_OMIT}`).on("keydown paste drop focus", function() {
-            setTimeout(
-                () => {
-                    var jqTextarea = $(this);
-                    jqTextarea.toggleClass("regex", !!parseRegex(jqTextarea.val()));
-                },
-                1
-            );
-        });
-
-        nowCommonsPopupOption.change(() => {
-            markedAction._action = nowCommonsPopupOption.is(":checked")
-                ? new NowCommonsNowCommonsAction()
-                : new NowCommonsDeletePopupAction();
-        });
-
-        $(`${AUTO_MARK_OK},${AUTO_MARK_TEST}`).data(NC_ACTION, new NowCommonsSearchAction());
-        $(`${AUTO_DELETE_OK},${AUTO_DELETE_TEST}`).data(NC_ACTION, markedAction);
-
-        $(`${AUTO_DELETE_OK},${AUTO_MARK_OK}`).click(function() {
-            try {
-                $(this).data(NC_ACTION).run();
-            } catch (error) {
-                window.alert(error);
-            }
-        });
-
-        $(`${AUTO_MARK_TEST},${AUTO_DELETE_TEST}`).click(function() {
-            try {
-                $("#count").html($(this).data(NC_ACTION).test().length);
-                testDialog.open();
-            } catch (error) {
-                window.alert(error);
-            }
-        });
-
-        closeButtons.click(() => {
-            $(".bottom-buttons-buttons > *").animate({ width: "toggle" }, 350);
-            closeButtons.toggleClass("glyphicon-menu-left");
-        });
-
-        testDialog = new MDialog("#auto-files-found");
-        testDialog.addCloseButton("#auto-delete-found-ok");
-
-        autoDeleteDialog = new MDialog(AUTO_DELETE, {
-            open() {
-                let length = markedAction.test().length;
-                autoDeleteCount.val(length).attr("max", length);
-            }
-        });
-        autoDeleteDialog.addOpenButton("#auto-delete-open");
-        autoDeleteDialog.addCloseButton("#auto-delete-cancel");
-
-        markDialog = new MDialog(AUTO_MARK);
-        markDialog.addOpenButton(`${AUTO_MARK}-open`);
-        markDialog.addCloseButton(`${AUTO_MARK}-cancel`);
+    $(MARK_AUTO).click(function() {
+        $(this).closest(NC_ROW).toggleClass(SELECTED);
     });
+
+    $("#clear-marks").click(() => {
+        $(SELECTED_CLASS).removeClass(SELECTED);
+    });
+
+    //suppress default links
+    $(`.delink,${MARK_AUTO}`).click(e => {
+        e.preventDefault(); //suppress link
+    });
+
+    $(`${AUTO_MARK_TEXT},${AUTO_MARK_TEXT_OMIT}`).on("keydown paste drop focus", function() {
+        setTimeout(
+            () => {
+                var jqTextarea = $(this);
+                jqTextarea.toggleClass("regex", !!parseRegex(jqTextarea.val()));
+            },
+            1
+        );
+    });
+
+    nowCommonsPopupOption.change(() => {
+        markedAction._action = nowCommonsPopupOption.is(":checked")
+            ? new NowCommonsNowCommonsAction()
+            : new NowCommonsDeletePopupAction();
+    });
+
+    $(`${AUTO_MARK_OK},${AUTO_MARK_TEST}`).data(NC_ACTION, new NowCommonsSearchAction());
+    $(`${AUTO_DELETE_OK},${AUTO_DELETE_TEST}`).data(NC_ACTION, markedAction);
+
+    $(`${AUTO_DELETE_OK},${AUTO_MARK_OK}`).click(function() {
+        try {
+            $(this).data(NC_ACTION).run();
+        } catch (error) {
+            window.alert(error);
+        }
+    });
+
+    $(`${AUTO_MARK_TEST},${AUTO_DELETE_TEST}`).click(function() {
+        try {
+            $("#count").html($(this).data(NC_ACTION).test().length);
+            testDialog.open();
+        } catch (error) {
+            window.alert(error);
+        }
+    });
+
+    closeButtons.click(() => {
+        $(".bottom-buttons-buttons > *").animate({ width: "toggle" }, 350);
+        closeButtons.toggleClass("glyphicon-menu-left");
+    });
+
+    testDialog = new MDialog("#auto-files-found");
+    testDialog.addCloseButton("#auto-delete-found-ok");
+
+    autoDeleteDialog = new MDialog(AUTO_DELETE, {
+        open() {
+            let length = markedAction.test().length;
+            autoDeleteCount.val(length).attr("max", length);
+        }
+    });
+    autoDeleteDialog.addOpenButton("#auto-delete-open");
+    autoDeleteDialog.addCloseButton("#auto-delete-cancel");
+
+    markDialog = new MDialog(AUTO_MARK);
+    markDialog.addOpenButton(`${AUTO_MARK}-open`);
+    markDialog.addCloseButton(`${AUTO_MARK}-cancel`);
 })(window);
