@@ -69,17 +69,7 @@
     };
 
     window.XDomain = class XDomain {
-        /**
-         * @param {String} origin
-         * @param {String} path the path of the iframe to open
-         * @param {Number|null} The timeout after which to fail the request
-         */
-        constructor(origin, path, timeout) {
-            /**
-             * @private
-             */
-            this.origin = origin;
-
+        constructor() {
             /**
              * @private
              */
@@ -88,59 +78,81 @@
             /**
              * @private
              */
-            this.deferred = $.Deferred();
+            this._promise = new Promise((resolve, reject) => {
+                window.setIntervalImmediate(
+                    () => {
+                        var input = $("input[data-xd-auto]");
 
-            function stopListeningForPing() {
-                $window.off("message", null, checkedResolved);
-                if (failTimeout) {
-                    window.clearTimeout(failTimeout);
-                }
-            }
+                        if (input[0]) {
+                            let data = $(input).data();
 
-            function checkOrigin(originalEvent) {
-                return originalEvent.origin === origin;
-            }
+                            var { xdDomain, xdPath, xdTimeout } = data;
 
-            var checkedResolved = e => {
-                var originalEvent = e.originalEvent;
+                            function stopListeningForPing() {
+                                $window.off("message", null, checkedResolved);
+                                if (failTimeout) {
+                                    window.clearTimeout(failTimeout);
+                                }
+                            }
 
-                if (!checkOrigin(originalEvent)) {
-                    return;
-                }
+                            function checkOrigin(originalEvent) {
+                                return originalEvent.origin === origin;
+                            }
 
-                if (originalEvent.data === "ping") {
-                    this.deferred.resolve();
-                    stopListeningForPing();
-                    $window.on("message", e => {
-                        var originalEvent = e.originalEvent;
+                            const checkedResolved = e => {
+                                var originalEvent = e.originalEvent;
 
-                        if (!checkOrigin(originalEvent)) {
-                            return;
+                                if (!checkOrigin(originalEvent)) {
+                                    return;
+                                }
+
+                                if (originalEvent.data === "ping") {
+                                    resolve();
+                                    stopListeningForPing();
+                                    $window.on("message", e => {
+                                        var originalEvent = e.originalEvent;
+
+                                        if (!checkOrigin(originalEvent)) {
+                                            return;
+                                        }
+
+                                        this.listeners.forEach(listener => {
+                                            listener(originalEvent.data);
+                                        });
+                                    });
+                                }
+                            };
+
+                            var $window = $(window);
+                            var failTimeout = xdTimeout && window.setTimeout(
+                                    () => {
+                                        reject();
+                                        stopListeningForPing();
+                                    },
+                                    xdTimeout
+                                );
+
+                            $window.on("message", checkedResolved);
+                            /**
+                         * @private
+                         */
+                            this.iframe = $("<iframe/>")
+                                .attr({ style: "display: none", src: `${xdDomain}/${xdPath}` })
+                                .appendTo("body");
+
+                            return false;
                         }
 
-                        this.listeners.forEach(listener => {
-                            listener(originalEvent.data);
-                        });
-                    });
-                }
-            };
+                        let ready = $.isReady;
+                        if (ready) {
+                            reject();
+                        }
 
-            var $window = $(window);
-            var failTimeout = timeout && window.setTimeout(
-                    () => {
-                        this.deferred.reject();
-                        stopListeningForPing();
+                        return !ready;
                     },
-                    timeout
+                    100
                 );
-
-            $window.on("message", checkedResolved);
-            /**
-             * @private
-             */
-            this.iframe = $("<iframe/>")
-                .attr({ style: "display: none", src: `${origin}/${path}` })
-                .appendTo("body");
+            });
         }
 
         /**
@@ -160,26 +172,8 @@
         /**
          * @return {Promise}
          */
-        promise() {
-            return this.deferred.promise();
-        }
-
-        /**
-         * @param {callback} onDetect
-         */
-        static global(onDetect) {
-            var detected = $();
-            window.observeDom(() => {
-                var inputs = $("input[data-xd-auto]").not(detected);
-
-                detected = detected.add(inputs);
-                inputs.each((index, input) => {
-                    const data = $(input).data();
-                    onDetect(new XDomain(data.xdDomain, data.xdPath, data.xdTimeout));
-                });
-
-                return $.isReady;
-            });
+        ready() {
+            return this._promise;
         }
     };
 
@@ -217,27 +211,19 @@
     };
 
     /**
-     * @callback statusCallback
+     * @param {callback} callback
      * @param {number} intervalLength
      */
-    window.observeDom = function(statusCallback, intervalLength = 100) {
-        var deferred = $.Deferred();
-        var interval = setInterval(
-            () => {
-                if (statusCallback()) {
-                    clearInterval(interval);
-                    deferred.resolve();
-                } else if ($.isReady) {
-                    deferred.fail();
-                } else {
-                    deferred.notify();
-                }
-            },
-            intervalLength
-        );
-
-        return deferred.promise();
+    window.setIntervalImmediate = function(callback, interval) {
+        function test() {
+            if (callback() === false) {
+                window.clearInterval(clear);
+            }
+        }
+        var clear = window.setInterval(test, interval);
+        test();
     };
+
     window.sortByKey = object => {
         var keys = Object.keys(object);
 

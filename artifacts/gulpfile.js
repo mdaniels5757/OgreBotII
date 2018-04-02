@@ -57,5 +57,8 @@ gulp.task("minify-css", () => {
 				source_map_location_mapping: `${JS_DIR}|` 
 			}));
 	    }))
+	    .pipe(sourcemaps.write(".", {
+	        mapFile: path => path.replace(/\.min\.js\.map/, '.js.map')
+	     }))
 	    .pipe(getGulpDest("js"));
 }).task('default', ['minify-css', 'lint-js', 'minify-js']);

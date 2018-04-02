@@ -98,50 +98,13 @@
      */
     const MDialog = window.MDialog;
 
-    /**
-     * @type {JQuery}
-     */
-    var autoHideCheckbox;
+    var xDomain = new window.XDomain();
+    window.setIntervalImmediate(() => {
+        $("#ready-count").html(roughPercent($("input.file").length / $("#files-count").val()));
+        return !$.isReady;
+    });
 
-    /**
-     * @type {JQuery}
-     */
-    var nowCommonsPopupOption;
-
-    /**
-     * @type {HTMLElement}
-     */
-    var ajaxCountElement;
-
-    /**
-     * @type {JQuery}
-     */
-    var autoMarkStart;
-
-    /**
-     * @type {JQuery}
-     */
-    var autoMarkCount;
-
-    /**
-     * @type {JQuery}
-     */
-    var autoDeleteCount;
-
-    /**
-     * @type {MDialog}
-     */
-    var autoDeleteDialog;
-
-    /**
-     * @type {MDialog}
-     */
-    var markDialog;
-
-    /**
-     * @jQuery
-     */
-    var autoUser;
+    await $.ready;
 
     /**
      * @param {string} name
@@ -639,12 +602,8 @@
                 ajaxDeleteObject[$link.data(NAME)] = $link.data(REASON);
             });
             ajaxCountElement.text(+ajaxCountElement.text() + rows.length);
-            this.xDomain.postMessage(ajaxDeleteObject);
+            xDomain.postMessage(ajaxDeleteObject);
         }
-        //        /**
-        //         * @type {XDomain}
-        //         */
-        //        xDomain : undefined
     }
 
     class NowCommonsDeletePopupAction extends NowCommonsAutoOpenAction {
@@ -674,42 +633,6 @@
 
     var markedAction = new NowCommonsAbstractAction(new NowCommonsDeletePopupAction());
 
-    window.XDomain.global(/**
-         * @param {XDomain} xDomain
-         */
-    async xDomain => {
-        await xDomain.promise();
-        ajaxCountElement.text(0);
-        window.topBar({ css: { background: "#000099" }, message: "Ajax delete detected" });
-        markedAction._action = new NowCommonsDeleteAjaxAction();
-
-        //wait until document ready in case it hasn't loaded
-        $(() => {
-            nowCommonsPopupOption.closest(".table-row").hide();
-        });
-
-        xDomain.addListener(data => {
-            ajaxCountElement.text(ajaxCountElement.text() - 1);
-            if (data.status === "success") {
-                window.topBar({
-                    css: { background: "#009999" },
-                    delay: 2000,
-                    message: `${data.page}: deleted`
-                });
-                removeRow(data.page);
-            } else {
-                window.topBar(`${data.page}: ${data.message}`);
-            }
-        });
-        markedAction._action.xDomain = xDomain;
-    });
-
-    window
-        .observeDom(() => $.isReady)
-        .progress(() => {
-            $("#ready-count").html(roughPercent($("input.file").length / $("#files-count").val()));
-        });
-
     $(window).on("beforeunload", () => {
         var selectedLength = $(SELECTED_CLASS).length / 2;
         if (selectedLength) {
@@ -734,18 +657,42 @@
         autoUser.val(previousVal);
     }
 
-    await $.ready;
-
     var closeButtons = $(".close-buttons");
-    var testDialog;
 
-    autoUser = $("#auto-user");
-    autoHideCheckbox = $(AUTO_DELETE_REMOVE_DELETED);
-    nowCommonsPopupOption = $(AUTO_DELETE_NC);
-    ajaxCountElement = $(".ajax-count");
-    autoMarkStart = $("#auto-mark-start");
-    autoMarkCount = $("#auto-mark-count");
-    autoDeleteCount = $("#auto-delete-count");
+    /**
+     * @jQuery
+     */
+    var autoUser = $("#auto-user");
+
+    /**
+     * @type {JQuery}
+     */
+    var autoHideCheckbox = $(AUTO_DELETE_REMOVE_DELETED);
+
+    /**
+     * @type {JQuery}
+     */
+    var nowCommonsPopupOption = $(AUTO_DELETE_NC);
+
+    /**
+     * @type {HTMLElement}
+     */
+    var ajaxCountElement = $(".ajax-count");
+
+    /**
+     * @type {JQuery}
+     */
+    var autoMarkStart = $("#auto-mark-start");
+
+    /**
+     * @type {JQuery}
+     */
+    var autoMarkCount = $("#auto-mark-count");
+
+    /**
+     * @type {JQuery}
+     */
+    var autoDeleteCount = $("#auto-delete-count");
 
     setupUploaderDropdown();
     $("#doc-load-per,.ready-count,.bottom-buttons").toggle();
@@ -804,10 +751,13 @@
         closeButtons.toggleClass("glyphicon-menu-left");
     });
 
-    testDialog = new MDialog("#auto-files-found");
+    var testDialog = new MDialog("#auto-files-found");
     testDialog.addCloseButton("#auto-delete-found-ok");
 
-    autoDeleteDialog = new MDialog(AUTO_DELETE, {
+    /**
+     * @type {MDialog}
+     */
+    var autoDeleteDialog = new MDialog(AUTO_DELETE, {
         open() {
             let length = markedAction.test().length;
             autoDeleteCount.val(length).attr("max", length);
@@ -816,7 +766,36 @@
     autoDeleteDialog.addOpenButton("#auto-delete-open");
     autoDeleteDialog.addCloseButton("#auto-delete-cancel");
 
-    markDialog = new MDialog(AUTO_MARK);
+    /**
+     * @type {MDialog}
+     */
+    var markDialog = new MDialog(AUTO_MARK);
     markDialog.addOpenButton(`${AUTO_MARK}-open`);
     markDialog.addCloseButton(`${AUTO_MARK}-cancel`);
+
+    try {
+        await xDomain.ready();
+        ajaxCountElement.text(0);
+        window.topBar({ css: { background: "#000099" }, message: "Ajax delete detected" });
+        markedAction._action = new NowCommonsDeleteAjaxAction();
+
+        //wait until document ready in case it hasn't loaded
+        nowCommonsPopupOption.closest(".table-row").hide();
+
+        xDomain.addListener(data => {
+            ajaxCountElement.text(ajaxCountElement.text() - 1);
+            if (data.status === "success") {
+                window.topBar({
+                    css: { background: "#009999" },
+                    delay: 2000,
+                    message: `${data.page}: deleted`
+                });
+                removeRow(data.page);
+            } else {
+                window.topBar(`${data.page}: ${data.message}`);
+            }
+        });
+    } catch (e) {
+        window.topBar({ css: { background: "#990000" }, message: "Ajax detection failed" });
+    }
 })(window);
