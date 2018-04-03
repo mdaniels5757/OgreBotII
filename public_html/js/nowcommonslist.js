@@ -575,7 +575,6 @@
                 row.toggleSelect(false);
             });
         }
-
         //        /**
         //         * @callback
         //         * @param {NowCommonsRow} row
