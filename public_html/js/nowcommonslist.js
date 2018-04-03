@@ -345,9 +345,10 @@
 
             if (this.confirm(rows.length)) {
                 this._run(rows);
+                rows.forEach(row => removeRow(row.localName));
             }
 
-            this.postRun(rows);
+            this.postRun();
         }
 
         /**
@@ -575,14 +576,6 @@
             });
         }
 
-        /**
-         * @param {NowCommonsRow[]} 
-         * @override
-         */
-        postRun(rows) {
-            rows.forEach(row => removeRow(row.localName));
-            super.postRun();
-        }
         //        /**
         //         * @callback
         //         * @param {NowCommonsRow} row
