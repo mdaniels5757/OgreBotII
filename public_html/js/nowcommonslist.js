@@ -345,7 +345,6 @@
 
             if (this.confirm(rows.length)) {
                 this._run(rows);
-                rows.forEach(row => removeRow(row.localName));
             }
 
             this.postRun();
@@ -573,6 +572,7 @@
             rows.forEach(row => {
                 window.open(getAutoOpenLink(row).attr("href"), "_blank");
                 row.toggleSelect(false);
+                removeRow(row.localName);
             });
         }
         //        /**
