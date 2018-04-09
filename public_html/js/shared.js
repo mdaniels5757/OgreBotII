@@ -96,7 +96,7 @@
                             }
 
                             function checkOrigin(originalEvent) {
-                                return originalEvent.origin === origin;
+                                return originalEvent.origin === xdDomain;
                             }
 
                             const checkedResolved = e => {
