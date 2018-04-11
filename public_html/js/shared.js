@@ -134,11 +134,16 @@
 
                             $window.on("message", checkedResolved);
                             /**
-                         * @private
-                         */
+	                         * @private
+	                         */
                             this.iframe = $("<iframe/>")
                                 .attr({ style: "display: none", src: `${xdDomain}/${xdPath}` })
                                 .appendTo("body");
+
+                            /**
+                             * @private
+                             */
+                            this.origin = xdDomain;
 
                             return false;
                         }
