@@ -301,7 +301,6 @@ class UserData implements Serializable {
 	
 	/**
 	 *
-	 * @throws Exception
 	 * @return void
 	 */
 	private static function marshallUserData() {
@@ -312,8 +311,10 @@ class UserData implements Serializable {
 		
 		$logger->debug("marshalling " . count($userData) . " users");
 		
-		if (file_put_contents($filename, serialize($userData), LOCK_EX) === false) {
-			throw new Exception("Can't marshall user data");
+		try {
+			file_put_contents_ensure($filename, serialize($userData), LOCK_EX);
+		} catch (FileIOException $e) {
+			$logger->error($e);
 		}
 	}
 	
