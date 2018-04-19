@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"main": "package.json",
 	"devDependencies": {
-		"google-closure-compiler": "^20180319.0.0",
+		"google-closure-compiler": "^20180402.0.0",
 		"gulp": "^3.9.1",
 		"gulp-clean-css": "^3.9.3",
 		"gulp-flatmap": "^1.0.2",
