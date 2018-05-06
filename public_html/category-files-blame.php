@@ -5,7 +5,7 @@ $log_directory = BASE_DIRECTORY . "/" .
 	 array_key_or_exception($constants, 'category_files.output_path') . "/";
 
 $all_files_in_directory = get_all_files_in_directory($log_directory);
-sort($all_files_in_directory, SORT_STRING);
+rsort($all_files_in_directory, SORT_STRING);
 
 // get all gallery names
 $all_galleries = Category_Files_Log_Entry::get_all_gallery_names(
