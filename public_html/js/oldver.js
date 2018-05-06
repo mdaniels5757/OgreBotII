@@ -1,39 +1,32 @@
 /*jslint browser: true, devel: true, sloppy: true */
-/*global $ */
+/*global $, alert, angular, encodeURIComponent */
 /**
  * @license
  * Datepicker icon is licensed as BSD by Wikibooks user Tbernhard,
  * https://commons.wikimedia.org/wiki/File:Calendar_-_2.png
  */
-(function(window, _undefined) {
-    const alert = window.alert;
-    const angular = window.angular;
-    const encodeURIComponent = window.encodeURIComponent.bind();
 
-    //process upload page
-    if (window.isAngular) {
-        angular.module("app", []).controller("process-uploads", [
-            "$scope",
-            $scope => {
-                angular.extend($scope, window.logic);
-            }
-        ]).filter("escapeTitle", () =>
-            url =>
-                encodeURIComponent(url)
-                    .replace(/%2F/g, "/")
-                    .replace(/%3A/g, ":")
-                    .replace(
-                        /%20/g,
-                        "_"
-                    )).filter("escape", () => encodeURIComponent).filter("trusted", [ "$sce", $sce => url => $sce.trustAsResourceUrl(url) ]);
-        return;
-    }
-
+//process upload page
+if (window.isAngular) {
+    angular.module("app", []).controller("process-uploads", [
+        "$scope",
+        $scope => {
+            angular.extend($scope, window.logic);
+        }
+    ]).filter("escapeTitle", () =>
+        url =>
+            encodeURIComponent(url)
+                .replace(/%2F/g, "/")
+                .replace(/%3A/g, ":")
+                .replace(
+                    /%20/g,
+                    "_"
+                )).filter("escape", () => encodeURIComponent).filter("trusted", [ "$sce", $sce => url => $sce.trustAsResourceUrl(url) ]);
+} else {
     var submitProcessUploads = $(".submit-pu");
-
-    function notReady() {
+    const notReady = () => {
         alert("Please wait while the page loads.");
-    }
+    };
 
     var interval = window.setInterval(
         () => {
@@ -157,4 +150,4 @@
             $("#ident-cookie").val(event.data.cookie);
         };
     });
-})(window);
+}
