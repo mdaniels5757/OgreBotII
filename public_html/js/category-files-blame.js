@@ -52,9 +52,10 @@
                         $scope.loading = true;
                         lastSearchedDate = selectedDate;
 
-                        allDateEntries = await $http({
+                        var response = await $http({
                             url: `category-files-blame-data.php?date=${lastSearchedDate}`
-                        }).data;
+                        });
+                        allDateEntries = response.data;
 
                         $scope.loading = false;
                         $scope.selectedDate = $scope.selectedDate || $scope.dates[0];
