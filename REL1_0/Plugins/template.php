@@ -330,7 +330,7 @@ class Template implements Abstract_Template {
 	public function __toString() {
 		$return = $this->open;
 		$return .= $this->name;
-		if (count($this->fields != 0) && is_array($this->fields)) {
+		if (is_array($this->fields)) {
 			foreach ($this->fields as $field) {
 				$return .= "|$field";
 			}
