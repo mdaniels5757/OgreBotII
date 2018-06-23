@@ -69,7 +69,7 @@ if (window.isAngular) {
         clearInterval(interval);
         $(":button").off("click", null, notReady);
 
-        if (srcSpanVal !== _undefined) {
+        if (srcSpanVal !== undefined) {
             $src.val(srcSpanVal);
             $trg.val(trgSpanVal);
         }
