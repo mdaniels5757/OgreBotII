@@ -1,7 +1,7 @@
 /*jslint browser: true, plusplus: true */
 /*global $, angular */
 
-if (!angular) {
+if (!window.angular) {
     /**
      * Opening page
      */
