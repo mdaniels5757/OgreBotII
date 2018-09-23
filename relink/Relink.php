@@ -49,7 +49,7 @@ abstract class Relink {
 	 * @return void
 	 */
 	public function run() {
-		global $logger, $constants, $wiki_interface;
+		global $logger, $wiki_interface;
 		
 		$all_same = $this->normalize($this->get_files_same_name());
 		$all_different = $this->get_files_different_name();
@@ -153,9 +153,10 @@ abstract class Relink {
 	
 	/**
 	 *
+	 * @param string $from
 	 * @param string[] $links        	
 	 */
-	private function prune_usage($from, $links) {
+	private function prune_usage(string $from, array $links) {
 		global $constants, $logger;
 		
 		$all_prefixes_to_ignore = array_key_or_empty($constants, 
@@ -191,7 +192,7 @@ abstract class Relink {
 	 * @param string $link        	
 	 * @param string $new_text        	
 	 */
-	private function edit_link($from_name, $to_name, $link, $new_text) {
+	private function edit_link(string $from_name, string $to_name, string $link, string $new_text) {
 		global $wiki_interface;
 		
 		$link_properties = array("local" => $from_name, "shared" => $to_name);
@@ -219,21 +220,19 @@ abstract class Relink {
 	}
 	/**
 	 *
-	 * @param string $file_name        	
+	 * @param string[] $file_names        	
 	 * @return array -
 	 *         index 0 : links by page (string[][])
 	 *         index 1 : links for all pages (unique)
 	 */
-	private function get_and_prune_usage($file_name) {
+	private function get_and_prune_usage(array $file_names): array {
 		global $logger, $wiki_interface;
 		
-		static $props = array('iufilterredir' => 'nonredirects');
-		
 		$i = 0;
-		$count = count($file_name);
+		$count = count($file_names);
 		$all_links = array();
 		$links_by_page = array();
-		foreach ($file_name as $name) {
+		foreach ($file_names as $name) {
 			$i++;
 			$logger->info("Getting links for $name ($i of $count)");
 			$links = $wiki_interface->get_usage($this->local, $name, USAGE_NON_REDIRECTS_ONLY);
@@ -252,7 +251,7 @@ abstract class Relink {
 	 * @param array $templates        	
 	 * @return bool
 	 */
-	private function has_keep_local($imageinfo) {
+	private function has_keep_local(array $imageinfo): bool {
 		global $constants;
 		static $keep_local_templates = null;
 		
@@ -281,7 +280,7 @@ abstract class Relink {
 	 * @param array $shared        	
 	 * @return bool
 	 */
-	private function is_different_mime($local, $shared) {
+	private function is_different_mime(array $local, array $shared): bool {
 		$local_mime = array_key_or_exception($local, "imageinfo", 0, "mime");
 		$shared_mime = array_key_or_exception($shared, "imageinfo", 0, "mime");
 		return $local_mime !== $shared_mime;
@@ -292,7 +291,7 @@ abstract class Relink {
 	 * @param string[] $file_names        	
 	 * @return string[]
 	 */
-	private function normalize($file_names) {
+	private function normalize(array $file_names): array {
 		global $wiki_interface;
 		
 		$normalized = $wiki_interface->query_generic($this->shared, "titles", $file_names, array());
@@ -301,12 +300,12 @@ abstract class Relink {
 	
 	/**
 	 *
-	 * @param string[] $redirects        	
-	 * @param array $local_info        	
-	 * @param array $shared_info        	
+	 * @param string[]|null $redirects        	
+	 * @param string $from        	
+	 * @param string $to        	
 	 * @return boolean if the edits were made without error
 	 */
-	private function relink_redirects($redirects, $from, $to) {
+	private function relink_redirects(?array $redirects, string $from, string $to): bool {
 		global $logger, $wiki_interface;
 		
 		$global_success = true;
@@ -365,7 +364,8 @@ abstract class Relink {
 	 * @param bool $redirect
 	 * @return bool if all links were successfully updated
 	 */
-	private function relink_all($from, $to, $links, $previous_count = null, $redirect = false) {
+	private function relink_all(string $from, string $to, array $links, int $previous_count = null, 
+			bool $redirect = false): bool {
 		global $logger, $validator, $wiki_interface;
 		
 		$validator->validate_arg($from, "string");
@@ -463,9 +463,9 @@ abstract class Relink {
 	 * @throws Exception
 	 * @return string
 	 */
-	protected function relink_text($page_name, $page_text, $str_old_image, $str_new_image,
-			$test_conflicts) {
-		global $MB_WS_RE, $MB_WS_RE, $MB_WS_RE_OPT, $logger, $validator, $wiki_interface;
+	protected function relink_text(string $page_name, string $page_text, string $str_old_image, 
+			string $str_new_image, bool $test_conflicts) : string {
+		global $MB_WS_RE, $MB_WS_RE, $MB_WS_RE_OPT, $validator, $wiki_interface;
 		
 		/* pre-function assertions */
 		$validator->validate_arg($page_name, "string");
@@ -757,8 +757,8 @@ abstract class Relink {
 	
 	/**
 	 * 
-	 * @param string $str
-	 * @return string
+	 * @param string|string[] $str
+	 * @return string|string[]
 	 */
 	protected static final function remove_namespace($str) {
 		return preg_replace("/^.+?\:(.+)$/", "$1", $str);
@@ -771,7 +771,8 @@ abstract class Relink {
 	 * @param string[] $images_names_underscore        	
 	 * @return bool[]
 	 */
-	protected final function test_image_inclusion($page_name, $page_text, $images_names_underscore) {
+	protected final function test_image_inclusion(string $page_name, string $page_text, 
+			array $images_names_underscore): array {
 		global $wiki_interface;
 		
 		$test_old_image_inclusion = $wiki_interface->api_query($this->local, 
@@ -787,18 +788,19 @@ abstract class Relink {
 		
 		return $return;
 	}
+	
 	/**
 	 *
 	 * @param string $from        	
 	 * @param boolean $same        	
 	 */
-	protected abstract function post_delink($from, $same);
+	protected abstract function post_delink(string $from, bool $same);
 	
 	/**
 	 *
 	 * @return string[] - array of file names without the namespace
 	 */
-	protected abstract function get_files_same_name();
+	protected abstract function get_files_same_name(): array;
 	
 	/**
 	 *
@@ -806,7 +808,7 @@ abstract class Relink {
 	 *         without the namespace. The value is the destination file
 	 *         without the namespace
 	 */
-	protected abstract function get_files_different_name();
+	protected abstract function get_files_different_name(): array;
 	
 	/**
 	 * Override as needed
@@ -825,7 +827,7 @@ abstract class Relink {
 	 * 
 	 * @return boolean
 	 */
-	protected function is_verify_mime() {
+	protected function is_verify_mime(): bool {
 		return true;
 	}
 	
@@ -833,7 +835,7 @@ abstract class Relink {
 	 *
 	 * @return Wiki
 	 */
-	protected function get_local() {
+	protected function get_local(): Wiki {
 		return $this->local;
 	}
 	
@@ -841,7 +843,7 @@ abstract class Relink {
 	 *
 	 * @return array
 	 */
-	public function get_properties() {
+	public function get_properties(): array {
 		return $this->properties;
 	}
 	
@@ -849,14 +851,14 @@ abstract class Relink {
 	 *
 	 * @return Wiki
 	 */
-	protected function get_shared() {
+	protected function get_shared(): Wiki {
 		return $this->shared;
 	}
 	
 	/**
 	 * @return bool
 	 */
-	public function get_test_conflicts() {
+	public function get_test_conflicts(): bool {
 		return $this->test_conflicts;
 	}
 	
@@ -865,7 +867,7 @@ abstract class Relink {
 	 * @param bool $test_conflicts
 	 * @return bool
 	 */
-	public function set_test_conflicts($test_conflicts) {
+	public function set_test_conflicts(bool $test_conflicts) {
 		$this->test_conflicts = $test_conflicts;
 	}
 }

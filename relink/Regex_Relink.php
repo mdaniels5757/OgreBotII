@@ -66,7 +66,8 @@ class Regex_Relink extends Relink {
 	 *
 	 * @see Relink::relink_text()
 	 */
-	protected function relink_text($page_name, $page_text, $str_old_image, $str_new_image, $ignored) {
+	protected function relink_text(string $page_name, string $page_text, string $str_old_image,
+			string $str_new_image, bool $ignored): string {
 		$length = preg_match_all($this->search, $page_text, $matches, PREG_SET_ORDER);
 		
 		if ($length === 0) {
@@ -94,7 +95,7 @@ class Regex_Relink extends Relink {
 	 *
 	 * @see Relink::post_delink()
 	 */
-	protected function post_delink($from, $same) {
+	protected function post_delink(string $from, bool $same) {
 		// do nothing
 	}
 	
@@ -103,7 +104,7 @@ class Regex_Relink extends Relink {
 	 *
 	 * @see Relink::get_files_same_name()
 	 */
-	protected function get_files_same_name() {
+	protected function get_files_same_name(): array {
 		// only delinking different name
 		return [];
 	}
@@ -113,7 +114,7 @@ class Regex_Relink extends Relink {
 	 *
 	 * @see Relink::get_files_different_name()
 	 */
-	protected function get_files_different_name() {
+	protected function get_files_different_name(): array {
 		return ["File:$this->from" => "File:$this->to"];
 	}
 }

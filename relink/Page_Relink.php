@@ -8,16 +8,16 @@ class Page_Relink extends Relink {
 	 */
 	private $pages;
 	
-	protected function post_delink($from, $same) {
+	protected function post_delink(string $from, bool $same) {
 		//do nothing
 	}
 	
-	protected function get_files_same_name() {
+	protected function get_files_same_name(): array {
 		//only delinking different name
 		return array();
 	}
 	
-	protected function get_files_different_name() {
+	protected function get_files_different_name(): array {
 		return $this->pages;
 	}
 	
@@ -26,7 +26,7 @@ class Page_Relink extends Relink {
 	 * @param string[][] $pages
 	 * @return void
 	 */	
-	public function set_pages($pages) {
+	public function set_pages(array $pages) {
 		$this->pages = $pages;
 	}
 	
@@ -36,7 +36,7 @@ class Page_Relink extends Relink {
 	 * @param bool $ignore_first_parameter DEFAULT true
 	 * @return void
 	 */
-	public function set_pages_from_unparsed_command_line($lines, $ignore_first_parameter = true) {
+	public function set_pages_from_unparsed_command_line(array $lines, bool $ignore_first_parameter = true) {
 		if ($ignore_first_parameter) {
 			array_shift($lines);
 		}
@@ -48,7 +48,7 @@ class Page_Relink extends Relink {
 		});
 	}
 	
-	private function decode_pagename($page) {
+	private function decode_pagename(string $page): string {
 		return urldecode($page);
 	}
 }

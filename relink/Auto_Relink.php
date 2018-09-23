@@ -36,7 +36,7 @@ class Auto_Relink extends Relink {
 	 * @see Relink::handle_failure()
 	 */
 	protected function handle_failure(Relink_Failure $failure) {
-		global $wiki_interface;
+		global $logger, $wiki_interface;
 		
 		// log the failure
 		parent::handle_failure($failure);
@@ -74,7 +74,7 @@ class Auto_Relink extends Relink {
 	 * (non-PHPdoc)
 	 * @see Relink::post_delink()
 	 */
-	protected function post_delink($title, $same) {
+	protected function post_delink(string $title, bool $same) {
 		global $logger, $wiki_interface;
 		
 		static $edit_summary = null;
@@ -112,7 +112,7 @@ class Auto_Relink extends Relink {
 	 * (non-PHPdoc)
 	 * @see Relink::get_files_same_name()
 	 */
-	protected function get_files_same_name() {
+	protected function get_files_same_name(): array {
 		$this->init();
 		return $this->same_files;
 	}
@@ -121,7 +121,7 @@ class Auto_Relink extends Relink {
 	 * (non-PHPdoc)
 	 * @see Relink::get_files_different_name()
 	 */
-	protected function get_files_different_name() {
+	protected function get_files_different_name(): array {
 		$this->init();
 		return $this->different_files;
 	}
@@ -243,7 +243,7 @@ class Auto_Relink extends Relink {
 	 * 
 	 * @see Relink::is_verify_mime()
 	 */
-	protected function is_verify_mime() {
+	protected function is_verify_mime(): bool {
 		return true;
 	}
 	
@@ -251,7 +251,7 @@ class Auto_Relink extends Relink {
 	 *
 	 * @return bool
 	 */
-	public function get_write_warnings() {
+	public function get_write_warnings(): bool {
 		return $this->write_warnings;
 	}
 	
@@ -260,7 +260,7 @@ class Auto_Relink extends Relink {
 	 * @param bool $write_warnings
 	 * @return void
 	 */
-	public function set_write_warnings($write_warnings) {
+	public function set_write_warnings(bool $write_warnings) {
 		global $validator;
 		$validator->validate_arg($write_warnings, "bool");
 	

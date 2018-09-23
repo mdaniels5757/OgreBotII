@@ -2,6 +2,7 @@
 //--type=regex "--from=Kit right arm blacklowerthin.png" "--search=/_ra\d?\s*\=\s*_blacklowerthin\b/" --replacement="$0_2"
 //--type=regex "--from=Kit right arm blacklowerthin.png" "--search=/\|\s*arm\s*\|\s*_blacklowerthin\b/" --replacement="$0_2"
 require_once __DIR__ . "/../base/bootstrap.php";
+global $env, $logger, $wiki_interface;
 
 $argv = $env->load_command_line_args();
 $type = find_command_line_arg($argv, "type", false, true, "auto");
