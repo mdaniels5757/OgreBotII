@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . "/../base/bootstrap.php";
+global $argv, $logger, $wiki_interface;
 
 $starttime = array_key_exists(1, $argv)?($argv[1]):
 	date('Ymd235959', time()-SECONDS_PER_DAY*2-date("Z"));

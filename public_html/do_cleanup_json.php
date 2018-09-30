@@ -1,6 +1,7 @@
 <?php 
 
 require_once __DIR__ . "/../base/bootstrap.php";
+global $env, $logger;
 
 $POST = $env->get_request_args();
 //$POST['image'] = "File:Hbg fixed.jpg";

@@ -2,6 +2,7 @@
 $all_maps = array_keys(Latitude_Longitude_Svg::load());
 sort($all_maps);
 $cpd = new Project_Data("commons.wikimedia");
+global $constants;
 
 ?><div class="sharedHeader">
 	<div>

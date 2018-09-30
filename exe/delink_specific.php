@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
+global $argv, $logger, $validator, $wiki_interface;
 
 
 /* errorcode variable is just to keep myself honest: assert I don't commit if calling function has outstanding errors */
@@ -47,7 +48,7 @@ $imagename string
 $re string the regular expression for which to search.
 $replacer, what to replace the regular expression with */
 function replace_image_special_regex($imagename, $re, $replacer) {
-	global $en, $co, $validator, $wiki_interface;
+	global $en, $co, $logger, $validator, $wiki_interface;
 	
 	$img = $wiki_interface->new_image($en, $imagename);
 	$imgpg = &$img->get_page();

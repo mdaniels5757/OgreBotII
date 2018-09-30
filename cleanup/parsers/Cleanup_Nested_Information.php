@@ -57,6 +57,8 @@ class Cleanup_Nested_Information implements Cleanup_Module {
 	 * @see Cleanup_Module::cleanup()
 	 */
 	public function cleanup(Cleanup_Instance $ci) {
+		global $logger;
+		
 		$infinite_loop_check = 0;
 		while (preg_match("/\{\{\s*[Ii]nformation\s*\|[\s\S]*\{\{\s*[Ii]nformation\s*\|/u", 
 			$ci->get_text()) && $t = $ci->get_template(Cleanup_Shared::INFORMATION)) {

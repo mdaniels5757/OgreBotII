@@ -1,6 +1,7 @@
 <?php 
 
 require_once __DIR__ . "/../base/bootstrap.php";
+global $env, $logger;
 
 class Do_Cleanup_Json_Object_Instance {
 	/**

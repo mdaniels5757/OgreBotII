@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
+global $env, $wiki_interface;
 
 try {
 	$argv = $env->load_command_line_args();

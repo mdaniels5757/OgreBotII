@@ -74,7 +74,7 @@ class Template implements Abstract_Template {
 	 * @param int $offset Where to start parsing the document in looking for the template Magog 2012-12-24
 	 */
 	public function __construct($text,$name,$offset=0, $ignore_fieldname = false) {
-		global $logger, $validator;
+		global $logger;
 		
 		$text = str_replace(["{{", "}}", "{", "}", "%%MTOBEGINBRACKETS%%", 
 			"%%MTOENDBRACKETS%%"], 

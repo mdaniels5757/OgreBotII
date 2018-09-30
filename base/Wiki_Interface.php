@@ -82,7 +82,7 @@ class Wiki_Interface {
 	 * @return mixed
 	 */
 	public function run_mediawiki_query($callback, Wiki $wiki = null) {
-		global $logger, $constants, $validator;
+		global $logger, $validator;
 		
 		$validator->validate_arg($callback, "function");
 		$validator->validate_arg($wiki, "Wiki", true);
@@ -173,7 +173,6 @@ class Wiki_Interface {
 	 * @return Page_Text_Response|Page_Text_Response[]
 	 */
 	public function get_text(Wiki $wiki, $page_names, $follow_redirect = true) {
-		global $validator;
 		
 		$array = is_array($page_names);
 		if (!$array) {
@@ -1425,7 +1424,7 @@ class Wiki_Interface {
 	 * @param array $dates        	
 	 */
 	function get_recent_uploads(Wiki &$wiki, $starttime, $endtime, &$files, &$dates) {
-		global $logger;
+		global $logger, $validator;
 		
 		$files = [];
 		$dates = [];

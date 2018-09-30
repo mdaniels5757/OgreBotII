@@ -28,6 +28,7 @@ class Cleanup_Add_Source implements Cleanup_Module {
 	 * @see Cleanup_Module::cleanup()
 	 */
 	public function cleanup(Cleanup_Instance $ci) {
+		global $logger, $validator;
 	// add source field in {{information}} template if it's not there
 		// per http://commons.wikimedia.org/w/index.php?oldid=131405179#cleanup.js
 		$iterator = new Template_Iterator($text, $this->template_factory);

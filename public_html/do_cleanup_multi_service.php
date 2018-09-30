@@ -1,5 +1,6 @@
 <?php 
 require_once __DIR__ . "/../base/bootstrap.php";
+global $logger, $wiki_interface;
 
 try {
 	ini_set("max_execution_time", 60 * SECONDS_PER_MINUTE);

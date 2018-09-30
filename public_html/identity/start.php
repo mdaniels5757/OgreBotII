@@ -1,6 +1,7 @@
 <?php
 define("LOGGER_NAME", "ident-start");
 require_once __DIR__ . "/../../base/bootstrap.php";
+global $constants, $string_utils;
 
 $username = (new Identity_Verifier())->get_username();
 

@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . "/../../base/bootstrap.php";
 
+global $env;
+
 /**
  * 
  * @author magog

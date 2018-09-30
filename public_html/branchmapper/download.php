@@ -1,6 +1,7 @@
 <?php
 define("LOGGER_NAME", "branchmapper-download");
 require_once __DIR__ . "/../../base/bootstrap.php";
+global $env, $validator;
 
 $branchmapper = null;
 $data_blob = null;

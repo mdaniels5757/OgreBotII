@@ -126,7 +126,7 @@ class Fileinfo_Web_Logic {
 	 * @return void
 	 */
 	private function fileinfoLogicInternal() {
-		global $env, $MB_WS_RE_OPT, $environment, $logger, $wiki_interface;
+		global $constants, $env, $MB_WS_RE_OPT, $environment, $logger, $wiki_interface;
 		
 		$POST = $env->get_request_args();
 		$this->all_projects = get_all_project_names();

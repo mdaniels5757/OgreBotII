@@ -1,5 +1,6 @@
 <?php 
 require_once __DIR__ . "/../base/bootstrap.php";
+global $validator, $wiki_interface;
 
 $http_io = new Http_Io();
 $http_io->ob_start();

@@ -1,6 +1,7 @@
 <?php
 $start = microtime();
 require_once __DIR__ . "/../base/bootstrap.php";
+global $logger;
 
 try {
 	$ws = new Web_Script(@$_REQUEST[Web_Script::WEB_ARGUMENT]);

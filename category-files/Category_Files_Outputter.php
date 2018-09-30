@@ -97,7 +97,7 @@ class Category_Files_Outputter {
 	 * @return void
 	 */
 	public function run($start = null, $end = null) {
-		global $logger, $validator, $wiki_interface;
+		global $constants, $logger, $validator, $wiki_interface;
 		
 		if ($start === null) {
 			$start = date('Ymd000000', time() - SECONDS_PER_DAY);

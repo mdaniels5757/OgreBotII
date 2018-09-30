@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
 
+global $env, $logger;
+
 $argv = $env->load_command_line_args();
 $project_name = find_command_line_arg($argv, "project", false, false, "en.wikipedia");
 $license_cache_refresh = find_command_line_arg($argv, "nocache", false, false) !== null;

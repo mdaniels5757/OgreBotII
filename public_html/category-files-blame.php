@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
+global $constants, $string_utils;
 
 $log_directory = BASE_DIRECTORY . "/" .
 	 array_key_or_exception($constants, 'category_files.output_path') . "/";

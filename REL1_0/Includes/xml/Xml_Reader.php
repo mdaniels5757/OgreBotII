@@ -17,9 +17,7 @@ class Xml_Reader {
 	 *         will not be set if it is a self-closing tag.
 	 *        
 	 */
-	public static final function simple_parse_element($text, $offset = 0) {
-		global $logger;
-		
+	public static final function simple_parse_element($text, $offset = 0) {		
 		$xml_type = new Xml_Type();
 		
 		$text = substr($text, $offset);

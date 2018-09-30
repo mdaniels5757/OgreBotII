@@ -1,6 +1,7 @@
 <?php
 echo "Step 0: Initializing...";
 require_once __DIR__ . "/base/bootstrap.php";
+global $wiki_interface;
 
 /* grab as much information about files as we can */
 debug_print(" done\nStep 1: Gathering list of talk pages...");

@@ -68,9 +68,7 @@ class File_System_Identity_Dao implements Identity_Dao {
 	 *
 	 * @see Identity_Dao::get()
 	 */
-	public function get($cookie) {
-		global $logger;
-		
+	public function get($cookie) {		
 		$cookie_data = $this->get_cookie_data($cookie);
 		
 		if ($cookie_data === null) {

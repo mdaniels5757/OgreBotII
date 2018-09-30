@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
+global $env;
 
 /* parse command line variables */
 $argv = $env->load_command_line_args();

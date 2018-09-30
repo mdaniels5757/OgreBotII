@@ -625,7 +625,7 @@ function replace_named_variables_defaults($subject, $moreVariables = []) {
  * @return string
  */
 function replace_named_variables($subject, $variables, $keep_token = true) {
-	global $logger, $validator;
+	global $validator;
 	
 	$validator->validate_arg($subject, "string");
 	$validator->validate_arg($variables, "array");

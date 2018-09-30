@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
+global $argv, $logger, $validator, $wiki_interface;
 
 $ignored_cats = array("Category:Wikipedia files with a different name on Wikimedia Commons as of unknown date",
 		"Category:Wikipedia files with the same name on Wikimedia Commons as of unknown date",

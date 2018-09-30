@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
+global $env, $logger;
 
 $argv = $env->load_command_line_args(true);
 $download = find_command_line_arg($argv, "download");

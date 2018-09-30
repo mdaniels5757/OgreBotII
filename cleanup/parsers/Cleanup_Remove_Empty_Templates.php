@@ -44,7 +44,6 @@ class Cleanup_Remove_Empty_Templates implements Cleanup_Module {
 	 * @return string
 	 */
 	private function get_regexified_templates(array $templates, $full_regex_string) {
-		global $logger, $validator;
 	
 		$regex_string = implode("|", array_map(function($template) {
 			return regexify_template($template);

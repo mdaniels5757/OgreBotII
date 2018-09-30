@@ -66,9 +66,7 @@ abstract class FCC_Database_Serializer {
 					// find the most powerful strength of each $new_station_coords
 					$instance->post_process_all($new_station_coords);
 					$new_station_coords = array_map_filter($new_station_coords, 
-						function (array $station_coords) {
-							global $logger;
-							
+						function (array $station_coords) {							
 							// average together the stations by signal strength
 							$total_strength = 0;
 							$total_lat = 0;

@@ -75,7 +75,7 @@ class Service_Call {
 	 * @return void
 	 */
 	public static function call_multiple($service_calls, $timeout = self::DEFAULT_TIMEOUT) {
-		global $logger, $validator;
+		global $logger;
 		$logger->debug("Service_Call:call_multiple(" . count($service_calls) . ")");
 		
 		array_walk($service_calls, function($service_call) {

@@ -78,7 +78,7 @@ class Cleanup_Category extends Abstract_Cleanup {
 	 * @see Abstract_Cleanup::get_files()
 	 */
 	protected function get_files() {
-		global $validator, $wiki_interface;
+		global $wiki_interface;
 		
 		$files = $wiki_interface->new_category_traverse($this->wiki, $this->category, $this->subcats, 6, 
 			$this->get_limit());

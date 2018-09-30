@@ -183,7 +183,7 @@ abstract class Now_Commons_List {
 	 * @return Now_Commons_Image[]
 	 */
 	private function get_objects() {
-		global $logger, $validator, $wiki_interface;
+		global $logger, $wiki_interface;
 		
 		$logger->debug("Now_Commons_List::get_objects()");
 		

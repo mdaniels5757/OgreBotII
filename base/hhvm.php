@@ -12,9 +12,7 @@ if (!function_exists("cal_days_in_month")) {
 	 * @return int|false
 	 * @throws IllegalArgumentException if $calendar isn't CAL_GREGORIAN
 	 */
-	function cal_days_in_month($calendar, $month, $year) {
-		global $logger;
-		
+	function cal_days_in_month($calendar, $month, $year) {		
 		logger_or_stderr(Level::TRACE, "cal_days_in_month($calendar, $month, $year)");
 		if ($calendar !== CAL_GREGORIAN) {
 			throw new IllegalArgumentException(

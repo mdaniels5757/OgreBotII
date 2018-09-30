@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
 
+global $env;
 $http_io = new Http_Io();
 $http_io->ob_start();
 

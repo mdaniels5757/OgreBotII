@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
+global $env, $logger;
 
 $argv = array_slice($env->load_command_line_args(), 1);
 $repetitions = find_command_line_arg($argv, "repeat");

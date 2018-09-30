@@ -1,6 +1,7 @@
 <?php
 define("LOGGER_NAME", "ident-verify");
 require_once __DIR__ . "/../../base/bootstrap.php";
+global $logger;
 
 $verifier = new Identity_Verifier();
 

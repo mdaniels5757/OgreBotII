@@ -38,9 +38,7 @@ class Http_Io {
 	 * @param string[] $deferred
 	 * @return void
 	 */
-	public function transcludeScript($pageName, $type, $directory = null, array $options = []) {
-		global $environment, $logger, $validator;
-		
+	public function transcludeScript($pageName, $type, $directory = null, array $options = []) {		
 		if (is_array($type)) {
 			array_walk($type, function($type) use ($pageName, $directory, $options){
 				$this->transcludeScript($pageName, $type, $directory, $options);
@@ -94,7 +92,7 @@ class Http_Io {
 	 * @throws IllegalStateException
 	 */
 	public function transcludeScriptRemote($key) {
-		global $constants, $validator;
+		global $constants;
 
 		if (is_array($key)) {
 			array_walk($key, [$this, "transcludeScriptRemote"]);

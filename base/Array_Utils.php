@@ -584,9 +584,7 @@ function array_map_filter(array $array, $map_callback, $filter_callback = null) 
  * @throws AssertionFailureException if the keys do not perfectly map to the keys of $array
  * @return array
  */
-function &array_sort_custom(array $array, array $keys) {
-	global $validator;
-	
+function &array_sort_custom(array $array, array $keys) {	
 	$new_array = [];
 	foreach ($keys as $key) {
 		if (!isset($array[$key])) {
@@ -616,7 +614,6 @@ function array_merge_all(array $array) {
  * @throws Array_Merge_Conflict_Exception
  */
 function array_merge_no_conflicts(array $array) {
-	global $validator;
 	
 	$total_count = array_sum(
 		array_map(function ($sub_array) {

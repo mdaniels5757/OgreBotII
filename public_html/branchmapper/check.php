@@ -1,6 +1,7 @@
 <?php
 define("LOGGER_NAME", "branchmapper-check");
 require_once __DIR__ . "/../../base/bootstrap.php";
+global $logger;
 
 try {
 	$which = (new Web_Branch_Map_Factory())->create()->which();

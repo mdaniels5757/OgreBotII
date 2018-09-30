@@ -67,7 +67,7 @@ class UploadReportWriter {
 	 * @return string
 	 */
 	private function getUploadReport($count) {
-		global $logger, $messages, $validator, $wiki_interface;
+		global $logger, $messages, $wiki_interface;
 		
 		// need LOTS of memory for this operation.
 		$old_memory = ini_get("memory_limit");
@@ -224,7 +224,7 @@ class UploadReportWriter {
 	 * @throws EditConflictException        	
 	 */
 	public function loadAndWrite($update) {
-		global $constants, $logger, $messages, $wiki_interface;
+		global $logger, $messages, $wiki_interface;
 		
 		$indexPageName = $this->getIndexPageName();
 		$dateText = $this->getDateText();

@@ -75,7 +75,6 @@ class Cleanup_License_Migration implements Cleanup_Module {
 	 */
 	private function license_migration_cleanup_internal(Cleanup_Instance $ci, $migration_text, 
 		$migration_template_text) {
-		global $validator;
 		
 		$migration_template = $ci->get_template($migration_template_text);
 		

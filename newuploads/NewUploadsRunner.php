@@ -195,7 +195,7 @@ class NewUploadsRunner {
 	 * @return string
 	 */
 	private function getText(&$upload, $showUserName) {
-		global $logger, $validator;
+		global $validator;
 		
 		$validator->validate_arg($upload, "array");
 		$validator->validate_arg($showUserName, "bool");

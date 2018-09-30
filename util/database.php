@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
+global $logger, $validator;
 
 class DatabaseUtils {
 

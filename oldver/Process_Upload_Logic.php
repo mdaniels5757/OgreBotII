@@ -324,6 +324,7 @@ class Process_Upload_Logic {
 	 * @throws Process_Uploads_Exception
 	 */
 	private function download_files() {
+		global $validator;
 		
 		$process_id = getmypid();
 		$comtitle = $this->trg->get_page()->get_title(false);

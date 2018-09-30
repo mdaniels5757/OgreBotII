@@ -107,8 +107,9 @@ class Cached_Lazy_Load_Storage implements Lazy_Load_Storage {
 	/**
 	 * @return void
 	 */
-	private function lazy_load() {	
-		$validator = Environment::get()->get_validator();
+	private function lazy_load() {
+		global $logger;
+		
 		$file_content = file_exists($this->file) ? file_get_contents($this->file) : null;
 			
 		if ($file_content) {

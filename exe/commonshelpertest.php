@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
+global $env, $logger;
 
 ini_set('xdebug.var_display_max_data', -1);
 

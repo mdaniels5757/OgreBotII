@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__. "/../base/bootstrap.php";
 
+global $env, $logger;
+
 $argv = $env->load_command_line_args(true);
 $map = find_command_line_arg($argv, "map");
 $svgs = Latitude_Longitude_Svg::load();

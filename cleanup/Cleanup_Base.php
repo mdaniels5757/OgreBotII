@@ -131,7 +131,7 @@ class Cleanup_Base {
 	 * @return Cleanup_Instance
 	 */
 	private function do_cleanup($text, $uploadtime, $human) {
-		global $logger, $validator;
+		global $logger;
 		
 		/**
 		 * Isolate Comments and nowikis, which we shouldn't touch

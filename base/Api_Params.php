@@ -187,7 +187,7 @@ class Api_Params {
 	 * @return int
 	 */
 	private static function get_limit(Wiki $wiki) {
-		global $validator, $wiki_interface;
+		global $wiki_interface;
 		
 		$hash = $wiki->get_hash();
 		if (self::$limits[$hash] === null) {

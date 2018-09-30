@@ -31,9 +31,7 @@ abstract class Unparsed_Xml_Element_Type extends Unparsed_Element_Type {
 	 * 
 	 * @see Unparsed_Element_Type::find_close()
 	 */
-	public final function find_close(&$text, $start) {
-		global $logger;
-		
+	public final function find_close(&$text, $start) {		
 		$xml_type = Xml_Reader::simple_parse_element($text, $start);
 		
 		if (strcasecmp($xml_type->open_tag, $this->tag) !== 0) {

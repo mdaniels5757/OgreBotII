@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
+global $constants;
 
 $f = new Fileinfo_Web_Logic();
 $f->load();

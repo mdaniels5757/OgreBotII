@@ -13,7 +13,7 @@ class Command_Line_Cron_Date_Factory extends Cron_Date_Factory {
 	 * @see Cron_Date_Factory::get_range()
 	 */
 	protected function get_range() {
-		global $env, $logger;
+		global $env;
 		
 		$post = $env->load_command_line_args();
 		$command_line_range = find_command_line_arg($post, "interval");

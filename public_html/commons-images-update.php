@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
+global $env, $logger;
 
 //this script takes quite a long time to run
 ini_set("max_execution_time", 20 * SECONDS_PER_MINUTE);

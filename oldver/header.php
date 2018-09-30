@@ -1,4 +1,6 @@
-<div class="sharedHeader">
+<?php 
+global $constants, $msg;
+?><div class="sharedHeader">
 	<div>
 		<div class="toolTitle">
 			<a href="oldver.php"><?= $msg['header.title'] ?></a>

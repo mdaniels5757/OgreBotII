@@ -1,5 +1,6 @@
 <?php
 include_once(__DIR__ . "/base/bootstrap.php");
+global $validator, $wiki_interface;
 
 function relink($text)
 {

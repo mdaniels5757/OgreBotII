@@ -1,6 +1,7 @@
 <?php 
 
 require_once __DIR__ . "/../base/bootstrap.php";
+global $validator;
 
 $validator->assert(cal_days_in_month(CAL_GREGORIAN, 2, 1900) === 28);
 $validator->assert(cal_days_in_month(CAL_GREGORIAN, 2, 2100) === 28);

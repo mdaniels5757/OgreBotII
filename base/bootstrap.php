@@ -16,7 +16,10 @@ require_once __DIR__ . "/../REL1_0/Init.php";
 $env = Environment::init();
 /* for autosuggest not picking up globals in PDT */
 if (false) {
-   $logger = $env->get_logger();
-   $validator = $env->get_validator();
-   $wiki_interface = $env->get_wiki_interface();
+	$argv = [];
+	$constants = [];
+	$logger = $env->get_logger ();
+	$string_utils = new String_Utils ();
+	$validator = $env->get_validator ();
+	$wiki_interface = $env->get_wiki_interface ();
 }

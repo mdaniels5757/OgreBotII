@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
 
+global $env;
 $post = $env->get_request_args();
 
 $in = @$post['in'];
