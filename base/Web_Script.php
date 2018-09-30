@@ -12,9 +12,9 @@ class Web_Script {
 	
 	/**
 	 * 
-	 * @var string
+	 * @var string[]
 	 */
-	private $file;
+	private $files;
 	
 	/**
 	 * 
@@ -24,51 +24,55 @@ class Web_Script {
 	
 	/**
 	 * 
-	 * @param string $script
+	 * @param string[] $scripts
 	 * @throws IllegalArgumentException
 	 * @throws CantOpenFileException
 	 */
-	public function __construct($script) {
-		if (!$script) {
-			throw new IllegalArgumentException("Script not specified.");
+	public function __construct(array $scripts) {		
+		$extensions = array_unique(preg_replace("/^[\w.-]+\./", "", $scripts, 1));
+		if (count($extensions) !== 1) {
+			throw new IllegalArgumentException("Conflicting script types.");
 		}
 		
-		preg_match("/^[\w.-]+\.(\w+)$/", $script, $match);
-		$this->type = @$match[1];
-		if ($this->type[1] === "css" && $this->type[1] === "js") {
-			throw new IllegalArgumentException("Illegal script name: $script.");
+		$this->type = $extensions[0];
+		if ($this->type !== "js" && $this->type !== "css") {
+			throw new IllegalArgumentException("Illegal script name: " . print_r($scripts, true));
 		}
+		$this->files = str_prepend($scripts, BASE_DIRECTORY . DIRECTORY_SEPARATOR . self::DIRECTORY . 
+				DIRECTORY_SEPARATOR . $this->type . DIRECTORY_SEPARATOR);
 		
-		$this->file = str_replace("/", DIRECTORY_SEPARATOR, BASE_DIRECTORY . "/" . self::DIRECTORY
-				. "/$this->type/$script");
-				
-		
-		if (!file_exists($this->file)) {
-			throw new CantOpenFileException("Script not found: $this->file");
+		foreach ($this->files as $file) {
+			if (!file_exists($file)) {
+				throw new CantOpenFileException("Script not found: $file");
+			}
 		}
 	}
 	
 	/**
 	 * 
-	 * @return number
+	 * @return int
 	 */
-	public function get_last_modified() {
-		return filemtime($this->file);
-	}
-	
-	/**
-	 * 
-	 * @return string
-	 */
-	public function get_text() {
-		return file_get_contents($this->file);
+	public function get_last_modified(): int {
+		return max(array_map(function(string $file): int {
+			return filemtime($file);
+		}, $this->files));
 	}
 	
 	/**
 	 * 
 	 * @return string
 	 */
-	public function get_type() {
+	public function get_text(): string {
+		return join("\n", array_map(function(string $file){
+			return file_get_contents($file);
+		}, $this->files));
+	}
+	
+	/**
+	 * 
+	 * @return string
+	 */
+	public function get_type(): string {
 		return $this->type;
 	}
 }

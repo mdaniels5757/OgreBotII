@@ -3,16 +3,7 @@ $start = microtime();
 require_once __DIR__ . "/../base/bootstrap.php";
 global $logger;
 
-try {
-	$ws = new Web_Script(@$_REQUEST[Web_Script::WEB_ARGUMENT]);
-} catch (BaseException $e) {
-	//bad filename
-	if ($e instanceof CantOpenFileException || $e instanceof IllegalArgumentException) {
-		$logger->error($e);
-		die();
-	}
-	throw $e;
-}
+$ws = new Web_Script(preg_split("/\\|/", @$_REQUEST[Web_Script::WEB_ARGUMENT]));
 $about_one_year = gmdate('D, d M Y H:i:s \G\M\T', time() + SECONDS_PER_DAY * 365);
 
 

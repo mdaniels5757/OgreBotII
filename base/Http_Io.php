@@ -46,30 +46,30 @@ class Http_Io {
 			return;
 		}
 		
-		if (is_array($pageName)) {
-			array_walk($pageName, function($pageName) use ($type, $directory, $options){
-				$this->transcludeScript($pageName, $type, $directory, $options);
-			});
-			return;
+		if (!is_array($pageName)) {
+			$pageName = [$pageName];
 		}
 
-		$full_page_name = "$pageName." . ($this->minify ? "min." : "") . $type;
-		$ws = new Web_Script($full_page_name);
+		$full_page_names = array_map(function(string $pageName) use ($type) : string {
+			return "$pageName." . ($this->minify ? "min." : "") . $type;
+		}, $pageName);
+		$ws = new Web_Script($full_page_names);
 		if ($this->minify) {
-			$url = "{$directory}load.php?s=$full_page_name&";
+			$urls = ["{$directory}load.php?s=" . join("%7C", $full_page_names) . "&"];
 		} else {
-			$url = "{$directory}$type/$full_page_name?";
+			$urls = str_append(str_prepend($full_page_names, "$directory$type/"), "?");
 		}
 		
-		$url .= "t={$ws->get_last_modified()}";
-		if ($type === "js") {
-			$text = "<script type=\"text/javascript\" src=\"$url\" " . join(" ", $options) .
-				 "></script>";
-		} else {
-			$text = "<link rel=\"stylesheet\" type=\"text/css\" href=\"$url\"" . join(" ", $options) .
-				 "/>";
-		}
-		echo $text;
+		$urls =  str_append($urls, "t={$ws->get_last_modified()}");
+		
+		$options = join("", str_prepend($options, " "));
+		echo join("", array_map(function(string $url) use ($options, $type) : string {
+			if ($type === "js") {
+				return "<script type=\"text/javascript\" src=\"$url\"$options></script>";
+			} else {
+				return  "<link rel=\"stylesheet\" type=\"text/css\" href=\"$url\"$options/>";
+			}
+		}, $urls));
 		
 	}
 	
