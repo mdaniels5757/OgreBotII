@@ -4,7 +4,6 @@ const JS_DIR = `${BASE_DIR}/js`;
 
 let gulp = require('gulp');
 let cleanCSS = require('gulp-clean-css');
-let sourcemaps = require('gulp-sourcemaps');
 let rename = require("gulp-rename");
 let closureCompiler = require('google-closure-compiler').gulp();
 let flatmap = require('gulp-flatmap');
@@ -22,9 +21,7 @@ let isFixed = (file) => file.eslint != null && file.eslint.fixed;
 gulp.task("minify-css", () => {
 	console.log("Minifying CSS");
 	return getGulpSources("css")
-    	.pipe(sourcemaps.init())
 	    .pipe(cleanCSS({compatibility: 'ie11'}))
-	    .pipe(sourcemaps.write("."))
 	    .pipe(rename((path) => {
 	    	path.dirname = ".";
 	    	if (path.extname === ".css") {
@@ -52,14 +49,8 @@ gulp.task("minify-css", () => {
 	        	language_in: 'ECMASCRIPT_NEXT',
 	        	language_out: 'ECMASCRIPT5',
 				js_output_file: filePath.replace(/\.js$/, "") + ".min.js",
-				create_source_map: `${filePath}.map`,
-				source_map_location_mapping: `${JS_DIR}|`,
 				isolation_mode: "IIFE"
 			}));
 	    }))
-	    .pipe(sourcemaps.write(".", {
-	        mapFile: path => path.replace(/\.min\.js\.map/, '.js.map'),
-	        sourceMappingURLPrefix: "js"
-	     }))
 	    .pipe(getGulpDest("js"));
 }).task('default', ['minify-css', 'lint-js', 'minify-js']);
