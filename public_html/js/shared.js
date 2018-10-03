@@ -238,61 +238,6 @@ window.sortByKey = object => {
     return object;
 };
 
-{
-    let FileReader = window.FileReader;
-    let defaultOptions = { type: "text" };
-    let validReaders = {};
-    let validHandlers = {};
-
-    Object.keys(FileReader.prototype).forEach(key => {
-        var handler = key.match(/^on([a-z]+)$/);
-        var reader = key.match(/^readAs([A-Za-z]+)$/);
-
-        if (handler) {
-            validHandlers[key] = handler[1];
-        }
-        if (reader) {
-            validReaders[lcfirst(reader[1])] = key;
-        }
-    });
-
-    $.fn.fileReader = function(options) {
-        var inputs = this.filter("input[type='file']");
-
-        let localHandlers = {};
-
-        options = $.extend({}, options, defaultOptions);
-        $.each(validHandlers, function(key) {
-            var option = options[this];
-            if (option) {
-                localHandlers[key] = option;
-            }
-        });
-        let localReader = validReaders[options.type];
-
-        if (!localReader) {
-            throw `Illegal readAs type: ${options.type}`;
-        }
-
-        inputs.each(function() {
-            //each input gets its own reader
-            var $this = $(this);
-            var fileReader = new FileReader();
-
-            $.extend(fileReader, localHandlers);
-
-            $this.change(event => {
-                $.each(event.target.files, function() {
-                    fileReader[localReader](this);
-                });
-                $this.val("");
-            });
-        });
-
-        return this;
-    };
-}
-
 /*******************
  * spinner
  *******************/

@@ -20,10 +20,6 @@ var bodyWrapper = $(".body-wrapper");
 const noop = $.noop;
 var finalDownloadListener = noop;
 
-function fileReaderError() {
-    window.alert("Er, that didn't seem to work.");
-}
-
 function getPhase() {
     return +phaseInput.val();
 }
@@ -259,42 +255,34 @@ saveState.click(() => {
     state[name] = saveStateObject;
     setSavedState(state);
 });
-$("#import").fileReader({
-    error: fileReaderError,
-    load() {
+var $import = $("#import").change(event => {
+    let fileReader = new FileReader();
+    fileReader.onload = progressEvent => {
         try {
+            let text = progressEvent.target.result;
             var importCount = 0;
-            var text = this.result;
-            var state = getSavedState(); //TODO use Object.entries
-            $.each(getSavedStateFromText(text), (key, newState) => {
+            var state = getSavedState();
+            Object.entries(getSavedStateFromText(text)).forEach(([ key, newState ]) => {
                 var inputs = newState.inputs;
-                var validInputs = true;
-                var existing;
-                if ($.isPlainObject(inputs)) {
-                    //validate data
-                    //TODO use Object.values
-                    $.each(inputs, (ignore, val) => {
-                        validInputs = typeof val === "string";
-                        return validInputs;
-                    });
-                    if (validInputs) {
-                        existing = state[key];
-                        if (
-                            !existing || stringify(existing) !== stringify(newState) ||
-                                !window.confirm(`Overwrite ${key}?`)
-                        ) {
-                            importCount++;
-                            state[key] = newState;
-                        }
-                    }
+                if (
+                    !inputs || typeof inputs !== "object" ||
+                        Object.values(inputs).some(val => typeof val !== "string")
+                ) {
+                    throw "Deserialization failed.";
+                }
+                if (!state[key] || window.confirm(`Overwrite ${key}?`)) {
+                    importCount++;
+                    state[key] = newState;
                 }
             });
             setSavedState(state);
             window.alert(`${importCount} entries loaded.`);
+            $import.val("");
         } catch (e) {
-            fileReaderError();
+            window.alert("Er, that didn't seem to work.");
         }
-    }
+    };
+    fileReader.readAsText(event.target.files[0]);
 });
 $("#export").click(() => {
     saveAs(
