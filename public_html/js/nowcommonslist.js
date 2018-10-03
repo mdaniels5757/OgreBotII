@@ -107,6 +107,39 @@
     await $.ready;
 
     /**
+     * @param {Object} options
+     */
+    function topBar(options) {
+        function setHeight(height, div) {
+            $(div).css("top", `${height * 26}px`);
+        }
+
+        if (typeof options !== "object") {
+            options = { message: options };
+        }
+
+        var existing = $(".topbar:last");
+        var div = $("<div />", { "class": "topbar", text: options.message }).css(options.css || {});
+
+        window.setTimeout(
+            () => {
+                div.remove();
+
+                $(".topbar").each(setHeight);
+            },
+            options.delay || 5000
+        );
+
+        if (existing[0]) {
+            existing.after(div);
+        } else {
+            $("body").prepend(div);
+        }
+
+        setHeight($(".topbar").length - 1, div);
+    }
+
+    /**
      * @param {string} name
      */
     function removeRow(name) {
@@ -768,7 +801,7 @@
     try {
         await xDomain.ready();
         ajaxCountElement.text(0);
-        window.topBar({ css: { background: "#000099" }, message: "Ajax delete detected" });
+        topBar({ css: { background: "#000099" }, message: "Ajax delete detected" });
         markedAction._action = new NowCommonsDeleteAjaxAction();
 
         //wait until document ready in case it hasn't loaded
@@ -777,17 +810,17 @@
         xDomain.addListener(data => {
             ajaxCountElement.text(ajaxCountElement.text() - 1);
             if (data.status === "success") {
-                window.topBar({
+                topBar({
                     css: { background: "#009999" },
                     delay: 2000,
                     message: `${data.page}: deleted`
                 });
                 removeRow(data.page);
             } else {
-                window.topBar(`${data.page}: ${data.message}`);
+                topBar(`${data.page}: ${data.message}`);
             }
         });
     } catch (e) {
-        window.topBar({ css: { background: "#990000" }, message: "Ajax detection failed" });
+        topBar({ css: { background: "#990000" }, message: "Ajax detection failed" });
     }
 })(window);
