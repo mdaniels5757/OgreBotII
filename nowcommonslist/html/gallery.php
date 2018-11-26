@@ -20,10 +20,7 @@ $http_io->transcludeScript(["shared", "nowcommonslist"], "css");
 $http_io->transcludeScriptRemote(["jquery2.url", "jquery-ui.url"]);
 $http_io->transcludeScript(["shared", "nowcommonslist"], "js");
 
-$xd_path = "wiki/User:Magog_the_Ogre/xdomain";
-if (!boolean_or_exception($GLOBALS['environment']['minify'])) {
-	$xd_path .= "?debug=true";
-}
+$xd_path = "wiki/User:Magog_the_Ogre/xdomain?debug=true";
 ?>
 </head>
 <body>
