@@ -1660,7 +1660,7 @@ class Wiki_Interface {
 					 "px-$URL_parsed[4].jpg";
 			} else if (preg_match("/\.ogv$/i", $image_ver_instance['url'])) {
 				/* OGVs do not have previews at pixelage */
-				$thumb_url = "$URL_parsed[0]thumb/$URL_parsed[1]$URL_parsed[2]$URL_parsed[3]$URL_parsed[4]/mid-$URL_parsed[4].jpg";
+				$thumb_url = "$URL_parsed[0]thumb/$URL_parsed[1]$URL_parsed[2]$URL_parsed[3]$URL_parsed[4]/${width}px-$URL_parsed[4].jpg";
 			} else if (preg_match("/\.djvu$/i", $image_ver_instance['url'])) {
 				/* DJVUs will have previews regardless of original resolution */
 				$thumb_url = "$URL_parsed[0]thumb/$URL_parsed[1]$URL_parsed[2]$URL_parsed[3]$URL_parsed[4]/page1-$width" .
