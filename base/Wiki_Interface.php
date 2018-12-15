@@ -971,9 +971,15 @@ class Wiki_Interface {
 	 * @return string[]|string|null
 	 */
 	function get_files_by_hash(Wiki $wiki, $sha1, $only_first = false) {
-		global $validator;
+		global $logger, $validator;
 		
 		$validator->validate_arg($sha1, "string");
+		
+		if (!$sha1) {
+			$logger->warn("Attempted to get files for empty hash");
+			return null;
+		}
+		
 		$results = array_keys($this->simple_query($wiki, "allimages", ['aisha1' => $sha1]));
 		
 		if ($only_first) {
