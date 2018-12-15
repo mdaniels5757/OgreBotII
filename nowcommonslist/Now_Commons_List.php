@@ -9,7 +9,7 @@ abstract class Now_Commons_List {
 	const PROJECTS_DIRECTORY = "/projects";
 	const TEMPLATE_DIRECTORY = "/html/template/";
 	const TEMPLATE_PREFIX = "Template:";
-	const GALLERY_SIZE = 500;
+	const GALLERY_SIZE = 250;
 	const THUMB_SIZE = 200;
 	const PREVIEW_SIZE = 190;
 	
