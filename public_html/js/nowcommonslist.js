@@ -119,16 +119,13 @@
         }
 
         var existing = $(".topbar:last");
-        var div = $("<div />", { "class": "topbar", text: options.message }).css(options.css || {});
+        var div = $("<div />", { class: "topbar", text: options.message }).css(options.css || {});
 
-        window.setTimeout(
-            () => {
-                div.remove();
+        window.setTimeout(() => {
+            div.remove();
 
-                $(".topbar").each(setHeight);
-            },
-            options.delay || 5000
-        );
+            $(".topbar").each(setHeight);
+        }, options.delay || 5000);
 
         if (existing[0]) {
             existing.after(div);
@@ -144,18 +141,24 @@
      */
     function removeRow(name) {
         if (autoHideCheckbox.is(":checked")) {
-            $("a.delete").get().forEach(link => {
-                var $link = $(link);
-                if ($link.data(NAME) === name) {
-                    $link.closest(NC_ROW).prev().addBack().remove();
-                    let count = +autoMarkCount.attr("max") - 1;
+            $("a.delete")
+                .get()
+                .forEach(link => {
+                    var $link = $(link);
+                    if ($link.data(NAME) === name) {
+                        $link
+                            .closest(NC_ROW)
+                            .prev()
+                            .addBack()
+                            .remove();
+                        let count = +autoMarkCount.attr("max") - 1;
 
-                    [ autoDeleteCount, autoMarkCount, autoMarkStart ].forEach(field => {
-                        let $field = $(field);
-                        $field.attr("max", count).val(Math.min(+$field.val(), count));
-                    });
-                }
-            });
+                        [autoDeleteCount, autoMarkCount, autoMarkStart].forEach(field => {
+                            let $field = $(field);
+                            $field.attr("max", count).val(Math.min(+$field.val(), count));
+                        });
+                    }
+                });
             setupUploaderDropdown();
         }
     }
@@ -289,7 +292,9 @@
          */
         constructor(rows) {
             this._div = rows;
-            this.texts = $(".text", rows).get().map(textElement => $(textElement).text());
+            this.texts = $(".text", rows)
+                .get()
+                .map(textElement => $(textElement).text());
             this.deleteLink = $(DELETE_CLASS, rows);
         }
 
@@ -352,7 +357,9 @@
          * @return {String[]}
          */
         get uploaders() {
-            return $(".user", this._div).get().map(link => $(link).text());
+            return $(".user", this._div)
+                .get()
+                .map(link => $(link).text());
         }
 
         /**
@@ -374,7 +381,9 @@
         _run() {}
 
         run() {
-            var rows = this.test().get().slice(this.min(), this.max());
+            var rows = this.test()
+                .get()
+                .slice(this.min(), this.max());
 
             if (this.confirm(rows.length)) {
                 this._run(rows);
@@ -425,7 +434,11 @@
          */
         static getNowCommonsRows(filter) {
             return $(NC_ROW).map(function() {
-                var row = new NowCommonsRow($(this).prev(NC_ROW).addBack());
+                var row = new NowCommonsRow(
+                    $(this)
+                        .prev(NC_ROW)
+                        .addBack()
+                );
                 if (filter(row)) {
                     return row;
                 }
@@ -526,9 +539,17 @@
          * @override
          */
         test() {
-            var searchVal = $(AUTO_MARK_TEXT).val().trim().replace(/\n/g, "").trim();
+            var searchVal = $(AUTO_MARK_TEXT)
+                .val()
+                .trim()
+                .replace(/\n/g, "")
+                .trim();
             var searchRegex = parseRegex(searchVal);
-            var omitVal = $(AUTO_MARK_TEXT_OMIT).val().trim().replace(/\n/g, "").trim();
+            var omitVal = $(AUTO_MARK_TEXT_OMIT)
+                .val()
+                .trim()
+                .replace(/\n/g, "")
+                .trim();
             var omitRegex = parseRegex(omitVal);
             var autoUserVal = autoUser.val().trim();
             var filters = [];
@@ -576,12 +597,13 @@
                 /**
                  * @param {NowCommonsRow} nowCommonsRow
                  */
-                nowCommonsRow => filters.every(
-                    /**
+                nowCommonsRow =>
+                    filters.every(
+                        /**
                          * @param {AbstractMatch} filter
                          */
-                    filter => filter.match(nowCommonsRow)
-                )
+                        filter => filter.match(nowCommonsRow)
+                    )
             );
         }
 
@@ -667,18 +689,26 @@
 
     function setupUploaderDropdown() {
         let previousVal = autoUser.val();
-        autoUser.html("").append("<option/>").append(
-            Array
-                .from(new Set(
-                    NowCommonsAction
-                        .getNowCommonsRows(() => true)
-                        .get()
-                        .map(nowcommonsrow => nowcommonsrow.uploaders)
-                        ._flatten()
-                ))
-                .sort()
-                .map(uploader => $("<option/>").val(uploader).text(uploader)[0])
-        );
+        autoUser
+            .html("")
+            .append("<option/>")
+            .append(
+                Array.from(
+                    new Set(
+                        NowCommonsAction.getNowCommonsRows(() => true)
+                            .get()
+                            .map(nowcommonsrow => nowcommonsrow.uploaders)
+                            ._flatten()
+                    )
+                )
+                    .sort()
+                    .map(
+                        uploader =>
+                            $("<option/>")
+                                .val(uploader)
+                                .text(uploader)[0]
+                    )
+            );
         autoUser.val(previousVal);
     }
 
@@ -723,7 +753,9 @@
     $("#doc-load-per,.ready-count,.bottom-buttons").toggle();
 
     $(MARK_AUTO).click(function() {
-        $(this).closest(NC_ROW).toggleClass(SELECTED);
+        $(this)
+            .closest(NC_ROW)
+            .toggleClass(SELECTED);
     });
 
     $("#clear-marks").click(() => {
@@ -736,13 +768,10 @@
     });
 
     $(`${AUTO_MARK_TEXT},${AUTO_MARK_TEXT_OMIT}`).on("keydown paste drop focus", function() {
-        setTimeout(
-            () => {
-                var jqTextarea = $(this);
-                jqTextarea.toggleClass("regex", !!parseRegex(jqTextarea.val()));
-            },
-            1
-        );
+        setTimeout(() => {
+            var jqTextarea = $(this);
+            jqTextarea.toggleClass("regex", !!parseRegex(jqTextarea.val()));
+        }, 1);
     });
 
     nowCommonsPopupOption.change(() => {
@@ -756,7 +785,9 @@
 
     $(`${AUTO_DELETE_OK},${AUTO_MARK_OK}`).click(function() {
         try {
-            $(this).data(NC_ACTION).run();
+            $(this)
+                .data(NC_ACTION)
+                .run();
         } catch (error) {
             window.alert(error);
         }
@@ -764,7 +795,11 @@
 
     $(`${AUTO_MARK_TEST},${AUTO_DELETE_TEST}`).click(function() {
         try {
-            $("#count").html($(this).data(NC_ACTION).test().length);
+            $("#count").html(
+                $(this)
+                    .data(NC_ACTION)
+                    .test().length
+            );
             testDialog.open();
         } catch (error) {
             window.alert(error);

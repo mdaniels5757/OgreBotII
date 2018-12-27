@@ -1,7 +1,3 @@
-const BASE_DIR = "../public_html";
-const CSS_DIR = `${BASE_DIR}/css`;
-const JS_DIR = `${BASE_DIR}/js`;
-
 let gulp = require('gulp');
 let cleanCSS = require('gulp-clean-css');
 let rename = require("gulp-rename");
@@ -9,9 +5,13 @@ let closureCompiler = require('google-closure-compiler').gulp();
 let flatmap = require('gulp-flatmap');
 let prettier = require('gulp-prettier');
 
+const BASE_DIR = "../public_html";
+const CSS_DIR = `${BASE_DIR}/css`;
+const JS_DIR = `${BASE_DIR}/js`;
+
 let getDir = (type) => `../public_html/${type}`;
 let getGulpSources = (type) => {
-	let dir = getDir(type);
+	let dir = getDir(type);	
 	return gulp.src([`${dir}/*.${type}`, `!${dir}/*.min.${type}`]);
 };
 let getGulpDest = (type) => gulp.dest(getDir(type));
@@ -29,7 +29,9 @@ gulp.task("minify-css", () => {
 	    	}
 	    }))
 	    .pipe(getGulpDest("css"));
-}).task("lint-js", () => {
+});
+
+gulp.task("lint-js", () => {
 	return getGulpSources("js")
 		.pipe(prettier({
 			printWidth: 100,
@@ -37,7 +39,9 @@ gulp.task("minify-css", () => {
 			bracketSpacing: true
 		}))
 		.pipe(getGulpDest("js"));
-}).task("minify-js", () => {
+});
+
+gulp.task("minify-js", () => {
 	return getGulpSources("js")
 	    .pipe(flatmap((stream, file) => {
 	    	const filePath = file.relative;
@@ -53,4 +57,12 @@ gulp.task("minify-css", () => {
 			}));
 	    }))
 	    .pipe(getGulpDest("js"));
-}).task('default', ['minify-css', 'lint-js', 'minify-js']);
+});
+
+gulp.task('default', gulp.parallel("minify-css", gulp.series("lint-js", "minify-js")));
+//
+//module.exports = {
+//	'minify-css': gulp.task('minify-css'),
+//	'lint-js',  gulp.task('minify-css')
+//	default: gulp.parallel("minify-css", "minify-js") 
+//};

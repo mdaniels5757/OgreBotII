@@ -74,84 +74,80 @@ window.XDomain = class XDomain {
          * @private
          */
         this._promise = new Promise((resolve, reject) => {
-            window.setIntervalImmediate(
-                () => {
-                    var input = $("input[data-xd-auto]");
+            window.setIntervalImmediate(() => {
+                var input = $("input[data-xd-auto]");
 
-                    if (input[0]) {
-                        let data = $(input).data();
+                if (input[0]) {
+                    let data = $(input).data();
 
-                        var { xdDomain, xdPath, xdTimeout } = data;
+                    var { xdDomain, xdPath, xdTimeout } = data;
 
-                        function stopListeningForPing() {
-                            $window.off("message", null, checkedResolved);
-                            if (failTimeout) {
-                                window.clearTimeout(failTimeout);
-                            }
+                    function stopListeningForPing() {
+                        $window.off("message", null, checkedResolved);
+                        if (failTimeout) {
+                            window.clearTimeout(failTimeout);
+                        }
+                    }
+
+                    function checkOrigin(originalEvent) {
+                        return originalEvent.origin === xdDomain;
+                    }
+
+                    const checkedResolved = e => {
+                        var originalEvent = e.originalEvent;
+
+                        if (!checkOrigin(originalEvent)) {
+                            return;
                         }
 
-                        function checkOrigin(originalEvent) {
-                            return originalEvent.origin === xdDomain;
-                        }
+                        if (originalEvent.data === "ping") {
+                            resolve();
+                            stopListeningForPing();
+                            $window.on("message", e => {
+                                var originalEvent = e.originalEvent;
 
-                        const checkedResolved = e => {
-                            var originalEvent = e.originalEvent;
+                                if (!checkOrigin(originalEvent)) {
+                                    return;
+                                }
 
-                            if (!checkOrigin(originalEvent)) {
-                                return;
-                            }
-
-                            if (originalEvent.data === "ping") {
-                                resolve();
-                                stopListeningForPing();
-                                $window.on("message", e => {
-                                    var originalEvent = e.originalEvent;
-
-                                    if (!checkOrigin(originalEvent)) {
-                                        return;
-                                    }
-
-                                    this.listeners.forEach(listener => {
-                                        listener(originalEvent.data);
-                                    });
+                                this.listeners.forEach(listener => {
+                                    listener(originalEvent.data);
                                 });
-                            }
-                        };
+                            });
+                        }
+                    };
 
-                        var $window = $(window);
-                        var failTimeout = xdTimeout && window.setTimeout(
-                                () => {
-                                    reject();
-                                    stopListeningForPing();
-                                },
-                                xdTimeout
-                            );
+                    var $window = $(window);
+                    var failTimeout =
+                        xdTimeout &&
+                        window.setTimeout(() => {
+                            reject();
+                            stopListeningForPing();
+                        }, xdTimeout);
 
-                        $window.on("message", checkedResolved);
-                        /**
-                         * @private
-                         */
-                        this.iframe = $("<iframe/>")
-                            .attr({ style: "display: none", src: `${xdDomain}/${xdPath}` })
-                            .appendTo("body");
+                    $window.on("message", checkedResolved);
+                    /**
+                     * @private
+                     */
+                    this.iframe = $("<iframe/>")
+                        .attr({ style: "display: none", src: `${xdDomain}/${xdPath}` })
+                        .appendTo("body");
 
-                        /**
-                         * @private
-                         */
-                        this.origin = xdDomain;
+                    /**
+                     * @private
+                     */
+                    this.origin = xdDomain;
 
-                        return false;
-                    }
+                    return false;
+                }
 
-                    let ready = $.isReady;
-                    if (ready) {
-                        reject();
-                    }
+                let ready = $.isReady;
+                if (ready) {
+                    reject();
+                }
 
-                    return !ready;
-                },
-                100
-            );
+                return !ready;
+            }, 100);
         });
     }
 
@@ -233,13 +229,8 @@ window.sortByKey = object => {
                     right: position.left + $this.outerWidth()
                 });
             });
-            var [ top, left, bottom, right ] = [
-                [ "top" ],
-                [ "left" ],
-                [ "bottom", 1 ],
-                [ "right", 1 ]
-            ].map(
-                ([ index, max ]) =>
+            var [top, left, bottom, right] = [["top"], ["left"], ["bottom", 1], ["right", 1]].map(
+                ([index, max]) =>
                     Math[max ? "max" : "min"].apply(window, $.map(coords, coords => coords[index]))
             );
             this._div.css({
@@ -340,26 +331,30 @@ $(() => {
 
             span = span.prependTo(this);
 
-            $this.tooltip({
-                content() {
-                    return $(".tooltip-text").filter(function() {
-                        return $(this).data("for") === id;
-                    }).html();
-                },
-                close() {
-                    if ($this.data("keepOpen")) {
-                        keepOpen();
-                    }
-                },
-                open() {
-                    $(uniqueClassSelector).hover(keepOpen, () => {
-                        $this.tooltip("close");
-                    });
-                },
-                items: $this,
-                hide: 300,
-                tooltipClass: uniqueClass
-            }).data(tooltipContent, uniqueClassSelector);
+            $this
+                .tooltip({
+                    content() {
+                        return $(".tooltip-text")
+                            .filter(function() {
+                                return $(this).data("for") === id;
+                            })
+                            .html();
+                    },
+                    close() {
+                        if ($this.data("keepOpen")) {
+                            keepOpen();
+                        }
+                    },
+                    open() {
+                        $(uniqueClassSelector).hover(keepOpen, () => {
+                            $this.tooltip("close");
+                        });
+                    },
+                    items: $this,
+                    hide: 300,
+                    tooltipClass: uniqueClass
+                })
+                .data(tooltipContent, uniqueClassSelector);
 
             $("*").click(event => {
                 var isKeepOpen = !!$(event.target).closest($this.add(uniqueClassSelector))[0];

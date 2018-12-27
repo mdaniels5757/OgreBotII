@@ -35,7 +35,10 @@ function updatePhase(delta) {
         element = checkedVal ? $(`#branch-${checkedVal}`) : 0;
 
     setPhase(phase);
-    panels.hide().eq(phase).show();
+    panels
+        .hide()
+        .eq(phase)
+        .show();
     previous.add(saveState).toggle(phase !== 0);
     next.toggle(!phaseLast);
     submit.toggle(phaseLast);
@@ -93,9 +96,10 @@ updatePhase(0);
 
 previous.click($.proxy(updatePhase, previous, -1));
 
-next
-    .click($.proxy(updatePhase, previous, 1))
-    .attr("disabled", typeCheckbox.filter(":checked")[0] ? null : "disabled");
+next.click($.proxy(updatePhase, previous, 1)).attr(
+    "disabled",
+    typeCheckbox.filter(":checked")[0] ? null : "disabled"
+);
 
 typeCheckbox.one("change", $.fn.attr.bind(next, "disabled", null));
 
@@ -106,7 +110,10 @@ $(".download-button").click(function() {
         svgOptions = $(".svg-options");
 
     finalDownloadListener = async () => {
-        var thisSpinner = button.closest("tr").children(".map,.selection,.resolution").spinner();
+        var thisSpinner = button
+            .closest("tr")
+            .children(".map,.selection,.resolution")
+            .spinner();
 
         svgOptions.dialog("close");
 
@@ -122,7 +129,8 @@ $(".download-button").click(function() {
                     radius: $("#option-radius").val()
                 },
                 httpMethod: "post",
-                failMessageHtml: `Unable to download ${row.data("mapHumanReadable")}. ` +
+                failMessageHtml:
+                    `Unable to download ${row.data("mapHumanReadable")}. ` +
                     "Please reload the page and try again."
             });
         } finally {
@@ -138,9 +146,9 @@ $(".download-button").click(function() {
         width: 600,
         height: 400
     });
-    $(
-        "#recommended-dimensions"
-    ).html(`${row.data("mapRecommendedWidth")}` + `&nbsp;×&nbsp;${row.data("mapRecommendedHeight")}`);
+    $("#recommended-dimensions").html(
+        `${row.data("mapRecommendedWidth")}` + `&nbsp;×&nbsp;${row.data("mapRecommendedHeight")}`
+    );
 });
 $(".resolution :checkbox").click(function() {
     var $this = $(this);
@@ -149,10 +157,14 @@ $(".resolution :checkbox").click(function() {
 $(".show-wikitext").click(async function(e) {
     //cancel anchor click
     e.preventDefault();
-    await $(this).closest(".wikitext").find(".wikitext-toggle").each(function() {
-        var $this = $(this);
-        $this.slideToggle($this.height());
-    }).promise();
+    await $(this)
+        .closest(".wikitext")
+        .find(".wikitext-toggle")
+        .each(function() {
+            var $this = $(this);
+            $this.slideToggle($this.height());
+        })
+        .promise();
     $.spinner.all.redraw();
 });
 $("#verify-input").click(async () => {
@@ -163,7 +175,7 @@ $("#verify-input").click(async () => {
         if (message) {
             $("#verify-text").val(message);
         } else {
-            window.alert(data && data.error || "Connection problem or server error.");
+            window.alert((data && data.error) || "Connection problem or server error.");
         }
     } catch (e) {
         window.alert("Connection problem");
@@ -183,23 +195,22 @@ $("#click-help").click(function() {
 });
 $("#load-state").click(function() {
     var div = $("<div/>");
-    var table = $("<table class='load-session'/>").clone().show();
+    var table = $("<table class='load-session'/>")
+        .clone()
+        .show();
     var state = getSavedState();
     $.each(state, (name, entry) => {
-        var loadButton = $("<input type='button' value='Load'  class='btn btn-primary' />").click((
-            
-        ) =>
-            {
-                typeCheckbox
-                    .filter(`[value='${entry.type}']`)
-                    .prop("checked", true); //TODO use Object.entries
+        var loadButton = $("<input type='button' value='Load'  class='btn btn-primary' />").click(
+            () => {
+                typeCheckbox.filter(`[value='${entry.type}']`).prop("checked", true); //TODO use Object.entries
                 $.each(entry.inputs, (key, value) => {
                     $(`textarea[name='${key}']`).val(value);
                 });
                 setPhase(1);
                 updatePhase(0);
                 div.dialog("close");
-            });
+            }
+        );
         var removeButton = $(
             "<input type='button' value='Remove' class='btn btn-warning' />"
         ).click(() => {
@@ -232,9 +243,10 @@ saveState.click(() => {
     var state = getSavedState();
     var defaultName = 0;
     var name;
-    var saveStateObject; /**
-         * get name
-         */
+    var saveStateObject;
+    /**
+     * get name
+     */
     while (state[prefix + ++defaultName]) {}
     do {
         name = prompt("Name of the saved state: ", `${prefix}${defaultName}`); //cancelled
@@ -262,11 +274,12 @@ var $import = $("#import").change(event => {
             let text = progressEvent.target.result;
             var importCount = 0;
             var state = getSavedState();
-            Object.entries(getSavedStateFromText(text)).forEach(([ key, newState ]) => {
+            Object.entries(getSavedStateFromText(text)).forEach(([key, newState]) => {
                 var inputs = newState.inputs;
                 if (
-                    !inputs || typeof inputs !== "object" ||
-                        Object.values(inputs).some(val => typeof val !== "string")
+                    !inputs ||
+                    typeof inputs !== "object" ||
+                    Object.values(inputs).some(val => typeof val !== "string")
                 ) {
                     throw "Deserialization failed.";
                 }
@@ -286,7 +299,7 @@ var $import = $("#import").change(event => {
 });
 $("#export").click(() => {
     saveAs(
-        new Blob([ localStorage.getItem(saveStateStorageName) ], {
+        new Blob([localStorage.getItem(saveStateStorageName)], {
             type: "text/plain;charset=utf-8"
         }),
         "branchmapper-data.txt"

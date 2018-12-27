@@ -8,34 +8,36 @@
 
 //process upload page
 if (window.isAngular) {
-    angular.module("app", []).controller("process-uploads", [
-        "$scope",
-        $scope => {
-            angular.extend($scope, window.logic);
-        }
-    ]).filter("escapeTitle", () =>
-        url =>
+    angular
+        .module("app", [])
+        .controller("process-uploads", [
+            "$scope",
+            $scope => {
+                angular.extend($scope, window.logic);
+            }
+        ])
+        .filter("escapeTitle", () => url =>
             encodeURIComponent(url)
                 .replace(/%2F/g, "/")
                 .replace(/%3A/g, ":")
-                .replace(
-                    /%20/g,
-                    "_"
-                )).filter("escape", () => encodeURIComponent).filter("trusted", [ "$sce", $sce => url => $sce.trustAsResourceUrl(url) ]);
+                .replace(/%20/g, "_")
+        )
+        .filter("escape", () => encodeURIComponent)
+        .filter("trusted", ["$sce", $sce => url => $sce.trustAsResourceUrl(url)]);
 } else {
     var submitProcessUploads = $(".submit-pu");
     const notReady = () => {
         alert("Please wait while the page loads.");
     };
 
-    var interval = window.setInterval(
-        () => {
-            $(":button").filter(function() {
+    var interval = window.setInterval(() => {
+        $(":button")
+            .filter(function() {
                 return !$(this).data("notReady");
-            }).data("notReady", true).click(notReady);
-        },
-        200
-    );
+            })
+            .data("notReady", true)
+            .click(notReady);
+    }, 200);
 
     $(() => {
         var $src = $("#src"),
@@ -87,7 +89,9 @@ if (window.isAngular) {
             submitProcessUploads.prop("disabled", true);
         });
         $("#change_files").click(function() {
-            $(this).add("#src,#trg,#srcspan,#trgspan,#submit_OV,#upload_text").toggle();
+            $(this)
+                .add("#src,#trg,#srcspan,#trgspan,#submit_OV,#upload_text")
+                .toggle();
         });
 
         $("#form").submit(() => {
@@ -108,17 +112,15 @@ if (window.isAngular) {
 
         $(".view-by-date-button").click(() => {
             viewByDate.dialog("open");
-            datepickerElements
-                .blur()
-                .datepicker({
-                    showOn: "button",
-                    buttonImage: "images/calendar.png",
-                    buttonImageOnly: true,
-                    changeMonth: true,
-                    changeYear: true,
-                    dateFormat: datepickerFormat,
-                    onClose: updateDatepickerMinMax
-                });
+            datepickerElements.blur().datepicker({
+                showOn: "button",
+                buttonImage: "images/calendar.png",
+                buttonImageOnly: true,
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: datepickerFormat,
+                onClose: updateDatepickerMinMax
+            });
             updateDatepickerMinMax();
         });
 
@@ -128,14 +130,20 @@ if (window.isAngular) {
             viewByDate.dialog("close");
         });
 
-        $("#view-by-date-form").submit(() => {
-            if (datepickerElements.is(function() {
-                    return !$(this).val().match(/\d{4}-\d{2}-\d{2}/);
-                })) {
-                alert("Please enter a date in the form yyyy-mm-dd");
-                return false;
-            }
-        }).on("reset", window.setTimeout.bind(window, updateDatepickerMinMax));
+        $("#view-by-date-form")
+            .submit(() => {
+                if (
+                    datepickerElements.is(function() {
+                        return !$(this)
+                            .val()
+                            .match(/\d{4}-\d{2}-\d{2}/);
+                    })
+                ) {
+                    alert("Please enter a date in the form yyyy-mm-dd");
+                    return false;
+                }
+            })
+            .on("reset", window.setTimeout.bind(window, updateDatepickerMinMax));
     });
 
     $("#ident-frame").on("load", function() {

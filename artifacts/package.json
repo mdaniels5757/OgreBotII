@@ -4,12 +4,12 @@
 	"main": "package.json",
 	"devDependencies": {
 		"google-closure-compiler": "*",
-		"gulp": "^3.9.1",
-		"gulp-clean-css": "^3.9.3",
-		"gulp-flatmap": "^1.0.2",
-		"gulp-prettier": "^1.1.0",
+		"gulp": "^4.0.0",
+		"gulp-clean-css": "^4.0.0",
+		"gulp-flatmap": "*",
+		"gulp-prettier": "^2.0.0",
 		"gulp-rename": "*",
-		"gulp-sourcemaps": "^2.6.3",
-		"prettier": "^1.11.1"
+		"gulp-sourcemaps": "*",
+		"prettier": "*"
 	}
 }

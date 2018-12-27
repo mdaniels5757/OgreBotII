@@ -10,9 +10,11 @@ information.click(() => {
             $(this).prop("checked", !!this.wasChecked);
         });
     } else {
-        fields.each(function() {
-            this.wasChecked = $(this).prop("checked");
-        }).prop("checked", false);
+        fields
+            .each(function() {
+                this.wasChecked = $(this).prop("checked");
+            })
+            .prop("checked", false);
     }
     fields.prop("disabled", !checked);
 });

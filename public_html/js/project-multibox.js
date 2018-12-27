@@ -21,10 +21,10 @@ $($ => {
     var cssClass = select.attr("class");
     var projects = {};
 
-    var [ , currentSubproject, currentProject ] = parse(select.val());
+    var [, currentSubproject, currentProject] = parse(select.val());
 
     select.children("option").each(function() {
-        var [ , subproject, project ] = parse($(this).html());
+        var [, subproject, project] = parse($(this).html());
 
         if (!projects[project]) {
             projects[project] = [];
@@ -34,11 +34,17 @@ $($ => {
 
     var subprojectElement = $("<select/>");
     var projectElement = $("<select/>")
-        .append(Object.keys(projects).sort().map(key => `<option>${key}</option>`))
+        .append(
+            Object.keys(projects)
+                .sort()
+                .map(key => `<option>${key}</option>`)
+        )
         .val(currentProject);
-    projectElement.change(() => {
-        buildSubprojectOptions(subprojectElement.val());
-    }).change();
+    projectElement
+        .change(() => {
+            buildSubprojectOptions(subprojectElement.val());
+        })
+        .change();
     buildSubprojectOptions(currentSubproject);
 
     select
