@@ -85,7 +85,7 @@ class Web_Script {
 			self::TYPE => $this->type
 		];
 		
-		if (!$this->debug) {
+		if ($this->debug) {
 			$params[self::DEBUG] = "true";
 		}
 		
