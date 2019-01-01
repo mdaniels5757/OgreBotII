@@ -3,13 +3,12 @@
 	"version": "1.0.0",
 	"main": "package.json",
 	"devDependencies": {
-		"google-closure-compiler": "*",
+		"google-closure-compiler": "^20181210.0.0",
 		"gulp": "^4.0.0",
 		"gulp-clean-css": "^4.0.0",
-		"gulp-flatmap": "*",
+		"gulp-flatmap": "^1.0.2",
 		"gulp-prettier": "^2.0.0",
-		"gulp-rename": "*",
-		"gulp-sourcemaps": "*",
-		"prettier": "*"
+		"gulp-rename": "^1.4.0",
+		"prettier": "^1.15.3"
 	}
 }

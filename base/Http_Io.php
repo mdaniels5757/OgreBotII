@@ -50,26 +50,15 @@ class Http_Io {
 			$pageName = [$pageName];
 		}
 
-		$full_page_names = array_map(function(string $pageName) use ($type) : string {
-			return "$pageName." . ($this->minify ? "min." : "") . $type;
-		}, $pageName);
-		$ws = new Web_Script($full_page_names);
-		if ($this->minify) {
-			$urls = ["{$directory}load.php?s=" . join("%7C", $full_page_names) . "&"];
-		} else {
-			$urls = str_append(str_prepend($full_page_names, "$directory$type/"), "?");
-		}
-		
-		$urls =  str_append($urls, "t={$ws->get_last_modified()}");
+		$ws = new Web_Script($pageName, $type, !$this->minify);
+		$url = "{$directory}{$ws->get_load_url()}";
 		
 		$options = join("", str_prepend($options, " "));
-		echo join("", array_map(function(string $url) use ($options, $type) : string {
-			if ($type === "js") {
-				return "<script type=\"text/javascript\" src=\"$url\"$options></script>";
-			} else {
-				return  "<link rel=\"stylesheet\" type=\"text/css\" href=\"$url\"$options/>";
-			}
-		}, $urls));
+		if ($type === "js") {
+			echo "<script type=\"text/javascript\" src=\"$url\"$options></script>";
+		} else {
+			echo  "<link rel=\"stylesheet\" type=\"text/css\" href=\"$url\"$options/>";
+		};
 		
 	}
 	

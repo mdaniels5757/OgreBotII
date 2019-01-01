@@ -1,26 +1,14 @@
-let gulp = require('gulp');
-let cleanCSS = require('gulp-clean-css');
-let rename = require("gulp-rename");
-let closureCompiler = require('google-closure-compiler').gulp();
-let flatmap = require('gulp-flatmap');
-let prettier = require('gulp-prettier');
+const gulp = require('gulp');
+const cleanCSS = require('gulp-clean-css');
+const rename = require("gulp-rename");
+const closureCompiler = require('google-closure-compiler').gulp();
+const flatmap = require('gulp-flatmap');
+const prettier = require('gulp-prettier');
 
 const BASE_DIR = "../public_html";
-const CSS_DIR = `${BASE_DIR}/css`;
-const JS_DIR = `${BASE_DIR}/js`;
-
-let getDir = (type) => `../public_html/${type}`;
-let getGulpSources = (type) => {
-	let dir = getDir(type);	
-	return gulp.src([`${dir}/*.${type}`, `!${dir}/*.min.${type}`]);
-};
-let getGulpDest = (type) => gulp.dest(getDir(type));
-// Has ESLint fixed the file contents?
-let isFixed = (file) => file.eslint != null && file.eslint.fixed;
 
 gulp.task("minify-css", () => {
-	console.log("Minifying CSS");
-	return getGulpSources("css")
+	return gulp.src(`${BASE_DIR}/css/src/*`)
 	    .pipe(cleanCSS({compatibility: 'ie11'}))
 	    .pipe(rename((path) => {
 	    	path.dirname = ".";
@@ -28,21 +16,21 @@ gulp.task("minify-css", () => {
 	    		path.extname = ".min.css";	
 	    	}
 	    }))
-	    .pipe(getGulpDest("css"));
+	    .pipe(gulp.dest(`${BASE_DIR}/css/bin`));
 });
 
 gulp.task("lint-js", () => {
-	return getGulpSources("js")
+	return gulp.src(`${BASE_DIR}/js/src/*`)
 		.pipe(prettier({
 			printWidth: 100,
 			tabWidth: 4,
 			bracketSpacing: true
 		}))
-		.pipe(getGulpDest("js"));
+		.pipe(gulp.dest(`${BASE_DIR}/js/src`));
 });
 
 gulp.task("minify-js", () => {
-	return getGulpSources("js")
+	return gulp.src(`${BASE_DIR}/js/src/*`)
 	    .pipe(flatmap((stream, file) => {
 	    	const filePath = file.relative;
 	    	console.log(`Minifying ${filePath}...`);
@@ -56,13 +44,7 @@ gulp.task("minify-js", () => {
 				isolation_mode: "IIFE"
 			}));
 	    }))
-	    .pipe(getGulpDest("js"));
+	    .pipe(gulp.dest(`${BASE_DIR}/js/bin`));
 });
 
 gulp.task('default', gulp.parallel("minify-css", gulp.series("lint-js", "minify-js")));
-//
-//module.exports = {
-//	'minify-css': gulp.task('minify-css'),
-//	'lint-js',  gulp.task('minify-css')
-//	default: gulp.parallel("minify-css", "minify-js") 
-//};

@@ -3,7 +3,7 @@ $start = microtime();
 require_once __DIR__ . "/../base/bootstrap.php";
 global $logger;
 
-$ws = new Web_Script(preg_split("/\\|/", @$_REQUEST[Web_Script::WEB_ARGUMENT]));
+$ws = Web_Script::from_request_params($_REQUEST);
 $about_one_year = gmdate('D, d M Y H:i:s \G\M\T', time() + SECONDS_PER_DAY * 365);
 
 
