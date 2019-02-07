@@ -38,3 +38,4 @@ org.eclipse.php.core.prefs
 /cleanup-multi-log
 
 /artifacts/node_modules
+/js/node_modules
