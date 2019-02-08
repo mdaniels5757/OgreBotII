@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mediawiki_1 = __importDefault(require("./mediawiki"));
 const multithreaded_promise_1 = __importDefault(require("./multithreaded-promise"));
-const category = process.argv[2];
+const [category, numberOfThreads = 45] = process.argv.slice(2);
 if (!category) {
     throw new Error("Category name required");
 }
@@ -13,7 +13,7 @@ const mw = mediawiki_1.default();
 (async function () {
     let i = 0;
     do {
-        const multithread = new multithreaded_promise_1.default(45);
+        const multithread = new multithreaded_promise_1.default(+numberOfThreads);
         var members = await mw.categoryMembers(category);
         for (const member of members) {
             multithread.enqueue(async () => {
