@@ -84,10 +84,7 @@ class MediawikiImpl {
         return tokenPromise;
     }
     async query(parameters, subIndices) {
-        var result = await this.post({
-            ...parameters,
-            action: "query"
-        });
+        var result = await this.post(Object.assign({}, parameters, { action: "query" }));
         for (const index of subIndices) {
             result = result[index];
         }

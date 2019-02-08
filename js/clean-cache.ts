@@ -7,15 +7,20 @@ if (!category) {
     throw new Error("Category name required");
 }
 
+const mw = getMediawiki();
 (async function () {
-    var mw = getMediawiki();
-    var multithread = new MultiThreadedPromise();
-    const members = await mw.categoryMembers(category);
-    for (let i = 0; i < Math.min(5000, members.length); i++) {
-        multithread.enqueue(() => {
-            console.log(`Purging #${i}`);
-            return mw.editAppend(members[i], "", "\n\n");
-        });
-    }
-    await multithread.done();
+    let i = 0;
+    do {
+        const multithread = new MultiThreadedPromise(45);
+        var members = await mw.categoryMembers(category);
+        for (const member of members) {
+            multithread.enqueue(async () => {
+                if (member) {
+                    console.log(`Purging #${++i}`);
+                    return await mw.editAppend(member, "", "\n\n");
+                }
+            });
+        }
+        await multithread.done();
+    } while (members.length > 500);
 }());

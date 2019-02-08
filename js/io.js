@@ -5,14 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = __importDefault(require("fs"));
 const utils_1 = require("./utils");
-var MediawikiApi;
-(function (MediawikiApi) {
-    MediawikiApi["COMMONS"] = "https://commons.wikimedia.org/w/api.php";
-})(MediawikiApi || (MediawikiApi = {}));
-var MediawikiUsername;
-(function (MediawikiUsername) {
-    MediawikiUsername["OGREBOT_2"] = "OgreBot_2";
-})(MediawikiUsername || (MediawikiUsername = {}));
 class Io {
     static getProperty(file, property) {
         let thisProperties = this.properties.get(file);

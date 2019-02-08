@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const path_1 = require("path");
 class MultiThreadedPromiseImpl {
     constructor(maxThreads = 20) {
         this.maxThreads = maxThreads;
@@ -36,7 +35,7 @@ class MultiThreadedPromiseImpl {
     }
     check() {
         if (this.ready && this.threadCount === 0) {
-            path_1.resolve();
+            this.resolve();
         }
     }
 }

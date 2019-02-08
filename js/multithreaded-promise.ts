@@ -43,7 +43,7 @@ export default class MultiThreadedPromiseImpl implements MultiThreadedPromise {
 
     private check() {
         if (this.ready && this.threadCount === 0) {
-            resolve();
+            this.resolve();
         }
     }
 }

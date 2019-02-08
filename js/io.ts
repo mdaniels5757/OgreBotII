@@ -1,19 +1,5 @@
-
 import fs from "fs";
 import {matchAll} from "./utils";
-enum MediawikiApi {
-    COMMONS = "https://commons.wikimedia.org/w/api.php"
-}
-
-enum MediawikiUsername {
-    OGREBOT_2 = "OgreBot_2"
-}
-
-interface PropertiesFile {
-    username: MediawikiUsername;
-    api: MediawikiApi
-}
-
 export default class Io {
 
 
