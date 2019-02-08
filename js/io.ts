@@ -9,7 +9,7 @@ export default class Io {
         let thisProperties = this.properties.get(file);
         if (!thisProperties) {
             thisProperties = new Map();
-            const contents = fs.readFileSync(`../properties/${file}.properties`, {encoding: "UTF-8"});
+            const contents = fs.readFileSync(`${__dirname}/../properties/${file}.properties`, {encoding: "UTF-8"});
             for (const [, key, val] of matchAll(() => new RegExp(/^\s*(.+?)\s*\=\s*"?(.+)"\s*?$/gm), contents)) {
                 thisProperties.set(key, val);
             }

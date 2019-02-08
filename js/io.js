@@ -10,7 +10,7 @@ class Io {
         let thisProperties = this.properties.get(file);
         if (!thisProperties) {
             thisProperties = new Map();
-            const contents = fs_1.default.readFileSync(`../properties/${file}.properties`, { encoding: "UTF-8" });
+            const contents = fs_1.default.readFileSync(`${__dirname}/../properties/${file}.properties`, { encoding: "UTF-8" });
             for (const [, key, val] of utils_1.matchAll(() => new RegExp(/^\s*(.+?)\s*\=\s*"?(.+)"\s*?$/gm), contents)) {
                 thisProperties.set(key, val);
             }
