@@ -13,6 +13,6 @@ class ProdCronRunner extends CronRunner {
 		$timeout   = $this->runConfig->getTimeout();
 		$vm		   = "php"; //$this->runConfig->getHhvm() ? "hhvm" : "php";
 
-		return "cd ".BASE_DIRECTORY."/$directory; timeout $timeout $vm $command.php $args >> ".LOG_DIRECTORY."/${command}_errors.log";
+		return "timeout $timeout $vm ".BASE_DIRECTORY."/$directory/$command.php $args >> ".LOG_DIRECTORY."/${command}_errors.log";
 	}
 }
