@@ -1,0 +1,13 @@
+{
+	"name": "ogrebot-js",
+	"version": "1.0.0",
+	"main": "package.json",
+	"dependencies": {
+		"fetch-cookie": "*",
+		"node-fetch": "*"
+	},
+	"devDependencies": {
+		"@types/node": "*",
+		"@types/node-fetch": "*"
+	}
+}
