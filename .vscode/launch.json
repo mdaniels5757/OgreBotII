@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/js/clean-cache.js",
+            "program": "${workspaceFolder}/js/exe/get-gallery-names.js",
             "cwd": "${workspaceFolder}/js"
         }
     ]

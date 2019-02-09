@@ -1,6 +1,6 @@
 
-import getMediawiki from "./mediawiki";
-import MultiThreadedPromise from "./multithreaded-promise";
+import getMediawiki from "../lib/mediawiki";
+import MultiThreadedPromise from "../lib/multithreaded-promise";
 
 const [category, numberOfThreads = 45] =  process.argv.slice(2);
 

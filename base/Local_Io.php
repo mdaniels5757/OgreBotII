@@ -188,6 +188,29 @@ function ogrebotExec($command) {
 
 /**
  *
+ * @param string $command
+ * @return string
+ * @throws Exception
+ */
+function ogrebotExecWithOutput(string $command): string {
+	global $logger;
+	
+	$logger->info("Running:\n$command");
+	
+	exec($command, $output, $return_var);
+	
+	$logger->info(" ...done");
+	
+	if ($return_var !== 0) {
+		throw new Exception("Command $command FAILED. Return status: $return_var.");
+	}
+	
+	return join("\n", $output);
+}
+
+
+/**
+ *
  * @param string $prompt        	
  * @throws IllegalStateException
  */

@@ -1,19 +1,9 @@
 <?php
 require_once __DIR__ . "/../base/bootstrap.php";
-global $constants, $string_utils;
-
-$log_directory = BASE_DIRECTORY . "/" .
-	 array_key_or_exception($constants, 'category_files.output_path') . "/";
-
-$all_files_in_directory = get_all_files_in_directory($log_directory);
-rsort($all_files_in_directory, SORT_STRING);
+global $string_utils;
 
 // get all gallery names
-$all_galleries = Category_Files_Log_Entry::get_all_gallery_names(
-	str_prepend($all_files_in_directory, $log_directory));
-sort($all_galleries, SORT_FLAG_CASE | SORT_STRING);
-
-$dates = preg_replace("/^(\d{4})(\d{2})(\d{2})\.log$/", "$1-$2-$3", $all_files_in_directory);
+list("galleries" => $galleries, "dates" => $dates) = Category_Files_Log_Entry::get_all_gallery_names();
 
 $http_io = new Http_Io();
 $http_io->ob_start();
@@ -29,8 +19,8 @@ $http_io->ob_start();
 	<title>Category Files Blamer</title>
 </head>
 <body ng-app="app" ng-controller="ctrl" 
-	ng-init='galleries=<?= $string_utils->encode_json_for_html($all_galleries) ?>;
-			 dates=<?= $string_utils->encode_json_for_html($dates) ?>'>
+	ng-init='galleries=<?= $string_utils->encode_json_for_html($galleries); 
+			?>;dates=<?= $string_utils->encode_json_for_html($dates) ?>'>
 	<form ng-cloak>
 		<div class="_table">
 			<div class="table-row">
