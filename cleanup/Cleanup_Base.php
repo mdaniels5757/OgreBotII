@@ -60,8 +60,8 @@ class Cleanup_Base {
 				"otrs", "remove_incorrect_trailing_license", "license_migration", "kettos", 
 				"add_source", "remove_duplicates", "by_author_type", "self_migration_redundant", 
 				"remove_original_uploader", "duplicate_transfer_text", "transferred_from", "fastily", 
-				"remove_notoc", "remove_information_extra_bar", "pd_user", "warn_citation_removed", 
-				"human_changes"]);
+				"remove_notoc", "remove_information_extra_bar", "pd_user", "file_importer",
+				"warn_citation_removed", "human_changes"]);
 			
 		$this->post_parse_modules = array_sort_custom($all_modules, 
 			["remove_local_missing_template"]);
