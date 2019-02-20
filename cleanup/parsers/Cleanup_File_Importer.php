@@ -102,9 +102,14 @@ class Cleanup_File_Importer implements Cleanup_Module {
 					}
 					$template->updatefield("description", $description);
 					
-					$ci->set_text($template->wholePage());
 				}
+				$ci->set_text($template->wholePage());
+				
 			}
+			//remove Category ordered by date
+			while ($bad_template = $ci->get_template("Category ordered by date")) {
+				$ci->set_text(Cleanup_shared::remove_template_and_trailing_newline($bad_template));				
+			}			
 		}
 	}
 	
