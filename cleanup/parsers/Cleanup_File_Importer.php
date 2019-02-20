@@ -13,12 +13,24 @@ class Cleanup_File_Importer implements Cleanup_Module {
 	private $dont_modify_links_regex;
 	
 	/**
+	 * 
+	 * @var string[]
+	 */
+	private $langlinks;
+	
+	/**
 	 *
 	 * @param Cleanup_Package $cleanup_package
 	 */
 	public function __construct(Cleanup_Package $cleanup_package) {
-		$constants = $cleanup_package->get_constants();
-		$this->dont_modify_links_regex = "/\s*:?\s*(user|file|image|[a-z]|$constants[langlinks_regex])\s*\:\s*\S/i";
+		list(
+			"langlinks_regex" => $langlinks, 
+			"no_modify_interwiki_prefixes_regex" => $no_modify_prefixes,
+			"langlinks" => $this->langlinks
+		) = $cleanup_package->get_constants();
+		
+		
+		$this->dont_modify_links_regex = "/\s*:?\s*([a-z]|$no_modify_prefixes|$langlinks)\s*\:\s*\S/";
 	}
 
 	/**
@@ -74,9 +86,16 @@ class Cleanup_File_Importer implements Cleanup_Module {
 				}
 				
 				$description = $template->fieldvalue("description");
-				if ($description) {					
+				if ($description) {
+					$has_langlinks = false;
+					foreach (new Template_Iterator($description) as $desc_template) {
+						if (array_search(ucfirst_utf8($desc_template->getname()), $this->langlinks) !== false) {
+							$has_langlinks = true;
+							break;
+						}
+					}
 					//add language wrapper to description
-					if (strpos($description, "{{") === false) {
+					if (!$has_langlinks) {
 						$number_prefix = strpos($description, "=") ? "1=": "";
 						$description = preg_replace("/^(\s*)([\s\S]+?)(\s*)$/", 
 								"$1{{{$lang}|{$number_prefix}$2}}$3", $description);

@@ -99,6 +99,7 @@ class Cleanup_Shared {
 		$this->regexify_raw_in_cleanup_properties("information_local_templates");
 		$this->regexify_raw_in_cleanup_properties("flickr_local_templates");
 		$this->regexify_raw_in_cleanup_properties("langlinks", true);
+		$this->regexify_raw_in_cleanup_properties("no_modify_interwiki_prefixes", true);
 		$this->regexify_raw_in_cleanup_properties("otrs", true);
 		
 		$months = range(1, 12);
