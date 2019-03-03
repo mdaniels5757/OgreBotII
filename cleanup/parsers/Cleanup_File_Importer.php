@@ -109,8 +109,44 @@ class Cleanup_File_Importer implements Cleanup_Module {
 			//remove Category ordered by date
 			while ($bad_template = $ci->get_template("Category ordered by date")) {
 				$ci->set_text(Cleanup_shared::remove_template_and_trailing_newline($bad_template));				
-			}			
+			}
+			
+			//remove redundant migration 
+			$self_template = $ci->get_template("self");
+			if ($self_template) {
+				if ($self_template->fieldvalue("migration") === "redundant") {
+					if ($this->self_template_has_license($self_template, "/^gfdl/i") && 
+							$this->self_template_has_license($self_template, "/^cc-by(-sa)?-(?:[34]\.0(?:-migrated)?|all)$/i")) {
+							$self_template->removefield("migration");
+						$ci->set_text($self_template->wholePage(), false);
+					}
+				}
+			}
+			//remove date from PD-self
+			$pd_self = $ci->get_template("PD-self");
+			if ($pd_self && $pd_self->fieldisset("date")) {
+				$pd_self->removefield("date");
+				$ci->set_text($pd_self->wholePage(), false);
+			}
+			
+			//top spacing
+			$ci->preg_replace("/^(%%%MTONOPARSE_COMMENT0%%%\s*?\n)(?:\s*\n)+(==\s*{{\s*int\s*:\s*filedesc\s*}}\s*==)/", "$1$2", false);
 		}
+	}
+	
+	/**
+	 * 
+	 * @param Abstract_Template $template
+	 * @param string $regex
+	 * @return bool
+	 */
+	private function self_template_has_license(Abstract_Template $template, string $regex): bool {
+		foreach ([1, 2, 3] as $i) {
+			if (preg_match($regex, $template->fieldvalue($i)??"")) {
+				return true;
+			}
+		}
+		return false;
 	}
 	
 }
