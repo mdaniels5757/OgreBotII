@@ -167,67 +167,79 @@ if (!window.angular) {
                 let nextLine = 0;
                 let readDataTime;
 
-                try {
-                    while (true) {
-                        const { data } = await http.post(
+                (function call() {
+                    $http
+                        .post(
                             `do_cleanup_multi_json.php?line=${nextLine}&request_key=${
                                 $scope.request_key
                             }`
-                        );
-                        let readData;
+                        )
+                        .then(
+                            response => {
+                                let readData;
+                                let data = response.data;
 
-                        if (!data || data.error) {
-                            throw 0;
-                        }
-
-                        if (data.complete) {
-                            break;
-                        }
-
-                        nextLine = data.lineNum;
-
-                        if (data.startup) {
-                            $scope.started = true;
-                            readData = true;
-                        }
-
-                        if (data.count != null) {
-                            $scope.filesCount = data.count;
-                            readData = true;
-                        }
-
-                        if (data.lines && data.lines.length) {
-                            $scope.lines = $scope.lines.concat(data.lines);
-
-                            if ($scope.scrollBottom) {
-                                //scroll to the bottom
-                                window.setTimeout(() => {
-                                    window.scrollTo(0, window.document.body.scrollHeight);
-                                });
-                            }
-                            readData = true;
-                        }
-
-                        //sanity check that background process is still running
-                        if (readData) {
-                            readDataTime = null;
-                        } else {
-                            if (readDataTime) {
-                                if (new Date().getTime() - readDataTime > 300000) {
-                                    throw 0;
+                                if (!data) {
+                                    $scope.processError = true;
+                                    return;
                                 }
-                            } else {
-                                readDataTime = new Date().getTime();
-                            }
-                        }
 
-                        await $timeout(call, 5000);
-                    }
-                    $scope.complete = true;
-                    $scope.runTime = prettyTime(new Date() - startTime);
-                } catch {
-                    $scope.processError = true;
-                }
+                                nextLine = data.lineNum;
+
+                                if (data.startup) {
+                                    $scope.started = true;
+                                    readData = true;
+                                }
+
+                                if (data.count != null) {
+                                    $scope.filesCount = data.count;
+                                    readData = true;
+                                }
+
+                                if (data.lines && data.lines.length) {
+                                    $scope.lines = $scope.lines.concat(data.lines);
+
+                                    if ($scope.scrollBottom) {
+                                        //scroll to the bottom
+                                        window.setTimeout(() => {
+                                            window.scrollTo(0, window.document.body.scrollHeight);
+                                        });
+                                    }
+                                    readData = true;
+                                }
+
+                                if (data.complete) {
+                                    $scope.complete = true;
+                                    $scope.runTime = prettyTime(new Date() - startTime);
+                                    return;
+                                }
+
+                                if (data.error) {
+                                    $scope.processError = true;
+                                    return;
+                                }
+
+                                //sanity check that background process is still running
+                                if (readData) {
+                                    readDataTime = null;
+                                } else {
+                                    if (readDataTime) {
+                                        if (new Date().getTime() - readDataTime > 300000) {
+                                            $scope.processError = true;
+                                            return;
+                                        }
+                                    } else {
+                                        readDataTime = new Date().getTime();
+                                    }
+                                }
+
+                                $timeout(call, 5000);
+                            },
+                            () => {
+                                $scope.processError = true;
+                            }
+                        );
+                })();
             }
         ])
         .filter("escape", () => url =>
