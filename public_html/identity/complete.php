@@ -3,7 +3,7 @@ define("LOGGER_NAME", "ident-complete");
 require_once __DIR__ . "/../../base/bootstrap.php";
 
 try {
-	(new Identity_Verifier())->do_identify();
+	(new Identity_Verifier_Impl())->do_identify();
 } catch (OAuthException $e) {
 	header("HTTP/1.1 500 Internal Server Error", 500);
 	die(htmlspecialchars($e->getMessage()));

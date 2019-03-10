@@ -4,7 +4,7 @@ require_once __DIR__ . "/../../base/bootstrap.php";
 
 $response = [];
 try {
-	$response['redirect'] = (new Identity_Verifier())->do_authorization_redirect();
+	$response['redirect'] = (new Identity_Verifier_Impl())->do_authorization_redirect();
 } catch (OAuthException $e) {
 	$response['error'] = $e->getMessage();
 } catch (Exception $e) {

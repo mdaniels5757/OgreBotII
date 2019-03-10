@@ -3,7 +3,7 @@ define("LOGGER_NAME", "ident-verify");
 require_once __DIR__ . "/../../base/bootstrap.php";
 global $logger;
 
-$verifier = new Identity_Verifier();
+$verifier = new Identity_Verifier_Impl();
 
 $auth_tool_keys = $verifier->get_auth_tool_keys();
 $tooluser = @$_REQUEST["tooluser"];
