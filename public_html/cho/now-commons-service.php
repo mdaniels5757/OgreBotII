@@ -60,7 +60,7 @@ class Now_Commons_Service {
 	 * @return string|null A string with the error message, if any, or null if successful
 	 */
 	public function upload() {
-		new Identity_Verifier();
+		new Identity_Verifier_Impl();
 	}
 }
 $ncs = new Now_Commons_Service();
