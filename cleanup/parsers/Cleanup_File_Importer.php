@@ -64,7 +64,7 @@ class Cleanup_File_Importer implements Cleanup_Module {
 						"location", "other_fields", "permission"] as $field) {
 					//update interwikis work
 					$value = $template->fieldvalue($field);
-					if ($value) {
+					if ($value && mb_trim($value) && strpbrk($value, "{}") === false) {
 						$last_offset = 0;
 						preg_match_all("/\[\[([^\[\]]+)\]\]/", $value, $matches,
 								PREG_OFFSET_CAPTURE | PREG_SET_ORDER, $last_offset);
@@ -81,7 +81,7 @@ class Cleanup_File_Importer implements Cleanup_Module {
 				}
 				
 				$additional = $template->fieldvalue("additional_information");
-				if ($additional !== false && preg_match("/^\s*$/", $additional)) {
+				if ($additional !== false && !mb_trim($additional)) {
 					$template->removefield("additional_information");
 				}
 				
@@ -95,7 +95,7 @@ class Cleanup_File_Importer implements Cleanup_Module {
 						}
 					}
 					//add language wrapper to description
-					if (!$has_langlinks) {
+					if (!$has_langlinks && mb_trim($description) && strpbrk($description, "{}") === false) {
 						$number_prefix = strpos($description, "=") ? "1=": "";
 						$description = preg_replace("/^(\s*)([\s\S]+?)(\s*)$/", 
 								"$1{{{$lang}|{$number_prefix}$2}}$3", $description);
