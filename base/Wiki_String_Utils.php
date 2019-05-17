@@ -189,7 +189,7 @@ function get_listed_commons_image($pagetext, $pagetitle, &$errorflag = NULL) {
 	global $logger, $MB_WS_RE_OPT, $validator;
 	
 	$commons_now_re = "/\{\{\s*([Cc]ommons[Nn]ow|NC|[Dd]b\-(nowcommons|[Ff]8)|[Mm]oved[ _]to" .
-		 "[ _]commons|[Nn]CT|[Nn]ow[ _]at[ _]commons|[Nn]ow[ _][Cc]ommons|[Nn]ow[Cc]" .
+		 "[ _]commons|[Nn]CT|[Nn]ct|[Nn]ow[ _]at[ _]commons|[Nn]ow[ _][Cc]ommons|[Nn]ow[Cc]" .
 		 "ommons(?:this|\/Mängel)?|[Nn]owcommons2|Nach[ _]Commons[ _]verschieben[ _]" .
 		 "\(bestätigt\))\s*(?:\|[\s\S]*?)?\}\}/um";
 	$no_matches = preg_match_all($commons_now_re, $pagetext, $matches, PREG_SET_ORDER);
