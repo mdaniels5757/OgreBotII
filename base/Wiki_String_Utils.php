@@ -188,7 +188,7 @@ function filter_templates($pagetext, &$template_text = NULL, &$template_text_ind
 function get_listed_commons_image($pagetext, $pagetitle, &$errorflag = NULL) {
 	global $logger, $MB_WS_RE_OPT, $validator;
 	
-	$commons_now_re = "/\{\{\s*([Cc]ommons[Nn]ow|NC|[Dd]b\-(nowcommons|[Ff]8)|[Mm]oved[ _]to" .
+	$commons_now_re = "/\{\{\s*([Dd]b\-commons|[Cc]ommons[Nn]ow|NC|[Dd]b\-(nowcommons|[Ff]8)|[Mm]oved[ _]to" .
 		 "[ _]commons|[Nn]CT|[Nn]ct|[Nn]ow[ _]at[ _]commons|[Nn]ow[ _][Cc]ommons|[Nn]ow[Cc]" .
 		 "ommons(?:this|\/Mängel)?|[Nn]owcommons2|Nach[ _]Commons[ _]verschieben[ _]" .
 		 "\(bestätigt\))\s*(?:\|[\s\S]*?)?\}\}/um";
