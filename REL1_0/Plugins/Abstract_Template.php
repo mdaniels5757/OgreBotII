@@ -39,6 +39,13 @@ interface Abstract_Template {
 	 */
 	public function fieldvalue($fieldname, $trim_fieldname = true);
 	
+	/**
+	 * Return the first field name found, or null if not found
+	 * @param string[] $fieldnames
+	 * @return string|NULL
+	 */
+	public function first_field_value(array $fieldnames): ?string;
+	
 	
 	/**
 	 * Change the name of a field
