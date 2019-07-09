@@ -170,9 +170,7 @@ if (!window.angular) {
                 (function call() {
                     $http
                         .post(
-                            `do_cleanup_multi_json.php?line=${nextLine}&request_key=${
-                                $scope.request_key
-                            }`
+                            `do_cleanup_multi_json.php?line=${nextLine}&request_key=${$scope.request_key}`
                         )
                         .then(
                             response => {
