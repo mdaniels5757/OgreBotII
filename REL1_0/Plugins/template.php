@@ -370,6 +370,22 @@ class Template implements Abstract_Template {
 	}
 	
 	/**
+	 * 
+	 * {@inheritDoc}
+	 * @see Abstract_Template::first_field_value()
+	 */
+	public function first_field_value(array $fieldnames): ?string {
+		foreach ($fieldnames as $fieldname) {
+			if (isset($this->fields[$fieldname])) {
+				$key = is_numeric($fieldname)?"(?:$fieldname\s*\=)?":(preg_quote($fieldname, "/")."\s*\=");
+				$result = $this->fields[$fieldname];
+				$result = preg_replace("/^\s*$key\s*?([\s\S]*?)$/", "$1", $result);
+				return $result;
+			}
+		}
+	}
+
+	/**
 	 *
 	 * @param string $fieldname
 	 *        	Make sure to always pass the value to the function as lcfirst

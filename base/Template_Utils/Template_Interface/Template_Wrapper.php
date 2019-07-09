@@ -80,6 +80,21 @@ class Template_Wrapper implements Abstract_Template {
 	}
 	
 	/**
+	 *
+	 * {@inheritDoc}
+	 * @see Abstract_Template::first_field_value()
+	 */
+	public function first_field_value(array $fieldnames): ?string {
+		foreach ($fieldnames as $field_name) {
+			$field_name = $this->locate_field($field_name);
+			if ($field_name !== null) {
+				return $this->template->fieldvalue($field_name);
+			}			
+		}
+		return null;
+	}
+	
+	/**
 	 * 
 	 * {@inheritDoc}
 	 * @see Abstract_Template::renamefield()

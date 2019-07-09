@@ -218,7 +218,7 @@ function get_listed_commons_image($pagetext, $pagetitle, &$errorflag = NULL) {
 	}
 	
 	$temp = new Template($matches[0][0], $matches[0][1]);
-	$tempfieldvalue1 = $temp->fieldisset("1") ? $temp->fieldvalue(1) : NULL;
+	$tempfieldvalue1 = $temp->first_field_value(["1", "filename"]);
 	$commons_listed_name = ($tempfieldvalue1 == NULL) ? $pagetitle : "File:" .
 		 basepagename_ns6(preg_replace("/^${MB_WS_RE_OPT}1\=/u", "", $tempfieldvalue1));
 	
