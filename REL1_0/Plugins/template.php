@@ -383,6 +383,7 @@ class Template implements Abstract_Template {
 				return $result;
 			}
 		}
+		return null;
 	}
 
 	/**
