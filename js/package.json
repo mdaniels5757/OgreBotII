@@ -7,7 +7,9 @@
 		"node-fetch": "*"
 	},
 	"devDependencies": {
+		"@types/google-closure-compiler": "0.0.18",
 		"@types/node": "*",
-		"@types/node-fetch": "*"
+		"@types/node-fetch": "*",
+		"google-closure-compiler": "^20190618.0.0"
 	}
 }

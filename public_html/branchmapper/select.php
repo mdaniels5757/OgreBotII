@@ -121,6 +121,6 @@ if ($which_result->latitude_longitudes_svg) {
 <?php 
 
 $http_io->transcludeScriptRemote(['jquery.url', 'jquery-ui.url', 'jquery.filedownload.url']);
-$http_io->transcludeScript(['shared', 'branchmapper'], 'js', '../');
+$http_io->transcludeScript('branchmapper', 'js', '../');
 ?>
 </body>

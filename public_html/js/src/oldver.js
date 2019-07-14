@@ -25,6 +25,7 @@ if (window.isAngular) {
         .filter("escape", () => encodeURIComponent)
         .filter("trusted", ["$sce", $sce => url => $sce.trustAsResourceUrl(url)]);
 } else {
+    projectMultibox();
     var submitProcessUploads = $(".submit-pu");
     const notReady = () => {
         alert("Please wait while the page loads.");

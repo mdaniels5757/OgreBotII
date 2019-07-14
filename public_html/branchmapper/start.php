@@ -17,7 +17,6 @@ $http_io->transcludeScriptRemote(
 		'awesome.css.url']);
 $http_io->transcludeScript(['shared', 'branchmapper'], 'css', '../');
 $http_io->transcludeScriptRemote(['jquery.url', 'jquery-ui.url', 'filesaver.js.url']);
-$http_io->transcludeScript(['shared', 'branchmapper'], 'js', '../', ["defer"]);
 ?>
 </head>
 <body class="start">
@@ -152,5 +151,8 @@ $http_io->transcludeScript(['shared', 'branchmapper'], 'js', '../', ["defer"]);
 		target="_blank">registered with the FCC</a>.
 	</span>
 	</div>
+	<?php
+		$http_io->transcludeScript('branchmapper', 'js', '../');
+	?>
 </body>
 </html>

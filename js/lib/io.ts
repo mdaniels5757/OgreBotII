@@ -1,6 +1,9 @@
 import fs from "fs";
 import {matchAll} from "./utils";
+import {EOL} from "os";
 export default class Io {
+
+    public static readonly EOL = EOL;
 
     private static properties: Map<string, Map<string, string>> = new Map();
 
@@ -20,6 +23,18 @@ export default class Io {
         }
 
         return thisProperties.get(property);
+    }
+
+    public static writeFile(filename: string, data: any, options: fs.WriteFileOptions = {}) {
+        return new Promise<string>((resolve, reject) => {
+            fs.writeFile(filename, data, options, function(err: NodeJS.ErrnoException) {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(data.toString());
+                }
+            });
+        });
     }
 
     public static readFile(filename: string) {

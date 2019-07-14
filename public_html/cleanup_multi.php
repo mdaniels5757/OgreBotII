@@ -25,7 +25,7 @@ $http_io->transcludeScriptRemote(
 			'awesome.css.url', "jquery-ui.css.url"]);
 $http_io->transcludeScript(['do_cleanup_multi', 'shared'], 'css');
 $http_io->transcludeScriptRemote(['jquery.url', 'jquery-ui.url', "timepicker.url"]);
-$http_io->transcludeScript(["do_cleanup_multi", "shared"], "js", null, ["defer"]);
+$http_io->transcludeScript("do_cleanup_multi", "js", null, ["defer"]);
 ?>
 </head>
 <body>

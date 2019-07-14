@@ -29,22 +29,4 @@ gulp.task("lint-js", () => {
 		.pipe(gulp.dest(`${BASE_DIR}/js/src`));
 });
 
-gulp.task("minify-js", () => {
-	return gulp.src(`${BASE_DIR}/js/src/*`)
-	    .pipe(flatmap((stream, file) => {
-	    	const filePath = file.relative;
-	    	console.log(`Minifying ${filePath}...`);
-	    	
-			return stream.pipe(closureCompiler({
-		    	compilation_level: 'SIMPLE',
-	        	//warning_level: 'VERBOSE',
-	        	language_in: 'ECMASCRIPT_NEXT',
-	        	language_out: 'ECMASCRIPT5',
-				js_output_file: filePath.replace(/\.js$/, "") + ".min.js",
-				isolation_mode: "IIFE"
-			}));
-	    }))
-	    .pipe(gulp.dest(`${BASE_DIR}/js/bin`));
-});
-
-gulp.task('default', gulp.parallel("minify-css", gulp.series("lint-js", "minify-js")));
+gulp.task('default', gulp.parallel("minify-css", "lint-js"));

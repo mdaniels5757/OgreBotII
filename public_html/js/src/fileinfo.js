@@ -1,5 +1,7 @@
 /*global $ */
 /*jslint browser: true */
+projectMultibox();
+
 var fields = $("#authordate,#license,#fields");
 var information = $("#information");
 

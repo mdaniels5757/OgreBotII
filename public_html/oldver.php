@@ -428,6 +428,6 @@ if (!$startpage) {
 		id="ident-frame" src="identity/start.php?compact=1"></iframe>
 	</form> <?php
 }
-$http_io->transcludeScript(["oldver", "shared", "project-multibox"], "js");
+$http_io->transcludeScript("oldver", "js");
 ?></body>
 </html>

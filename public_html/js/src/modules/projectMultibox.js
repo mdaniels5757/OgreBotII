@@ -1,8 +1,12 @@
 /*jslint browser: true, devel: true, sloppy: true */
 /*global $ */
-$($ => {
+async function projectMultibox() {
+    /**
+     * 
+     * @param {string} project 
+     */
     function parse(project) {
-        return project.match(/^([a-z-]+)\.([a-z-]+)$/);
+        return project.match(/^([a-z-]+)\.([a-z-]+)$/).slice(1);
     }
 
     function buildSubprojectOptions(currentValue) {
@@ -17,14 +21,17 @@ $($ => {
             );
     }
 
+    await $.ready;
+
+
     var select = $("select[name='project']");
     var cssClass = select.attr("class");
     var projects = {};
 
-    var [, currentSubproject, currentProject] = parse(select.val());
+    var [currentSubproject, currentProject] = parse(select.val());
 
     select.children("option").each(function() {
-        var [, subproject, project] = parse($(this).html());
+        var [subproject, project] = parse($(this).html());
 
         if (!projects[project]) {
             projects[project] = [];
@@ -63,4 +70,4 @@ $($ => {
         .change(() => {
             select.val(`${subprojectElement.val()}.${projectElement.val()}`);
         });
-});
+}

@@ -18,7 +18,7 @@ $http_io->transcludeScriptRemote(
 	["jquery-ui.css.url", "bootstrap.css.url", 'fontawesome.css.url', 'awesome.css.url']);
 $http_io->transcludeScript(["shared", "nowcommonslist"], "css");
 $http_io->transcludeScriptRemote(["jquery2.url", "jquery-ui.url"]);
-$http_io->transcludeScript(["shared", "nowcommonslist"], "js");
+$http_io->transcludeScript("nowcommonslist", "js");
 
 $xd_path = "wiki/User:Magog_the_Ogre/xdomain?debug=true";
 ?>

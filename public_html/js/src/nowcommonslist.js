@@ -1,7 +1,5 @@
-(async function(window) {
+(async function() {
     "use strict";
-
-    const $ = window.$;
 
     /**
      * @constant {String}
@@ -93,48 +91,13 @@
      */
     const SELECTED_CLASS = `.${SELECTED}`;
 
-    /**
-     * @constant {MDialog}
-     */
-    const MDialog = window.MDialog;
-
-    var xDomain = new window.XDomain();
-    window.setIntervalImmediate(() => {
+    var xDomain = new XDomain();
+    setIntervalImmediate(() => {
         $("#ready-count").html(roughPercent($("input.file").length / $("#files-count").val()));
         return !$.isReady;
     });
 
     await $.ready;
-
-    /**
-     * @param {Object} options
-     */
-    function topBar(options) {
-        function setHeight(height, div) {
-            $(div).css("top", `${height * 26}px`);
-        }
-
-        if (typeof options !== "object") {
-            options = { message: options };
-        }
-
-        var existing = $(".topbar:last");
-        var div = $("<div />", { class: "topbar", text: options.message }).css(options.css || {});
-
-        window.setTimeout(() => {
-            div.remove();
-
-            $(".topbar").each(setHeight);
-        }, options.delay || 5000);
-
-        if (existing[0]) {
-            existing.after(div);
-        } else {
-            $("body").prepend(div);
-        }
-
-        setHeight($(".topbar").length - 1, div);
-    }
 
     /**
      * @param {string} name
@@ -474,7 +437,7 @@
          * @return Boolean
          */
         confirm(count) {
-            return window.confirm(`Delete ${count} files?`);
+            return confirm(`Delete ${count} files?`);
         }
 
         /**
@@ -625,7 +588,7 @@
         _markedRun(rows) {
             var getAutoOpenLink = this._getAutoOpenLink.bind(this);
             rows.forEach(row => {
-                window.open(getAutoOpenLink(row).attr("href"), "_blank");
+                open(getAutoOpenLink(row).attr("href"), "_blank");
                 row.toggleSelect(false);
                 removeRow(row.localName);
             });
@@ -667,7 +630,7 @@
          * @override
          */
         confirm(count) {
-            return window.confirm(`Delete ${count} files?`);
+            return confirm(`Delete ${count} files?`);
         }
 
         /**
@@ -697,8 +660,7 @@
                     new Set(
                         NowCommonsAction.getNowCommonsRows(() => true)
                             .get()
-                            .map(nowcommonsrow => nowcommonsrow.uploaders)
-                            ._flatten()
+                            .flatMap(nowcommonsrow => nowcommonsrow.uploaders)
                     )
                 )
                     .sort()
@@ -789,7 +751,7 @@
                 .data(NC_ACTION)
                 .run();
         } catch (error) {
-            window.alert(error);
+            alert(error);
         }
     });
 
@@ -802,7 +764,7 @@
             );
             testDialog.open();
         } catch (error) {
-            window.alert(error);
+            alert(error);
         }
     });
 
@@ -858,4 +820,4 @@
     } catch (e) {
         topBar({ css: { background: "#990000" }, message: "Ajax detection failed" });
     }
-})(window);
+})();

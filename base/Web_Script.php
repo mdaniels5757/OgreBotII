@@ -58,7 +58,7 @@ class Web_Script {
 			throw new IllegalArgumentException("Illegal script name: " . print_r($scripts, true));
 		}
 		$this->scripts = $scripts;
-		$this->debug = $debug;
+		$this->debug = $debug && $this->type === "css";
 		
 		$this->files = array_map(function (string $script): string {
 			return BASE_DIRECTORY . DIRECTORY_SEPARATOR . self::DIRECTORY .
@@ -80,16 +80,22 @@ class Web_Script {
 	 * @return string
 	 */
 	public function get_load_url() : string {
-		$params = [self::SCRIPT => join("%7C", $this->scripts),
-			self::TIMESTAMP => $this->get_last_modified(),
-			self::TYPE => $this->type
-		];
-		
-		if ($this->debug) {
-			$params[self::DEBUG] = "true";
+
+		$params = [self::TIMESTAMP => $this->get_last_modified()];
+
+		if ($this->type === "css" || count($this->scripts) > 1) {
+			$url = "load.php";
+			$params[self::SCRIPT] = join("%7C", $this->scripts);
+			$params[self::TYPE] = $this->type;
+			
+			if ($this->debug) {
+				$params[self::DEBUG] = "true";
+			}
+			
+		} else {	
+			$url = "js/bin/" . $this->scripts[0] . ".min.js";
 		}
-		
-		return "load.php?" .query_to_string($params);
+		return "$url?" .query_to_string($params);
 	}
 	
 	/**

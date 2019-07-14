@@ -15,9 +15,7 @@ $http_io->ob_start();
 $http_io->transcludeScriptRemote(['bootstrap.css.url', 'bootstrap.css.theme.url',
 		'fontawesome.css.url', 'awesome.css.url']);
 $http_io->transcludeScript(["fileinfo", "shared"], "css");
-
 $http_io->transcludeScriptRemote("jquery2.url");
-$http_io->transcludeScript(["fileinfo", "shared", "project-multibox"], "js", null, ["defer"]);
 ?>
 </head>
 <body>
@@ -134,6 +132,8 @@ $http_io->transcludeScript(["fileinfo", "shared", "project-multibox"], "js", nul
 	</form>
 	<?php
 	}
+
+	$http_io->transcludeScript("fileinfo", "js");
 	?>
 </body>
 </html>

@@ -20,6 +20,9 @@ var bodyWrapper = $(".body-wrapper");
 const noop = $.noop;
 var finalDownloadListener = noop;
 
+const spinnerFactory = new SpinnerFactory();
+const tooltipsFactory = new TooltipsFactory();
+
 function getPhase() {
     return +phaseInput.val();
 }
@@ -71,7 +74,7 @@ function getSavedStateFromText(text) {
         throw "Deserialization failed!";
     }
 
-    return window.sortByKey(states);
+    return sortByKey(states);
 }
 
 function getSavedState() {
@@ -88,7 +91,7 @@ startForm.submit(() => {
         return false;
     }
 
-    bodyWrapper.spinner();
+    spinnerFactory.create(bodyWrapper);
     $(":submit").attr("disabled", "disabled");
 });
 
@@ -110,10 +113,9 @@ $(".download-button").click(function() {
         svgOptions = $(".svg-options");
 
     finalDownloadListener = async () => {
-        var thisSpinner = button
+        var thisSpinner = spinnerFactory.create(button
             .closest("tr")
-            .children(".map,.selection,.resolution")
-            .spinner();
+            .children(".map,.selection,.resolution"));
 
         svgOptions.dialog("close");
 
@@ -134,7 +136,7 @@ $(".download-button").click(function() {
                     "Please reload the page and try again."
             });
         } finally {
-            thisSpinner.spinner("remove");
+            spinnerFactory.remove(thisSpinner);
         }
     };
 
@@ -165,10 +167,10 @@ $(".show-wikitext").click(async function(e) {
             $this.slideToggle($this.height());
         })
         .promise();
-    $.spinner.all.redraw();
+    spinnerFactory.redraw();
 });
 $("#verify-input").click(async () => {
-    bodyWrapper.spinner();
+    spinnerFactory.create(bodyWrapper);
     try {
         let data = await $.ajax("check.php", { data: startForm.serialize(), method: "post" });
         let message = data && data.message;
@@ -180,7 +182,7 @@ $("#verify-input").click(async () => {
     } catch (e) {
         window.alert("Connection problem");
     } finally {
-        bodyWrapper.spinner("remove");
+        spinnerFactory.remove(bodyWrapper);
     }
 });
 $("#final-download").click(() => {
@@ -191,7 +193,7 @@ if ((localStorage.getItem(returnUserStorageName) || 0) < Date.now() - 1000 * 60 
 }
 $("#click-help").click(function() {
     showStartupHelpDialog(); //cancel sticky popup
-    setTimeout($.fn.closeTooltip.bind($(this)), 1);
+    setTimeout(() => tooltipsFactory.close($(this)), 1);
 });
 $("#load-state").click(function() {
     var div = $("<div/>");
