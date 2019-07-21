@@ -1,6 +1,7 @@
 import fs, { exists } from "fs";
 import io from "../lib/io";
 import compiler from 'google-closure-compiler';
+import MultiThreadedPromiseImpl from "../lib/multithreaded-promise";
 
 const {compiler: ClosureCompiler} = compiler;
 
@@ -16,7 +17,10 @@ const FILES_TO_MINIFY = process.argv.slice(2);
     const modules = fs.readdirSync(MODULES_DIR).map(module => `${MODULES_DIR}/${module}`);
 
     try {
-        await Promise.all(jsFiles.map(async jsFile => {
+        //multithreaded Closure makes Windows freeze
+        const multiThreaded = new MultiThreadedPromiseImpl(
+            process.platform === "win32" ? 2 : 20);
+        multiThreaded.enqueue(...jsFiles.map(jsFile => async () => {
             console.log(`Minifying ${jsFile}...`);
             const minFileName = jsFile.replace(/\.js$/, "") + ".min.js";
             const mapFile = `${jsFile}.map`;
@@ -42,8 +46,9 @@ const FILES_TO_MINIFY = process.argv.slice(2);
                     (code ? reject : resolve)();
                 });
             });
-            await io.writeFile(outputFile, `${io.EOL}//# sourceMappingURL=${mapFile}`, {flag: "a"});
+            await io.writeFile(outputFile, `${io.EOL}//# sourceMappingURL=${mapFile}`, { flag: "a" });
         }));
+        await multiThreaded.done();
         console.log("All files successfully compiled");
     } catch {
         console.error("All files NOT successfully compiled");

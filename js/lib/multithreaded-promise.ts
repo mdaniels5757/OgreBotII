@@ -1,7 +1,7 @@
 import { resolve } from "path";
 
 interface MultiThreadedPromise {
-    enqueue(action: () => PromiseLike<void>): void;
+    enqueue(...actions: (() => PromiseLike<void>)[]): void;
     done(): PromiseLike<void>;
 }
 export default class MultiThreadedPromiseImpl implements MultiThreadedPromise {
@@ -16,11 +16,13 @@ export default class MultiThreadedPromiseImpl implements MultiThreadedPromise {
 
     constructor(private maxThreads: number = 20) { }
 
-    enqueue(action: () => PromiseLike<void>) {
-        this.actions.push(action);
-        this.run();
+    enqueue(...actions: (() => PromiseLike<void>)[]) {
+        for (const action of actions) {
+            this.actions.push(action);
+            this.run();
+        }
     }
-
+    
     done() {
         this.ready = true;
         this.check();
@@ -42,7 +44,7 @@ export default class MultiThreadedPromiseImpl implements MultiThreadedPromise {
     }
 
     private check() {
-        if (this.ready && this.threadCount === 0) {
+        if (this.ready && this.threadCount === 0 && this.actions.length === 0) {
             this.resolve();
         }
     }

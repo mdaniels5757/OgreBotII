@@ -27,7 +27,7 @@ export default class Io {
 
     public static writeFile(filename: string, data: any, options: fs.WriteFileOptions = {}) {
         return new Promise<string>((resolve, reject) => {
-            fs.writeFile(filename, data, options, function(err: NodeJS.ErrnoException) {
+            fs.writeFile(filename, data, options, function(err: NodeJS.ErrnoException | null) {
                 if (err) {
                     reject(err);
                 } else {
