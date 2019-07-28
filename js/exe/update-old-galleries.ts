@@ -69,15 +69,17 @@ console.log(`Updating galleries from ${startDate} to ${endDate}`);
         const minutesBetween = 24 * 60 / count;
         const [untilDate] = ranges[i + 1];
         for (var date = start; date < untilDate; date = plusMinutes(date, minutesBetween)) {
-            console.log(`Updating ${date}`);
-            await nodeFetch("https://tools.wmflabs.org/magog//UpdateNewUploads.php", {
-                method: 'POST',
-                body: `project=commons.wikimedia&start=${date}00`,
-                headers: {
-                  'Content-Type': 'application/x-www-form-urlencoded'
-                },
-            });
-            //no need to wait for processing the response
+            if (date >= startDate) {
+                console.log(`Updating ${date}`);
+                await nodeFetch("https://tools.wmflabs.org/magog//UpdateNewUploads.php", {
+                    method: 'POST',
+                    body: `project=commons.wikimedia&start=${date}00`,
+                    headers: {
+                      'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                });
+                //no need to wait for processing the response
+            }
         }
     }
 })();
