@@ -69,7 +69,7 @@ console.log(`Updating galleries from ${startDate} to ${endDate}`);
         const minutesBetween = 24 * 60 / count;
         const [untilDate] = ranges[i + 1];
         for (var date = start; date < untilDate; date = plusMinutes(date, minutesBetween)) {
-            if (date >= startDate) {
+            if (date >= startDate && date <= endDate) {
                 console.log(`Updating ${date}`);
                 await nodeFetch("https://tools.wmflabs.org/magog//UpdateNewUploads.php", {
                     method: 'POST',
