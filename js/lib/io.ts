@@ -1,28 +1,28 @@
 import fs from "fs";
-import {matchAll} from "./utils";
+import {matchAll} from "./stringUtils";
 import {EOL} from "os";
+import { cachable } from "./decorators/cachable";
 export default class Io {
 
     public static readonly EOL = EOL;
-
-    private static properties: Map<string, Map<string, string>> = new Map();
 
     public static get projectDir() {
         return `${__dirname}/../..`;
     }
 
-    public static getProperty(file: string, property: string) {
-        let thisProperties = this.properties.get(file);
-        if (!thisProperties) {
-            thisProperties = new Map();
-            const contents = fs.readFileSync(`${this.projectDir}/properties/${file}.properties`, {encoding: "UTF-8"});
-            for (const [, key, val] of matchAll(/^\s*(.+?)\s*\=\s*"?(.+)"\s*?$/gm, contents)) {
-                thisProperties.set(key, val);
-            }
-            this.properties.set(file, thisProperties);            
+    @cachable()
+    private static getProperties(file: string): Map<string, string> {
+        const thisProperties = new Map();
+        const contents = fs.readFileSync(`${this.projectDir}/properties/${file}.properties`, {encoding: "UTF-8"});
+        for (const [, key, val] of matchAll(/^\s*(.+?)\s*\=\s*"?(.+)"\s*?$/gm, contents)) {
+            thisProperties.set(key, val);
         }
+        return thisProperties;
 
-        return thisProperties.get(property);
+    }
+
+    public static getProperty(file: string, property: string) {
+        return this.getProperties(file).get(property);
     }
 
     public static writeFile(filename: string, data: any, options: fs.WriteFileOptions = {}) {
@@ -48,5 +48,4 @@ export default class Io {
             })
         });
     }
-
 }

@@ -1,7 +1,8 @@
 import fs, { exists } from "fs";
 import io from "../lib/io";
 import compiler from 'google-closure-compiler';
-import MultiThreadedPromiseImpl from "../lib/multithreaded-promise";
+import { shutdown, startup } from "../lib/promiseUtils";
+import { ThreadPoolImpl } from "../lib/ThreadPool";
 
 const {compiler: ClosureCompiler} = compiler;
 
@@ -10,6 +11,8 @@ const SRC_DIR = `${JS_DIR}/src`;
 const DEST_DIR = `${JS_DIR}/bin`;
 const MODULES_DIR = `${SRC_DIR}/modules`;
 const FILES_TO_MINIFY = process.argv.slice(2);
+
+startup();
 (async function() {
     const jsFiles = FILES_TO_MINIFY.length > 0 ? 
         FILES_TO_MINIFY.map(file => `${file}.js`) : 
@@ -18,39 +21,43 @@ const FILES_TO_MINIFY = process.argv.slice(2);
 
     try {
         //multithreaded Closure makes Windows freeze
-        const multiThreaded = new MultiThreadedPromiseImpl(
-            process.platform === "win32" ? 2 : 20);
-        multiThreaded.enqueue(...jsFiles.map(jsFile => async () => {
-            console.log(`Minifying ${jsFile}...`);
-            const minFileName = jsFile.replace(/\.js$/, "") + ".min.js";
-            const mapFile = `${jsFile}.map`;
-            const outputFile = `${DEST_DIR}/${minFileName}`;
-            await new Promise((resolve, reject) => {
-                new ClosureCompiler({
-                    js: [...modules, `${SRC_DIR}/${jsFile}`],
-                    compilation_level: 'SIMPLE',
-                    //warning_level: 'VERBOSE',
-                    language_in: 'ECMASCRIPT_NEXT',
-                    language_out: 'ECMASCRIPT5',
-                    js_output_file: outputFile,
-                    isolation_mode: "IIFE",
-                    create_source_map: `${DEST_DIR}/${mapFile}`,
-                    source_map_location_mapping: `${JS_DIR}|..`
-                }).run((code, stdOutData, stdErrData) => {
-                    if (stdOutData) {
-                        console.log(jsFile, stdOutData);
-                    }
-                    if (stdErrData) {
-                        console.error(jsFile, stdErrData)
-                    }
-                    (code ? reject : resolve)();
-                });
-            });
-            await io.writeFile(outputFile, `${io.EOL}//# sourceMappingURL=${mapFile}`, { flag: "a" });
-        }));
-        await multiThreaded.done();
+        const threadPool = new ThreadPoolImpl(process.platform === "win32" ? 2 : 10);
+        await threadPool.enqueueAll(function*() {
+            for (const jsFile of jsFiles) {
+                yield async () => {
+                    console.log(`Minifying ${jsFile}...`);
+                    const minFileName = jsFile.replace(/\.js$/, "") + ".min.js";
+                    const mapFile = `${jsFile}.map`;
+                    const outputFile = `${DEST_DIR}/${minFileName}`;
+                    await new Promise((resolve, reject) => {
+                        new ClosureCompiler({
+                            js: [...modules, `${SRC_DIR}/${jsFile}`],
+                            compilation_level: 'SIMPLE',
+                            //warning_level: 'VERBOSE',
+                            language_in: 'ECMASCRIPT_NEXT',
+                            language_out: 'ECMASCRIPT5',
+                            js_output_file: outputFile,
+                            isolation_mode: "IIFE",
+                            create_source_map: `${DEST_DIR}/${mapFile}`,
+                            source_map_location_mapping: `${JS_DIR}|..`
+                        }).run((code, stdOutData, stdErrData) => {
+                            if (stdOutData) {
+                                console.log(jsFile, stdOutData);
+                            }
+                            if (stdErrData) {
+                                console.error(jsFile, stdErrData)
+                            }
+                            (code ? reject : resolve)();
+                        });
+                    });
+                    await io.writeFile(outputFile, `${io.EOL}//# sourceMappingURL=${mapFile}`, { flag: "a" });
+                };
+            }
+        });
         console.log("All files successfully compiled");
     } catch {
         console.error("All files NOT successfully compiled");
+    } finally {
+        shutdown();
     }
 }());

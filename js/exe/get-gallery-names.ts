@@ -1,6 +1,6 @@
 import fs from "fs";
 import io from "../lib/io";
-import {matchAll, sortCaseInsensitive} from "../lib/utils";
+import {matchAll, sortCaseInsensitive} from "../lib/stringUtils";
 
 const LOG_DIR = `${io.projectDir}/log/category-files`;
 const galleryNames = new Set<String>();

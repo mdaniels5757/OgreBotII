@@ -8,8 +8,8 @@
 	},
 	"devDependencies": {
 		"@types/google-closure-compiler": "0.0.18",
-		"@types/node": "*",
-		"@types/node-fetch": "*",
-		"google-closure-compiler": "^20190618.0.0"
+		"@types/node": "^12.6.9",
+		"@types/node-fetch": "^2.5.0",
+		"google-closure-compiler": "^20190709.0.0"
 	}
 }

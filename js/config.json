@@ -1,0 +1,5 @@
+{
+    "log-level": {
+        "add-wikidata-categories": "debug"
+    }
+}

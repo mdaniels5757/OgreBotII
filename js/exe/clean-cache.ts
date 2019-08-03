@@ -1,6 +1,5 @@
-
-import getMediawiki from "../lib/mediawiki";
-import MultiThreadedPromise from "../lib/multithreaded-promise";
+import { ThreadPoolImpl } from "../lib/ThreadPool";
+import { MediawikiImpl } from "../lib/mediawiki/MediawikiImpl";
 
 const [category, numberOfThreads = 45] =  process.argv.slice(2);
 
@@ -8,20 +7,19 @@ if (!category) {
     throw new Error("Category name required");
 }
 
-const mw = getMediawiki();
+const mw = new MediawikiImpl();
 (async function () {
     let i = 0;
     do {
-        const multithread = new MultiThreadedPromise(+numberOfThreads);
         var members = await mw.categoryMembers(category);
-        for (const member of members) {
-            multithread.enqueue(async () => {
-                if (member) {
+            
+        await new ThreadPoolImpl(+numberOfThreads).enqueueAll(function* () {
+            for (const member of members) {
+                yield async() => {
                     console.log(`Purging #${++i}`);
-                    return await mw.editAppend(member, "", "\n\n");
-                }
-            });
-        }
-        await multithread.done();
+                    await mw.editAppend(member, "", "\n\n");
+                };
+            }
+        });
     } while (members.length > 500);
 }());
