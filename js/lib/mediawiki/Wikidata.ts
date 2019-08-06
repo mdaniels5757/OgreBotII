@@ -50,7 +50,7 @@ export interface Wikidata {
 export class WikidataImpl extends AbstractMediawiki implements Wikidata {
 
     constructor() {
-        super({username: MediawikiUsername.OGREBOT, api: MediawikiApi.WIKIDATA, threadPoolSize: 1, throttle: 10000})
+        super({username: MediawikiUsername.OGREBOT, api: MediawikiApi.WIKIDATA, threadPoolSize: 2, throttle: 0})
     }
 
     @awaitReady()
@@ -81,16 +81,21 @@ export class WikidataImpl extends AbstractMediawiki implements Wikidata {
     @cachable()
     @awaitReady() 
     async getentities(site: string, titles: string[], props: string[]) {
-        const {entities, success} = <EntityResponse>await this.post({
-            action: "wbgetentities",
-            sites: site,
-            titles: titles.join("|"),
-            props: props.join("|"),
-            bot: true
-        }, false);
-        if (!success) {
-            throw new Error(`Unsuccessful response.`);
+        const MAX_SIZE = 500;
+        const allEntities : {[s: string]: Entity} = {};
+        for (var i = 0; i < titles.length; i += MAX_SIZE) {
+            const {entities, success} = <EntityResponse>await this.post({
+                action: "wbgetentities",
+                sites: site,
+                titles: titles.slice(i, i + MAX_SIZE).join("|"),
+                props: props.join("|"),
+                bot: true
+            }, false);
+            if (!success) {
+                throw new Error(`Unsuccessful response.`);
+            }
+            Object.assign(allEntities, entities);
         }
-        return Object.values(entities).filter(entity => entity.missing === undefined);
+        return Object.values(allEntities).filter(entity => entity.missing === undefined);
     }
 }
