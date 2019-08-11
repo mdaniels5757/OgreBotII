@@ -10,4 +10,24 @@ export function shutdown() {
     warningTimer && clearTimeout(warningTimer);
 }
 
-export const sleep = (millis: number) => new Promise<void>(resolve => setTimeout(resolve, millis));
+export class SleepPromise {
+    private _timeout: number = 0;
+    private _promise: Promise<void>;
+
+    constructor(millis: number) {
+        this._promise = new Promise<void>(resolve => {
+            this._timeout = setTimeout(resolve, millis)
+        });
+    }
+
+    public get promise() {
+        return this._promise;
+    }
+
+    public cancel() {
+        clearTimeout(this._timeout);
+    }
+}
+
+
+export const sleep = (millis: number) => new SleepPromise(millis).promise;

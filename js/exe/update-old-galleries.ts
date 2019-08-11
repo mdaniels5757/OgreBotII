@@ -1,4 +1,5 @@
 import nodeFetch from 'node-fetch';
+import { SleepPromise } from '../lib/promiseUtils';
 
 function zeroPad(value: number) {
     return String(value).padStart(2, "0");
@@ -71,13 +72,16 @@ console.log(`Updating galleries from ${startDate} to ${endDate}`);
         for (var date = start; date < untilDate; date = plusMinutes(date, minutesBetween)) {
             if (date >= startDate && date <= endDate) {
                 console.log(`Updating ${date}`);
-                await nodeFetch("https://tools.wmflabs.org/magog//UpdateNewUploads.php", {
+                //sometimes the script doesn't receive a response. Set a timeout for 5 minutes
+                const timeout = new SleepPromise(1000 * 60 * 5);
+                await Promise.race([timeout.promise, nodeFetch("https://tools.wmflabs.org/magog//UpdateNewUploads.php", {
                     method: 'POST',
                     body: `project=commons.wikimedia&start=${date}00`,
                     headers: {
                       'Content-Type': 'application/x-www-form-urlencoded'
                     },
-                });
+                })]);
+                timeout.cancel();
                 //no need to wait for processing the response
             }
         }
