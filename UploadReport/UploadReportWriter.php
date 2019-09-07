@@ -25,7 +25,7 @@ class UploadReportWriter {
 	 * @param number $start        	
 	 * @param number $end        	
 	 */
-	public function __construct(Wiki $wiki, $start, $end) {
+	public function __construct(Wiki $wiki, string $start, string $end) {
 		global $validator;
 		
 		$validator->validate_arg($start, "numeric");
@@ -47,7 +47,7 @@ class UploadReportWriter {
 	 * @param string[][] $uploads        	
 	 * @return UserData[]
 	 */
-	private function getUserData($uploads) {
+	private function getUserData(array $uploads): array {
 		global $logger, $validator;
 		
 		$validator->validate_arg($uploads, "array");
@@ -62,15 +62,10 @@ class UploadReportWriter {
 		return $userDataGlob;
 	}
 	
-	/**
-	 *
-	 * @return string
-	 */
-	private function getUploadReport($count) {
+	private function getUploadReport(int $count): string {
 		global $logger, $messages, $wiki_interface;
 		
 		// need LOTS of memory for this operation.
-		$old_memory = ini_get("memory_limit");
 		ini_set('memory_limit', '6G');
 		$logger->debug("Memory limit set to 6G.");
 		
@@ -121,7 +116,7 @@ class UploadReportWriter {
 	 * @param bool $showUserName        	
 	 * @return string
 	 */
-	private function getTextUploadReport($upload, $showUserName) {
+	private function getTextUploadReport(array $upload, bool $showUserName): string {
 		global $logger, $validator;
 		
 		$validator->validate_arg($upload, "array");
@@ -218,12 +213,11 @@ class UploadReportWriter {
 	
 	/**
 	 *
-	 * @param bool $update
 	 * @throws APIError
 	 * @throws CURLError
 	 * @throws EditConflictException        	
 	 */
-	public function loadAndWrite($update) {
+	public function loadAndWrite(bool $update): void {
 		global $logger, $messages, $wiki_interface;
 		
 		$indexPageName = $this->getIndexPageName();
@@ -273,29 +267,17 @@ class UploadReportWriter {
 		}
 	}
 	
-	/**
-	 * 
-	 * @return string
-	 */
-	public function getGalleryPageName() {
+	public function getGalleryPageName(): string {
 		$indexPageName = $this->getIndexPageName();
 		$dateText = $this->getDateText();
 		return "$indexPageName/$dateText";
 	}
 	
-	/**
-	 * 
-	 * @return string
-	 */
-	private function getDateText() {
+	private function getDateText(): string {
 		return date("Y F j", strtotime(substr($this->start, 0, 8)));
 	}
 	
-	/**
-	 * 
-	 * @return string
-	 */
-	private function getIndexPageName() {
+	private function getIndexPageName(): string {
 		global $constants;
 		
 		return array_key_or_exception($constants, 'uploadreport.pagename');

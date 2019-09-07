@@ -148,3 +148,6 @@ $MB_WS_RE_OPT = "[$MB_WS_RE]*";
 define("DO_CLEANUP_FILE", TMP_DIRECTORY . "/do_cleanup_progress.\$request_key.txt");
 
 define("OGREBOT_USERAGENT", "OgreBot, Peachy framework");
+
+define("METADATA", "metadata");
+define("SPECIAL_INSTRUCTIONS", "SpecialInstructions");

@@ -6,20 +6,25 @@ abstract class NewUploadHandler {
 	 * 
 	 * @var NewUploadHandler[]
 	 */
-	private static $allHandlers = null;
+	private static $allHandlers;
 	
+	
+	/**
+	 * @return void
+	 */
+	private static function _autoload(): void {
+		self::$allHandlers = [new FacebookImageHandler(), new NonImageNewUploaderHandler(),
+			// new LargeFileHandler()
+			new NoLicenseOrNldHandler(), new SuspiciousFilenameHandler(), new FacebookExifHandler()];
+	}
 	/**
 	 * 
 	 * @return NewUploadHandler[]
 	 */
 	public static function getHandlers() {
-		if (self::$allHandlers === null) {
-			self::$allHandlers = [new FacebookImageHandler(), new NonImageNewUploaderHandler(), 
-				// new LargeFileHandler()
-				new NoLicenseOrNldHandler(), new SuspiciousFilenameHandler()];
-		}
 		return self::$allHandlers;
 	}
+	
 	
 	/**
 	 * 

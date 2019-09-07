@@ -1268,10 +1268,10 @@ class Wiki_Interface {
 		//   carry absurdly large amounts of metadata (>=12MB)
 		$hook = function (&$api_data) {
 			foreach ($api_data['query']['allimages'] as &$file) {
-				if (isset($file['metadata'])) {
-					foreach ($file['metadata'] as $key => &$metadatum) {
-						if (@$metadatum['name'] !== "Make" && @$metadatum['name'] !== 'Model') {
-							unset($file['metadata'][$key]);
+				if (isset($file[METADATA])) {
+					foreach ($file[METADATA] as $key => &$metadatum) {
+						if (!in_array(@$metadatum["name"], ["Make", "Model", SPECIAL_INSTRUCTIONS])) {
+							unset($file[METADATA][$key]);
 						}
 					}
 				}
