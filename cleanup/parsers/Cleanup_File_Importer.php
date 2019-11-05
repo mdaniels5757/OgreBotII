@@ -41,7 +41,7 @@ class Cleanup_File_Importer implements Cleanup_Module {
 	private function get_project(Cleanup_Instance $ci): ?string {
 		foreach ($ci->get_page_parser()->__get("elements") as $unparsed_element) {
 			
-			if (preg_match("/<\!\-\-\s*This file was moved here using FileImporter (?:from https:)?" . 
+			if (preg_match("/<\!\-\-\s*This file was moved here using FileImporter from (?:https:)?" . 
 					"\/\/([\w+\-]+)\.wikipedia\./u", $unparsed_element, $match)) {
 				return $match[1];
 			}
