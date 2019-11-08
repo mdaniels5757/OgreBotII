@@ -6,7 +6,7 @@ import { ThreadPoolImpl } from "../lib/ThreadPool";
 
 const {compiler: ClosureCompiler} = compiler;
 
-const JS_DIR = `${io.projectDir}/public_html/js`;
+const JS_DIR = `${io.PROJECT_DIR}/public_html/js`;
 const SRC_DIR = `${JS_DIR}/src`;
 const DEST_DIR = `${JS_DIR}/bin`;
 const MODULES_DIR = `${SRC_DIR}/modules`;

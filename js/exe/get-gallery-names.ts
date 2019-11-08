@@ -2,7 +2,7 @@ import fs from "fs";
 import io from "../lib/io";
 import {matchAll, sortCaseInsensitive} from "../lib/stringUtils";
 
-const LOG_DIR = `${io.projectDir}/log/category-files`;
+const LOG_DIR = `${io.PROJECT_DIR}/log/category-files`;
 const galleryNames = new Set<String>();
 (async function() {
     var files = fs.readdirSync(LOG_DIR);

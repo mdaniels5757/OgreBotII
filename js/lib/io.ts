@@ -4,16 +4,16 @@ import {EOL} from "os";
 import { cachable } from "./decorators/cachable";
 export default class Io {
 
+    public static readonly readDir = fs.readdirSync.bind(fs);
+
     public static readonly EOL = EOL;
 
-    public static get projectDir() {
-        return `${__dirname}/../..`;
-    }
+    public static readonly PROJECT_DIR  = `${__dirname}/../..`;
 
     @cachable()
     private static getProperties(file: string): Map<string, string> {
         const thisProperties = new Map();
-        const contents = fs.readFileSync(`${this.projectDir}/properties/${file}.properties`, {encoding: "UTF-8"});
+        const contents = fs.readFileSync(`${this.PROJECT_DIR}/properties/${file}.properties`, {encoding: "UTF-8"});
         for (const [, key, val] of matchAll(/^\s*(.+?)\s*\=\s*"?(.+)"\s*?$/gm, contents)) {
             thisProperties.set(key, val);
         }
