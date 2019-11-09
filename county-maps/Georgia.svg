@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="206.31064"
+   height="223.40005"
+   id="svg5618"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.2 r9819"
+   version="1.0"
+   sodipodi:docname="Georgia Republican Presidential Primary Election Results by County, 2012.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs5620">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective5626" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.0844526"
+     inkscape:cx="81.342104"
+     inkscape:cy="102.67774"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5623">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-354.801,-381.6336)">
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 454.26353,387.02986 L 453.28414,390.70453 L 449.71234,393.23737 L 447.00907,397.67258 L 446.2332,401.16434 L 434.43737,397.1715 L 437.63437,388.90998 L 440.11567,388.62431 L 454.26353,387.02986"
+       id="GA_Rabun"
+       inkscape:label="Rabun, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 423.00651,390.38925 L 437.63437,388.90998 L 434.43737,397.1715 L 433.40626,398.31357 L 429.69178,398.98313 L 429.58059,397.8054 L 428.33905,394.50385 L 427.25417,393.81912 L 426.14857,393.85385 L 423.89714,392.44825 L 422.74116,391.23915 L 423.00651,390.38925"
+       id="GA_Towns"
+       inkscape:label="Towns, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 434.35403,555.94469 L 435.52693,573.01702 L 431.02778,573.3372 L 420.69358,574.147 L 415.4627,574.56176 L 415.58085,572.61219 L 416.24707,571.04143 L 416.47874,570.71133 L 421.5287,564.10942 L 426.48296,560.59472 L 428.71165,556.58032 L 434.35403,555.94469"
+       id="GA_Mitchell"
+       inkscape:label="Mitchell, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 417.2617,557.65605 L 428.71165,556.58032 L 426.48296,560.59472 L 421.5287,564.10942 L 416.47874,570.71133 L 416.24707,571.04143 L 415.58085,572.61219 L 415.4627,574.56176 L 414.08406,574.63157 L 409.51109,566.57202 L 409.05495,558.40719 L 417.2617,557.65605"
+       id="GA_Baker"
+       inkscape:label="Baker, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 409.51109,566.57202 L 414.08406,574.63157 L 406.6325,575.662 L 398.99077,576.07593 L 398.55161,567.52452 L 407.00926,567.0776 L 409.50617,566.68404 L 409.51109,566.57202"
+       id="GA_Miller"
+       inkscape:label="Miller, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 401.59936,555.81753 L 409.05495,558.40719 L 409.51109,566.57202 L 409.50617,566.68404 L 407.00926,567.0776 L 398.55161,567.52452 L 398.99077,576.07593 L 395.03115,576.22794 L 394.64196,575.28054 L 394.369,574.73644 L 392.57752,572.58359 L 392.2849,572.4875 L 391.94167,572.47243 L 391.60701,572.26227 L 391.24374,571.30152 L 390.83604,567.9714 L 391.16359,566.77673 L 391.64054,565.55965 L 392.56782,555.64919 L 393.3641,557.13573 L 394.2644,557.07749 L 395.04113,556.86544 L 396.15112,556.48338 L 401.59936,555.81753"
+       id="GA_Early"
+       inkscape:label="Early, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 398.99077,576.07593 L 406.6325,575.662 L 405.86019,577.34032 L 406.2711,584.30861 L 405.86028,586.658 L 404.51674,588.89768 L 402.90794,589.84064 L 402.28427,591.01871 L 402.19067,591.74944 L 402.57262,592.69652 L 402.52204,592.6943 L 396.05004,579.65366 L 395.03115,576.22794 L 398.99077,576.07593"
+       id="GA_Seminole"
+       inkscape:label="Seminole, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 420.69358,574.147 L 421.94098,592.24342 L 402.57262,592.69652 L 402.19067,591.74944 L 402.28427,591.01871 L 402.90794,589.84064 L 404.51674,588.89768 L 405.86028,586.658 L 406.2711,584.30861 L 405.86019,577.34032 L 406.6325,575.662 L 414.08406,574.63157 L 415.4627,574.56176 L 420.69358,574.147"
+       id="GA_Decatur"
+       inkscape:label="Decatur, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 431.02778,573.3372 L 431.31824,577.93639 L 431.85134,579.234 L 432.35673,579.92587 L 433.11796,580.7267 L 433.87146,591.93083 L 425.94551,592.14044 L 421.94098,592.24342 L 420.69358,574.147 L 431.02778,573.3372"
+       id="GA_Grady"
+       inkscape:label="Grady, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 435.52693,573.01702 L 446.30183,573.96051 L 447.52207,591.60324 L 436.93708,591.85905 L 433.87146,591.93083 L 433.11796,580.7267 L 432.35673,579.92587 L 431.85134,579.234 L 431.31824,577.93639 L 431.02778,573.3372 L 435.52693,573.01702"
+       id="GA_Thomas"
+       inkscape:label="Thomas, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 456.71169,573.32417 L 459.88463,582.68337 L 458.79777,583.77594 L 457.53066,586.171 L 457.4943,586.33956 L 458.91061,588.62795 L 459.53608,589.14048 L 463.04943,591.23858 L 452.83012,591.49233 L 447.52207,591.60324 L 446.30183,573.96051 L 452.56247,571.52758 L 456.71169,573.32417"
+       id="GA_Brooks"
+       inkscape:label="Brooks, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 454.02571,559.71486 L 452.56247,571.52758 L 446.30183,573.96051 L 435.52693,573.01702 L 434.70321,561.02067 L 448.40356,560.05453 L 454.02571,559.71486"
+       id="GA_Colquitt"
+       inkscape:label="Colquitt, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 457.04109,558.39561 L 456.97671,559.86247 L 457.20119,560.60355 L 457.4414,560.98695 L 459.53188,562.59544 L 460.154,562.85441 L 463.1034,569.96669 L 463.90475,572.90502 L 456.71169,573.32417 L 452.56247,571.52758 L 454.02571,559.71486 L 457.04109,558.39561"
+       id="GA_Cook"
+       inkscape:label="Cook, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 473.08896,564.72891 L 476.0926,564.41911 L 477.45546,579.05995 L 475.62981,580.15993 L 475.23405,577.63032 L 474.27204,575.71298 L 468.82628,576.07489 L 467.78619,572.63737 L 467.66565,571.26014 L 468.56081,566.86503 L 473.6087,566.41326 L 473.64553,566.23389 L 473.43914,565.41034 L 473.08896,564.72891"
+       id="GA_Lanier"
+       inkscape:label="Lanier, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 463.90475,572.90502 L 467.78619,572.63737 L 468.82628,576.07489 L 474.27204,575.71298 L 475.23405,577.63032 L 475.62981,580.15993 L 471.92341,591.038 L 464.98005,591.21109 L 463.04943,591.23858 L 459.53608,589.14048 L 458.91061,588.62795 L 457.4943,586.33956 L 457.53066,586.171 L 458.79777,583.77594 L 459.88463,582.68337 L 456.71169,573.32417 L 463.90475,572.90502"
+       id="GA_Lowndes"
+       inkscape:label="Lowndes, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 477.45546,579.05995 L 482.57669,580.23676 L 482.99988,580.98655 L 483.51367,582.64168 L 484.59955,583.96356 L 485.15707,584.2921 L 486.20252,584.63844 L 487.70129,584.63544 L 488.50468,584.55848 L 490.08511,584.59164 L 492.70099,584.86935 L 493.38937,585.18554 L 493.77627,585.60795 L 493.91016,585.85636 L 494.1494,590.46777 L 489.90138,590.59264 L 471.92341,591.038 L 475.62981,580.15993 L 477.45546,579.05995"
+       id="GA_Echols"
+       inkscape:label="Echols, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 476.0926,564.41911 L 487.98116,563.33003 L 491.28012,569.57076 L 492.5887,571.01462 L 495.00014,572.98109 L 498.99466,579.29216 L 499.57522,584.70409 L 500.15978,588.87093 L 500.78188,590.28466 L 499.14736,590.32876 L 494.1494,590.46777 L 493.91016,585.85636 L 493.77627,585.60795 L 493.38937,585.18554 L 492.70099,584.86935 L 490.08511,584.59164 L 488.50468,584.55848 L 487.70129,584.63544 L 486.20252,584.63844 L 485.15707,584.2921 L 484.59955,583.96356 L 483.51367,582.64168 L 482.99988,580.98655 L 482.57669,580.23676 L 477.45546,579.05995 L 476.0926,564.41911"
+       id="GA_Clinch"
+       inkscape:label="Clinch, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 488.86592,554.80051 L 487.98116,563.33003 L 476.0926,564.41911 L 473.08896,564.72891 L 472.8026,562.75797 L 472.00933,558.48061 L 470.26062,557.00295 L 468.49656,554.96715 L 468.43678,554.84507 L 468.38776,554.06464 L 475.58889,553.54448 L 480.80556,554.8558 L 481.39344,555.4825 L 488.86592,554.80051"
+       id="GA_Atkinson"
+       inkscape:label="Atkinson, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 467.93444,551.69179 L 468.38776,554.06464 L 468.43678,554.84507 L 468.49656,554.96715 L 470.26062,557.00295 L 472.00933,558.48061 L 472.8026,562.75797 L 473.08896,564.72891 L 473.43914,565.41034 L 473.64553,566.23389 L 473.6087,566.41326 L 468.56081,566.86503 L 467.66565,571.26014 L 467.78619,572.63737 L 463.90475,572.90502 L 463.1034,569.96669 L 460.154,562.85441 L 459.53188,562.59544 L 457.4414,560.98695 L 457.20119,560.60355 L 456.97671,559.86247 L 457.04109,558.39561 L 460.31437,552.18993 L 467.93444,551.69179"
+       id="GA_Berrien"
+       inkscape:label="Berrien, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 472.89006,541.79524 L 467.93444,551.69179 L 460.31437,552.18993 L 453.41629,547.28989 L 454.61995,539.49474 L 457.88151,539.24694 L 459.96641,542.63256 L 462.41216,543.65212 L 465.93179,543.4627 L 468.22616,542.48828 L 472.89006,541.79524"
+       id="GA_Irwin"
+       inkscape:label="Irwin, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 447.62941,548.99068 L 453.41629,547.28989 L 460.31437,552.18993 L 457.04109,558.39561 L 454.02571,559.71486 L 448.40356,560.05453 L 447.62941,548.99068"
+       id="GA_Tift"
+       inkscape:label="Tift, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 435.0904,536.93986 L 440.64861,538.55212 L 440.82057,538.67551 L 441.03252,540.52736 L 441.60137,546.94873 L 444.70992,546.72315 L 445.04791,546.85746 L 446.19871,547.68985 L 447.62941,548.99068 L 448.40356,560.05453 L 434.70321,561.02067 L 434.35403,555.94469 L 432.74592,546.39716 L 435.0904,536.93986"
+       id="GA_Worth"
+       inkscape:label="Worth, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 421.8145,548.607 L 432.74592,546.39716 L 434.35403,555.94469 L 428.71165,556.58032 L 417.2617,557.65605 L 415.79848,549.0959 L 421.8145,548.607"
+       id="GA_Dougherty"
+       inkscape:label="Dougherty, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 411.97985,549.41699 L 415.79848,549.0959 L 417.2617,557.65605 L 409.05495,558.40719 L 401.59936,555.81753 L 401.27033,550.28271 L 411.97985,549.41699"
+       id="GA_Calhoun"
+       inkscape:label="Calhoun, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 388.06334,543.71934 L 395.17928,543.32577 L 396.0525,550.45627 L 401.27033,550.28271 L 401.59936,555.81753 L 396.15112,556.48338 L 395.04113,556.86544 L 394.2644,557.07749 L 393.3641,557.13573 L 392.56782,555.64919 L 388.70984,544.65993 L 388.06334,543.71934"
+       id="GA_Clay"
+       inkscape:label="Clay, GA"
+       sodipodi:nodetypes="cccccccccccc" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 390.34141,533.79577 L 396.70919,536.34493 L 395.17928,543.32577 L 388.06334,543.71934 L 390.34141,533.79577"
+       id="GA_Quitman"
+       inkscape:label="Quitman, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 406.62181,535.82071 L 408.83006,535.65337 L 409.21115,542.5588 L 410.57065,543.17231 L 412.20314,546.5562 L 412.26328,548.15522 L 412.09309,549.06358 L 411.97985,549.41699 L 401.27033,550.28271 L 396.0536,550.43116 L 395.17928,543.32577 L 396.70919,536.34493 L 406.62181,535.82071"
+       id="GA_Randolph"
+       sodipodi:nodetypes="ccccccccccccc"
+       inkscape:label="Randolph, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 421.27749,545.41961 L 421.8145,548.607 L 415.79848,549.0959 L 411.97985,549.41699 L 412.09309,549.06358 L 412.26328,548.15522 L 412.20314,546.5562 L 410.57065,543.17231 L 409.21115,542.5588 L 408.83006,535.65337 L 414.787,532.96458 L 419.28921,537.02827 L 421.27749,545.41961 z"
+       id="GA_Terrell"
+       sodipodi:nodetypes="ccccccccccccc"
+       inkscape:label="Terrell, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 435.51593,533.92504 L 435.0904,536.93986 L 432.74592,546.39716 L 421.8145,548.607 L 421.27749,545.41961 L 419.28921,537.02827 L 419.13813,535.02705 L 435.51593,533.92504"
+       id="GA_Lee"
+       inkscape:label="Lee, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 433.53132,528.50218 L 447.36962,527.44437 L 447.9582,535.56072 L 440.64861,538.55212 L 435.0904,536.93986 L 435.51593,533.92504 L 433.53132,528.50218"
+       id="GA_Crisp"
+       inkscape:label="Crisp, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 447.9582,535.56072 L 453.18442,535.41725 L 454.61995,539.49474 L 453.41629,547.28989 L 447.62941,548.99068 L 446.19871,547.68985 L 445.04791,546.85746 L 444.70992,546.72315 L 441.60137,546.94873 L 441.03252,540.52736 L 440.82057,538.67551 L 440.64861,538.55212 L 447.9582,535.56072"
+       id="GA_Turner"
+       inkscape:label="Turner, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 453.18442,535.41725 L 465.09136,534.32172 L 472.53725,536.80237 L 472.89006,541.79524 L 468.22616,542.48828 L 465.93179,543.4627 L 462.41216,543.65212 L 459.96641,542.63256 L 457.88151,539.24694 L 454.61995,539.49474 L 453.18442,535.41725"
+       id="GA_Ben_Hill"
+       inkscape:label="Ben Hill, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 472.53725,536.80237 L 478.65628,534.54422 L 479.27653,541.27916 L 487.53453,540.43254 L 488.0069,545.75283 L 489.28219,545.64591 L 489.64039,549.77385 L 488.86592,554.80051 L 481.39344,555.4825 L 480.80556,554.8558 L 475.58889,553.54448 L 468.38776,554.06464 L 467.93444,551.69179 L 472.89006,541.79524 L 472.53725,536.80237"
+       id="GA_Coffee"
+       inkscape:label="Coffee, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 491.53221,538.25867 L 494.48628,540.06796 L 496.29756,541.11035 L 498.89059,541.90832 L 503.30518,544.33919 L 503.68044,544.77919 L 503.99073,545.46249 L 503.48142,545.51978 L 501.25892,547.49645 L 501.37012,548.67418 L 499.79798,550.59613 L 496.86116,551.52788 L 489.64039,549.77385 L 489.28219,545.64591 L 488.0069,545.75283 L 487.53453,540.43254 L 491.53221,538.25867"
+       id="GA_Bacon"
+       inkscape:label="Bacon, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 509.60392,530.97578 L 512.91475,532.40978 L 526.18334,542.76592 L 528.15574,546.57013 L 524.54365,552.74284 L 523.16171,552.06317 L 521.60945,551.47016 L 519.72035,552.11847 L 516.86641,552.81131 L 512.50099,552.31204 L 512.09047,552.01529 L 507.98058,547.83852 L 506.52573,533.80903 L 508.11422,531.43167 L 509.60392,530.97578"
+       id="GA_Wayne"
+       inkscape:label="Wayne, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 503.99073,545.46249 L 507.98058,547.83852 L 512.09047,552.01529 L 514.31148,554.85665 L 514.1733,555.86056 L 513.62373,556.42286 L 506.90135,560.55136 L 506.78573,560.54628 L 503.14375,559.89413 L 496.86116,551.52788 L 499.79798,550.59613 L 501.37012,548.67418 L 501.25892,547.49645 L 503.48142,545.51978 L 503.99073,545.46249"
+       id="GA_Pierce"
+       inkscape:label="Pierce, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 524.54365,552.74284 L 523.94611,560.33653 L 521.62669,563.44922 L 519.06257,564.13669 L 518.34738,564.4311 L 518.08442,564.81412 L 517.81016,566.69169 L 512.71863,565.91076 L 512.23824,569.0209 L 510.20999,569.21061 L 503.14375,559.89413 L 506.78573,560.54628 L 506.90135,560.55136 L 513.62373,556.42286 L 514.1733,555.86056 L 514.31148,554.85665 L 512.09047,552.01529 L 512.50099,552.31204 L 516.86641,552.81131 L 519.72035,552.11847 L 521.60945,551.47016 L 523.16171,552.06317 L 524.54365,552.74284"
+       id="GA_Brantley"
+       inkscape:label="Brantley, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 489.64039,549.77385 L 496.86116,551.52788 L 503.14375,559.89413 L 510.20999,569.21061 L 498.90711,570.23491 L 499.7322,580.38517 L 509.4093,579.61895 L 510.55972,579.79974 L 508.98004,590.1413 L 500.78188,590.28466 L 500.15978,588.87093 L 499.57522,584.70409 L 498.99466,579.29216 L 495.00014,572.98109 L 492.5887,571.01462 L 491.28012,569.57076 L 487.98116,563.33003 L 488.86592,554.80051 L 489.64039,549.77385"
+       id="GA_Ware"
+       inkscape:label="Ware, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 517.81016,566.69169 L 520.09281,577.03624 L 515.6241,579.38492 L 515.05637,584.40254 L 515.19123,585.37135 L 515.77126,586.34163 L 516.92235,587.99214 L 517.38345,589.44586 L 517.27565,592.5615 L 516.92264,595.73877 L 516.57148,598.95594 L 511.97324,599.6374 L 511.71187,599.57163 L 510.91305,598.88498 L 510.21227,597.77911 L 509.86411,596.7213 L 508.98004,590.1413 L 510.55972,579.79974 L 509.4093,579.61895 L 499.7322,580.38517 L 498.90711,570.23491 L 510.20999,569.21061 L 512.23824,569.0209 L 512.71863,565.91076 L 517.81016,566.69169"
+       id="GA_Charlton"
+       inkscape:label="Charlton, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 537.31445,566.1106 L 539.0564,580.2794 L 538.43918,580.32108 L 535.0323,580.58062 L 532.5489,580.58384 L 527.88572,579.8579 L 521.73717,578.2523 L 520.09281,577.03624 L 517.81016,566.69169 L 518.08442,564.81412 L 518.34738,564.4311 L 519.06257,564.13669 L 521.62669,563.44922 L 523.94611,560.33653 L 524.06999,560.89582 L 524.18866,561.0784 L 527.35023,562.20178 L 529.22202,562.35996 L 537.31445,566.1106"
+       id="GA_Camden"
+       inkscape:label="Camden, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 542.93877,552.44249 L 537.31445,566.1106 L 529.22202,562.35996 L 527.35023,562.20178 L 524.18866,561.0784 L 524.06999,560.89582 L 523.94611,560.33653 L 524.54365,552.74284 L 528.15574,546.57013 L 528.17815,546.71954 L 530.22131,548.82912 L 532.86972,550.59241 L 538.36176,551.89772 L 542.27848,552.55831 L 542.93877,552.44249"
+       id="GA_Glynn"
+       inkscape:label="Glynn, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 532.13923,534.57479 L 533.40911,535.00338 L 535.28619,536.44324 L 536.2872,536.7297 L 539.19079,535.64808 L 541.33307,535.82899 L 542.45843,536.25123 L 543.15874,536.62585 L 544.4123,537.75599 L 544.56062,538.0883 L 544.55836,539.37689 L 542.93877,552.44249 L 542.27848,552.55831 L 538.36176,551.89772 L 532.86972,550.59241 L 530.22131,548.82912 L 528.17815,546.71954 L 528.15574,546.57013 L 526.18334,542.76592 L 532.13923,534.57479"
+       id="GA_McIntosh"
+       inkscape:label="McIntosh, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 387.40032,466.61494 L 391.04509,475.78126 L 379.81663,481.04774 L 376.63921,467.25397 L 387.40032,466.61494"
+       id="GA_Heard"
+       inkscape:label="Heard, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 371.54834,445.34361 L 376.0468,445.12113 L 378.21653,444.67698 L 384.46955,444.31433 L 385.24036,448.60879 L 384.9628,451.22105 L 382.09555,454.11422 L 376.07124,456.77109 L 374.20705,456.85217 L 371.54834,445.34361"
+       id="GA_Haralson"
+       inkscape:label="Haralson, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 383.94778,435.33574 L 388.74513,435.64403 L 387.05746,441.93015 L 384.3181,442.07418 L 384.46955,444.31433 L 378.21653,444.67698 L 376.0468,445.12113 L 371.54834,445.34361 L 370.87482,442.46155 L 369.62725,437.07102 L 375.90919,436.70964 L 375.87479,435.92621 L 383.94778,435.33574"
+       id="GA_Polk"
+       inkscape:label="Polk, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 381.4598,412.43191 L 384.52781,421.37746 L 384.69503,423.50607 L 384.43278,429.81132 L 383.64889,429.85654 L 383.94778,435.33574 L 375.87479,435.92621 L 375.90919,436.70964 L 369.62725,437.07102 L 367.43537,427.54495 L 370.29885,427.37741 L 372.51055,423.00749 L 374.56239,421.95003 L 377.70755,419.8184 L 378.05963,418.88904 L 379.98579,412.53013 L 381.4598,412.43191"
+       id="GA_Floyd"
+       inkscape:label="Floyd, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 379.98579,412.53013 L 378.05963,418.88904 L 377.70755,419.8184 L 374.56239,421.95003 L 372.51055,423.00749 L 370.29885,427.37741 L 367.43537,427.54495 L 364.71738,416.56229 L 364.01941,413.57779 L 379.98579,412.53013"
+       id="GA_Chattooga"
+       inkscape:label="Chattooga, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 383.61827,393.43883 L 389.91894,392.98051 L 389.01793,395.94188 L 386.17372,406.22794 L 385.98647,407.77267 L 387.20729,409.81357 L 382.0557,410.73137 L 381.71605,406.1807 L 377.21818,406.47199 L 377.28589,406.08401 L 377.98743,404.20349 L 378.52019,401.71465 L 380.93255,401.10378 L 381.90581,399.30032 L 383.56881,394.15339 L 383.50186,393.45181 L 383.61827,393.43883"
+       id="GA_Whitfield"
+       inkscape:label="Whitfield, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 372.70862,394.32834 L 383.50186,393.45181 L 383.56881,394.15339 L 381.90581,399.30032 L 380.93255,401.10378 L 378.52019,401.71465 L 377.98743,404.20349 L 372.70862,394.32834"
+       id="GA_Catoosa"
+       inkscape:label="Catoosa, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 372.70862,394.32834 L 377.98743,404.20349 L 377.28589,406.08401 L 377.21818,406.47199 L 381.71605,406.1807 L 382.0557,410.73137 L 381.4598,412.43191 L 379.98579,412.53013 L 364.01941,413.57779 L 363.63443,411.95727 L 365.14906,409.69613 L 366.39857,405.39259 L 366.26986,403.62406 L 367.36331,398.3399 L 368.9759,394.67131 L 372.70862,394.32834"
+       id="GA_Walker"
+       inkscape:label="Walker, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 368.9759,394.67131 L 367.36331,398.3399 L 366.26986,403.62406 L 366.39857,405.39259 L 365.14906,409.69613 L 363.63443,411.95727 L 361.04587,400.99477 L 359.82907,395.23275 L 364.86669,394.93258 L 368.9759,394.67131"
+       id="GA_Dade"
+       inkscape:label="Dade, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 517.4992,521.32046 L 518.4398,522.57079 L 520.42762,527.09606 L 520.51759,527.60319 L 525.89989,532.15073 L 531.81343,534.57497 L 532.13923,534.57479 L 526.18334,542.76592 L 512.91475,532.40978 L 517.4992,521.32046"
+       id="GA_Long"
+       inkscape:label="Long, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 502.2589,527.68146 L 509.60392,530.97578 L 508.11422,531.43167 L 506.52573,533.80903 L 507.98058,547.83852 L 503.99073,545.46249 L 503.68044,544.77919 L 503.30518,544.33919 L 498.89059,541.90832 L 496.29756,541.11035 L 494.48628,540.06796 L 491.53221,538.25867 L 490.99333,532.3092 L 494.49682,531.99238 L 494.06551,527.30376 L 493.90061,526.02955 L 502.2589,527.68146"
+       id="GA_Appling"
+       inkscape:label="Appling, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 493.90061,526.02955 L 494.06551,527.30376 L 494.49682,531.99238 L 490.99333,532.3092 L 491.53221,538.25867 L 487.53453,540.43254 L 479.27653,541.27916 L 478.65628,534.54422 L 485.70235,529.0616 L 489.53749,526.79734 L 491.93969,526.00503 L 493.90061,526.02955"
+       id="GA_Jeff_Davis"
+       inkscape:label="Jeff Davis, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 405.39998,521.26569 L 405.77513,521.21339 L 406.1509,521.55929 L 406.34538,524.22122 L 406.46756,527.37591 L 406.30437,530.76423 L 406.62181,535.82071 L 396.70919,536.34493 L 390.34141,533.79577 L 390.38589,530.30812 L 394.98737,522.12996 L 405.39998,521.26569"
+       id="GA_Stewart"
+       inkscape:label="Stewart, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 405.77513,521.21339 L 406.89001,521.13199 L 410.04285,523.60885 L 410.84342,524.66841 L 412.61055,525.3143 L 414.67284,525.17314 L 414.787,532.96458 L 408.83006,535.65337 L 406.62181,535.82071 L 406.30437,530.76423 L 406.46756,527.37591 L 406.34538,524.22122 L 406.1509,521.55929 L 405.77513,521.21339"
+       id="GA_Webster"
+       inkscape:label="Webster, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 424.1185,519.94786 L 430.37,522.17699 L 433.53132,528.50218 L 435.51593,533.92504 L 419.13813,535.02705 L 419.28921,537.02827 L 414.787,532.96458 L 414.67284,525.17314 L 414.60843,523.67166 L 424.1185,519.94786"
+       id="GA_Sumter"
+       inkscape:label="Sumter, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 457.73065,522.88914 L 463.76053,531.98277 L 465.09136,534.32172 L 453.18442,535.41725 L 447.9582,535.56072 L 447.36962,527.44437 L 447.04303,523.25627 L 451.68342,522.85179 L 453.79143,522.32892 L 454.51673,521.88654 L 456.15347,521.79186 L 456.58274,521.90844 L 457.73065,522.88914"
+       id="GA_Wilcox"
+       inkscape:label="Wilcox, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 473.66699,520.05192 L 485.70235,529.0616 L 478.65628,534.54422 L 472.53725,536.80237 L 465.09136,534.32172 L 463.76053,531.98277 L 473.66699,520.05192"
+       id="GA_Telfair"
+       inkscape:label="Telfair, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 480.95935,511.18461 L 483.60067,511.45983 L 483.95959,511.52986 L 484.24416,512.46905 L 485.42352,517.1869 L 485.61463,519.67855 L 486.62018,523.40775 L 486.99359,524.13726 L 487.15763,524.44129 L 489.53749,526.79734 L 485.70235,529.0616 L 473.66699,520.05192 L 475.08703,517.05903 L 480.95935,511.18461"
+       id="GA_Wheeler"
+       inkscape:label="Wheeler, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 456.6683,515.17553 L 464.15469,507.41359 L 471.13722,519.70922 L 475.08703,517.05903 L 473.66699,520.05192 L 463.76053,531.98277 L 457.73065,522.88914 L 458.75324,521.85891 L 458.88537,521.48823 L 459.22682,519.31678 L 455.68398,516.32328 L 456.6683,515.17553"
+       id="GA_Dodge"
+       inkscape:label="Dodge, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 456.6683,515.17553 L 455.68398,516.32328 L 459.22682,519.31678 L 458.88537,521.48823 L 458.75324,521.85891 L 457.73065,522.88914 L 456.58274,521.90844 L 456.15347,521.79186 L 454.51673,521.88654 L 453.79143,522.32892 L 451.68342,522.85179 L 447.04303,523.25627 L 446.07248,515.34758 L 450.20214,509.67181 L 456.6683,515.17553"
+       id="GA_Pulaski"
+       inkscape:label="Pulaski, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 446.07248,515.34758 L 447.04303,523.25627 L 447.36962,527.44437 L 433.53132,528.50218 L 430.37,522.17699 L 436.93503,516.02529 L 446.07248,515.34758"
+       id="GA_Dooly"
+       inkscape:label="Dooly, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 429.46059,506.52437 L 436.32059,507.75577 L 436.93503,516.02529 L 430.37,522.17699 L 424.1185,519.94786 L 420.73306,513.53319 L 428.03245,505.90784 L 429.46059,506.52437"
+       id="GA_Macon"
+       inkscape:label="Macon, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 416.37987,512.67246 L 420.73306,513.53319 L 424.1185,519.94786 L 414.60843,523.67166 L 414.39935,520.60004 L 414.98368,518.42115 L 415.70071,517.42456 L 415.1858,512.00105 L 416.37987,512.67246 z M 416.37987,512.67246 L 416.37987,512.67246"
+       id="GA_Schley"
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:label="Schley, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 405.1744,507.10553 L 412.61091,505.26358 L 415.1858,512.00105 L 415.70071,517.42456 L 414.98368,518.42115 L 414.39935,520.60004 L 414.60843,523.67166 L 414.67284,525.17314 L 412.61055,525.3143 L 410.84342,524.66841 L 410.04285,523.60885 L 406.89001,521.13199 L 405.77513,521.21339 L 405.39998,521.26569 L 405.1744,507.10553"
+       id="GA_Marion"
+       inkscape:label="Marion, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 405.1744,507.10553 L 405.39998,521.26569 L 394.98737,522.12996 L 395.08716,522.0004 L 395.47671,520.54782 L 395.12059,519.75391 L 394.19476,518.90965 L 391.63848,518.09882 L 391.40486,517.81345 L 391.33904,517.41598 L 391.84915,515.77321 L 395.97131,513.81476 L 400.30626,512.78147 L 402.99474,508.02345 L 405.1744,507.10553"
+       id="GA_Chattahoochee"
+       inkscape:label="Chattahoochee, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 387.49407,504.9757 L 394.3532,504.49486 L 394.43396,505.62419 L 402.75203,504.97568 L 402.99474,508.02345 L 400.30626,512.78147 L 395.97131,513.81476 L 391.84915,515.77321 L 391.04752,509.29458 L 387.49407,504.9757"
+       id="GA_Muscogee"
+       inkscape:label="Muscogee, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 418.08714,496.12472 L 421.5647,498.54342 L 429.95275,505.37312 L 428.03245,505.90784 L 420.73306,513.53319 L 416.37987,512.67246 L 415.1858,512.00105 L 412.61091,505.26358 L 418.08714,496.12472"
+       id="GA_Taylor"
+       inkscape:label="Taylor, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 409.01493,490.53197 L 409.36764,490.41351 L 410.20057,490.65278 L 412.76366,492.46303 L 413.35021,493.28514 L 413.7928,494.25299 L 413.87529,494.6005 L 414.22077,494.8944 L 416.12889,495.70936 L 418.08714,496.12472 L 412.61091,505.26358 L 405.1744,507.10553 L 402.99474,508.02345 L 402.75203,504.97568 L 401.61953,492.83907 L 409.01493,490.53197"
+       id="GA_Talbot"
+       inkscape:label="Talbot, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 395.2454,492.00185 L 401.61953,492.83907 L 402.75203,504.97568 L 394.43396,505.62419 L 394.3532,504.49486 L 387.49407,504.9757 L 384.95168,498.65234 L 382.7056,493.00081 L 395.2454,492.00185"
+       id="GA_Harris"
+       inkscape:label="Harris, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 391.04509,475.78126 L 394.12093,477.12532 L 395.2454,492.00185 L 382.7056,493.00081 L 380.05202,482.03545 L 379.81663,481.04774 L 391.04509,475.78126"
+       id="GA_Troup"
+       inkscape:label="Troup, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 385.24036,448.60879 L 390.59379,449.6908 L 394.87953,459.09883 L 393.4758,462.13226 L 387.40032,466.61494 L 376.63921,467.25397 L 376.04849,464.71219 L 374.20705,456.85217 L 376.07124,456.77109 L 382.09555,454.11422 L 384.9628,451.22105 L 385.24036,448.60879"
+       id="GA_Carroll"
+       inkscape:label="Carroll, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 388.74513,435.64403 L 395.8422,435.26773 L 396.24119,441.43548 L 396.86972,441.38343 L 397.29209,448.00832 L 390.59379,449.6908 L 385.24036,448.60879 L 384.46955,444.31433 L 384.3181,442.07418 L 387.05746,441.93015 L 388.74513,435.64403"
+       id="GA_Paulding"
+       inkscape:label="Paulding, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 397.07123,392.41841 L 397.64599,398.62282 L 399.06353,399.81084 L 399.15474,399.95964 L 399.13379,400.10712 L 398.25573,401.47311 L 397.19919,402.53445 L 396.64962,404.66419 L 397.2634,411.46399 L 387.20729,409.81357 L 385.98647,407.77267 L 386.17372,406.22794 L 389.01793,395.94188 L 389.91894,392.98051 L 391.22313,392.87486 L 397.07123,392.41841"
+       id="GA_Murray"
+       inkscape:label="Murray, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 387.20729,409.81357 L 397.2634,411.46399 L 397.38857,413.06586 L 397.9089,419.43804 L 384.52781,421.37746 L 381.4598,412.43191 L 382.0557,410.73137 L 387.20729,409.81357"
+       id="GA_Gordon"
+       inkscape:label="Gordon, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 397.9089,419.43804 L 398.86824,435.10732 L 388.74513,435.64403 L 383.94778,435.33574 L 383.64889,429.85654 L 384.43278,429.81132 L 384.69503,423.50607 L 384.52781,421.37746 L 397.9089,419.43804"
+       id="GA_Bartow"
+       inkscape:label="Bartow, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 398.86824,435.10732 L 408.09172,434.61439 L 409.48802,438.18338 L 407.8663,443.79186 L 407.34921,445.59359 L 407.09211,446.25563 L 404.55315,449.17405 L 403.16992,450.5034 L 397.29209,448.00832 L 396.86972,441.38343 L 396.24119,441.43548 L 395.8422,435.26773 L 398.86824,435.10732"
+       id="GA_Cobb"
+       inkscape:label="Cobb, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 390.59379,449.6908 L 397.29209,448.00832 L 403.16992,450.5034 L 400.58695,454.25973 L 396.84015,456.4084 L 395.28383,458.05233 L 394.95299,458.49754 L 394.87953,459.09883 L 390.59379,449.6908"
+       id="GA_Douglas"
+       inkscape:label="Douglas, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 393.4758,462.13226 L 402.81621,461.86165 L 403.16107,466.70576 L 405.54622,469.18873 L 407.19693,471.41503 L 408.0265,472.96818 L 407.9804,474.67839 L 394.12093,477.12532 L 391.04509,475.78126 L 387.40032,466.61494 L 393.4758,462.13226"
+       id="GA_Coweta"
+       inkscape:label="Coweta, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 408.31272,476.42692 L 407.92044,486.43687 L 409.01493,490.53197 L 401.61953,492.83907 L 395.2454,492.00185 L 394.12093,477.12532 L 407.9804,474.67839 L 408.31272,476.42692"
+       id="GA_Meriwether"
+       inkscape:label="Meriwether, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 408.31272,476.42692 L 409.98578,475.09219 L 412.22544,474.95156 L 413.07354,475.7526 L 417.92832,475.41183 L 417.82069,484.71029 L 407.92044,486.43687 L 408.31272,476.42692"
+       id="GA_Pike"
+       inkscape:label="Pike, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 417.82069,484.71029 L 423.74054,486.99002 L 424.009,490.85339 L 421.5647,498.54342 L 418.08714,496.12472 L 416.12889,495.70936 L 414.22077,494.8944 L 413.87529,494.6005 L 413.7928,494.25299 L 413.35021,493.28514 L 412.76366,492.46303 L 410.20057,490.65278 L 409.36764,490.41351 L 409.01493,490.53197 L 407.92044,486.43687 L 417.82069,484.71029"
+       id="GA_Upson"
+       inkscape:label="Upson, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 424.009,490.85339 L 433.0453,490.17126 L 441.10809,496.82379 L 441.10745,496.83823 L 429.95275,505.37312 L 421.5647,498.54342 L 424.009,490.85339"
+       id="GA_Crawford"
+       inkscape:label="Crawford, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 429.95275,505.37312 L 441.10745,496.83823 L 441.01342,504.34182 L 440.93293,504.85594 L 438.30884,508.55978 L 437.5735,508.98361 L 437.17949,509.05321 L 436.32059,507.75577 L 429.46059,506.52437 L 428.03115,505.90848 L 429.95275,505.37312"
+       id="GA_Peach"
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:label="Peach, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 441.10745,496.83823 L 441.10809,496.82379 L 445.25467,497.7732 L 450.0088,507.314 L 450.20214,509.67181 L 446.07248,515.34758 L 436.93503,516.02529 L 436.32059,507.75577 L 437.17949,509.05321 L 437.5735,508.98361 L 438.30884,508.55978 L 440.93293,504.85594 L 441.01342,504.34182 L 441.10745,496.83823"
+       id="GA_Houston"
+       inkscape:label="Houston, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 464.15469,507.41359 L 456.6683,515.17553 L 450.20214,509.67181 L 450.0088,507.314 L 460.0471,500.21428 L 464.15469,507.41359"
+       id="GA_Bleckley"
+       inkscape:label="Bleckley, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 460.0471,500.21428 L 470.01899,493.47365 L 473.65901,492.76824 L 476.77598,493.83536 L 481.68139,496.87781 L 481.844,501.00803 L 482.95098,501.43671 L 480.95935,511.18461 L 475.08703,517.05903 L 471.13722,519.70922 L 464.15469,507.41359 L 460.0471,500.21428"
+       id="GA_Laurens"
+       inkscape:label="Laurens, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 453.51907,484.73859 L 460.74508,480.59962 L 461.35164,480.14118 L 461.93551,480.19937 L 464.45366,482.78592 L 466.39823,486.31743 L 468.12041,486.99755 L 468.75299,487.43074 L 469.72184,489.10946 L 470.19059,491.04859 L 470.01899,493.47365 L 460.0471,500.21428 L 451.70598,486.21196 L 453.51907,484.73859"
+       id="GA_Wilkinson"
+       inkscape:label="Wilkinson, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 447.79771,489.07031 L 451.70598,486.21196 L 460.0471,500.21428 L 450.0088,507.314 L 445.25467,497.7732 L 445.69093,494.26654 L 448.34056,491.13576 L 448.79739,489.96487 L 447.79771,489.07031"
+       id="GA_Twiggs"
+       inkscape:label="Twiggs, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 439.69973,484.70402 L 440.41383,486.33174 L 441.98938,487.54842 L 444.32537,487.35772 L 445.66675,487.72429 L 447.79771,489.07031 L 448.79739,489.96487 L 448.34056,491.13576 L 445.69093,494.26654 L 445.25467,497.7732 L 441.10809,496.82379 L 433.0453,490.17126 L 439.69973,484.70402"
+       id="GA_Bibb"
+       inkscape:label="Bibb, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 455.66262,472.27155 L 456.46457,472.22712 L 462.64632,473.32377 L 462.76107,473.51342 L 462.77432,473.78912 L 462.71085,474.16281 L 462.49119,474.30158 L 462.32954,474.68544 L 462.10201,476.40577 L 462.20427,476.79759 L 462.96704,478.05822 L 463.97115,477.2842 L 464.71342,476.45522 L 464.45366,482.78592 L 461.93551,480.19937 L 461.35164,480.14118 L 460.74508,480.59962 L 453.51907,484.73859 L 449.66632,472.88802 L 455.66262,472.27155"
+       id="GA_Baldwin"
+       inkscape:label="Baldwin, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 449.66632,472.88802 L 453.51907,484.73859 L 451.70598,486.21196 L 447.79771,489.07031 L 445.66675,487.72429 L 444.32537,487.35772 L 441.98938,487.54842 L 440.41383,486.33174 L 439.69973,484.70402 L 434.89644,476.6959 L 445.21495,473.93429 L 449.66632,472.88802"
+       id="GA_Jones"
+       inkscape:label="Jones, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 425.89133,474.11063 L 434.47354,474.45472 L 434.89644,476.6959 L 439.69973,484.70402 L 433.0453,490.17126 L 424.009,490.85339 L 423.74054,486.99002 L 426.43421,486.81503 L 426.7663,486.0115 L 425.89133,474.11063"
+       id="GA_Monroe"
+       inkscape:label="Monroe, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 425.89133,474.11063 L 426.7663,486.0115 L 426.43421,486.81503 L 423.74054,486.99002 L 417.82069,484.71029 L 417.92832,475.41183 L 422.69465,474.3649 L 425.89133,474.11063"
+       id="GA_Lamar"
+       inkscape:label="Lamar, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 411.9211,468.19431 L 413.21429,468.0918 L 423.15347,469.84928 L 422.69465,474.3649 L 417.92832,475.41183 L 413.07354,475.7526 L 412.22544,474.95156 L 409.98578,475.09219 L 408.31272,476.42692 L 407.9804,474.67839 L 408.0265,472.96818 L 411.9211,468.19431"
+       id="GA_Spalding"
+       inkscape:label="Spalding, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 402.81621,461.86165 L 408.47077,459.13425 L 411.9211,468.19431 L 408.0265,472.96818 L 407.19693,471.41503 L 405.54622,469.18873 L 403.16107,466.70576 L 402.81621,461.86165"
+       id="GA_Fayette"
+       inkscape:label="Fayette, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 414.93888,454.11858 L 415.72325,454.80459 L 415.99958,457.0864 L 415.97506,458.63466 L 415.23485,464.03566 L 414.89113,464.4441 L 413.0155,465.19799 L 413.21429,468.0918 L 411.9211,468.19431 L 408.47077,459.13425 L 412.28559,454.28087 L 414.93888,454.11858"
+       id="GA_Clayton"
+       inkscape:label="Clayton, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 429.47942,462.13414 L 432.14183,465.80575 L 434.47354,474.45472 L 425.89133,474.11063 L 422.69465,474.3649 L 423.15347,469.84928 L 429.47942,462.13414"
+       id="GA_Butts"
+       inkscape:label="Butts, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 414.93888,454.11858 L 418.68175,453.8738 L 424.54501,459.01079 L 429.47942,462.13414 L 423.15347,469.84928 L 413.21429,468.0918 L 413.0155,465.19799 L 414.89113,464.4441 L 415.23485,464.03566 L 415.97506,458.63466 L 415.99958,457.0864 L 415.72325,454.80459 L 414.93888,454.11858"
+       id="GA_Henry"
+       inkscape:label="Henry, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 413.95848,439.58864 L 424.45432,448.37511 L 423.28818,449.70673 L 420.86413,454.37863 L 418.68175,453.8738 L 414.93888,454.11858 L 412.28559,454.28087 L 412.04619,450.82781 L 411.85917,447.99607 L 411.83516,447.55338 L 411.23361,439.65004 L 413.95848,439.58864"
+       id="GA_DeKalb"
+       inkscape:label="DeKalb, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 413.79213,428.86276 L 420.48671,434.68781 L 413.95848,439.58864 L 411.23361,439.65004 L 411.83516,447.55338 L 411.85917,447.99607 L 412.04619,450.82781 L 412.28559,454.28087 L 408.47077,459.13425 L 402.81621,461.86165 L 393.4758,462.13226 L 394.87953,459.09883 L 394.95299,458.49754 L 395.28383,458.05233 L 396.84015,456.4084 L 400.58695,454.25973 L 403.16992,450.5034 L 404.55315,449.17405 L 407.09211,446.25563 L 407.34921,445.59359 L 407.8663,443.79186 L 409.48802,438.18338 L 408.09172,434.61439 L 413.79213,428.86276"
+       id="GA_Fulton"
+       inkscape:label="Fulton, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 413.1317,419.74415 L 413.25115,421.88878 L 413.79213,428.86276 L 408.09172,434.61439 L 398.86824,435.10732 L 397.9089,419.43804 L 413.1317,419.74415"
+       id="GA_Cherokee"
+       inkscape:label="Cherokee, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 397.38857,413.06586 L 400.9587,412.71577 L 408.15743,412.2498 L 409.08786,411.50512 L 409.14146,412.18078 L 410.4309,415.87538 L 412.83473,415.70577 L 413.1317,419.74415 L 397.9089,419.43804 L 397.38857,413.06586"
+       id="GA_Pickens"
+       inkscape:label="Pickens, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 414.54178,408.48294 L 414.91709,409.16908 L 423.57819,417.11848 L 424.76072,421.02197 L 413.25115,421.88878 L 413.1317,419.74415 L 412.83473,415.70577 L 410.4309,415.87538 L 409.14146,412.18078 L 409.08786,411.50512 L 414.54178,408.48294"
+       id="GA_Dawson"
+       inkscape:label="Dawson, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 413.25115,421.88878 L 424.76072,421.02197 L 421.35062,429.10762 L 420.48671,434.68781 L 413.79213,428.86276 L 413.25115,421.88878"
+       id="GA_Forsyth"
+       inkscape:label="Forsyth, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 430.89468,430.2179 L 432.40745,439.38115 L 425.9329,446.68795 L 424.45432,448.37511 L 413.95848,439.58864 L 420.48671,434.68781 L 421.35062,429.10762 L 430.89468,430.2179"
+       id="GA_Gwinnett"
+       inkscape:label="Gwinnett, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 428.68029,448.42303 L 424.54501,459.01079 L 418.68175,453.8738 L 420.86413,454.37863 L 423.28818,449.70673 L 424.45432,448.37511 L 425.9329,446.68795 L 428.68029,448.42303"
+       id="GA_Rockdale"
+       inkscape:label="Rockdale, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 444.59275,461.63547 L 445.21495,473.93429 L 434.89644,476.6959 L 434.47354,474.45472 L 432.14183,465.80575 L 438.49662,457.84572 L 444.59275,461.63547"
+       id="GA_Jasper"
+       inkscape:label="Jasper, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 428.68029,448.42303 L 438.26516,454.54145 L 438.49662,457.84572 L 432.14183,465.80575 L 429.47942,462.13414 L 424.54501,459.01079 L 428.68029,448.42303"
+       id="GA_Newton"
+       inkscape:label="Newton, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 432.40745,439.38115 L 438.33193,439.98868 L 444.11142,443.65231 L 438.26516,454.54145 L 428.68029,448.42303 L 425.9329,446.68795 L 432.40745,439.38115"
+       id="GA_Walton"
+       inkscape:label="Walton, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 430.89468,430.2179 L 432.3149,432.16983 L 432.94731,432.60663 L 436.51426,433.48356 L 437.44426,433.40852 L 440.60135,433.56157 L 441.03416,433.84483 L 442.28933,436.83567 L 438.33193,439.98868 L 432.40745,439.38115 L 430.89468,430.2179"
+       id="GA_Barrow"
+       inkscape:label="Barrow, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 446.48364,425.56271 L 448.76397,432.74335 L 442.28933,436.83567 L 441.03416,433.84483 L 440.60135,433.56157 L 437.44426,433.40852 L 436.51426,433.48356 L 432.94731,432.60663 L 432.3149,432.16983 L 430.89468,430.2179 L 437.77971,421.72368 L 438.92621,422.7369 L 439.68803,423.27711 L 440.13611,423.45969 L 441.80874,423.2073 L 443.24515,422.81062 L 445.54807,424.69269 L 446.48364,425.56271"
+       id="GA_Jackson"
+       inkscape:label="Jackson, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 448.76397,432.74335 L 452.84275,434.33051 L 452.53138,434.33133 L 452.22325,436.48614 L 452.24989,436.62125 L 452.41278,437.03382 L 453.92173,438.69643 L 452.82381,441.44282 L 442.28933,436.83567 L 448.76397,432.74335"
+       id="GA_Clarke"
+       inkscape:label="Clarke, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 438.33193,439.98868 L 442.28933,436.83567 L 452.82381,441.44282 L 452.9863,445.49341 L 448.43218,448.88086 L 444.11142,443.65231 L 438.33193,439.98868"
+       id="GA_Oconee"
+       inkscape:label="Oconee, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 448.43218,448.88086 L 454.1827,458.4835 L 444.59275,461.63547 L 438.49662,457.84572 L 438.26516,454.54145 L 444.11142,443.65231 L 448.43218,448.88086"
+       id="GA_Morgan"
+       inkscape:label="Morgan, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 444.59275,461.63547 L 454.1827,458.4835 L 459.18695,464.057 L 459.72971,464.39211 L 460.00388,464.66118 L 460.06964,464.81247 L 459.67725,466.3301 L 458.07305,467.4977 L 456.99019,468.00402 L 456.15304,468.85055 L 455.60822,471.61397 L 455.6019,472.08789 L 455.66262,472.27155 L 449.66632,472.88802 L 445.21495,473.93429 L 444.59275,461.63547"
+       id="GA_Putnam"
+       inkscape:label="Putnam, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 470.85195,458.82415 L 472.06327,459.51441 L 473.88821,464.78186 L 475.40968,467.31379 L 475.76708,467.99554 L 474.62171,468.11179 L 471.87129,470.32231 L 471.44306,471.08902 L 471.07384,472.40856 L 470.77632,473.16656 L 470.35196,473.68006 L 466.41506,476.28375 L 464.71342,476.45522 L 463.97115,477.2842 L 462.96704,478.05822 L 462.20427,476.79759 L 462.10201,476.40577 L 462.32954,474.68544 L 462.49119,474.30158 L 462.71085,474.16281 L 462.77432,473.78912 L 462.76107,473.51342 L 462.64632,473.32377 L 456.46457,472.22712 L 455.66262,472.27155 L 455.6019,472.08789 L 455.60822,471.61397 L 456.15304,468.85055 L 456.99019,468.00402 L 458.07305,467.4977 L 459.67725,466.3301 L 460.06964,464.81247 L 460.00388,464.66118 L 459.72971,464.39211 L 459.18695,464.057 L 464.53334,458.20654 L 470.85195,458.82415"
+       id="GA_Hancock"
+       inkscape:label="Hancock, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 465.85535,445.65278 L 468.48273,450.0396 L 469.00967,450.65278 L 469.09277,450.65643 L 473.8371,450.35786 L 476.78259,450.87808 L 475.44391,452.75961 L 471.70729,455.74854 L 470.35209,457.67641 L 470.29294,457.8693 L 470.85195,458.82415 L 464.53334,458.20654 L 464.22834,447.67008 L 465.85535,445.65278"
+       id="GA_Taliaferro"
+       inkscape:label="Taliaferro, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 464.22834,447.67008 L 464.53334,458.20654 L 459.18695,464.057 L 454.1827,458.4835 L 448.43218,448.88086 L 452.9863,445.49341 L 464.22834,447.67008"
+       id="GA_Greene"
+       inkscape:label="Greene, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 463.44948,431.27023 L 471.30655,433.94992 L 468.82104,435.65079 L 467.99925,436.55952 L 465.78328,440.20164 L 464.19023,443.34259 L 464.16578,443.56956 L 465.85535,445.65278 L 464.22834,447.67008 L 452.9863,445.49341 L 452.82381,441.44282 L 453.92173,438.69643 L 452.41278,437.03382 L 452.24989,436.62125 L 452.22325,436.48614 L 452.53138,434.33133 L 452.84275,434.33051 L 457.40754,431.68922 L 457.68717,431.66891 L 458.2293,432.0185 L 460.28733,432.71697 L 460.80491,432.80122 L 463.44948,431.27023"
+       id="GA_Oglethorpe"
+       inkscape:label="Oglethorpe, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 471.30655,433.94992 L 476.3519,432.81389 L 484.32075,448.28765 L 477.91684,450.35591 L 476.78259,450.87808 L 473.8371,450.35786 L 469.09277,450.65643 L 469.00967,450.65278 L 468.48273,450.0396 L 465.85535,445.65278 L 464.16578,443.56956 L 464.19023,443.34259 L 465.78328,440.20164 L 467.99925,436.55952 L 468.82104,435.65079 L 471.30655,433.94992"
+       id="GA_Wilkes"
+       inkscape:label="Wilkes, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 477.91684,450.35591 L 480.05725,455.11592 L 483.28894,461.81706 L 484.97142,462.41217 L 489.52399,463.18392 L 487.83985,465.10097 L 485.08198,464.01703 L 482.65864,463.14688 L 481.49839,463.51948 L 475.40968,467.31379 L 473.88821,464.78186 L 472.06327,459.51441 L 470.85195,458.82415 L 470.29294,457.8693 L 470.35209,457.67641 L 471.70729,455.74854 L 475.44391,452.75961 L 476.78259,450.87808 L 477.91684,450.35591"
+       id="GA_Warren"
+       inkscape:label="Warren, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 486.36161,447.56275 L 485.99761,448.02098 L 485.93799,448.63737 L 486.41324,452.3252 L 488.81437,456.01068 L 492.11301,460.36181 L 492.79033,460.84763 L 490.68807,463.05402 L 489.52399,463.18392 L 484.97142,462.41217 L 483.28894,461.81706 L 480.05725,455.11592 L 477.91684,450.35591 L 484.32075,448.28765 L 486.36161,447.56275"
+       id="GA_McDuffie"
+       inkscape:label="McDuffie, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 475.40968,467.31379 L 481.49839,463.51948 L 482.65864,463.14688 L 485.08198,464.01703 L 487.83985,465.10097 L 486.44658,466.41177 L 482.39705,470.50915 L 482.50792,470.95203 L 482.73207,472.93835 L 479.61702,472.89937 L 475.76708,467.99554 L 475.40968,467.31379"
+       id="GA_Glascock"
+       inkscape:label="Glascock, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 489.52399,463.18392 L 490.68807,463.05402 L 494.21271,464.81233 L 494.42743,464.86882 L 494.74118,465.14322 L 495.74823,466.3639 L 494.78248,470.14052 L 494.43245,472.17765 L 494.26798,474.44012 L 494.51006,475.60552 L 494.88919,476.94704 L 495.57952,480.1882 L 494.97106,482.99951 L 494.35786,485.09388 L 490.12181,488.98759 L 486.46142,486.52829 L 485.82181,481.38891 L 484.23814,477.71757 L 484.12191,477.72696 L 482.73765,476.93498 L 481.21175,475.65895 L 480.61313,474.782 L 479.61702,472.89937 L 482.73207,472.93835 L 482.50792,470.95203 L 482.39705,470.50915 L 486.44658,466.41177 L 487.83985,465.10097 L 489.52399,463.18392"
+       id="GA_Jefferson"
+       inkscape:label="Jefferson, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 479.61702,472.89937 L 480.61313,474.782 L 481.21175,475.65895 L 482.73765,476.93498 L 484.12191,477.72696 L 484.23814,477.71757 L 485.82181,481.38891 L 486.46142,486.52829 L 483.13101,488.01471 L 480.96675,488.91158 L 476.70469,488.77882 L 475.58742,488.17232 L 470.19059,491.04859 L 469.72184,489.10946 L 468.75299,487.43074 L 468.12041,486.99755 L 466.39823,486.31743 L 464.45366,482.78592 L 464.71342,476.45522 L 466.41506,476.28375 L 470.35196,473.68006 L 470.77632,473.16656 L 471.07384,472.40856 L 471.44306,471.08902 L 471.87129,470.32231 L 474.62171,468.11179 L 475.76708,467.99554 L 479.61702,472.89937"
+       id="GA_Washington"
+       inkscape:label="Washington, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 490.12181,488.98759 L 482.95098,501.43671 L 481.844,501.00803 L 481.68139,496.87781 L 476.77598,493.83536 L 473.65901,492.76824 L 470.01899,493.47365 L 470.19059,491.04859 L 475.58742,488.17232 L 476.70469,488.77882 L 480.96675,488.91158 L 483.13101,488.01471 L 486.46142,486.52829 L 490.12181,488.98759"
+       id="GA_Johnson"
+       inkscape:label="Johnson, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 482.95098,501.43671 L 488.82131,501.54594 L 489.83455,501.88362 L 493.20407,503.46499 L 493.56554,503.80664 L 493.38175,506.09723 L 492.97635,507.91112 L 483.60067,511.45983 L 480.95935,511.18461 L 482.95098,501.43671"
+       id="GA_Treutlen"
+       inkscape:label="Treutlen, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 492.97635,507.91112 L 491.93969,526.00503 L 489.53749,526.79734 L 487.15763,524.44129 L 486.99359,524.13726 L 486.62018,523.40775 L 485.61463,519.67855 L 485.42352,517.1869 L 484.24416,512.46905 L 483.95959,511.52986 L 483.60067,511.45983 L 492.97635,507.91112"
+       id="GA_Montgomery"
+       inkscape:label="Montgomery, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 492.97635,507.91112 L 500.03361,508.85434 L 502.35267,516.967 L 502.2589,527.68146 L 493.90061,526.02955 L 491.93969,526.00503 L 492.97635,507.91112"
+       id="GA_Toombs"
+       inkscape:label="Toombs, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 519.79688,519.52809 L 521.27563,517.42466 L 524.56138,519.1001 L 531.38168,521.73065 L 534.20362,522.83913 L 534.50469,523.40257 L 535.63038,526.45651 L 535.69199,526.78501 L 535.67544,526.9146 L 536.07804,527.30874 L 538.93123,529.60229 L 543.30171,531.96605 L 543.54046,532.05256 L 543.38434,532.39322 L 544.14417,533.14331 L 545.18928,533.49687 L 545.44131,533.36313 L 545.51256,533.14183 L 545.61675,533.07763 L 546.01043,533.01526 L 546.34794,533.16039 L 546.53817,535.09454 L 546.63782,536.53602 L 545.85524,539.10801 L 545.43222,539.83878 L 545.20238,539.87937 L 544.55836,539.37689 L 544.56062,538.0883 L 544.4123,537.75599 L 543.15874,536.62585 L 542.45843,536.25123 L 541.33307,535.82899 L 539.19079,535.64808 L 536.2872,536.7297 L 535.28619,536.44324 L 533.40911,535.00338 L 532.13923,534.57479 L 531.81343,534.57497 L 525.89989,532.15073 L 520.51759,527.60319 L 520.42762,527.09606 L 518.4398,522.57079 L 517.4992,521.32046 L 519.79688,519.52809"
+       id="GA_Liberty"
+       inkscape:label="Liberty, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 508.34362,509.87427 L 510.59915,510.11443 L 518.48949,514.75758 L 521.27563,517.42466 L 519.79688,519.52809 L 514.78307,519.94514 L 511.06211,518.86599 L 508.34362,509.87427"
+       id="GA_Evans"
+       inkscape:label="Evans, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 500.03361,508.85434 L 508.34362,509.87427 L 511.06211,518.86599 L 514.78307,519.94514 L 519.79688,519.52809 L 517.4992,521.32046 L 512.91475,532.40978 L 509.60392,530.97578 L 502.2589,527.68146 L 502.35267,516.967 L 500.03361,508.85434"
+       id="GA_Tattnall"
+       inkscape:label="Tattnall, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 506.89708,497.79988 L 509.33469,498.75755 L 511.85134,503.11056 L 510.97708,509.00885 L 510.59915,510.11443 L 508.34362,509.87427 L 500.03361,508.85434 L 499.3338,506.90145 L 501.32258,501.42492 L 502.36864,499.11789 L 504.86123,497.00827 L 506.89708,497.79988"
+       id="GA_Candler"
+       inkscape:label="Candler, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 501.12694,485.51041 L 507.69234,494.52619 L 506.89708,497.79988 L 504.86123,497.00827 L 502.36864,499.11789 L 501.32258,501.42492 L 499.3338,506.90145 L 500.03361,508.85434 L 492.97635,507.91112 L 493.38175,506.09723 L 493.56554,503.80664 L 493.20407,503.46499 L 489.83455,501.88362 L 488.82131,501.54594 L 482.95098,501.43671 L 490.12181,488.98759 L 494.35786,485.09388 L 501.12694,485.51041"
+       id="GA_Emanuel"
+       inkscape:label="Emanuel, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 543.81299,508.68708 L 543.97537,509.60644 L 544.26223,511.48328 L 544.67939,513.52512 L 544.85228,513.71008 L 547.0153,514.65571 L 554.19936,516.33932 L 555.54409,516.54677 L 555.91338,516.62814 L 556.08357,517.20393 L 556.06565,517.61221 L 555.88973,518.32122 L 555.4393,519.26436 L 548.44893,529.49875 L 548.13836,529.89416 L 546.21823,531.90944 L 545.93793,532.02747 L 545.05394,531.79681 L 543.92331,527.78338 L 542.32487,522.96388 L 537.94453,519.75262 L 534.8304,516.72364 L 534.03767,515.73319 L 543.81299,508.68708"
+       id="GA_Chatham"
+       inkscape:label="Chatham, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 518.48949,514.75758 L 531.57487,509.16354 L 534.03767,515.73319 L 534.8304,516.72364 L 537.94453,519.75262 L 542.32487,522.96388 L 543.92331,527.78338 L 545.05394,531.79681 L 543.54046,532.05256 L 543.30171,531.96605 L 538.93123,529.60229 L 536.07804,527.30874 L 535.67544,526.9146 L 535.69199,526.78501 L 535.63038,526.45651 L 534.50469,523.40257 L 534.20362,522.83913 L 531.38168,521.73065 L 524.56138,519.1001 L 521.27563,517.42466 L 518.48949,514.75758"
+       id="GA_Bryan"
+       inkscape:label="Bryan, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 513.72984,491.89885 L 525.95363,498.10052 L 531.57487,509.16354 L 518.48949,514.75758 L 510.59915,510.11443 L 510.97708,509.00885 L 511.85134,503.11056 L 509.33469,498.75755 L 506.89708,497.79988 L 507.69234,494.52619 L 513.72984,491.89885"
+       id="GA_Bulloch"
+       inkscape:label="Bulloch, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 501.12694,485.51041 L 500.97438,485.1924 L 501.61248,482.11813 L 503.09593,480.40225 L 511.62231,477.81176 L 512.9218,478.06064 L 514.57081,478.676 L 514.9664,478.98296 L 515.30251,479.49003 L 513.72984,491.89885 L 507.69234,494.52619 L 501.12694,485.51041"
+       id="GA_Jenkins"
+       inkscape:label="Jenkins, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 531.57197,492.48646 L 535.57226,494.29462 L 536.30793,494.60563 L 539.65063,497.62293 L 543.4158,506.19002 L 543.81299,508.68708 L 534.03767,515.73319 L 531.57487,509.16354 L 525.95363,498.10052 L 531.57197,492.48646"
+       id="GA_Effingham"
+       inkscape:label="Effingham, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 515.30251,479.49003 L 523.35799,472.20554 L 530.19068,485.6059 L 531.57197,492.48646 L 525.95363,498.10052 L 513.72984,491.89885 L 515.30251,479.49003"
+       id="GA_Screven"
+       inkscape:label="Screven, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 494.21271,464.81233 L 497.81562,463.05552 L 498.07496,463.08501 L 499.31437,463.87788 L 499.56486,464.43909 L 501.82401,465.42151 L 505.57208,465.55342 L 508.85238,463.64128 L 510.37155,464.08081 L 513.87516,466.97847 L 520.2412,470.30947 L 523.35799,472.20554 L 515.30251,479.49003 L 514.9664,478.98296 L 514.57081,478.676 L 512.9218,478.06064 L 511.62231,477.81176 L 503.09593,480.40225 L 501.61248,482.11813 L 500.97438,485.1924 L 501.12694,485.51041 L 494.35786,485.09388 L 494.97106,482.99951 L 495.57952,480.1882 L 494.88919,476.94704 L 494.51006,475.60552 L 494.26798,474.44012 L 494.43245,472.17765 L 494.78248,470.14052 L 495.74823,466.3639 L 494.74118,465.14322 L 494.42743,464.86882 L 494.21271,464.81233"
+       id="GA_Burke"
+       inkscape:label="Burke, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 502.11915,450.94393 L 502.72556,451.56059 L 503.0407,451.88573 L 504.78946,453.6928 L 507.24048,456.81938 L 507.99962,460.38936 L 510.37155,464.08081 L 508.85238,463.64128 L 505.57208,465.55342 L 501.82401,465.42151 L 499.56486,464.43909 L 499.31437,463.87788 L 498.07496,463.08501 L 497.81562,463.05552 L 494.21271,464.81233 L 490.68807,463.05402 L 492.79033,460.84763 L 502.11915,450.94393"
+       id="GA_Richmond"
+       inkscape:label="Richmond, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 494.13676,445.09855 L 498.42437,449.18538 L 502.11915,450.94393 L 492.79033,460.84763 L 492.11301,460.36181 L 488.81437,456.01068 L 486.41324,452.3252 L 485.93799,448.63737 L 485.99761,448.02098 L 486.36161,447.56275 L 494.13676,445.09855"
+       id="GA_Columbia"
+       inkscape:label="Columbia, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 476.3519,432.81389 L 479.60381,433.85797 L 485.21584,437.5432 L 485.45506,437.61885 L 486.0062,437.43309 L 486.1826,437.45532 L 489.43295,439.2776 L 490.40941,440.04083 L 492.71837,442.11503 L 494.13676,445.09855 L 486.36161,447.56275 L 484.32075,448.28765 L 476.3519,432.81389"
+       id="GA_Lincoln"
+       inkscape:label="Lincoln, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 470.43524,418.91437 L 471.70575,422.7095 L 478.11346,431.35998 L 479.60381,433.85797 L 476.3519,432.81389 L 471.30655,433.94992 L 463.44948,431.27023 L 458.78498,423.06911 L 470.43524,418.91437"
+       id="GA_Elbert"
+       inkscape:label="Elbert, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 457.22451,421.01329 L 458.78498,423.06911 L 463.44948,431.27023 L 460.80491,432.80122 L 460.28733,432.71697 L 458.2293,432.0185 L 457.68717,431.66891 L 457.40754,431.68922 L 452.84275,434.33051 L 448.76397,432.74335 L 446.48364,425.56271 L 448.18093,424.17114 L 457.22451,421.01329"
+       id="GA_Madison"
+       inkscape:label="Madison, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 445.56203,413.23988 L 448.18093,424.17114 L 446.48364,425.56271 L 445.54807,424.69269 L 443.24515,422.81062 L 441.80874,423.2073 L 440.13611,423.45969 L 439.68803,423.27711 L 438.92621,422.7369 L 437.77971,421.72368 L 437.44004,415.35943 L 443.12528,412.5103 L 445.56203,413.23988"
+       id="GA_Banks"
+       inkscape:label="Banks, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 435.16656,412.14653 L 437.44004,415.35943 L 437.77971,421.72368 L 430.89468,430.2179 L 421.35062,429.10762 L 424.76072,421.02197 L 423.57819,417.11848 L 428.42289,412.63608 L 435.16656,412.14653"
+       id="GA_Hall"
+       inkscape:label="Hall, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 427.07058,402.53869 L 428.42289,412.63608 L 423.57819,417.11848 L 414.91709,409.16908 L 415.91742,406.91436 L 418.85515,406.45687 L 422.10912,403.66031 L 427.07058,402.53869"
+       id="GA_Lumpkin"
+       inkscape:label="Lumpkin, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 397.64599,398.62282 L 404.91623,398.09485 L 407.06962,398.43551 L 408.68575,399.5526 L 409.53829,400.25247 L 412.06479,403.96879 L 414.18221,407.35585 L 414.54178,408.48294 L 409.08786,411.50512 L 408.15743,412.2498 L 400.9587,412.71577 L 397.38857,413.06586 L 397.2634,411.46399 L 396.64962,404.66419 L 397.19919,402.53445 L 398.25573,401.47311 L 399.13379,400.10712 L 399.15474,399.95964 L 399.06353,399.81084 L 397.64599,398.62282"
+       id="GA_Gilmer"
+       inkscape:label="Gilmer, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 408.4154,391.52624 L 415.70387,390.99544 L 414.11916,392.544 L 413.97045,392.7981 L 413.99595,393.04176 L 415.94923,399.42614 L 416.64761,399.92738 L 417.3728,399.73477 L 416.98075,404.62618 L 415.91742,406.91436 L 414.91709,409.16908 L 414.54178,408.48294 L 414.18221,407.35585 L 412.06479,403.96879 L 409.53829,400.25247 L 408.68575,399.5526 L 407.06962,398.43551 L 404.91623,398.09485 L 397.64599,398.62282 L 397.07123,392.41841 L 408.4154,391.52624"
+       id="GA_Fannin"
+       inkscape:label="Fannin, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 420.3975,390.61502 L 423.00651,390.38925 L 422.74116,391.23915 L 423.89714,392.44825 L 426.14857,393.85385 L 427.25417,393.81912 L 428.33905,394.50385 L 429.58059,397.8054 L 429.69178,398.98313 L 427.07058,402.53869 L 422.10912,403.66031 L 418.85515,406.45687 L 415.91742,406.91436 L 416.98075,404.62618 L 417.3728,399.73477 L 416.64761,399.92738 L 415.94923,399.42614 L 413.99595,393.04176 L 413.97045,392.7981 L 414.11916,392.544 L 415.70387,390.99544 L 420.3975,390.61502"
+       id="GA_Union"
+       inkscape:label="Union, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 429.69178,398.98313 L 433.40626,398.31357 L 435.3607,399.55773 L 435.60149,400.00993 L 435.81008,401.19555 L 436.88389,410.13319 L 435.16656,412.14653 L 428.42289,412.63608 L 427.07058,402.53869 L 429.69178,398.98313"
+       id="GA_White"
+       inkscape:label="White, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 434.43737,397.1715 L 446.2332,401.16434 L 446.92967,402.45101 L 443.12528,412.5103 L 437.44004,415.35943 L 435.16656,412.14653 L 436.88389,410.13319 L 435.81008,401.19555 L 435.60149,400.00993 L 435.3607,399.55773 L 433.40626,398.31357 L 434.43737,397.1715"
+       id="GA_Habersham"
+       inkscape:label="Habersham, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 458.59972,410.54693 L 460.94816,410.97941 L 461.38023,410.78479 L 461.41338,410.77178 L 462.94732,410.46263 L 464.32095,410.34191 L 465.10943,410.60457 L 465.48662,410.91796 L 465.46662,411.04379 L 466.64882,413.05766 L 470.43524,418.91437 L 458.78498,423.06911 L 457.22451,421.01329 L 458.59972,410.54693"
+       id="GA_Hart"
+       inkscape:label="Hart, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 456.3371,408.81865 L 458.59972,410.54693 L 457.22451,421.01329 L 448.18093,424.17114 L 445.56203,413.23988 L 446.34499,412.80365 L 446.64208,412.71533 L 453.88173,411.72991 L 456.3371,408.81865"
+       id="GA_Franklin"
+       inkscape:label="Franklin, GA" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.16630268000000000"
+       d="M 446.92967,402.45101 L 456.3371,408.81865 L 453.88173,411.72991 L 446.64208,412.71533 L 446.34499,412.80365 L 445.56203,413.23988 L 443.12528,412.5103 L 446.92967,402.45101"
+       id="GA_Stephens"
+       inkscape:label="Stephens, GA" />
+  </g>
+</svg>
