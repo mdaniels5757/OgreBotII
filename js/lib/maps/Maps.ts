@@ -30,7 +30,7 @@ class State {
         const counties: County[] = [];
         for (const {$} of xml.svg.g[0].path) {
             const {id, style} = <{[x: string] : string}>$;
-            const [, countyName] = id && style && id.match(/^[A-Z]{2}_([A-Za-z]+)$/) || [];
+            const [, countyName] = id && style && id.match(/^[A-Z]{2}_([A-Za-z_]+)$/) || [];
             countyName && counties.push(new County(countyName, $));
         }
         this.counties = Object.seal(counties);
@@ -74,13 +74,14 @@ export class StatesBuilder {
 
                         const stateCounties: { [x: string]: County } = Object.fromEntries(state.counties.map(county => [county.name.toLowerCase(), county]));
                         for (const [county, {r, d, i}] of Object.entries(await tracker.getCountyTotals())) {
-                            const stateCounty = stateCounties[county.toLowerCase()];
+                            const normalizedCounty = county.toLowerCase().replace(/ /g, "_");
+                            const stateCounty = stateCounties[normalizedCounty];
                             if (!stateCounty) {
                                 console.error(`County ${county}, ${state.name} not found in SVG`);
                                 continue;
                             }
 
-                            delete stateCounties[county.toLowerCase()];
+                            delete stateCounties[normalizedCounty];
 
                             const total = r + d + i;
                             stateCounty.fill = electionResultColorer(...((): [PartyOrTie, number] => {

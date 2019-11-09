@@ -1,3 +1,4 @@
+import { PoliticoElectionTracker } from './../lib/maps/PoliticoElectionTracker';
 import { CharityElectionsTracker } from './../lib/maps/CharityElectionsTracker';
 
 import {StatesBuilder} from "../lib/maps/Maps";
@@ -5,7 +6,8 @@ import { standardElectionResultColorer } from '../lib/maps/ElectionResultsColore
 import Io from '../lib/io';
 (async () => {
     const statesBuilder = new StatesBuilder().addElectionTrackers(
-        new CharityElectionsTracker("Kentucky", "https://results.enr.clarityelections.com//KY/97213/234751/json/ALL.json"))
+ //       new CharityElectionsTracker("Kentucky", "https://results.enr.clarityelections.com//KY/97213/234751/json/ALL.json"),
+        new PoliticoElectionTracker("20191105-general-election/mississippi/"))
         .setElectionResultHandler(standardElectionResultColorer);
     await statesBuilder.build(`${Io.PROJECT_DIR}/../Desktop`);
     console.log("Done");

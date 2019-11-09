@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="164.12206"
+   height="284.39841"
+   id="svg7314"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="Mississippi Presidential Election Results by County, 2008.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs7316">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective7322" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.5998441"
+     inkscape:cx="171.74046"
+     inkscape:cy="156.94563"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1024"
+     inkscape:window-height="721"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4" />
+  <metadata
+     id="metadata7319">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-359.07045,-277.19628)">
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 495.05345,526.21531 L 497.82728,541.24536 L 494.18614,542.10707 L 486.51687,543.97165 L 477.10309,546.5277 L 474.13393,544.41578 L 473.25385,529.12031 L 478.10967,528.86076 L 478.35546,527.19096 L 495.05345,526.21531"
+       id="MS_Harrison"
+       inkscape:label="Harrison, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 494.84302,522.97321 L 517.41995,521.56756 L 519.58624,541.88571 L 519.53498,542.70224 L 516.06892,544.85523 L 515.68204,544.98776 L 503.6437,544.37763 L 502.74746,544.16517 L 499.52402,542.2829 L 497.82728,541.24536 L 495.05345,526.21531 L 494.84302,522.97321"
+       id="MS_Jackson"
+       inkscape:label="Jackson, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 436.39527,349.09492 L 443.60835,348.80182 L 443.7001,350.4551 L 455.75263,349.84166 L 456.33163,360.45365 L 443.42133,361.17088 L 427.66072,361.92717 L 427.17497,359.44632 L 426.95525,354.53056 L 431.93244,354.25123 L 436.60482,353.25376 L 436.51254,351.63507 L 436.39527,349.09492"
+       id="MS_Grenada"
+       inkscape:label="Grenada, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 454.75649,333.35524 L 455.75263,349.84166 L 443.7001,350.4551 L 443.60835,348.80182 L 436.39527,349.09492 L 435.4354,334.21338 L 444.993,332.15681 L 454.75649,333.35524"
+       id="MS_Yalobusha"
+       inkscape:label="Yalobusha, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 492.14288,350.91511 L 492.61638,358.20876 L 502.72714,357.60487 L 502.9988,357.94195 L 502.21265,359.31384 L 495.45908,367.82578 L 495.23214,364.53155 L 480.80082,365.4593 L 479.21953,365.6516 L 477.92431,355.78985 L 492.14288,350.91511"
+       id="MS_Clay"
+       inkscape:label="Clay, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 470.66983,356.24666 L 477.92431,355.78985 L 479.21953,365.6516 L 476.10895,367.4597 L 462.80332,372.30069 L 457.01216,372.64556 L 456.19615,357.97376 L 470.66983,356.24666"
+       id="MS_Webster"
+       inkscape:label="Webster, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 486.45455,336.45072 L 491.2934,336.1693 L 492.14288,350.91511 L 477.92431,355.78985 L 470.66983,356.24666 L 470.51126,352.14913 L 472.91371,351.98653 L 472.02381,337.33956 L 486.45455,336.45072"
+       id="MS_Chickasaw"
+       inkscape:label="Chickasaw, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 454.75649,333.35524 L 466.86954,332.74272 L 472.02381,337.33956 L 472.91371,351.98653 L 470.51126,352.14913 L 470.66983,356.24666 L 456.19615,357.97376 L 455.75263,349.84166 L 454.75649,333.35524"
+       id="MS_Calhoun"
+       inkscape:label="Calhoun, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 485.45888,320.21946 L 486.45455,336.45072 L 472.02381,337.33956 L 466.86954,332.74272 L 466.15508,320.50704 L 485.45888,320.21946"
+       id="MS_Pontotoc"
+       inkscape:label="Pontotoc, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 488.99216,311.90531 L 498.00573,313.79726 L 499.29179,334.8459 L 491.2934,336.1693 L 486.45455,336.45072 L 485.45888,320.21946 L 488.99216,311.90531"
+       id="MS_Lee"
+       inkscape:label="Lee, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 472.66411,307.86167 L 488.73784,306.98904 L 488.99216,311.90531 L 485.45888,320.21946 L 466.15508,320.50704 L 465.78621,314.01499 L 465.55326,309.11633 L 472.66411,307.86167"
+       id="MS_Union"
+       inkscape:label="Union, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 443.95028,311.88591 L 446.35203,311.77087 L 451.07906,311.44883 L 455.10696,311.31946 L 461.0136,312.77525 L 465.78621,314.01499 L 466.15508,320.50704 L 466.86954,332.74272 L 454.75649,333.35524 L 444.993,332.15681 L 443.95028,311.88591"
+       id="MS_Lafayette"
+       inkscape:label="Lafayette, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 421.6523,303.42336 L 426.10347,302.75553 L 434.65828,300.09569 L 443.22247,299.676 L 443.51662,304.53233 L 445.96632,304.96288 L 446.35203,311.77087 L 443.95028,311.88591 L 422.18726,312.94496 L 421.6523,303.42336"
+       id="MS_Tate"
+       inkscape:label="Tate, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 422.18726,312.94496 L 443.95028,311.88591 L 444.993,332.15681 L 435.4354,334.21338 L 426.08464,334.8893 L 425.84131,328.96128 L 422.984,325.74403 L 422.28448,315.38103 L 422.18726,312.94496"
+       id="MS_Panola"
+       inkscape:label="Panola, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 422.28448,315.38103 L 422.984,325.74403 L 425.84131,328.96128 L 426.08464,334.8893 L 426.30497,339.76613 L 423.82535,339.88432 L 411.83021,340.42081 L 411.38517,329.81515 L 413.76876,329.75606 L 413.33541,320.6641 L 417.81044,320.4204 L 417.46731,315.65846 L 422.28448,315.38103"
+       id="MS_Quitman"
+       inkscape:label="Quitman, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 426.08464,334.8893 L 435.4354,334.21338 L 436.39527,349.09492 L 436.51254,351.63507 L 436.60482,353.25376 L 431.93244,354.25123 L 426.95525,354.53056 L 427.17497,359.44632 L 425.41395,355.7959 L 424.8304,354.63681 L 412.43035,355.0677 L 412.0462,345.29757 L 411.83021,340.42081 L 423.82535,339.88432 L 426.30497,339.76613 L 426.08464,334.8893"
+       id="MS_Tallahatchie"
+       inkscape:label="Tallahatchie, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 412.43035,355.0677 L 424.8304,354.63681 L 425.41395,355.7959 L 427.17497,359.44632 L 427.66072,361.92717 L 428.86405,362.70645 L 428.96763,363.2918 L 429.48378,374.05853 L 427.9116,376.50827 L 426.21993,376.56484 L 426.43892,381.24276 L 419.22977,383.27861 L 413.54036,382.04232 L 412.43035,355.0677"
+       id="MS_Leflore"
+       inkscape:label="Leflore, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 412.0462,345.29757 L 412.43035,355.0677 L 413.54036,382.04232 L 408.77591,382.26433 L 408.94692,385.54044 L 401.47812,385.87293 L 398.7081,371.44834 L 398.5134,366.5935 L 403.35094,366.39854 L 402.57123,345.60837 L 412.0462,345.29757"
+       id="MS_Sunflower"
+       inkscape:label="Sunflower, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 413.54036,382.04232 L 419.22977,383.27861 L 419.71494,392.66109 L 418.17289,395.40533 L 417.89759,395.59577 L 417.37164,395.48836 L 416.13824,394.69566 L 415.56641,393.90431 L 415.3667,393.95751 L 415.25154,394.13738 L 415.07319,395.06442 L 415.26138,396.91807 L 415.3607,397.21363 L 417.58918,399.11976 L 418.45838,399.69074 L 414.49775,399.94652 L 414.68026,404.74929 L 405.04312,405.20466 L 402.54215,395.57982 L 401.47812,385.87293 L 408.94692,385.54044 L 408.77591,382.26433 L 413.54036,382.04232"
+       id="MS_Humphreys"
+       inkscape:label="Humphreys, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 419.22977,383.27861 L 426.43892,381.24276 L 446.46086,386.94223 L 437.32266,406.16407 L 418.45838,399.69074 L 417.58918,399.11976 L 415.3607,397.21363 L 415.26138,396.91807 L 415.07319,395.06442 L 415.25154,394.13738 L 415.3667,393.95751 L 415.56641,393.90431 L 416.13824,394.69566 L 417.37164,395.48836 L 417.89759,395.59577 L 418.17289,395.40533 L 419.71494,392.66109 L 419.22977,383.27861"
+       id="MS_Holmes"
+       inkscape:label="Holmes, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 427.66072,361.92717 L 443.42133,361.17088 L 444.2345,375.74317 L 447.50277,376.37638 L 450.69719,376.17386 L 451.08677,382.72678 L 446.46086,386.94223 L 426.43892,381.24276 L 426.21993,376.56484 L 427.9116,376.50827 L 429.48378,374.05853 L 428.96763,363.2918 L 428.86405,362.70645 L 427.66072,361.92717"
+       id="MS_Carroll"
+       inkscape:label="Carroll, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 456.33163,360.45365 L 457.01216,372.64556 L 462.80332,372.30069 L 459.9634,382.23397 L 451.08677,382.72678 L 450.69719,376.17386 L 447.50277,376.37638 L 444.2345,375.74317 L 443.42133,361.17088 L 456.33163,360.45365"
+       id="MS_Montgomery"
+       inkscape:label="Montgomery, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 476.10895,367.4597 L 476.89884,381.28354 L 475.93782,381.35117 L 471.38343,386.55799 L 471.63767,391.47859 L 466.81592,391.77325 L 459.9634,382.23397 L 462.80332,372.30069 L 476.10895,367.4597"
+       id="MS_Choctaw"
+       inkscape:label="Choctaw, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 479.21953,365.6516 L 480.80082,365.4593 L 495.23214,364.53155 L 495.45908,367.82578 L 496.33357,380.05956 L 489.65017,380.49904 L 476.89884,381.28354 L 476.10895,367.4597 L 479.21953,365.6516"
+       id="MS_Oktibbeha"
+       inkscape:label="Oktibbeha, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 502.21265,359.31384 L 514.09297,353.21456 L 513.66711,365.07839 L 513.20292,378.90488 L 496.33357,380.05956 L 495.45908,367.82578 L 502.21265,359.31384"
+       id="MS_Lowndes"
+       inkscape:label="Lowndes, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 514.87685,333.97452 L 514.80949,335.56918 L 514.09297,353.21456 L 502.21265,359.31384 L 502.9988,357.94195 L 502.72714,357.60487 L 492.61638,358.20876 L 492.14288,350.91511 L 491.2934,336.1693 L 499.29179,334.8459 L 514.87685,333.97452"
+       id="MS_Monroe"
+       inkscape:label="Monroe, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 515.6646,312.76266 L 514.87685,333.97452 L 499.29179,334.8459 L 498.00573,313.79726 L 507.74355,313.26127 L 515.6646,312.76266"
+       id="MS_Itawamba"
+       inkscape:label="Itawamba, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 504.98795,297.02501 L 507.74355,313.26127 L 498.00573,313.79726 L 488.99216,311.90531 L 488.73784,306.98904 L 488.96931,297.97199 L 504.98795,297.02501"
+       id="MS_Prentiss"
+       inkscape:label="Prentiss, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 504.21379,283.59061 L 511.62456,283.09291 L 516.65316,288.5657 L 515.9213,306.08113 L 515.6646,312.76266 L 507.74355,313.26127 L 504.98795,297.02501 L 504.21379,283.59061"
+       id="MS_Tishomingo"
+       inkscape:label="Tishomingo, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 503.45209,283.63098 L 504.21379,283.59061 L 504.98795,297.02501 L 488.96931,297.97199 L 483.40221,284.92783 L 485.06014,284.81451 L 503.45209,283.63098"
+       id="MS_Alcorn"
+       inkscape:label="Alcorn, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 474.59822,285.47794 L 483.40221,284.92783 L 488.96931,297.97199 L 488.73784,306.98904 L 472.66411,307.86167 L 471.97003,295.70848 L 474.36777,295.57176 L 475.03244,293.08235 L 474.59822,285.47794"
+       id="MS_Tippah"
+       inkscape:label="Tippah, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 466.40939,285.95521 L 474.59822,285.47794 L 475.03244,293.08235 L 474.36777,295.57176 L 471.97003,295.70848 L 472.66411,307.86167 L 465.55326,309.11633 L 463.15113,309.2573 L 462.28291,294.60634 L 460.51177,291.91144 L 459.40678,286.34231 L 466.40939,285.95521"
+       id="MS_Benton"
+       inkscape:label="Benton, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 446.18173,286.99857 L 459.40678,286.34231 L 460.51177,291.91144 L 462.28291,294.60634 L 463.15113,309.2573 L 465.55326,309.11633 L 465.78621,314.01499 L 461.0136,312.77525 L 455.10696,311.31946 L 451.07906,311.44883 L 446.35203,311.77087 L 445.96632,304.96288 L 443.51662,304.53233 L 443.22247,299.676 L 442.55471,287.21184 L 446.18173,286.99857"
+       id="MS_Marshall"
+       inkscape:label="Marshall, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 442.55471,287.21184 L 443.22247,299.676 L 434.65828,300.09569 L 426.10347,302.75553 L 421.6523,303.42336 L 417.0601,295.97231 L 416.02816,288.43238 L 442.55471,287.21184"
+       id="MS_Desoto"
+       inkscape:label="Desoto, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 417.0601,295.97231 L 421.6523,303.42336 L 422.18726,312.94496 L 422.28448,315.38103 L 417.46731,315.65846 L 417.81044,320.4204 L 413.33541,320.6641 L 405.29083,315.31869 L 404.76637,308.81994 L 411.94768,297.7588 L 417.0601,295.97231"
+       id="MS_Tunica"
+       inkscape:label="Tunica, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 405.29083,315.31869 L 413.33541,320.6641 L 413.76876,329.75606 L 411.38517,329.81515 L 411.83021,340.42081 L 412.0462,345.29757 L 402.57123,345.60837 L 402.15923,338.25078 L 394.82679,338.42965 L 389.65571,338.66282 L 389.50831,338.11572 L 390.19062,336.74659 L 392.32603,332.51077 L 396.81103,324.7429 L 399.20891,324.31214 L 401.61581,323.85554 L 403.61459,322.93443 L 405.21353,321.57481 L 405.31415,321.49849 L 405.35888,321.39971 L 405.70366,320.33249 L 405.29083,315.31869"
+       id="MS_Coahoma"
+       inkscape:label="Coahoma, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 389.65571,338.66282 L 394.82679,338.42965 L 402.15923,338.25078 L 402.57123,345.60837 L 403.35094,366.39854 L 398.5134,366.5935 L 398.7081,371.44834 L 377.80527,372.24363 L 377.19214,370.46572 L 380.61966,369.14672 L 381.44736,368.45871 L 381.57749,367.85959 L 381.57835,367.8034 L 380.28864,366.72875 L 378.92514,365.67463 L 378.65589,365.17759 L 378.59707,365.06427 L 378.87129,363.80138 L 382.81308,347.91719 L 391.88715,343.51818 L 392.18784,341.65029 L 391.7176,340.43237 L 389.67608,338.7453 L 389.65571,338.66282"
+       id="MS_Bolivar"
+       inkscape:label="Bolivar, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 377.80527,372.24363 L 398.7081,371.44834 L 401.47812,385.87293 L 402.54215,395.57982 L 392.84424,400.9121 L 381.52424,401.12582 L 382.90937,399.6073 L 382.94887,399.56897 L 384.50188,393.52543 L 384.5026,393.47787 L 384.43263,389.23898 L 383.24151,387.93664 L 381.70676,385.05073 L 379.46897,378.32717 L 381.879,377.66307 L 382.45785,376.56047 L 382.11003,375.25358 L 380.2015,373.92311 L 377.86526,372.27914 L 377.80527,372.24363"
+       id="MS_Washington"
+       inkscape:label="Washington, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 402.54215,395.57982 L 405.04312,405.20466 L 400.42615,410.25918 L 400.48568,411.47089 L 401.36003,411.70032 L 402.61154,412.72681 L 403.85482,414.01263 L 405.24949,418.44021 L 405.18236,419.16136 L 404.72569,419.62148 L 402.54227,419.88252 L 391.23225,420.29529 L 390.91359,410.48292 L 391.19831,409.66991 L 391.43229,409.63886 L 391.76465,409.39309 L 391.98625,409.03752 L 392.84737,404.70892 L 392.84424,400.9121 L 402.54215,395.57982"
+       id="MS_Sharkey"
+       inkscape:label="Sharkey, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 392.84424,400.9121 L 392.84737,404.70892 L 391.98625,409.03752 L 391.76465,409.39309 L 391.43229,409.63886 L 391.19831,409.66991 L 390.91359,410.48292 L 391.23225,420.29529 L 402.54227,419.88252 L 402.77384,422.29899 L 400.63781,424.86128 L 396.54057,432.4361 L 391.80599,433.83046 L 391.44824,425.17209 L 385.24911,425.32916 L 383.7732,424.84413 L 383.65797,424.74294 L 383.21855,424.34711 L 383.1203,424.26778 L 383.06997,424.16324 L 382.92561,423.98808 L 382.87515,423.89218 L 382.60854,423.22221 L 379.12509,406.21819 L 379.05407,405.76738 L 379.5694,404.00221 L 381.14165,401.54814 L 381.52424,401.12582 L 392.84424,400.9121"
+       id="MS_Issaquena"
+       inkscape:label="Issaquena, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 418.45838,399.69074 L 437.32266,406.16407 L 434.24632,413.71539 L 433.76822,414.44762 L 431.07184,416.3182 L 417.2536,423.88874 L 415.51379,424.26892 L 410.81877,428.19361 L 402.77384,422.29899 L 402.54227,419.88252 L 404.72569,419.62148 L 405.18236,419.16136 L 405.24949,418.44021 L 403.85482,414.01263 L 402.61154,412.72681 L 401.36003,411.70032 L 400.48568,411.47089 L 400.42615,410.25918 L 405.04312,405.20466 L 414.68026,404.74929 L 414.49775,399.94652 L 418.45838,399.69074"
+       id="MS_Yazoo"
+       inkscape:label="Yazoo, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 459.9634,382.23397 L 466.81592,391.77325 L 467.28878,401.6831 L 456.11326,402.35305 L 448.17143,402.79513 L 448.30607,405.33123 L 437.32266,406.16407 L 446.46086,386.94223 L 451.08677,382.72678 L 459.9634,382.23397"
+       id="MS_Attala"
+       inkscape:label="Attala, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 476.89884,381.28354 L 489.65017,380.49904 L 490.88944,400.63886 L 486.15042,400.89585 L 467.28878,401.6831 L 466.81592,391.77325 L 471.63767,391.47859 L 471.38343,386.55799 L 475.93782,381.35117 L 476.89884,381.28354"
+       id="MS_Winston"
+       inkscape:label="Winston, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 496.33357,380.05956 L 513.20292,378.90488 L 512.6215,395.62258 L 512.5039,399.11052 L 490.88944,400.63886 L 489.65017,380.49904 L 496.33357,380.05956"
+       id="MS_Noxubee"
+       inkscape:label="Noxubee, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 490.88944,400.63886 L 512.5039,399.11052 L 511.87718,418.8243 L 487.3125,420.42044 L 486.15042,400.89585 L 490.88944,400.63886"
+       id="MS_Kemper"
+       inkscape:label="Kemper, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 467.28878,401.6831 L 486.15042,400.89585 L 487.3125,420.42044 L 468.47211,421.51937 L 467.28878,401.6831"
+       id="MS_Neshoba"
+       inkscape:label="Neshoba, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 467.28878,401.6831 L 468.47211,421.51937 L 468.23393,421.54171 L 449.1792,422.51631 L 448.99406,419.31783 L 448.30607,405.33123 L 448.17143,402.79513 L 456.11326,402.35305 L 467.28878,401.6831"
+       id="MS_Leake"
+       inkscape:label="Leake, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 437.32266,406.16407 L 448.30607,405.33123 L 448.99406,419.31783 L 446.61237,422.10994 L 445.57851,422.13321 L 443.14009,422.38608 L 436.49919,428.30946 L 433.90547,431.11131 L 433.72626,431.52375 L 433.69379,432.24109 L 433.95171,433.20067 L 428.00209,433.44369 L 425.5932,433.17374 L 425.38856,428.69066 L 423.66649,428.75543 L 415.73502,429.08523 L 415.51379,424.26892 L 417.2536,423.88874 L 431.07184,416.3182 L 433.76822,414.44762 L 434.24632,413.71539 L 437.32266,406.16407"
+       id="MS_Madison"
+       inkscape:label="Madison, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 446.61237,422.10994 L 450.16791,442.35396 L 450.68209,452.10444 L 427.12115,453.09739 L 425.9671,449.62913 L 427.78121,441.76034 L 430.68813,437.69187 L 433.95171,433.20067 L 433.69379,432.24109 L 433.72626,431.52375 L 433.90547,431.11131 L 436.49919,428.30946 L 443.14009,422.38608 L 445.57851,422.13321 L 446.61237,422.10994"
+       id="MS_Rankin"
+       inkscape:label="Rankin, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 410.81877,428.19361 L 415.51379,424.26892 L 415.73502,429.08523 L 423.66649,428.75543 L 425.38856,428.69066 L 425.5932,433.17374 L 428.00209,433.44369 L 433.95171,433.20067 L 430.68813,437.69187 L 427.78121,441.76034 L 425.9671,449.62913 L 427.12115,453.09739 L 404.14712,454.1684 L 403.2712,444.31733 L 410.81877,428.19361"
+       id="MS_Hinds"
+       inkscape:label="Hinds, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 385.24911,425.32916 L 391.44824,425.17209 L 391.80599,433.83046 L 396.54057,432.4361 L 400.63781,424.86128 L 402.77384,422.29899 L 410.81877,428.19361 L 403.2712,444.31733 L 402.11357,445.66199 L 399.75475,448.37227 L 394.79538,452.62161 L 393.50963,452.42919 L 389.43897,451.09629 L 384.7673,445.4689 L 390.21194,444.87663 L 390.00501,436.82593 L 384.88772,431.21342 L 384.8503,431.1134 L 384.65614,430.79912 L 384.52505,430.60253 L 384.52596,430.54201 L 384.45735,429.64584 L 385.57051,426.0951 L 385.24911,425.32916"
+       id="MS_Warren"
+       inkscape:label="Warren, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 379.54102,465.08285 L 390.62807,465.11643 L 398.79321,466.77934 L 398.9,467.43826 L 398.90781,468.0654 L 399.26491,469.04377 L 403.88635,468.84121 L 404.06318,473.73471 L 404.22729,478.61069 L 384.5133,479.42831 L 374.03764,472.13477 L 379.54102,465.08285"
+       id="MS_Jefferson"
+       inkscape:label="Jefferson, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 403.2712,444.31733 L 404.14712,454.1684 L 403.88635,468.84121 L 399.26491,469.04377 L 398.90781,468.0654 L 398.9,467.43826 L 398.79321,466.77934 L 390.62807,465.11643 L 379.54102,465.08285 L 389.43897,451.09629 L 393.50963,452.42919 L 394.79538,452.62161 L 399.75475,448.37227 L 402.11357,445.66199 L 403.2712,444.31733"
+       id="MS_Claiborne"
+       inkscape:label="Claiborne, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 427.12115,453.09739 L 432.97566,469.44103 L 427.2684,471.67258 L 404.06318,473.73471 L 403.88635,468.84121 L 404.14712,454.1684 L 427.12115,453.09739"
+       id="MS_Copiah"
+       inkscape:label="Copiah, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 450.68209,452.10444 L 455.07843,466.79145 L 450.27385,467.38043 L 439.94609,468.60805 L 432.97566,469.44103 L 427.12115,453.09739 L 450.68209,452.10444"
+       id="MS_Simpson"
+       inkscape:label="Simpson, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 450.16791,442.35396 L 469.32384,441.26414 L 470.89744,464.74739 L 466.91139,465.25361 L 455.07843,466.79145 L 450.68209,452.10444 L 450.16791,442.35396"
+       id="MS_Smith"
+       inkscape:label="Smith, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 448.99406,419.31783 L 449.1792,422.51631 L 468.23393,421.54171 L 469.32384,441.26414 L 450.16791,442.35396 L 446.61237,422.10994 L 448.99406,419.31783"
+       id="MS_Scott"
+       inkscape:label="Scott, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 468.47211,421.51937 L 487.3125,420.42044 L 488.51535,440.10998 L 469.32384,441.26414 L 468.23393,421.54171 L 468.47211,421.51937"
+       id="MS_Newton"
+       inkscape:label="Newton, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 487.3125,420.42044 L 511.87718,418.8243 L 511.3153,433.9639 L 511.134,438.519 L 488.51535,440.10998 L 487.3125,420.42044"
+       id="MS_Lauderdale"
+       inkscape:label="Lauderdale, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 511.134,438.519 L 510.53581,457.20401 L 489.99647,462.27292 L 488.51535,440.10998 L 511.134,438.519"
+       id="MS_Clarke"
+       inkscape:label="Clarke, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 488.51535,440.10998 L 489.99647,462.27292 L 488.44957,462.47872 L 470.89744,464.74739 L 469.32384,441.26414 L 488.51535,440.10998"
+       id="MS_Jasper"
+       inkscape:label="Jasper, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 488.44957,462.47872 L 489.72421,484.28393 L 480.12923,484.80913 L 468.12336,485.48381 L 466.91139,465.25361 L 470.89744,464.74739 L 488.44957,462.47872"
+       id="MS_Jones"
+       inkscape:label="Jones, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 466.91139,465.25361 L 468.12336,485.48381 L 465.62618,485.61904 L 459.21213,485.97611 L 458.98967,481.52734 L 458.14998,480.14817 L 456.47026,479.12817 L 454.7615,478.88611 L 453.49986,478.24435 L 450.71845,476.58498 L 450.27385,467.38043 L 455.07843,466.79145 L 466.91139,465.25361"
+       id="MS_Covington"
+       inkscape:label="Covington, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 439.94609,468.60805 L 450.27385,467.38043 L 450.71845,476.58498 L 453.49986,478.24435 L 454.7615,478.88611 L 456.47026,479.12817 L 458.14998,480.14817 L 458.98967,481.52734 L 459.21213,485.97611 L 456.01405,486.13533 L 447.94325,486.52788 L 448.11802,488.98242 L 441.67903,489.27425 L 441.32309,481.92617 L 440.28289,476.07692 L 439.94609,468.60805"
+       id="MS_Jefferson_Davis"
+       inkscape:label="Jefferson Davis, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 432.97566,469.44103 L 439.94609,468.60805 L 440.28289,476.07692 L 441.32309,481.92617 L 441.67903,489.27425 L 437.96328,492.49592 L 428.26467,492.15468 L 427.2684,471.67258 L 432.97566,469.44103"
+       id="MS_Lawrence"
+       inkscape:label="Lawrence, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 427.2684,471.67258 L 428.26467,492.15468 L 427.46838,492.19453 L 413.81118,492.83128 L 409.75643,493.02078 L 409.16032,478.39123 L 404.22729,478.61069 L 404.06318,473.73471 L 427.2684,471.67258"
+       id="MS_Lincoln"
+       inkscape:label="Lincoln, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 384.5133,479.42831 L 404.22729,478.61069 L 409.16032,478.39123 L 409.75643,493.02078 L 393.14064,493.70793 L 387.87769,495.44026 L 384.83167,494.12284 L 384.5133,479.42831"
+       id="MS_Franklin"
+       inkscape:label="Franklin, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 374.03764,472.13477 L 384.5133,479.42831 L 384.83167,494.12284 L 384.60147,493.90316 L 381.26788,492.72841 L 379.31709,493.04919 L 377.76541,493.57059 L 371.33573,496.10689 L 365.17168,501.66559 L 364.70708,502.64884 L 363.96277,505.54353 L 365.20358,499.55581 L 367.19584,485.05186 L 367.21372,485.01322 L 367.39666,484.63977 L 367.51686,484.4124 L 372.7555,474.27754 L 372.79075,474.23483 L 373.55804,472.96644 L 374.03764,472.13477"
+       id="MS_Adams"
+       inkscape:label="Adams, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 384.83167,494.12284 L 387.87769,495.44026 L 390.19287,513.34768 L 384.65058,513.53631 L 362.67671,514.23759 L 363.96277,505.54353 L 364.70708,502.64884 L 365.17168,501.66559 L 371.33573,496.10689 L 377.76541,493.57059 L 379.31709,493.04919 L 381.26788,492.72841 L 384.60147,493.90316 L 384.83167,494.12284"
+       id="MS_Wilkinson"
+       inkscape:label="Wilkinson, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 413.81118,492.83128 L 414.64922,512.33801 L 413.73655,512.35447 L 401.36954,512.88964 L 390.19287,513.34768 L 387.87769,495.44026 L 393.14064,493.70793 L 409.75643,493.02078 L 413.81118,492.83128"
+       id="MS_Amite"
+       inkscape:label="Amite, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 413.81118,492.83128 L 427.46838,492.19453 L 428.40185,511.68107 L 424.20868,511.8728 L 414.64922,512.33801 L 413.81118,492.83128"
+       id="MS_Pike"
+       inkscape:label="Pike, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 428.26467,492.15468 L 437.96328,492.49592 L 438.23184,498.18647 L 439.00464,501.41544 L 440.82051,503.72613 L 444.27184,505.9794 L 447.75228,506.59418 L 448.60778,510.64603 L 428.40185,511.68107 L 427.46838,492.19453 L 428.26467,492.15468"
+       id="MS_Walthall"
+       inkscape:label="Walthall, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 456.01405,486.13533 L 457.26799,510.16725 L 453.73623,510.37331 L 448.60778,510.64603 L 447.75228,506.59418 L 444.27184,505.9794 L 440.82051,503.72613 L 439.00464,501.41544 L 438.23184,498.18647 L 437.96328,492.49592 L 441.67903,489.27425 L 448.11802,488.98242 L 447.94325,486.52788 L 456.01405,486.13533"
+       id="MS_Marion"
+       inkscape:label="Marion, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 465.62618,485.61904 L 465.92864,490.49712 L 470.82363,490.22086 L 471.79023,508.94682 L 457.26799,510.16725 L 456.01405,486.13533 L 459.21213,485.97611 L 465.62618,485.61904"
+       id="MS_Lamar"
+       inkscape:label="Lamar, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 480.12923,484.80913 L 481.13181,502.01347 L 481.86163,508.94344 L 482.17876,513.99471 L 472.4843,514.52272 L 471.79023,508.94682 L 470.82363,490.22086 L 465.92864,490.49712 L 465.62618,485.61904 L 468.12336,485.48381 L 480.12923,484.80913"
+       id="MS_Forrest"
+       inkscape:label="Forrest, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 510.53581,457.20401 L 511.49895,468.15046 L 513.13389,482.71357 L 494.56319,483.99385 L 489.72421,484.28393 L 488.44957,462.47872 L 489.99647,462.27292 L 510.53581,457.20401"
+       id="MS_Wayne"
+       inkscape:label="Wayne, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 494.56319,483.99385 L 513.13389,482.71357 L 515.12148,500.55119 L 515.8499,507.00111 L 496.37621,508.22884 L 494.56319,483.99385"
+       id="MS_Greene"
+       inkscape:label="Greene, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 489.72421,484.28393 L 494.56319,483.99385 L 496.37621,508.22884 L 494.23371,513.2213 L 482.17876,513.99471 L 481.86163,508.94344 L 481.13181,502.01347 L 480.12923,484.80913 L 489.72421,484.28393"
+       id="MS_Perry"
+       inkscape:label="Perry, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 494.23371,513.2213 L 494.84302,522.97321 L 495.05345,526.21531 L 478.35546,527.19096 L 478.10967,528.86076 L 473.25385,529.12031 L 472.4843,514.52272 L 482.17876,513.99471 L 494.23371,513.2213"
+       id="MS_Stone"
+       inkscape:label="Stone, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 471.79023,508.94682 L 472.4843,514.52272 L 473.25385,529.12031 L 466.62371,529.46979 L 463.65154,531.27566 L 463.93327,536.95343 L 459.16755,540.4057 L 457.06,540.51222 L 449.21992,529.36233 L 449.8119,525.38857 L 450.43568,522.45746 L 451.21153,518.90594 L 451.87784,516.30846 L 451.99208,516.18911 L 452.38203,516.13878 L 452.68093,516.10439 L 453.17702,515.03946 L 453.80951,512.10415 L 453.73623,510.37331 L 457.26799,510.16725 L 471.79023,508.94682"
+       id="MS_Pearl_River"
+       inkscape:label="Pearl River, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 457.06,540.51222 L 459.16755,540.4057 L 463.93327,536.95343 L 463.65154,531.27566 L 466.62371,529.46979 L 473.25385,529.12031 L 474.13393,544.41578 L 465.87869,555.57743 L 463.65016,555.67781 L 463.55903,555.69806 L 463.44354,555.61414 L 463.27237,555.49479 L 463.1525,555.41514 L 462.80419,554.99907 L 461.77644,553.75974 L 461.32312,552.85343 L 459.84078,549.93373 L 459.80638,549.63482 L 459.93449,549.16973 L 460.39686,548.04806 L 460.33899,547.01369 L 457.44753,540.90727 L 457.14101,540.58695 L 457.06,540.51222"
+       id="MS_Hancock"
+       inkscape:label="Hancock, MS" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.9619149"
+       d="M 496.37621,508.22884 L 515.8499,507.00111 L 517.41995,521.56756 L 494.84302,522.97321 L 494.23371,513.2213 L 496.37621,508.22884"
+       id="MS_George"
+       inkscape:label="George, MS" />
+  </g>
+</svg>
