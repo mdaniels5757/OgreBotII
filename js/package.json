@@ -7,10 +7,12 @@
 		"node-fetch": "*"
 	},
 	"devDependencies": {
+		"@types/cheerio": "^0.22.13",
 		"@types/google-closure-compiler": "0.0.18",
 		"@types/node": "^12.12.6",
 		"@types/node-fetch": "^2.5.3",
 		"@types/xml2js": "^0.4.5",
+		"cheerio": "^1.0.0-rc.3",
 		"google-closure-compiler": "^20190709.0.0",
 		"typescript": "^3.7.2",
 		"xml2js": "^0.4.22"

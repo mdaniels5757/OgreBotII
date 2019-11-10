@@ -17,7 +17,8 @@ class County {
     }
 
     public set fill(color: string) {
-        this.path.style = this.path.style.replace(/;fill:\#?\w+;/, `;fill:${color};`);
+        this.path.style = this.path.style.split(/\s*;\s*/g).map((style: string) =>
+             style.match(/^\s*fill\s*:\s*\#?\w+\s*$/i) ? `fill:${color}` : style).join(";");
     }
 }
 

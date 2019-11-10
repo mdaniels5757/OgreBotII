@@ -10,6 +10,7 @@ export const standardElectionResultColorer = (party: PartyOrTie, percent: number
                 case 1:
                 case 2:
                 case 3:
+                    return "#ffabc5";
                 case 4:
                     return "#a5b0ff";
                 case 5:
@@ -18,8 +19,10 @@ export const standardElectionResultColorer = (party: PartyOrTie, percent: number
                     return "#6674de";
                 case 7:
                     return "#584cde";
-                default:
+                case 8:
                     return "#3933e5";
+                default:
+                    return "#0D0596";
             }
         case "r":
             switch (Math.floor(percent * 10)) {
