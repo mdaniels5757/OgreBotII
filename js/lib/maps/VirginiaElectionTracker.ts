@@ -1,7 +1,6 @@
 import cheerio from "cheerio";
 import { HttpFetch } from './../http';
 import { Party } from './types';
-import { matchAll } from '../stringUtils';
 
 export class VirginiaElectionTracker {
 
@@ -31,23 +30,21 @@ export class VirginiaElectionTracker {
             }
         }).slice(2);
         
-        return Object.fromEntries(function*(){
-            for (const tr of $("tr.m_item").get()) {
-                const locality =  $("td.locality a", tr).eq(0).text().replace(/ county$/i, "");
-                const results = {
-                    r: 0,
-                    d: 0,
-                    i: 0
-                };
-                $("td", tr).each((index, td) => {
-                    const indexParty = candidatesIndices[index];
-                    if (indexParty) {
-                        results[indexParty] += +$(td).text().replace(/\D+/, "");
-                    }
-                });
-                yield [locality, results];
-            }
-        }());
+        return Object.fromEntries($("tr.m_item").get().map(tr => {
+            const locality =  $("td.locality a", tr).eq(0).text().replace(/ county$/i, "");
+            const results = {
+                r: 0,
+                d: 0,
+                i: 0
+            };
+            $("td", tr).each((index, td) => {
+                const indexParty = candidatesIndices[index];
+                if (indexParty) {
+                    results[indexParty] += +$(td).text().replace(/\D+/, "");
+                }
+            });
+            return [locality, results];
+        }));
     }
 
 }

@@ -20,6 +20,20 @@ class County {
         this.path.style = this.path.style.split(/\s*;\s*/g).map((style: string) =>
              style.match(/^\s*fill\s*:\s*\#?\w+\s*$/i) ? `fill:${color}` : style).join(";");
     }
+
+    //normalize common abbreviations
+    public static normalize(state: string, county: string) {
+        return ((state, county) => {
+            switch (state) {
+                case "mississippi":
+                    switch (county) {
+                        case "jeff davis":
+                            return "jefferson davis";
+                    }
+            }
+            return county;
+        })(state.toLowerCase(), county.toLowerCase()).replace(/ /g, "_");
+    }
 }
 
 
@@ -75,10 +89,10 @@ export class StatesBuilder {
 
                         const stateCounties: { [x: string]: County } = Object.fromEntries(state.counties.map(county => [county.name.toLowerCase(), county]));
                         for (const [county, {r, d, i}] of Object.entries(await tracker.getCountyTotals())) {
-                            const normalizedCounty = county.toLowerCase().replace(/ /g, "_");
+                            const normalizedCounty = County.normalize(stateName, county);
                             const stateCounty = stateCounties[normalizedCounty];
                             if (!stateCounty) {
-                                console.error(`County ${county}, ${state.name} not found in SVG`);
+                                console.error(`County ${county}, ${stateName} not found in SVG`);
                                 continue;
                             }
 
