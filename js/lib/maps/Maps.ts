@@ -5,6 +5,7 @@ import fs from "fs";
 import { ElectionTracker } from "./ElectionTracker";
 import { PartyOrTie } from "./types";
 import { ElectionResultColorer } from "./ElectionResultsColorer";
+import { normalize } from "xml2js/lib/processors";
 const builder = new xmljs.Builder();
 const mapsDir = `${Io.PROJECT_DIR}/county-maps`;
 
@@ -25,6 +26,12 @@ class County {
     public static normalize(state: string, county: string) {
         return ((state, county) => {
             switch (state) {
+                case "louisiana":
+                    switch (county) {
+                        case "lasalle":
+                            return "la salle";
+                    }
+                    break;
                 case "mississippi":
                     switch (county) {
                         case "jeff davis":
@@ -45,7 +52,7 @@ class State {
         const counties: County[] = [];
         for (const {$} of xml.svg.g[0].path) {
             const {id, style} = <{[x: string] : string}>$;
-            const [, countyName] = id && style && id.match(/^[A-Z]{2}_([A-Za-z_]+)$/) || [];
+            const [, countyName] = id && style && id.match(/^[A-Z]{2}_([A-Za-z_\.]+)$/) || [];
             countyName && counties.push(new County(countyName, $));
         }
         this.counties = Object.seal(counties);
