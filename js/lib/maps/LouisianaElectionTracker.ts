@@ -16,7 +16,7 @@ export class LouisianaElectionTracker {
     async getCountyTotals(): Promise<{[x in string] : {[x in Party]: number}}> {
         const baseUrl = `https://voterportal.sos.la.gov/ElectionResults/ElectionResults/Data?blob=${this.context}`;
 
-        const [fields, ...results]  = <string[][]>csvParse(await new HttpFetch().fetch(baseUrl)));
+        const [fields, ...results]  = <string[][]>csvParse(await new HttpFetch().fetch(baseUrl));
 
         const parishIndex = fields.findIndex(field => field === "Parish");
         if (parishIndex < 0) {
