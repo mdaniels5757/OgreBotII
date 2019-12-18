@@ -6,6 +6,7 @@ import { standardElectionResultColorer } from '../lib/maps/ElectionResultsColore
 import Io from '../lib/io';
 import { ClarionElectionsTracker } from '../lib/maps/ClarionElectionsTracker';
 import { LouisianaElectionTracker } from '../lib/maps/LouisianaElectionTracker';
+import { IllinoisElectionTracker } from '../lib/maps/IllinoisElectionTracker';
 
 (async () => {
     const statesBuilder = new StatesBuilder().addElectionTrackers(
@@ -16,7 +17,8 @@ import { LouisianaElectionTracker } from '../lib/maps/LouisianaElectionTracker';
         //new CharityElectionsTracker("Georgia", "https://results.enr.clarityelections.com/GA/91639/222278/json/ALL.json", 1),
         //new VirginiaElectionTracker("87708") //2017 Gov
         //new ClarionElectionsTracker(`${Io.PROJECT_DIR}/artifacts/filestuff.txt`, "Mississippi")
-        new LouisianaElectionTracker("20191116/csv/ByParish_57627.csv")
+        //new LouisianaElectionTracker("20191116/csv/ByParish_57627.csv")
+        new IllinoisElectionTracker(2016)
         )
         .setElectionResultHandler(standardElectionResultColorer);
     await statesBuilder.build(`${Io.PROJECT_DIR}/../Desktop`);

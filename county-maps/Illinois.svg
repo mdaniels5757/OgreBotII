@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="186.81664"
+   height="337.4838"
+   id="svg5730"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="Illinois Presidential Election Results by County, 2008.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs5732">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective5738" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0615738"
+     inkscape:cx="401.88635"
+     inkscape:cy="154.19563"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1024"
+     inkscape:window-height="721"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4" />
+  <metadata
+     id="metadata5735">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-289.90804,-415.40968)">
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 469.94487,540.14439 L 470.12571,559.56934 L 470.36264,575.19752 L 452.31624,575.71885 L 451.76461,555.33088 L 452.36211,555.31273 L 452.02483,545.05308 L 451.82019,539.95033 L 469.9342,539.30618 L 469.94487,540.14439"
+       id="IL_Vermilion"
+       inkscape:label="Vermilion, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 442.70598,509.90712 L 469.31133,508.69497 L 469.9342,539.30618 L 451.82019,539.95033 L 443.73531,539.96825 L 442.70598,509.90712"
+       id="IL_Iroquois"
+       inkscape:label="Iroquois, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 383.2431,726.51348 L 394.15551,726.48046 L 393.57581,732.86294 L 393.02271,738.79207 L 393.38987,739.74123 L 393.72696,740.20134 L 394.8201,740.78623 L 397.73675,742.25659 L 399.57925,747.30345 L 390.76125,745.7371 L 387.84895,743.01086 L 386.49298,738.89861 L 384.02193,733.39436 L 382.96801,731.64239 L 383.2431,726.51348"
+       id="IL_Alexander"
+       inkscape:label="Alexander, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 394.15551,726.48046 L 403.57178,726.75886 L 408.92521,728.33745 L 409.00599,732.85819 L 408.75122,732.92258 L 397.73675,742.25659 L 394.8201,740.78623 L 393.72696,740.20134 L 393.38987,739.74123 L 393.02271,738.79207 L 393.57581,732.86294 L 394.15551,726.48046"
+       id="IL_Pulaski"
+       inkscape:label="Pulaski, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 408.92521,728.33745 L 419.01419,726.24519 L 429.29729,736.6285 L 429.37581,742.10944 L 426.03445,741.52022 L 409.00599,732.85819 L 408.92521,728.33745"
+       id="IL_Massac"
+       inkscape:label="Massac, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 434.33133,710.59802 L 445.5046,711.93473 L 448.8918,715.9635 L 448.82703,716.90581 L 447.88424,717.84237 L 447.41046,717.9145 L 440.94372,718.82648 L 439.96931,718.96434 L 439.1613,719.13186 L 438.86544,719.19802 L 438.76452,719.2093 L 437.61308,719.80379 L 437.38114,719.93351 L 437.33912,719.94883 L 436.51041,720.61556 L 435.24454,722.08067 L 432.62728,721.02237 L 432.64675,710.60515 L 434.33133,710.59802"
+       id="IL_Hardin"
+       inkscape:label="Hardin, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 432.64675,710.60515 L 432.62728,721.02237 L 432.33348,721.12506 L 431.51578,721.43299 L 431.17252,721.65976 L 430.74031,721.92136 L 430.09395,722.65069 L 429.81431,723.20954 L 428.10975,728.87293 L 428.10819,728.89555 L 428.05423,729.28331 L 428.36147,730.57428 L 430.1404,733.03603 L 430.73254,733.42721 L 431.26569,734.01459 L 432.37111,737.00356 L 431.47324,740.20082 L 430.82111,741.67622 L 429.72412,742.07417 L 429.37581,742.10944 L 429.29729,736.6285 L 419.01419,726.24519 L 418.99411,710.77299 L 432.64675,710.60515"
+       id="IL_Pope"
+       inkscape:label="Pope, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 418.99411,710.77299 L 419.01419,726.24519 L 408.92521,728.33745 L 403.57178,726.75886 L 403.65133,711.02952 L 418.99411,710.77299"
+       id="IL_Johnson"
+       inkscape:label="Johnson, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 403.65133,711.02952 L 403.57178,726.75886 L 394.15551,726.48046 L 383.2431,726.51348 L 384.94553,726.17985 L 385.49424,725.94448 L 385.53907,725.88838 L 385.58717,725.8507 L 385.62746,725.79432 L 385.85117,725.25439 L 386.15598,723.46838 L 386.18391,723.39292 L 386.16563,723.32794 L 385.9704,722.3268 L 385.95431,722.23012 L 385.93931,722.18358 L 385.31904,720.47964 L 384.79741,719.7246 L 383.66944,718.45462 L 382.90133,717.11372 L 381.7638,714.59136 L 381.74662,714.57652 L 381.53696,713.38781 L 381.53263,712.85498 L 381.55661,712.50614 L 398.49537,710.81633 L 403.65133,711.02952"
+       id="IL_Union"
+       inkscape:label="Union, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 448.1984,693.26725 L 450.14909,698.5946 L 449.40277,700.77816 L 449.14,701.35635 L 448.75245,701.96239 L 448.15867,702.52239 L 445.92784,703.92119 L 445.89005,703.94135 L 445.05608,705.2814 L 444.64131,705.88553 L 444.57372,706.00835 L 444.28428,706.64389 L 444.19283,707.04722 L 444.21108,707.11222 L 444.36031,708.45154 L 444.38312,708.51683 L 445.17923,711.23877 L 445.5046,711.93473 L 434.33133,710.59802 L 434.16577,692.4076 L 434.16858,692.36685 L 448.1984,693.26725"
+       id="IL_Gallatin"
+       inkscape:label="Gallatin, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 434.16577,692.4076 L 434.33133,710.59802 L 432.64675,710.60515 L 418.99411,710.77299 L 418.93718,695.17537 L 418.93122,692.61242 L 434.16577,692.4076"
+       id="IL_Saline"
+       inkscape:label="Saline, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 418.93718,695.17537 L 418.99411,710.77299 L 403.65133,711.02952 L 398.49537,710.81633 L 398.5508,695.37206 L 418.93718,695.17537"
+       id="IL_Williamson"
+       inkscape:label="Williamson, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 378.19018,689.8947 L 397.31122,690.16178 L 398.5508,695.37206 L 398.49537,710.81633 L 381.55661,712.50614 L 374.53874,698.85163 L 378.19018,689.8947"
+       id="IL_Jackson"
+       inkscape:label="Jackson, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 347.83406,656.40276 L 353.15097,661.95697 L 363.22999,671.40225 L 364.29636,674.16549 L 358.04412,674.00895 L 358.02119,679.17802 L 350.32022,681.88953 L 348.11997,679.99509 L 344.5352,675.99368 L 344.42611,675.85875 L 344.29518,675.64493 L 343.53586,674.44118 L 343.09578,673.09553 L 342.66477,670.42599 L 342.74712,667.96927 L 342.82865,667.37859 L 342.93154,667.1399 L 343.75315,664.92056 L 343.98503,664.52686 L 344.12308,664.37247 L 347.83406,656.40276"
+       id="IL_Monroe"
+       inkscape:label="Monroe, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 378.30054,674.31312 L 378.19018,689.8947 L 374.53874,698.85163 L 362.43839,694.57912 L 350.32022,681.88953 L 358.02119,679.17802 L 358.04412,674.00895 L 364.29636,674.16549 L 373.2496,674.29373 L 378.30054,674.31312"
+       id="IL_Randolph"
+       inkscape:label="Randolph, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 378.30054,674.31312 L 398.64048,674.65943 L 399.50375,679.8484 L 397.31122,690.16178 L 378.19018,689.8947 L 378.30054,674.31312"
+       id="IL_Perry"
+       inkscape:label="Perry, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 418.91228,679.70736 L 418.93718,695.17537 L 398.5508,695.37206 L 397.31122,690.16178 L 399.50375,679.8484 L 418.91228,679.70736"
+       id="IL_Franklin"
+       inkscape:label="Franklin, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 434.11462,671.89013 L 434.16858,692.36685 L 434.16577,692.4076 L 418.93122,692.61242 L 418.91228,679.70736 L 418.94893,671.95403 L 434.11462,671.89013"
+       id="IL_Hamilton"
+       inkscape:label="Hamilton, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 451.44578,671.37881 L 453.00964,673.39338 L 452.32601,679.50016 L 450.74379,692.98694 L 450.60438,693.22775 L 450.57436,693.26661 L 450.47006,693.32776 L 450.3921,693.33604 L 448.1984,693.26725 L 434.16858,692.36685 L 434.11462,671.89013 L 444.1399,671.71879 L 451.44578,671.37881"
+       id="IL_White"
+       inkscape:label="White, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 418.99637,659.07628 L 418.94893,671.95403 L 418.91228,679.70736 L 399.50375,679.8484 L 398.64048,674.65943 L 398.73509,659.24062 L 418.99637,659.07628"
+       id="IL_Jefferson"
+       inkscape:label="Jefferson, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 398.75314,657.52135 L 398.73509,659.24062 L 398.64048,674.65943 L 378.30054,674.31312 L 373.2496,674.29373 L 373.23827,662.53624 L 374.89438,661.08885 L 377.3561,659.30994 L 379.24301,658.74321 L 392.99965,657.32627 L 398.75314,657.52135"
+       id="IL_Washington"
+       inkscape:label="Washington, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 393.69107,643.42319 L 398.9395,643.74743 L 398.75314,657.52135 L 392.99965,657.32627 L 379.24301,658.74321 L 377.3561,659.30994 L 374.89438,661.08885 L 373.23827,662.53624 L 373.1517,648.56149 L 378.12417,643.36391 L 393.69107,643.42319"
+       id="IL_Clinton"
+       inkscape:label="Clinton, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 351.61484,648.14656 L 373.1517,648.56149 L 373.23827,662.53624 L 373.2496,674.29373 L 364.29636,674.16549 L 363.22999,671.40225 L 353.15097,661.95697 L 347.83406,656.40276 L 348.08742,655.69651 L 351.61484,648.14656"
+       id="IL_St._Clair"
+       inkscape:label="St. Clair, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 376.24907,628.26031 L 376.35411,633.02397 L 376.89462,635.62366 L 378.076,639.29603 L 378.12417,643.36391 L 373.1517,648.56149 L 351.61484,648.14656 L 351.00475,643.3801 L 354.56948,639.59238 L 354.70712,639.04653 L 354.96297,637.70776 L 354.94585,637.36068 L 354.78254,637.02173 L 350.53597,634.03994 L 349.71011,633.4734 L 348.60621,632.84679 L 347.46621,632.41344 L 353.36571,628.09886 L 373.58162,628.26369 L 376.24907,628.26031"
+       id="IL_Madison"
+       inkscape:label="Madison, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 393.82156,626.55489 L 393.69107,643.42319 L 378.12417,643.36391 L 378.076,639.29603 L 376.89462,635.62366 L 376.35411,633.02397 L 376.24907,628.26031 L 393.82156,626.55489"
+       id="IL_Bond"
+       inkscape:label="Bond, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 398.9395,643.74743 L 398.94557,638.55906 L 405.20588,638.59781 L 419.00611,638.33542 L 418.97869,651.31918 L 418.99637,659.07628 L 398.73509,659.24062 L 398.75314,657.52135 L 398.9395,643.74743"
+       id="IL_Marion"
+       inkscape:label="Marion, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 439.17097,651.49603 L 444.03443,653.25033 L 444.1399,671.71879 L 434.11462,671.89013 L 418.94893,671.95403 L 418.99637,659.07628 L 418.97869,651.31918 L 439.17097,651.49603"
+       id="IL_Wayne"
+       inkscape:label="Wayne, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 454.71744,652.97855 L 466.58385,652.90642 L 462.69315,662.03351 L 453.09266,673.11233 L 453.00964,673.39338 L 451.44578,671.37881 L 452.78999,653.00996 L 454.71744,652.97855"
+       id="IL_Wabash"
+       inkscape:label="Wabash, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 452.78999,653.00996 L 451.44578,671.37881 L 444.1399,671.71879 L 444.03443,653.25033 L 452.78999,653.00996"
+       id="IL_Edwards"
+       inkscape:label="Edwards, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 471.65841,636.02286 L 471.84257,636.05829 L 471.93103,636.22819 L 473.41381,640.08513 L 473.29763,641.51092 L 472.40359,645.1818 L 471.89876,645.97092 L 471.51547,646.24951 L 467.62707,650.57486 L 466.58385,652.90642 L 454.71744,652.97855 L 454.64215,636.45571 L 471.65841,636.02286"
+       id="IL_Lawrence"
+       inkscape:label="Lawrence, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 454.64215,636.45571 L 454.71744,652.97855 L 452.78999,653.00996 L 444.03443,653.25033 L 439.17097,651.49603 L 437.68415,646.24146 L 437.61737,645.35842 L 437.71742,643.70398 L 438.90712,643.74477 L 438.75656,636.86157 L 452.93667,636.50236 L 454.64215,636.45571"
+       id="IL_Richland"
+       inkscape:label="Richland, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 419.03763,633.1078 L 434.07137,633.17599 L 434.11037,636.97619 L 438.75656,636.86157 L 438.90712,643.74477 L 437.71742,643.70398 L 437.61737,645.35842 L 437.68415,646.24146 L 439.17097,651.49603 L 418.97869,651.31918 L 419.00611,638.33542 L 419.03763,633.1078"
+       id="IL_Clay"
+       inkscape:label="Clay, IL"
+       sodipodi:nodetypes="cccccccccccc" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 449.81819,617.4354 L 452.41066,617.33138 L 452.93667,636.50236 L 434.1099,636.97982 L 433.91574,617.82188 L 449.81819,617.4354"
+       id="IL_Jasper"
+       inkscape:label="Jasper, IL"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 452.41066,617.33138 L 466.92157,618.11913 L 467.62546,621.32177 L 469.5786,623.96389 L 472.42403,629.98089 L 472.1738,631.8344 L 471.78411,632.73616 L 471.49162,633.08471 L 471.65841,636.02286 L 454.64215,636.45571 L 452.93667,636.50236 L 452.41066,617.33138"
+       id="IL_Crawford"
+       inkscape:label="Crawford, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 451.68123,599.26608 L 463.8646,598.68777 L 463.84852,599.31932 L 470.91511,599.14947 L 467.93311,612.07589 L 466.92157,618.11913 L 452.41066,617.33138 L 449.81819,617.4354 L 449.43814,605.34761 L 451.68123,599.26608"
+       id="IL_Clark"
+       inkscape:label="Clark, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 449.43814,605.34761 L 449.81819,617.4354 L 428.95129,617.939 L 428.8236,605.88362 L 449.43814,605.34761"
+       id="IL_Cumberland"
+       sodipodi:nodetypes="ccccc"
+       inkscape:label="Cumberland, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 428.91371,615.30252 L 428.94716,617.94401 L 433.91574,617.82188 L 434.07137,633.17599 L 419.03763,633.1078 L 413.91677,633.3112 L 413.85954,615.33307"
+       id="IL_Effingham"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:label="Effingham, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 413.85954,615.33307 L 413.91677,633.3112 L 419.03763,633.1078 L 419.00611,638.33542 L 405.20588,638.59781 L 398.94557,638.55906 L 398.9395,643.74743 L 393.69107,643.42319 L 393.82156,626.55489 L 398.77613,615.32524 L 413.85954,615.33307"
+       id="IL_Fayette"
+       inkscape:label="Fayette, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 403.79243,589.55298 L 413.41409,589.55875 L 413.52825,593.85872 L 423.66706,600.64545 L 425.75534,601.58548 L 428.79677,601.57144 L 428.8236,605.88362 L 428.91371,615.30252 L 413.85954,615.33307 L 398.77613,615.32524 L 398.75691,607.59078 L 403.89939,607.73476 L 403.92007,597.29944 L 403.79243,589.55298"
+       id="IL_Shelby"
+       inkscape:label="Shelby, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 373.51399,597.32192 L 381.04347,597.23854 L 381.18054,607.63011 L 393.73365,607.63249 L 398.75691,607.59078 L 398.77613,615.32524 L 393.82156,626.55489 L 376.24907,628.26031 L 373.58162,628.26369 L 373.51399,597.32192"
+       id="IL_Montgomery"
+       inkscape:label="Montgomery, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 353.38128,612.63821 L 353.36571,628.09886 L 347.46621,632.41344 L 339.55962,629.90382 L 332.77165,620.98507 L 333.83634,617.01643 L 335.84841,616.68135 L 337.08344,616.98924 L 337.32578,617.23801 L 337.34458,617.36223 L 338.08421,617.85906 L 345.86803,617.78406 L 345.86601,614.76621 L 351.26993,612.62966 L 353.38128,612.63821"
+       id="IL_Jersey"
+       inkscape:label="Jersey, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 363.43527,597.34392 L 373.51399,597.32192 L 373.58162,628.26369 L 353.36571,628.09886 L 353.38128,612.63821 L 353.21756,597.40192 L 363.43527,597.34392"
+       id="IL_Macoupin"
+       inkscape:label="Macoupin, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 317.35321,604.12704 L 332.49892,604.55334 L 332.77165,620.98507 L 339.55962,629.90382 L 329.8136,631.77389 L 327.83279,625.09713 L 327.83436,625.07453 L 327.7491,624.65897 L 327.80716,624.47636 L 329.1653,622.66258 L 329.25195,621.93118 L 327.64245,614.61999 L 317.35321,604.12704"
+       id="IL_Calhoun"
+       inkscape:label="Calhoun, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 353.21756,597.40192 L 353.38128,612.63821 L 351.26993,612.62966 L 345.86601,614.76621 L 345.86803,617.78406 L 338.08421,617.85906 L 337.34458,617.36223 L 337.32578,617.23801 L 337.08344,616.98924 L 335.84841,616.68135 L 333.83634,617.01643 L 332.77165,620.98507 L 332.49892,604.55334 L 334.05572,597.13203 L 346.57545,597.35514 L 353.21756,597.40192"
+       id="IL_Greene"
+       inkscape:label="Greene, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 395.18152,580.20401 L 398.58207,580.9247 L 398.72496,589.50973 L 403.79243,589.55298 L 403.92007,597.29944 L 403.89939,607.73476 L 398.75691,607.59078 L 393.73365,607.63249 L 381.18054,607.63011 L 381.04347,597.23854 L 380.98776,590.36637 L 387.20142,584.39384 L 393.50987,580.08913 L 395.18152,580.20401"
+       id="IL_Christian"
+       inkscape:label="Christian, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 428.59212,589.51393 L 446.89511,589.23322 L 446.87112,587.52927 L 448.54404,587.29375 L 451.19633,587.18016 L 451.68123,599.26608 L 449.43814,605.34761 L 428.8236,605.88362 L 428.79677,601.57144 L 428.59212,589.51393"
+       id="IL_Coles"
+       inkscape:label="Coles, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 452.31624,575.71885 L 470.36264,575.19752 L 470.74202,591.46818 L 470.91511,599.14947 L 463.84852,599.31932 L 463.8646,598.68777 L 451.68123,599.26608 L 451.19633,587.18016 L 451.06438,582.87441 L 452.30717,580.88429 L 452.31624,575.71885"
+       id="IL_Edgar"
+       inkscape:label="Edgar, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 428.88295,576.07486 L 452.31624,575.71885 L 452.30717,580.88429 L 451.06438,582.87441 L 451.19633,587.18016 L 448.54404,587.29375 L 446.87112,587.52927 L 446.89511,589.23322 L 428.59212,589.51393 L 428.44622,581.2382 L 428.88295,576.07486"
+       id="IL_Douglas"
+       inkscape:label="Douglas, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 428.44622,581.2382 L 428.59212,589.51393 L 428.79677,601.57144 L 425.75534,601.58548 L 423.66706,600.64545 L 413.52825,593.85872 L 413.41409,589.55875 L 416.27225,581.34838 L 428.44622,581.2382"
+       id="IL_Moultrie"
+       inkscape:label="Moultrie, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 416.16894,565.82946 L 416.27225,581.34838 L 413.41409,589.55875 L 403.79243,589.55298 L 398.72496,589.50973 L 398.58207,580.9247 L 395.18152,580.20401 L 395.15266,574.06648 L 398.3954,566.28768 L 403.55284,566.21421 L 413.56553,565.8281 L 416.16894,565.82946"
+       id="IL_Macon"
+       inkscape:label="Macon, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 379.05959,570.60288 L 383.29055,570.56592 L 383.30104,573.12921 L 386.80788,574.02558 L 395.15266,574.06648 L 395.18152,580.20401 L 393.50987,580.08913 L 387.20142,584.39384 L 380.98776,590.36637 L 381.04347,597.23854 L 373.51399,597.32192 L 363.43527,597.34392 L 363.51217,595.62873 L 363.29553,594.34394 L 360.87213,585.76151 L 360.48453,581.79778 L 360.49387,576.62784 L 360.48954,574.90252 L 370.54157,574.93781 L 373.55524,574.00249 L 373.53714,572.8087 L 373.72219,570.64576 L 379.05959,570.60288"
+       id="IL_Sangamon"
+       inkscape:label="Sangamon, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 334.1849,576.1763 L 360.49387,576.62784 L 360.48453,581.79778 L 360.87213,585.76151 L 363.29553,594.34394 L 363.51217,595.62873 L 363.43527,597.34392 L 353.21756,597.40192 L 346.57545,597.35514 L 346.70124,590.49089 L 343.60968,583.55119 L 338.62773,581.40188 L 333.44623,581.29615 L 334.68846,578.3866 L 334.1849,576.1763"
+       id="IL_Morgan"
+       inkscape:label="Morgan, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 346.57545,597.35514 L 334.05572,597.13203 L 334.4535,596.11248 L 334.45065,595.88927 L 334.18306,594.68293 L 332.91727,590.18544 L 332.54675,583.91976 L 333.44623,581.29615 L 338.62773,581.40188 L 343.60968,583.55119 L 346.70124,590.49089 L 346.57545,597.35514"
+       id="IL_Scott"
+       inkscape:label="Scott, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 334.68846,578.3866 L 333.44623,581.29615 L 332.54675,583.91976 L 332.91727,590.18544 L 334.18306,594.68293 L 334.45065,595.88927 L 334.4535,596.11248 L 334.05572,597.13203 L 332.49892,604.55334 L 317.35321,604.12704 L 307.3617,592.21623 L 301.39409,586.9906 L 299.03315,582.59995 L 306.38104,582.84083 L 319.22522,583.04528 L 319.29466,577.86129 L 334.68846,578.3866"
+       id="IL_Pike"
+       inkscape:label="Pike, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 319.65128,562.53787 L 324.88465,562.55159 L 329.34329,562.71232 L 332.39085,567.37769 L 333.27439,569.42294 L 337.37704,569.66388 L 334.1849,576.1763 L 334.68846,578.3866 L 319.29466,577.86129 L 319.65128,562.53787"
+       id="IL_Brown"
+       inkscape:label="Brown, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 319.80995,557.31443 L 319.65128,562.53787 L 319.29466,577.86129 L 319.22522,583.04528 L 306.38104,582.84083 L 299.03315,582.59995 L 295.3218,571.49846 L 293.21891,556.39748 L 319.80995,557.31443"
+       id="IL_Adams"
+       inkscape:label="Adams, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 308.10405,530.87553 L 320.54815,531.00697 L 319.9747,551.93669 L 319.80995,557.31443 L 293.21891,556.39748 L 293.68717,553.5576 L 297.4834,546.00341 L 298.86607,545.62054 L 298.93199,545.58861 L 299.4254,545.2311 L 299.56475,544.72637 L 299.58536,544.69135 L 300.06425,539.44444 L 300.06851,538.853 L 299.87272,538.12493 L 299.21202,537.00993 L 298.33975,536.52215 L 298.22844,536.0229 L 298.32626,535.5927 L 300.37974,532.86633 L 300.55561,532.69179 L 300.7296,532.54444 L 300.87579,532.40426 L 301.28219,532.1864 L 302.43081,531.6327 L 302.70384,531.50123 L 302.77006,531.46482 L 305.13619,530.81272 L 305.1543,530.81395 L 305.50435,530.81978 L 306.67456,530.81369 L 308.10405,530.87553"
+       id="IL_Hancock"
+       inkscape:label="Hancock, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 325.61819,531.27798 L 340.78934,531.92908 L 340.37521,552.66038 L 319.9747,551.93669 L 320.54815,531.00697 L 325.61819,531.27798"
+       id="IL_McDonough"
+       inkscape:label="Donough, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 319.9747,551.93669 L 340.37521,552.66038 L 351.45864,558.21937 L 344.51155,561.68367 L 337.37704,569.66388 L 333.27439,569.42294 L 332.39085,567.37769 L 329.34329,562.71232 L 324.88465,562.55159 L 319.65128,562.53787 L 319.9747,551.93669"
+       id="IL_Schuyler"
+       inkscape:label="Schuyler, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 344.51155,561.68367 L 347.57602,565.77218 L 351.53976,565.98083 L 351.62414,565.94567 L 356.16009,564.45039 L 360.34306,563.05833 L 360.54667,562.7446 L 360.48954,574.90252 L 360.49387,576.62784 L 334.1849,576.1763 L 337.37704,569.66388 L 344.51155,561.68367"
+       id="IL_Cass"
+       inkscape:label="Cass, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 360.54667,562.7446 L 362.61022,561.32976 L 375.02667,559.74335 L 376.59749,560.1335 L 378.05601,561.95876 L 379.05959,570.60288 L 373.72219,570.64576 L 373.53714,572.8087 L 373.55524,574.00249 L 370.54157,574.93781 L 360.48954,574.90252 L 360.54667,562.7446"
+       id="IL_Menard"
+       inkscape:label="Menard, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 363.76376,543.41662 L 372.94492,543.47406 L 373.02782,550.34806 L 377.99252,550.29778 L 378.05601,561.95876 L 376.59749,560.1335 L 375.02667,559.74335 L 362.61022,561.32976 L 360.54667,562.7446 L 360.34306,563.05833 L 356.16009,564.45039 L 351.62414,565.94567 L 351.53976,565.98083 L 347.57602,565.77218 L 344.51155,561.68367 L 351.45864,558.21937 L 354.69064,555.69689 L 355.00157,555.345 L 357.33224,551.63177 L 358.10894,548.34428 L 358.41705,547.43696 L 358.71702,546.97963 L 363.09854,543.75782 L 363.76376,543.41662"
+       id="IL_Mason"
+       inkscape:label="Mason, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 393.0557,550.00384 L 398.14831,552.52944 L 398.3954,566.28768 L 395.15266,574.06648 L 386.80788,574.02558 L 383.30104,573.12921 L 383.29055,570.56592 L 379.05959,570.60288 L 378.05601,561.95876 L 377.99252,550.29778 L 393.0557,550.00384"
+       id="IL_Logan"
+       inkscape:label="Logan, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 423.64657,552.39271 L 416.16894,565.82946 L 413.56553,565.8281 L 403.55284,566.21421 L 398.3954,566.28768 L 398.14831,552.52944 L 423.64657,552.39271"
+       id="IL_DeWitt"
+       inkscape:label="De Witt, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 423.64657,552.39271 L 428.75292,552.33399 L 428.88295,576.07486 L 428.44622,581.2382 L 416.27225,581.34838 L 416.16894,565.82946 L 423.64657,552.39271"
+       id="IL_Piatt"
+       inkscape:label="Piatt, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 428.65502,545.41342 L 452.02483,545.05308 L 452.36211,555.31273 L 451.76461,555.33088 L 452.31624,575.71885 L 428.88295,576.07486 L 428.75292,552.33399 L 428.65502,545.41342"
+       id="IL_Champaign"
+       inkscape:label="Champaign, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 437.63667,510.15509 L 442.70598,509.90712 L 443.73531,539.96825 L 451.82019,539.95033 L 452.02483,545.05308 L 428.65502,545.41342 L 428.55778,532.52121 L 438.47274,532.36504 L 437.63667,510.15509"
+       id="IL_Ford"
+       inkscape:label="Ford, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 407.73686,524.66818 L 422.96871,524.30386 L 423.0845,529.44145 L 423.48034,532.62288 L 428.55778,532.52121 L 428.65502,545.41342 L 428.75292,552.33399 L 423.64657,552.39271 L 398.14831,552.52944 L 393.0557,550.00384 L 392.77216,534.12666 L 398.75983,533.96009 L 402.71418,532.11987 L 405.32908,529.90089 L 407.73686,524.66818"
+       id="IL_McLean"
+       inkscape:label="McLean, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 380.14031,525.07031 L 390.06982,525.03353 L 390.07849,528.4842 L 390.20843,532.88542 L 392.77216,534.12666 L 393.0557,550.00384 L 377.99252,550.29778 L 373.02782,550.34806 L 372.94492,543.47406 L 363.76376,543.41662 L 366.07864,538.87391 L 375.57042,533.68193 L 380.14062,527.71483 L 380.51999,526.69858 L 380.35427,525.59937 L 380.14031,525.07031"
+       id="IL_Tazewell"
+       inkscape:label="Tazewell, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 402.48944,514.52624 L 407.58324,514.3847 L 407.73686,524.66818 L 405.32908,529.90089 L 402.71418,532.11987 L 398.75983,533.96009 L 392.77216,534.12666 L 390.20843,532.88542 L 390.07849,528.4842 L 390.06982,525.03353 L 380.14031,525.07031 L 383.79733,514.83931 L 402.48944,514.52624"
+       id="IL_Woodford"
+       inkscape:label="Woodford, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 376.48245,511.73315 L 383.79733,514.83931 L 380.14031,525.07031 L 380.35427,525.59937 L 380.51999,526.69858 L 380.14062,527.71483 L 375.57042,533.68193 L 366.07864,538.87391 L 366.12718,534.92194 L 366.06545,532.30964 L 360.96096,532.2092 L 361.12481,527.10906 L 361.22829,511.62711 L 376.48245,511.73315"
+       id="IL_Peoria"
+       inkscape:label="Peoria, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 361.12481,527.10906 L 360.96096,532.2092 L 366.06545,532.30964 L 366.12718,534.92194 L 366.07864,538.87391 L 363.76376,543.41662 L 363.09854,543.75782 L 358.71702,546.97963 L 358.41705,547.43696 L 358.10894,548.34428 L 357.33224,551.63177 L 355.00157,555.345 L 354.69064,555.69689 L 351.45864,558.21937 L 340.37521,552.66038 L 340.78934,531.92908 L 340.89559,526.80676 L 361.12481,527.10906"
+       id="IL_Fulton"
+       inkscape:label="Fulton, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 326.14332,505.75238 L 341.33306,506.19995 L 340.78934,531.92908 L 325.61819,531.27798 L 326.14332,505.75238"
+       id="IL_Warren"
+       inkscape:label="Warren, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 318.97509,505.54654 L 326.14332,505.75238 L 325.61819,531.27798 L 320.54815,531.00697 L 308.10405,530.87553 L 311.41815,527.48933 L 312.1762,520.89611 L 312.39126,520.15077 L 316.13683,515.51976 L 316.63972,515.09007 L 317.95284,514.46114 L 318.22268,514.11101 L 318.7134,512.40144 L 319.21692,507.6569 L 319.10326,506.06515 L 318.97509,505.54654"
+       id="IL_Henderson"
+       inkscape:label="Henderson, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 313.47933,489.94389 L 341.72479,490.69689 L 341.33306,506.19995 L 326.14332,505.75238 L 318.97509,505.54654 L 318.94426,505.39879 L 319.08185,503.9927 L 317.25677,500.48089 L 316.91175,500.07031 L 316.56961,499.88294 L 315.97962,499.92432 L 314.63193,499.13534 L 311.91808,495.37586 L 311.90276,495.33383 L 311.89078,494.84599 L 313.47933,489.94389"
+       id="IL_Mercer"
+       inkscape:label="Mercer, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 361.31763,501.31936 L 361.22829,511.62711 L 361.12481,527.10906 L 340.89559,526.80676 L 341.33306,506.19995 L 341.4586,501.06073 L 361.31763,501.31936"
+       id="IL_Knox"
+       inkscape:label="Knox, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 366.91184,496.34659 L 376.48897,501.43793 L 376.48245,511.73315 L 361.22829,511.62711 L 361.31763,501.31936 L 366.91184,496.34659"
+       id="IL_Stark"
+       inkscape:label="Stark, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 376.48897,501.43793 L 384.06692,501.44435 L 390.06447,501.46504 L 389.8891,502.89133 L 389.77624,503.27498 L 389.49312,503.61968 L 389.04689,503.82111 L 388.78294,504.08521 L 397.407,504.03604 L 402.48944,514.52624 L 383.79733,514.83931 L 376.48245,511.73315 L 376.48897,501.43793"
+       id="IL_Marshall"
+       inkscape:label="Marshall, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 397.29528,491.88478 L 397.407,504.03604 L 388.78294,504.08521 L 389.04689,503.82111 L 389.49312,503.61968 L 389.77624,503.27498 L 389.8891,502.89133 L 390.06447,501.46504 L 384.06692,501.44435 L 384.03614,496.39455 L 390.24499,492.34701 L 392.70395,491.20513 L 393.23801,491.18262 L 397.29528,491.88478"
+       id="IL_Putnam"
+       inkscape:label="Putnam, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 422.68588,503.64757 L 437.36347,503.13594 L 437.63667,510.15509 L 438.47274,532.36504 L 428.55778,532.52121 L 423.48034,532.62288 L 423.0845,529.44145 L 422.96871,524.30386 L 407.73686,524.66818 L 407.58324,514.3847 L 407.54553,503.87251 L 422.68588,503.64757"
+       id="IL_Livingston"
+       inkscape:label="Livingston, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 469.10053,499.50901 L 469.31133,508.69497 L 442.70598,509.90712 L 437.63667,510.15509 L 437.36347,503.13594 L 437.61416,497.96437 L 445.25107,497.64257 L 447.6901,494.40559 L 447.61467,492.45691 L 468.93915,491.72382 L 469.10053,499.50901"
+       id="IL_Kankakee"
+       inkscape:label="Kankakee, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 437.07505,482.56118 L 437.61416,497.96437 L 437.36347,503.13594 L 422.68588,503.64757 L 422.06097,483.06789 L 437.07505,482.56118"
+       id="IL_Grundy"
+       inkscape:label="Grundy, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 436.45142,467.12946 L 446.60358,469.28361 L 446.71184,471.88087 L 457.21118,481.83294 L 468.76979,481.60314 L 468.93915,491.72382 L 447.61467,492.45691 L 447.6901,494.40559 L 445.25107,497.64257 L 437.61416,497.96437 L 437.07505,482.56118 L 436.45142,467.12946"
+       id="IL_Will"
+       inkscape:label="Will, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 436.43326,467.12822 L 436.45142,467.12946 L 437.07505,482.56118 L 422.06097,483.06789 L 421.68445,472.78274 L 421.6543,467.5919 L 436.43326,467.12822"
+       id="IL_Kendall"
+       inkscape:label="Kendall, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 407.039,473.09176 L 421.68445,472.78274 L 422.06097,483.06789 L 422.68588,503.64757 L 407.54553,503.87251 L 407.58324,514.3847 L 402.48944,514.52624 L 397.407,504.03604 L 397.29528,491.88478 L 397.09294,473.10468 L 402.10198,473.20311 L 407.039,473.09176"
+       id="IL_LaSalle"
+       inkscape:label="La Salle, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 397.11211,475.67308 L 397.29528,491.88478 L 393.23801,491.18262 L 392.70395,491.20513 L 390.24499,492.34701 L 384.03614,496.39455 L 384.06692,501.44435 L 376.48897,501.43793 L 366.91184,496.34659 L 366.78958,475.73773 L 376.84269,475.69121 L 397.11211,475.67308"
+       id="IL_Bureau"
+       inkscape:label="Bureau, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 366.78958,475.73773 L 366.91184,496.34659 L 361.31763,501.31936 L 341.4586,501.06073 L 341.72479,490.69689 L 341.89437,483.06186 L 344.86967,480.36696 L 345.40839,480.01254 L 346.20218,479.7212 L 348.30154,479.37388 L 349.93239,479.22195 L 352.2609,478.18942 L 352.7112,477.33284 L 352.96698,476.3263 L 352.92393,475.95921 L 352.70202,475.61172 L 366.78958,475.73773"
+       id="IL_Henry"
+       inkscape:label="Henry, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 350.33409,463.83787 L 350.09382,464.95019 L 350.06112,466.02212 L 350.38944,468.39785 L 350.95054,469.77 L 351.73993,470.60259 L 352.57044,470.96913 L 353.25993,471.46716 L 353.78839,472.12246 L 353.83359,472.9221 L 353.80703,473.63942 L 353.59349,474.95838 L 353.47656,475.13695 L 352.70202,475.61172 L 352.92393,475.95921 L 352.96698,476.3263 L 352.7112,477.33284 L 352.2609,478.18942 L 349.93239,479.22195 L 348.30154,479.37388 L 346.20218,479.7212 L 345.40839,480.01254 L 344.86967,480.36696 L 341.89437,483.06186 L 341.72479,490.69689 L 313.47933,489.94389 L 313.48057,489.92576 L 314.13462,487.95889 L 314.91316,485.50447 L 314.96175,485.394 L 315.29969,484.98029 L 315.30092,484.96217 L 315.34323,484.94236 L 315.83071,484.67086 L 317.51143,484.19009 L 323.75111,482.93934 L 326.42547,483.10036 L 327.04955,483.2252 L 328.5428,483.28681 L 332.11984,482.63142 L 340.65011,479.11207 L 343.44902,476.2685 L 345.92334,473.37988 L 347.03572,467.06136 L 350.33409,463.83787"
+       id="IL_Rock_Island"
+       inkscape:label="Rock Island, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 376.95965,457.03321 L 379.86966,457.01017 L 388.63417,456.97065 L 388.63845,457.83577 L 406.83271,457.54758 L 407.039,473.09176 L 402.10198,473.20311 L 397.09294,473.10468 L 397.11211,475.67308 L 376.84269,475.69121 L 376.95965,457.03321"
+       id="IL_Lee"
+       inkscape:label="Lee, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 374.49168,455.32517 L 376.95965,457.03321 L 376.84269,475.69121 L 366.78958,475.73773 L 352.70202,475.61172 L 353.47656,475.13695 L 353.59349,474.95838 L 353.80703,473.63942 L 353.83359,472.9221 L 353.78839,472.12246 L 353.25993,471.46716 L 352.57044,470.96913 L 351.73993,470.60259 L 350.95054,469.77 L 350.38944,468.39785 L 350.06112,466.02212 L 350.09382,464.95019 L 350.33409,463.83787 L 354.30477,455.33528 L 374.49168,455.32517"
+       id="IL_Whiteside"
+       inkscape:label="Whiteside, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 374.44578,439.50073 L 374.49168,455.32517 L 354.30477,455.33528 L 354.25356,449.19172 L 347.31997,439.67578 L 364.47287,439.63922 L 374.44578,439.50073"
+       id="IL_Carroll"
+       inkscape:label="Carroll, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 387.07897,439.33111 L 396.73322,439.19343 L 396.73823,442.36622 L 406.81784,442.19866 L 406.83271,457.54758 L 388.63845,457.83577 L 388.63417,456.97065 L 379.86966,457.01017 L 376.95965,457.03321 L 374.49168,455.32517 L 374.44578,439.50073 L 387.07897,439.33111"
+       id="IL_Ogle"
+       inkscape:label="Ogle, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 421.99649,442.01276 L 421.6543,467.5919 L 421.68445,472.78274 L 407.039,473.09176 L 406.83271,457.54758 L 406.81784,442.19866 L 416.94575,442.05713 L 421.99649,442.01276"
+       id="IL_DeKalb"
+       inkscape:label="DeKalb, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 437.14796,441.82499 L 436.19892,451.72776 L 436.43326,467.12822 L 421.6543,467.5919 L 421.99649,442.01276 L 437.14796,441.82499"
+       id="IL_Kane"
+       inkscape:label="Kane, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 436.43326,467.12822 L 436.19892,451.72776 L 446.2433,451.2118 L 450.58105,451.07746 L 451.07364,453.1823 L 451.5781,467.36785 L 446.60358,469.28361 L 436.45142,467.12946 L 436.43326,467.12822"
+       id="IL_DuPage"
+       inkscape:label="DuPage, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 438.82956,441.79491 L 457.84222,441.58576 L 461.75193,447.68043 L 463.6469,454.415 L 464.03645,456.23056 L 464.35326,458.17763 L 464.68991,459.57081 L 464.82781,459.94894 L 465.08946,460.64511 L 466.19587,463.02421 L 468.55203,467.55111 L 468.76979,481.60314 L 457.21118,481.83294 L 446.71184,471.88087 L 446.60358,469.28361 L 451.5781,467.36785 L 451.07364,453.1823 L 450.58105,451.07746 L 446.2433,451.2118 L 436.19892,451.72776 L 437.14796,441.82499 L 438.82956,441.79491"
+       id="IL_Cook"
+       inkscape:label="Cook, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 438.51155,421.65053 L 455.70786,421.64426 L 455.72595,421.64549 L 455.85015,422.81923 L 455.62037,427.9513 L 455.14764,429.13408 L 454.97054,429.32672 L 454.55781,431.15994 L 454.43952,432.88143 L 454.72237,434.72605 L 455.47543,436.94891 L 456.03048,438.34341 L 457.84222,441.58576 L 438.82956,441.79491 L 438.51155,421.65053"
+       id="IL_Lake"
+       inkscape:label="Lake, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 434.02752,421.79299 L 438.51155,421.65053 L 438.82956,441.79491 L 437.14796,441.82499 L 421.99649,442.01276 L 416.94575,442.05713 L 416.70088,422.04064 L 434.02752,421.79299"
+       id="IL_McHenry"
+       inkscape:label="McHenry, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 413.7241,422.04091 L 416.70088,422.04064 L 416.94575,442.05713 L 406.81784,442.19866 L 406.67024,422.02497 L 413.7241,422.04091"
+       id="IL_Boone"
+       inkscape:label="Boone, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 406.67024,422.02497 L 406.81784,442.19866 L 396.73823,442.36622 L 396.73322,439.19343 L 387.07897,439.33111 L 386.82515,421.76277 L 388.36292,421.77283 L 406.67024,422.02497"
+       id="IL_Winnebago"
+       inkscape:label="Winnebago, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 368.08089,421.44418 L 386.82515,421.76277 L 387.07897,439.33111 L 374.44578,439.50073 L 364.47287,439.63922 L 364.24669,421.40374 L 368.08089,421.44418"
+       id="IL_Stephenson"
+       inkscape:label="Stephenson, IL" />
+    <path
+       style="font-size:12px;fill:#888;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.96974581;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 364.24669,421.40374 L 364.47287,439.63922 L 347.31997,439.67578 L 345.56105,438.97691 L 344.80344,438.41051 L 344.10578,437.76631 L 344.06751,437.72725 L 342.94505,436.11171 L 342.9177,436.04611 L 342.41215,434.65952 L 342.43769,434.28805 L 342.72001,433.75668 L 343.07826,432.12001 L 343.07084,431.89645 L 342.9616,431.69779 L 340.59752,428.54496 L 340.49596,428.4333 L 340.47908,428.41394 L 336.9852,425.60675 L 334.20191,423.91803 L 333.25443,423.13373 L 332.93054,422.74736 L 332.8511,422.44603 L 332.83272,422.11708 L 332.86022,421.98244 L 333.52854,420.9997 L 342.74237,421.17769 L 364.24669,421.40374"
+       id="IL_JoDaviess"
+       inkscape:label="Jo Daviess, IL" />
+  </g>
+</svg>

@@ -1,50 +1,67 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.standardElectionResultColorer = (party, percent) => {
-    switch (party) {
-        case "d":
-            switch (Math.floor(percent * 10)) {
-                case 0:
-                case 1:
-                case 2:
-                case 3:
-                    return "#ffabc5";
-                case 4:
-                    return "#a5b0ff";
-                case 5:
-                    return "#7996e2";
-                case 6:
-                    return "#6674de";
-                case 7:
-                    return "#584cde";
-                case 8:
-                    return "#3933e5";
-                default:
-                    return "#0D0596";
-            }
-        case "r":
-            switch (Math.floor(percent * 10)) {
-                case 0:
-                case 1:
-                case 2:
-                case 3:
-                case 4:
-                    return "#ffb2b2";
-                case 5:
-                    return "#e27f7f";
-                case 6:
-                    return "#d75d5d";
-                case 7:
-                    return "#d72f30";
-                case 8:
-                    return "#c21b18";
-                default:
-                    return "#a80000";
-            }
-        case "t":
-            return "#888";
-        default:
-            throw new Error("Can't currently handle independents");
+const allColorsUsed = new Set();
+const electionColors = {
+    d: {
+        0: "#ffabc5",
+        1: "#ffabc5",
+        2: "#ffabc5",
+        3: "#ffabc5",
+        4: "#a5b0ff",
+        5: "#7996e2",
+        6: "#6674de",
+        7: "#584cde",
+        8: "#3933e5",
+        9: "#0D0596",
+        10: "#0D0596"
+    },
+    r: {
+        0: "#ffb2b2",
+        1: "#ffb2b2",
+        2: "#ffb2b2",
+        3: "#ffb2b2",
+        4: "#ffb2b2",
+        5: "#e27f7f",
+        6: "#d75d5d",
+        7: "#d72f30",
+        8: "#c21b18",
+        9: "#a80000",
+        10: "#a80000"
+    },
+    t: {
+        0: "#888",
+        1: "#888",
+        2: "#888",
+        3: "#888",
+        4: "#888",
+        5: "#888",
+        6: "#888",
+        7: "#888",
+        8: "#888",
+        9: "#888",
+        10: "#888"
+    },
+    i: {
+        0: "",
+        1: "",
+        2: "",
+        3: "",
+        4: "",
+        5: "",
+        6: "",
+        7: "",
+        8: "",
+        9: "",
+        10: ""
     }
 };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRWxlY3Rpb25SZXN1bHRzQ29sb3Jlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkVsZWN0aW9uUmVzdWx0c0NvbG9yZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFJYSxRQUFBLDZCQUE2QixHQUFHLENBQUMsS0FBaUIsRUFBRSxPQUFlLEVBQUUsRUFBRTtJQUNoRixRQUFRLEtBQUssRUFBRTtRQUNYLEtBQUssR0FBRztZQUNKLFFBQVEsSUFBSSxDQUFDLEtBQUssQ0FBQyxPQUFPLEdBQUcsRUFBRSxDQUFDLEVBQUU7Z0JBQzlCLEtBQUssQ0FBQyxDQUFDO2dCQUNQLEtBQUssQ0FBQyxDQUFDO2dCQUNQLEtBQUssQ0FBQyxDQUFDO2dCQUNQLEtBQUssQ0FBQztvQkFDRixPQUFPLFNBQVMsQ0FBQztnQkFDckIsS0FBSyxDQUFDO29CQUNGLE9BQU8sU0FBUyxDQUFDO2dCQUNyQixLQUFLLENBQUM7b0JBQ0YsT0FBTyxTQUFTLENBQUM7Z0JBQ3JCLEtBQUssQ0FBQztvQkFDRixPQUFPLFNBQVMsQ0FBQztnQkFDckIsS0FBSyxDQUFDO29CQUNGLE9BQU8sU0FBUyxDQUFDO2dCQUNyQixLQUFLLENBQUM7b0JBQ0YsT0FBTyxTQUFTLENBQUM7Z0JBQ3JCO29CQUNJLE9BQU8sU0FBUyxDQUFDO2FBQ3hCO1FBQ0wsS0FBSyxHQUFHO1lBQ0osUUFBUSxJQUFJLENBQUMsS0FBSyxDQUFDLE9BQU8sR0FBRyxFQUFFLENBQUMsRUFBRTtnQkFDOUIsS0FBSyxDQUFDLENBQUM7Z0JBQ1AsS0FBSyxDQUFDLENBQUM7Z0JBQ1AsS0FBSyxDQUFDLENBQUM7Z0JBQ1AsS0FBSyxDQUFDLENBQUM7Z0JBQ1AsS0FBSyxDQUFDO29CQUNGLE9BQU8sU0FBUyxDQUFDO2dCQUNyQixLQUFLLENBQUM7b0JBQ0YsT0FBTyxTQUFTLENBQUM7Z0JBQ3JCLEtBQUssQ0FBQztvQkFDRixPQUFPLFNBQVMsQ0FBQztnQkFDckIsS0FBSyxDQUFDO29CQUNGLE9BQU8sU0FBUyxDQUFDO2dCQUNyQixLQUFLLENBQUM7b0JBQ0YsT0FBTyxTQUFTLENBQUM7Z0JBQ3JCO29CQUNJLE9BQU8sU0FBUyxDQUFDO2FBQ3hCO1FBQ0wsS0FBSyxHQUFHO1lBQ0osT0FBTyxNQUFNLENBQUM7UUFDbEI7WUFDSSxNQUFNLElBQUksS0FBSyxDQUFDLHFDQUFxQyxDQUFDLENBQUM7S0FDOUQ7QUFDTCxDQUFDLENBQUEifQ==
+exports.standardElectionResultColorer = (party, percent) => {
+    const roundedPercent = Math.floor(percent * 10);
+    const color = electionColors[party][roundedPercent];
+    if (!allColorsUsed.has(`${party}${roundedPercent}`)) {
+        console.log(`${party}${roundedPercent}0: ${color}`);
+        allColorsUsed.add(`${party}${roundedPercent}`);
+    }
+    return color;
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRWxlY3Rpb25SZXN1bHRzQ29sb3Jlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkVsZWN0aW9uUmVzdWx0c0NvbG9yZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxNQUFNLGFBQWEsR0FBRyxJQUFJLEdBQUcsRUFBVSxDQUFDO0FBSXhDLE1BQU0sY0FBYyxHQUFHO0lBQ25CLENBQUMsRUFBRTtRQUNDLENBQUMsRUFBRSxTQUFTO1FBQ1osQ0FBQyxFQUFFLFNBQVM7UUFDWixDQUFDLEVBQUUsU0FBUztRQUNaLENBQUMsRUFBRSxTQUFTO1FBQ1osQ0FBQyxFQUFFLFNBQVM7UUFDWixDQUFDLEVBQUUsU0FBUztRQUNaLENBQUMsRUFBRSxTQUFTO1FBQ1osQ0FBQyxFQUFFLFNBQVM7UUFDWixDQUFDLEVBQUUsU0FBUztRQUNaLENBQUMsRUFBRSxTQUFTO1FBQ1osRUFBRSxFQUFFLFNBQVM7S0FDUDtJQUNWLENBQUMsRUFBRTtRQUNDLENBQUMsRUFBRSxTQUFTO1FBQ1osQ0FBQyxFQUFFLFNBQVM7UUFDWixDQUFDLEVBQUUsU0FBUztRQUNaLENBQUMsRUFBRSxTQUFTO1FBQ1osQ0FBQyxFQUFFLFNBQVM7UUFDWixDQUFDLEVBQUUsU0FBUztRQUNaLENBQUMsRUFBRSxTQUFTO1FBQ1osQ0FBQyxFQUFFLFNBQVM7UUFDWixDQUFDLEVBQUUsU0FBUztRQUNaLENBQUMsRUFBRSxTQUFTO1FBQ1osRUFBRSxFQUFFLFNBQVM7S0FDUDtJQUNWLENBQUMsRUFBRTtRQUNDLENBQUMsRUFBRSxNQUFNO1FBQ1QsQ0FBQyxFQUFFLE1BQU07UUFDVCxDQUFDLEVBQUUsTUFBTTtRQUNULENBQUMsRUFBRSxNQUFNO1FBQ1QsQ0FBQyxFQUFFLE1BQU07UUFDVCxDQUFDLEVBQUUsTUFBTTtRQUNULENBQUMsRUFBRSxNQUFNO1FBQ1QsQ0FBQyxFQUFFLE1BQU07UUFDVCxDQUFDLEVBQUUsTUFBTTtRQUNULENBQUMsRUFBRSxNQUFNO1FBQ1QsRUFBRSxFQUFFLE1BQU07S0FDSjtJQUNWLENBQUMsRUFBRTtRQUNDLENBQUMsRUFBRSxFQUFFO1FBQ0wsQ0FBQyxFQUFFLEVBQUU7UUFDTCxDQUFDLEVBQUUsRUFBRTtRQUNMLENBQUMsRUFBRSxFQUFFO1FBQ0wsQ0FBQyxFQUFFLEVBQUU7UUFDTCxDQUFDLEVBQUUsRUFBRTtRQUNMLENBQUMsRUFBRSxFQUFFO1FBQ0wsQ0FBQyxFQUFFLEVBQUU7UUFDTCxDQUFDLEVBQUUsRUFBRTtRQUNMLENBQUMsRUFBRSxFQUFFO1FBQ0wsRUFBRSxFQUFFLEVBQUU7S0FDQTtDQUNKLENBQUM7QUFFRSxRQUFBLDZCQUE2QixHQUFHLENBQUMsS0FBaUIsRUFBRSxPQUFlLEVBQUUsRUFBRTtJQUNoRixNQUFNLGNBQWMsR0FBK0MsSUFBSSxDQUFDLEtBQUssQ0FBQyxPQUFPLEdBQUcsRUFBRSxDQUFDLENBQUM7SUFDNUYsTUFBTSxLQUFLLEdBQUcsY0FBYyxDQUFDLEtBQUssQ0FBQyxDQUFDLGNBQWMsQ0FBQyxDQUFDO0lBRXBELElBQUksQ0FBQyxhQUFhLENBQUMsR0FBRyxDQUFDLEdBQUcsS0FBSyxHQUFHLGNBQWMsRUFBRSxDQUFDLEVBQUU7UUFDakQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxHQUFHLEtBQUssR0FBRyxjQUFjLE1BQU0sS0FBSyxFQUFFLENBQUMsQ0FBQztRQUNwRCxhQUFhLENBQUMsR0FBRyxDQUFDLEdBQUcsS0FBSyxHQUFHLGNBQWMsRUFBRSxDQUFDLENBQUM7S0FDbEQ7SUFDRCxPQUFPLEtBQUssQ0FBQztBQUNqQixDQUFDLENBQUEifQ==
