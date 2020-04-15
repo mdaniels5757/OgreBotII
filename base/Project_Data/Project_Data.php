@@ -309,7 +309,7 @@ class Project_Data {
 			} else if ($this->project === "wikimedia" && $this->subproject === "commons") {
 				$link = "MDanielsBotCommons";
 			} else {
-				$link = "$this->subproject";
+				$link = "MDanielsBot-$this->subproject";
 				if ($this->project !== "wikipedia") {
 					$link .= ".$this->project";
 				}
