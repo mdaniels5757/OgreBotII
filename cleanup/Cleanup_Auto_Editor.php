@@ -118,7 +118,7 @@ class Cleanup_Auto_Editor {
 
 				$logger->info("Editing $title");
 				$wiki_interface->edit_suppress_exceptions($pg, $newtext,
-					"(BOT): $editsummary of " . $this->edit_summary_all_files_desc, true, true,
+					"([[Commons:Bots/Requests/MDanielsBot_2|Test]]): $editsummary of " . $this->edit_summary_all_files_desc, true, true,
 					false, false, false);
 				$made_change = true;
 			}
