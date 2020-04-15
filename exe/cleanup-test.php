@@ -13,7 +13,7 @@ function find_first_test_index() {
 	});
 	
 	for ($i = 1; isset($files[$i]); $i++);
-	
+
 	return $i;
 }
 
@@ -39,9 +39,9 @@ $logger->all("Problems: " . print_r($ci->get_warnings(), true));
 
 if ($persist) {
 	$index = find_first_test_index();
-	
+
 	$logger->info("Persisting to $persist_directory/$index.(in|out)");
-	
+
 	file_put_contents_ensure("$persist_directory/$index.in", $text);
 	file_put_contents_ensure("$persist_directory/$index.out", $ci->get_text());
 }
