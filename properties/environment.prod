@@ -1,5 +1,5 @@
 environment = prod
-live        = false
+live        = true
 live_edits  = true
 
 url.prefix.secure = https:
