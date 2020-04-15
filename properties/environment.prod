@@ -1,8 +1,8 @@
 environment = prod
-live        = true
+live        = false
 live_edits  = true
 
-url.prefix.secure =
+url.prefix.secure = https:
 
 ;service
 service.url = "http://tools.wmflabs.org/mdaniels-ogrebot"
