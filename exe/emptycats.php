@@ -10,7 +10,7 @@ $emptycats_str = " <nowiki>[[WP:CSD#G6|G6]]: this temporary maintenance category
 $today = mktime(0, 0, 0, date("n"), date("j"), date("Y"), -1);
 
 
-$en = $wiki_interface->new_wiki( "OgreBot" );
+$en = $wiki_interface->new_wiki( "MDanielsBot" );
 
 $dcats = $wiki_interface->new_category_traverse($en, "Category:Wikipedia files with a different name on Wikimedia Commons", false, 14, NULL, $ignored_cats);
 $scats = $wiki_interface->new_category_traverse($en, "Category:Wikipedia files with the same name on Wikimedia Commons", false, 14, NULL, $ignored_cats);
@@ -39,7 +39,7 @@ foreach ($cats as $i => $cat) {
 	$cat_name = $cat['title'];
 
 	/* only print out empty categories dated before today */
-	preg_match("/(\d{1,2} [A-Za-z]+ \d{4})$/", $cat_name, $matches) || 
+	preg_match("/(\d{1,2} [A-Za-z]+ \d{4})$/", $cat_name, $matches) ||
 		$validator->assert(false, "Unrecognized category name structure; $cat_name");
 	$catdate = strtotime($matches[1]);
 	if ((!array_key_exists('categoryinfo', $cat) || !array_key_exists(
@@ -50,10 +50,10 @@ foreach ($cats as $i => $cat) {
 }
 
 $logger->debug("Updating empty cat list on wiki...");
-$pg = $wiki_interface->new_page($en, "User:OgreBot/emptycats");
+$pg = $wiki_interface->new_page($en, "User:MDanielsBot/emptycats");
 $wiki_interface->edit_throw_exceptions(
 		$pg,
 		$emptycats_str, "
 		BOT: updating list of empty dated nowcommons categories ".
-		"([[User talk:Magog the Ogre|report errors here]])"
+		"([[User talk:Mdaniels5757|report errors here]])"
 );

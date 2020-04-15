@@ -49,7 +49,7 @@ $re string the regular expression for which to search.
 $replacer, what to replace the regular expression with */
 function replace_image_special_regex($imagename, $re, $replacer) {
 	global $en, $co, $logger, $validator, $wiki_interface;
-	
+
 	$img = $wiki_interface->new_image($en, $imagename);
 	$imgpg = &$img->get_page();
 	$imgstr = $imgpg -> get_title(true); /* normalize title */
@@ -115,7 +115,7 @@ function replace_image_special_regex($imagename, $re, $replacer) {
 				$newtext=preg_replace($re, $replacer, $text, -1);
 			}
 		}
-		 
+
 		/* if we get this far, we're good to make the changes. now test it */
 		$preview = $wiki_interface->api_query(
 				$en,
@@ -132,7 +132,7 @@ function replace_image_special_regex($imagename, $re, $replacer) {
 		}
 		$prev_images = $preview['parse']['images'];
 
-		if (in_array($str_new_image_underscore, $prev_images) && 
+		if (in_array($str_new_image_underscore, $prev_images) &&
 				!in_array($str_old_image_underscore, $prev_images)) {
 			commit($newpage, $newtext, substr($imgstr, 5), substr($commons_name, 5), 0);
 			$logger->info("done");
@@ -145,8 +145,8 @@ function replace_image_special_regex($imagename, $re, $replacer) {
 }
 
 
-$en = $wiki_interface->new_wiki( "OgreBot" );
-$co = $wiki_interface->new_wiki( "OgreBotCommons" );
+$en = $wiki_interface->new_wiki( "MDanielsBot" );
+$co = $wiki_interface->new_wiki( "MDanielsBotCommons" );
 if (count($argv)!=4) {
 	stderr_print("Usage: [program name] [file to delink] [regular expression for which to".
 			" search] [string with which to replace it] $1 notation is allowed. Make sure".

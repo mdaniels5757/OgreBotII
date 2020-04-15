@@ -6,8 +6,8 @@ global $wiki_interface;
 /* grab as much information about files as we can */
 debug_print(" done\nStep 1: Gathering list of talk pages...");
 debug_print(".");
-$co = $wiki_interface->new_wiki( "OgreBotCommons" );
-$query_vars = array('action' => 'query', 'list' => 'usercontribs','ucuser' => 'Magog the Ogre', 'uclimit' => 5000, 'ucdir' => 'older', 'ucnamespace' => 7);
+$co = $wiki_interface->new_wiki( "MDanielsBotCommons" );
+$query_vars = array('action' => 'query', 'list' => 'usercontribs','ucuser' => 'Mdaniels5757', 'uclimit' => 5000, 'ucdir' => 'older', 'ucnamespace' => 7);
 $result=$wiki_interface->api_query($co, $query_vars);
 $query=$result['query']['usercontribs'];
 $pagenames=array();
@@ -17,8 +17,8 @@ foreach ($query as $query_this)
 
 debug_print("done\nStep 2: Gathering content of talk pages");
 $talk_content = $wiki_interface->query_pages(
-		$co, 
-		$pagenames, 
+		$co,
+		$pagenames,
 		'revisions'
 );
 

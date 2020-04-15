@@ -11,14 +11,14 @@ $test_conflicts = find_command_line_arg($argv, "ignore-conflicts", false, true) 
 $logger->debug("Starting up with relink type $type");
 
 
-$en = $wiki_interface->new_wiki("OgreBot");
-$co = $wiki_interface->new_wiki("OgreBotCommons");
+$en = $wiki_interface->new_wiki("MDanielsBot");
+$co = $wiki_interface->new_wiki("MDanielsBotCommons");
 
 switch ($type) {
 	case "auto":
 		$relink = new Auto_Relink($en, $co);
 		$relink->set_write_warnings($errlog);
-		
+
 		$logger->info("Error logs are " . ($errlog ? "ON" : "OFF") . ".");
 		break;
 	case "pages":

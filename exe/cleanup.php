@@ -10,15 +10,15 @@ $endtime = array_key_exists(2, $argv)?($argv[2]):
 
 $logger->debug("Querying recent changes (Step 1) - $endtime to $starttime");
 try {
-	$co2 = $wiki_interface->new_wiki( "OgreBot_2Commons" );
+	$co2 = $wiki_interface->new_wiki( "MDanielsBotCommons" );
 	$auto_editor = new Cleanup_Auto_Editor($co2, "new upload");
-	
+
 	$files = $wiki_interface->new_files($co2, $starttime, $endtime);
-	
+
 	$logger->debug(count($files)." files found. Querying page content (Step 2)");
 	$pagecontent = $wiki_interface->new_query_pages(
-			$co2, 
-			array_keys($files), 
+			$co2,
+			array_keys($files),
 			"revisions|categoriesnohidden",
 			array("rvprop" => "content|timestamp")
 	);
@@ -37,7 +37,7 @@ foreach($files as $title => $fileData) {
 		$logger->error($title);
 		continue;
 	}
-	
+
 	$thistime = time();
 	$i++;
 	if ($thistime-$timelapse>4) {
@@ -67,4 +67,3 @@ foreach($files as $title => $fileData) {
 }
 
 $logger->debug("Cleanup complete.");
-
