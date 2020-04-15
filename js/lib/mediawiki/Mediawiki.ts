@@ -5,8 +5,8 @@ export enum MediawikiApi {
 }
 
 export enum MediawikiUsername {
-    OGREBOT = "OgreBot",
-    OGREBOT_2 = "OgreBot_2"
+    OGREBOT = "MDanielsBot",
+    OGREBOT_2 = "MDanielsBot"
 }
 
 export interface Mediawiki {
