@@ -304,7 +304,7 @@ class Project_Data {
 		if ($this->wiki === null) {
 			$logger->debug("Load wiki $this->subproject.$this->project");
 
-			if ($this->project === "wikipedia" && $this->subproject === "en") {
+			/**if ($this->project === "wikipedia" && $this->subproject === "en") {
 				$link = "MDanielsBot";
 			} else if ($this->project === "wikimedia" && $this->subproject === "commons") {
 				$link = "MDanielsBotCommons";
@@ -318,8 +318,18 @@ class Project_Data {
 				$this->wiki = $wiki_interface->new_wiki($link);
 			} catch (BadEntryError $e) {
 				throw new ProjectNotFoundException("Unknown error: unable to locate project: $link");
-			}
+			}*/
 		}
+            $link = "MDanielsBot-$this->subproject";
+            if ($this->project !== "wikipedia") {
+                $link .= ".$this->project";
+            }
+        }
+        try {
+            $this->wiki = $wiki_interface->new_wiki($link);
+        } catch (BadEntryError $e) {
+            throw new ProjectNotFoundException("Unknown error: unable to locate project: $link");
+        }
 	}
 
 	/**
