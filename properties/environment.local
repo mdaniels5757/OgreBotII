@@ -9,7 +9,7 @@ service.url = "http://127.0.0.1/public_html"
 
 ; web constants
 tusc.url	= http://tools.wmflabs.org/tusc/tusc.php
-cookie.path = /
+cookie.path = / 
 
 minify = false
 
