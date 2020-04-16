@@ -9,8 +9,8 @@ try {
 	if (!$end) {
 		$end = substr($start, 0, 8) . "235959";
 	}
-	
-	$co = $wiki_interface->new_wiki("OgreBotCommons");
+
+	$co = $wiki_interface->new_wiki("MDanielsBotCommons");
 	$upload_report_writer = new UploadReportWriter($co, $start, $end);
 	$upload_report_writer->loadAndWrite($update);
 } catch (Exception $e) {
