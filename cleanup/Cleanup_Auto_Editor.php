@@ -87,7 +87,7 @@ class Cleanup_Auto_Editor {
 			}
 			$editsummary = "";
 			if ($cleanup_response->get_significant_changes()) {
-				$editsummary = "clean up";
+				$editsummary = "[[User:MDanielsBot/2b|clean up]]";
 			}
 
 			if (0) { // !$categories) {
@@ -118,7 +118,7 @@ class Cleanup_Auto_Editor {
 
 				$logger->info("Editing $title");
 				$wiki_interface->edit_suppress_exceptions($pg, $newtext,
-					"([[Commons:Bots/Requests/MDanielsBot_2|Test]]): $editsummary of " . $this->edit_summary_all_files_desc, true, true,
+					"([[Commons:Bots/Requests/MDanielsBot_2|Bot Test]]): $editsummary of " . $this->edit_summary_all_files_desc, true, true,
 					false, false, false);
 				$made_change = true;
 			}
