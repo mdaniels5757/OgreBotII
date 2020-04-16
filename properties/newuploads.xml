@@ -3,5 +3,7 @@
 <newuploads>
 	<ranges>
 		<range start="0" count="4"/>
+		<range start="20190401000000" count="8"/>
+		<range start="20200401000000" count="16"/>
 	</ranges>
 </newuploads>

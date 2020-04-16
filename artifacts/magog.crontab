@@ -20,4 +20,4 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 #
 # m h  dom mon dow   command
-13 * * * *  /usr/bin/jsub -l release=trusty -mem 1500m -N cron-tools.mdaniels-ogrebot -j y -quiet php exe/cron.php
+13 * * * *  /usr/bin/jsub -l -mem 1500m -N cron-tools.mdaniels-ogrebot -j y -quiet php exe/cron.php
